@@ -1,6 +1,6 @@
 package javaBasic;
 
-public class Topic_03_Compare {
+public class Topic_03_Compare_And_Operator {
 	static int studentNumber;
 	static boolean Name;
 	
