@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-09-19T15:59:14Z" name="Default suite" finished-at="2022-09-19T15:59:14Z" duration-ms="20">
+    <groups>
+    </groups>
+    <test started-at="2022-09-19T15:59:14Z" name="Default test" finished-at="2022-09-19T15:59:14Z" duration-ms="20">
+      <class name="javaBasic.Topic_07_Array">
+        <test-method signature="TC_01_Tim_So_Lon_Nhat_Trong_Mang()[pri:0, instance:javaBasic.Topic_07_Array@5bda8e08]" started-at="2022-09-19T15:59:14Z" name="TC_01_Tim_So_Lon_Nhat_Trong_Mang" finished-at="2022-09-19T15:59:14Z" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_01_Tim_So_Lon_Nhat_Trong_Mang -->
+        <test-method signature="TC_02_Sum_First_Number_And_Last_Number()[pri:0, instance:javaBasic.Topic_07_Array@5bda8e08]" started-at="2022-09-19T15:59:14Z" name="TC_02_Sum_First_Number_And_Last_Number" finished-at="2022-09-19T15:59:14Z" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_02_Sum_First_Number_And_Last_Number -->
+        <test-method signature="TC_03_Tinh_Tong_Va_Trung_Binh_Cong()[pri:0, instance:javaBasic.Topic_07_Array@5bda8e08]" started-at="2022-09-19T15:59:14Z" name="TC_03_Tinh_Tong_Va_Trung_Binh_Cong" finished-at="2022-09-19T15:59:14Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_03_Tinh_Tong_Va_Trung_Binh_Cong -->
+      </class> <!-- javaBasic.Topic_07_Array -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
