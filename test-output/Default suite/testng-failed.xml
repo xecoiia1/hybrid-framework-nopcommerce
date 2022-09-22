@@ -7,11 +7,9 @@
         <methods>
           <include name="TC_03_Register_Success"/>
           <include name="beforeClass"/>
-          <include name="TC_01_Register_Empty_Data"/>
           <include name="TC_04_Register_Existing_Email"/>
           <include name="TC_05_Register_Password_Less_Than_6_Chars"/>
           <include name="TC_06_Register_Invalid_Confirm_Password"/>
-          <include name="TC_02_Register_Invalid_Email"/>
           <include name="afterClass"/>
         </methods>
       </class> <!-- com.nopcommerce.user.User_01_Register_Login -->
