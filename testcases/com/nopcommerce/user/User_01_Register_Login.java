@@ -130,7 +130,7 @@ public class User_01_Register_Login {
   
   @Test
   public void TC_06_Register_Invalid_Confirm_Password(){
-driver.findElement(By.cssSelector("a.ico-register")).click();
+	  driver.findElement(By.cssSelector("a.ico-register")).click();
 	  
 	  driver.findElement(By.cssSelector("input#FirstName")).sendKeys("Thanh");
 	  
