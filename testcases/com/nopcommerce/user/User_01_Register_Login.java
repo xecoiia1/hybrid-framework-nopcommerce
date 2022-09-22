@@ -84,7 +84,7 @@ public class User_01_Register_Login {
 	  
 	  driver.findElement(By.cssSelector("button#register-button")).click();
 	  
-	  Assert.assertEquals(driver.findElement(By.cssSelector("div.result")).getText(), "Your registration completed	");
+	  Assert.assertEquals(driver.findElement(By.cssSelector("div.result")).getText(), "Your registration completed");
 	  
 	  driver.findElement(By.cssSelector("a.ico-logout")).click();
   }
@@ -124,7 +124,7 @@ public class User_01_Register_Login {
 	  
 	  driver.findElement(By.cssSelector("button#register-button")).click();
 	  
-	  Assert.assertEquals(driver.findElement(By.cssSelector("span#Password-error")).getText(), "Password must meet the following rules:/nmust have at least 6 characters");
+	  Assert.assertEquals(driver.findElement(By.cssSelector("span#Password-error")).getText(), "Password must meet the following rules:\nmust have at least 6 characters");
 	  
   }
   
