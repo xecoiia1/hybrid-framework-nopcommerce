@@ -19,7 +19,8 @@ public class User_01_Register_Login {
 
   @BeforeClass
   public void beforeClass() {
-	System.getProperty("webdriver.gecko.driver", projectPath + "\\browserDrivers\\geckodriver.exe");
+	System.setProperty("webdriver.gecko.driver", projectPath + "\\browserDrivers\\geckodriver.exe");
+	
 	driver = new FirefoxDriver();
 	
 	driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
