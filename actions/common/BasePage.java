@@ -57,7 +57,7 @@ public class BasePage {
 	
 	//Hàm đợi Alert xuất hiện
 	public Alert waitForAlertDisplay(WebDriver driver) {
-		WebDriverWait explixitWait = new WebDriverWait(driver, 30);
+		WebDriverWait explixitWait = new WebDriverWait(driver, longTimeOut);
 		return explixitWait.until(ExpectedConditions.alertIsPresent());
 	}
 	
@@ -167,7 +167,7 @@ public class BasePage {
 	
 	public void selectitemCustomDropDown(WebDriver driver, String parentLocator , String childLocator, String expectedTextItem) {
 		
-		WebDriverWait explixitWait = new WebDriverWait(driver, 30);
+		WebDriverWait explixitWait = new WebDriverWait(driver, longTimeOut);
 
 		clickToElementByXpath(driver, parentLocator);
 		
@@ -254,36 +254,38 @@ public class BasePage {
 	
 	//Add các hàm Wait
 	public void waitForElementVisible(WebDriver driver, String xpathLocator) {
-		WebDriverWait explixitWait = new WebDriverWait(driver, 30);
+		WebDriverWait explixitWait = new WebDriverWait(driver, longTimeOut);
 		
 		explixitWait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(getByXpath(xpathLocator)));
 	}
 	
 	public void waitForAllElementVisible(WebDriver driver, String xpathLocator) {
-		WebDriverWait explixitWait = new WebDriverWait(driver, 30);
+		WebDriverWait explixitWait = new WebDriverWait(driver, longTimeOut);
 		
 		explixitWait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(getByXpath(xpathLocator)));
 	}
 	
 	public void waitForElementInvisible(WebDriver driver, String xpathLocator) {
-		WebDriverWait explixitWait = new WebDriverWait(driver, 30);
+		WebDriverWait explixitWait = new WebDriverWait(driver, longTimeOut);
 		
 		explixitWait.until(ExpectedConditions.invisibilityOfElementLocated(getByXpath(xpathLocator)));
 	}
 	
 	public void waitForAllElementInvisible(WebDriver driver, String xpathLocator) {
-		WebDriverWait explixitWait = new WebDriverWait(driver, 30);
+		WebDriverWait explixitWait = new WebDriverWait(driver, longTimeOut);
 		
 	    explixitWait.until(ExpectedConditions.invisibilityOfAllElements(getListElementByXpath(driver, xpathLocator)));
 	}
 	
 	public void waitForElementClickAble(WebDriver driver, String xpathLocator) {
-		WebDriverWait explixitWait = new WebDriverWait(driver, 30);
+		WebDriverWait explixitWait = new WebDriverWait(driver, longTimeOut);
 		
 		explixitWait.until(ExpectedConditions.elementToBeClickable(getByXpath(xpathLocator)));
 	}
 	
-
+	private long longTimeOut = 30;
+	
+	private long shortTimeOut = 5;
 
 
 
