@@ -16,11 +16,17 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.Color;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 //Common class
 public class BasePage {
+	
+	// Che giấu đi việc khởi tạo của 1 đối tượng
+	public static BasePage getBasePageObj() {
+		return new BasePage();
+	}
 	
 	// Hàm này mở 1 URL
 	public void openPageURL(WebDriver driver, String pageURL) {
@@ -251,6 +257,100 @@ public class BasePage {
 	}
 	
 	//Add các hàm của JavaExecutor
+	public Object executeForBrowser(WebDriver driver, String javaScript) {
+		JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
+		return jsExecutor.executeScript(javaScript);
+	}
+
+	public String getInnerText(WebDriver driver) {
+		JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
+		return (String) jsExecutor.executeScript("return document.documentElement.innerText;");
+	}
+
+	public boolean areExpectedTextInInnerText(WebDriver driver, String textExpected) {
+		JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
+		String textActual = (String) jsExecutor.executeScript("return document.documentElement.innerText.match('" + textExpected + "')[0]");
+		return textActual.equals(textExpected);
+	}
+
+	public void scrollToBottomPage(WebDriver driver) {
+		JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
+		jsExecutor.executeScript("window.scrollBy(0,document.body.scrollHeight)");
+	}
+
+	public void navigateToUrlByJS(WebDriver driver, String url) {
+		JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
+		jsExecutor.executeScript("window.location = '" + url + "'");
+	}
+
+	public void highlightElement(WebDriver driver, String locator) {
+		JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
+		WebElement element = getElementByXpath(driver, locator);
+		String originalStyle = element.getAttribute("style");
+		jsExecutor.executeScript("arguments[0].setAttribute(arguments[1], arguments[2])", element, "style", "border: 2px solid red; border-style: dashed;");
+		sleepInSecond(1);
+		jsExecutor.executeScript("arguments[0].setAttribute(arguments[1], arguments[2])", element, "style", originalStyle);
+	}
+
+	public void clickToElementByJS(WebDriver driver, String locator) {
+		JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
+		jsExecutor.executeScript("arguments[0].click();", getElementByXpath(driver, locator));
+	}
+
+	public void scrollToElement(WebDriver driver, String locator) {
+		JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
+		jsExecutor.executeScript("arguments[0].scrollIntoView(true);", getElementByXpath(driver, locator));
+	}
+
+	public void sendkeyToElementByJS(WebDriver driver, String locator, String value) {
+		JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
+		jsExecutor.executeScript("arguments[0].setAttribute('value', '" + value + "')", getElementByXpath(driver, locator));
+	}
+
+	public void removeAttributeInDOM(WebDriver driver, String locator, String attributeRemove) {
+		JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
+		jsExecutor.executeScript("arguments[0].removeAttribute('" + attributeRemove + "');", getElementByXpath(driver, locator));
+	}
+
+	public boolean areJQueryAndJSLoadedSuccess(WebDriver driver) {
+		WebDriverWait explixitWait = new WebDriverWait(driver, longTimeOut);
+		JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
+
+		ExpectedCondition<Boolean> jQueryLoad = new ExpectedCondition<Boolean>() {
+			@Override
+			public Boolean apply(WebDriver driver) {
+				try {
+					return ((Long) jsExecutor.executeScript("return jQuery.active") == 0);
+				} catch (Exception e) {
+					return true;
+				}
+			}
+		};
+
+		ExpectedCondition<Boolean> jsLoad = new ExpectedCondition<Boolean>() {
+			@Override
+			public Boolean apply(WebDriver driver) {
+				return jsExecutor.executeScript("return document.readyState").toString().equals("complete");
+			}
+		};
+
+		return explixitWait.until(jQueryLoad) && explixitWait.until(jsLoad);
+	}
+
+	public String getElementValidationMessage(WebDriver driver, String locator) {
+		JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
+		return (String) jsExecutor.executeScript("return arguments[0].validationMessage;",getElementByXpath(driver, locator));
+	}
+
+	public boolean isImageLoaded(WebDriver driver, String locator) {
+		JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
+		boolean status = (boolean) jsExecutor.executeScript("return arguments[0].complete && typeof arguments[0].naturalWidth != \"undefined\" && arguments[0].naturalWidth > 0", getElementByXpath(driver, locator));
+		if (status) {
+			return true;
+		} else {
+			return false;
+		}
+	}
 	
 	//Add các hàm Wait
 	public void waitForElementVisible(WebDriver driver, String xpathLocator) {
