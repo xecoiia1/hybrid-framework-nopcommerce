@@ -1,6 +1,9 @@
 package com.nopcommerce.user;
 
 import org.testng.annotations.Test;
+
+import common.BasePage;
+
 import org.testng.annotations.BeforeClass;
 
 import java.util.Random;
@@ -15,6 +18,7 @@ import org.testng.annotations.AfterClass;
 public class User_01_Register_Login {
   WebDriver driver;
   String projectPath = System.getProperty("user.dir");
+  BasePage basePage;
   String emailAdd;
 
   @BeforeClass
@@ -22,6 +26,8 @@ public class User_01_Register_Login {
 	System.setProperty("webdriver.gecko.driver", projectPath + "\\browserDrivers\\geckodriver.exe");
 	
 	driver = new FirefoxDriver();
+	
+	basePage = new BasePage();
 	
 	driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 	
@@ -32,119 +38,109 @@ public class User_01_Register_Login {
   
   @Test
   public void TC_01_Register_Empty_Data() {
-	  driver.findElement(By.cssSelector("a.ico-register")).click();
+	  basePage.waitForElementClickAble(driver, "//a[@class= 'ico-register']");
+	  basePage.clickToElementByXpath(driver, "//a[@class= 'ico-register']");
 	  
-	  driver.findElement(By.cssSelector("button#register-button")).click();
+	  basePage.waitForElementClickAble(driver, "button[@id= 'register-button']");
+	  basePage.clickToElementByXpath(driver, "button[@id= 'register-button']");
 	  
-	  Assert.assertEquals(driver.findElement(By.cssSelector("span#FirstName-error")).getText(), "First name is required.");
+	  basePage.getTextOfElement(driver, "//span[@id = 'FirstName-error']");
 	  
-	  Assert.assertEquals(driver.findElement(By.cssSelector("span#LastName-error")).getText(), "Last name is required.");
-	  
-	  Assert.assertEquals(driver.findElement(By.cssSelector("span#Email-error")).getText(), "Email is required.");
-	  
-	  Assert.assertEquals(driver.findElement(By.cssSelector("span#Password-error")).getText(), "Password is required.");
-	  
-	  Assert.assertEquals(driver.findElement(By.cssSelector("span#ConfirmPassword-error")).getText(), "Password is required.");
-	  
+	  Assert.assertEquals(basePage.getTextOfElement(driver, "//span[@id = 'FirstName-error']"), "First name is required.");
+	  Assert.assertEquals(basePage.getTextOfElement(driver, "//span[@id = 'LastName-error']"), "Last name is required.");
+	  Assert.assertEquals(basePage.getTextOfElement(driver, "//span[@id = 'Email-error']"), "Email is required.");
+	  Assert.assertEquals(basePage.getTextOfElement(driver, "//span[@id = 'Password-error']"), "Password is required.");
+	  Assert.assertEquals(basePage.getTextOfElement(driver, "//span[@id = 'ConfirmPassword-error']"), "Password is required.");
 	  
   }
   
   @Test
   public void TC_02_Register_Invalid_Email() {
-	  driver.findElement(By.cssSelector("a.ico-register")).click();
 	  
-	  driver.findElement(By.cssSelector("input#FirstName")).sendKeys("Thanh");
+	  basePage.waitForElementClickAble(driver, "//a[@class= 'ico-register']");
+	  basePage.clickToElementByXpath(driver, "//a[@class= 'ico-register']");
+	 
+	  basePage.sendkeysToElementByXpath(driver, "//input[@id = 'FirstName']", "Thanh");
+	  basePage.sendkeysToElementByXpath(driver, "//input[@id = 'LastName']", "Nguyen");
+	  basePage.sendkeysToElementByXpath(driver, "//input[@id = 'Email']", "blahbla");
+	  basePage.sendkeysToElementByXpath(driver, "//input[@id = 'Password']", "123456");
+	  basePage.sendkeysToElementByXpath(driver, "//input[@id = 'ConfirmPassword']", "123456");
 	  
-	  driver.findElement(By.cssSelector("input#LastName")).sendKeys("Nguyen");
+	  basePage.waitForElementClickAble(driver, "button[@id= 'register-button']");
+	  basePage.clickToElementByXpath(driver, "button[@id= 'register-button']");
 	  
-	  driver.findElement(By.cssSelector("input#Email")).sendKeys("blahbla");
-	  
-	  driver.findElement(By.cssSelector("input#Password")).sendKeys("123456");
-	  
-	  driver.findElement(By.cssSelector("input#ConfirmPassword")).sendKeys("123456");
-	  
-	  driver.findElement(By.cssSelector("button#register-button")).click();
-	  
-	  Assert.assertEquals(driver.findElement(By.cssSelector("span#Email-error")).getText(), "Wrong email");
+	  Assert.assertEquals(basePage.getTextOfElement(driver, "//span[@id = 'Email-error']"), "Wrong email");
   }
   
   @Test
   public void TC_03_Register_Success() {
-	  driver.findElement(By.cssSelector("a.ico-register")).click();
+	  basePage.waitForElementClickAble(driver, "//a[@class= 'ico-register']");
+	  basePage.clickToElementByXpath(driver, "//a[@class= 'ico-register']");
 	  
-	  driver.findElement(By.cssSelector("input#FirstName")).sendKeys("Thanh");
+	  basePage.sendkeysToElementByXpath(driver, "//input[@id = 'FirstName']", "Thanh");
+	  basePage.sendkeysToElementByXpath(driver, "//input[@id = 'LastName']", "Nguyen");
+	  basePage.sendkeysToElementByXpath(driver, "//input[@id = 'Email']", emailAdd);
+	  basePage.sendkeysToElementByXpath(driver, "//input[@id = 'Password']", "123456");
+	  basePage.sendkeysToElementByXpath(driver, "//input[@id = 'ConfirmPassword']", "123456");
 	  
-	  driver.findElement(By.cssSelector("input#LastName")).sendKeys("Nguyen");
+	  basePage.waitForElementClickAble(driver, "button[@id= 'register-button']");
+	  basePage.clickToElementByXpath(driver, "button[@id= 'register-button']");
 	  
-	  driver.findElement(By.cssSelector("input#Email")).sendKeys(emailAdd);
+	  Assert.assertEquals(basePage.getTextOfElement(driver, "//div[@class = 'result']"), "Your registration completed");
 	  
-	  driver.findElement(By.cssSelector("input#Password")).sendKeys("123456");
-	  
-	  driver.findElement(By.cssSelector("input#ConfirmPassword")).sendKeys("123456");
-	  
-	  driver.findElement(By.cssSelector("button#register-button")).click();
-	  
-	  Assert.assertEquals(driver.findElement(By.cssSelector("div.result")).getText(), "Your registration completed");
-	  
-	  driver.findElement(By.cssSelector("a.ico-logout")).click();
+	  basePage.waitForElementClickAble(driver, "//a[@class= 'ico-logout']");
+	  basePage.clickToElementByXpath(driver, "//a[@class= 'ico-logout']");
   }
   
   @Test
   public void TC_04_Register_Existing_Email() {
-	  driver.findElement(By.cssSelector("a.ico-register")).click();
+	  basePage.waitForElementClickAble(driver, "//a[@class= 'ico-register']");
+	  basePage.clickToElementByXpath(driver, "//a[@class= 'ico-register']");
 	  
-	  driver.findElement(By.cssSelector("input#FirstName")).sendKeys("Thanh");
+	  basePage.sendkeysToElementByXpath(driver, "//input[@id = 'FirstName']", "Thanh");
+	  basePage.sendkeysToElementByXpath(driver, "//input[@id = 'LastName']", "Nguyen");
+	  basePage.sendkeysToElementByXpath(driver, "//input[@id = 'Email']", emailAdd);
+	  basePage.sendkeysToElementByXpath(driver, "//input[@id = 'Password']", "123456");
+	  basePage.sendkeysToElementByXpath(driver, "//input[@id = 'ConfirmPassword']", "123456");
 	  
-	  driver.findElement(By.cssSelector("input#LastName")).sendKeys("Nguyen");
+	  basePage.waitForElementClickAble(driver, "button[@id= 'register-button']");
+	  basePage.clickToElementByXpath(driver, "button[@id= 'register-button']");
 	  
-	  driver.findElement(By.cssSelector("input#Email")).sendKeys(emailAdd);
-	  
-	  driver.findElement(By.cssSelector("input#Password")).sendKeys("123456");
-	  
-	  driver.findElement(By.cssSelector("input#ConfirmPassword")).sendKeys("123456");
-	  
-	  driver.findElement(By.cssSelector("button#register-button")).click();
-	  
-	  Assert.assertEquals(driver.findElement(By.cssSelector("div.validation-summary-errors")).getText(), "The specified email already exists");
+	  Assert.assertEquals(basePage.getTextOfElement(driver, "//div[contains(@class, 'message-error')]//li"), "The specified email already exists");
   }
   
   @Test
   public void TC_05_Register_Password_Less_Than_6_Chars() {
-	  driver.findElement(By.cssSelector("a.ico-register")).click();
+	  basePage.waitForElementClickAble(driver, "//a[@class= 'ico-register']");
+	  basePage.clickToElementByXpath(driver, "//a[@class= 'ico-register']");
 	  
-	  driver.findElement(By.cssSelector("input#FirstName")).sendKeys("Thanh");
+	  basePage.sendkeysToElementByXpath(driver, "//input[@id = 'FirstName']", "Thanh");
+	  basePage.sendkeysToElementByXpath(driver, "//input[@id = 'LastName']", "Nguyen");
+	  basePage.sendkeysToElementByXpath(driver, "//input[@id = 'Email']", emailAdd);
+	  basePage.sendkeysToElementByXpath(driver, "//input[@id = 'Password']", "123");
+	  basePage.sendkeysToElementByXpath(driver, "//input[@id = 'ConfirmPassword']", "123");
 	  
-	  driver.findElement(By.cssSelector("input#LastName")).sendKeys("Nguyen");
+	  basePage.waitForElementClickAble(driver, "button[@id= 'register-button']");
+	  basePage.clickToElementByXpath(driver, "button[@id= 'register-button']");
 	  
-	  driver.findElement(By.cssSelector("input#Email")).sendKeys(emailAdd);
-	  
-	  driver.findElement(By.cssSelector("input#Password")).sendKeys("123");
-	  
-	  driver.findElement(By.cssSelector("input#ConfirmPassword")).sendKeys("123");
-	  
-	  driver.findElement(By.cssSelector("button#register-button")).click();
-	  
-	  Assert.assertEquals(driver.findElement(By.cssSelector("span#Password-error")).getText(), "Password must meet the following rules:\nmust have at least 6 characters");
-	  
+	  Assert.assertEquals(basePage.getTextOfElement(driver, "//span[@id = 'Password-error']"), "Password must meet the following rules:\\nmust have at least 6 characters");
   }
   
   @Test
   public void TC_06_Register_Invalid_Confirm_Password(){
-	  driver.findElement(By.cssSelector("a.ico-register")).click();
+	  basePage.waitForElementClickAble(driver, "//a[@class= 'ico-register']");
+	  basePage.clickToElementByXpath(driver, "//a[@class= 'ico-register']");
 	  
-	  driver.findElement(By.cssSelector("input#FirstName")).sendKeys("Thanh");
+	  basePage.sendkeysToElementByXpath(driver, "//input[@id = 'FirstName']", "Thanh");
+	  basePage.sendkeysToElementByXpath(driver, "//input[@id = 'LastName']", "Nguyen");
+	  basePage.sendkeysToElementByXpath(driver, "//input[@id = 'Email']", emailAdd);
+	  basePage.sendkeysToElementByXpath(driver, "//input[@id = 'Password']", "123456");
+	  basePage.sendkeysToElementByXpath(driver, "//input[@id = 'ConfirmPassword']", "123567");
 	  
-	  driver.findElement(By.cssSelector("input#LastName")).sendKeys("Nguyen");
+	  basePage.waitForElementClickAble(driver, "button[@id= 'register-button']");
+	  basePage.clickToElementByXpath(driver, "button[@id= 'register-button']");
 	  
-	  driver.findElement(By.cssSelector("input#Email")).sendKeys(emailAdd);
-	  
-	  driver.findElement(By.cssSelector("input#Password")).sendKeys("123456");
-	  
-	  driver.findElement(By.cssSelector("input#ConfirmPassword")).sendKeys("123567");
-	  
-	  driver.findElement(By.cssSelector("button#register-button")).click();
-	  
-	  Assert.assertEquals(driver.findElement(By.cssSelector("span#ConfirmPassword-error")).getText(), "The password and confirmation password do not match.");
+	  Assert.assertEquals(basePage.getTextOfElement(driver, "//span[@id = 'ConfirmPassword-error']"), "The password and confirmation password do not match.");
 	  
   }
 

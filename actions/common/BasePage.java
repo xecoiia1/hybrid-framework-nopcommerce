@@ -124,15 +124,15 @@ public class BasePage {
 
 	//Các hàm Element
 	
-	public By getByXpath(String xpathLocator) {
+	private By getByXpath(String xpathLocator) {
 		return By.xpath(xpathLocator);
 	}
 	
-	public WebElement getElementByXpath(WebDriver driver, String xpathLocator) {
+	private WebElement getElementByXpath(WebDriver driver, String xpathLocator) {
 		return driver.findElement(getByXpath(xpathLocator));
 	}
 	
-	public List<WebElement> getListElementByXpath(WebDriver driver, String xpathLocator) {
+	private List<WebElement> getListElementByXpath(WebDriver driver, String xpathLocator) {
 		return driver.findElements(getByXpath(xpathLocator));
 	}
 		
@@ -146,7 +146,7 @@ public class BasePage {
 		element.sendKeys(textValue);
 	}
 	
-	public String getTextOfElement(WebDriver driver, String xpathLocator, String textValue ) {
+	public String getTextOfElement(WebDriver driver, String xpathLocator) {
 		return getElementByXpath(driver, xpathLocator).getText();
 	}
     
