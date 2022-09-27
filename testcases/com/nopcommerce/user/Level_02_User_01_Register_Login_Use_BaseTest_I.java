@@ -15,7 +15,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 
-public class User_01_Register_Login_Use_BaseTest2 {
+public class Level_02_User_01_Register_Login_Use_BaseTest_I {
   WebDriver driver;
   String projectPath = System.getProperty("user.dir");
   BasePage basePage;
@@ -27,8 +27,7 @@ public class User_01_Register_Login_Use_BaseTest2 {
 	
 	driver = new FirefoxDriver();
 	
-	// Che giấu đi việc khởi tạo của 1 đối tượng
-	basePage = BasePage.getBasePageObj();
+	basePage = new BasePage();
 	
 	driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 	

@@ -16,7 +16,7 @@ import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 
 // Sử dụng extend để kế thừa các hàm từ BasePage mà không cần khai báo
-public class User_01_Register_Login_Use_BaseTest3 extends BasePage {
+public class Level_02_User_01_Register_Login_Use_BaseTest_III extends BasePage {
   WebDriver driver;
   String projectPath = System.getProperty("user.dir");
   String emailAdd;
