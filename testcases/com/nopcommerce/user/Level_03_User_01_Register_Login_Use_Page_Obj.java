@@ -55,11 +55,11 @@ public class Level_03_User_01_Register_Login_Use_Page_Obj extends BasePage {
 	  Assert.assertEquals(getTextOfElement(driver, "//span[@id = 'Password-error']"), "Password is required.");
 	  Assert.assertEquals(getTextOfElement(driver, "//span[@id = 'ConfirmPassword-error']"), "Password is required.");
 	  System.out.println("Register Page-Step 03: Verify Error Message");
-	  Assert.assertEquals(registerPage.getErrorMessageAtFirstNameTestBox, "First name is required.");
-	  Assert.assertEquals(registerPage.getErrorMessageAtLastNameTestBox, "Last name is required.");
-	  Assert.assertEquals(registerPage.getErrorMessageAtEmailTestBox, "Email is required.");
-	  Assert.assertEquals(registerPage.getErrorMessageAtPasswordTestBox, "Password is required.");
-	  Assert.assertEquals(registerPage.getErrorMessageAtConfirmPasswordTestBox, "Password is required.");
+	  Assert.assertEquals(registerPage.getErrorMessageAtFirstNameTestBox(), "First name is required.");
+	  Assert.assertEquals(registerPage.getErrorMessageAtLastNameTestBox(), "Last name is required.");
+	  Assert.assertEquals(registerPage.getErrorMessageAtEmailTestBox(), "Email is required.");
+	  Assert.assertEquals(registerPage.getErrorMessageAtPasswordTestBox(), "Password is required.");
+	  Assert.assertEquals(registerPage.getErrorMessageAtConfirmPasswordTestBox(), "Password is required.");
 	  
   }
   
@@ -90,7 +90,7 @@ public class Level_03_User_01_Register_Login_Use_Page_Obj extends BasePage {
 	  
 	  Assert.assertEquals(getTextOfElement(driver, "//span[@id = 'Email-error']"), "Wrong email");
 	  System.out.println("Register Page-Step 04: Verify Error Message");
-	  Assert.assertEquals(registerPage.getErrorMessageWrongAtEmailTestBox, "Wrong email");
+	  Assert.assertEquals(registerPage.getErrorMessageWrongAtEmailTestBox(), "Wrong email");
   }
   
   @Test
@@ -119,7 +119,7 @@ public class Level_03_User_01_Register_Login_Use_Page_Obj extends BasePage {
 	  
 	  Assert.assertEquals(getTextOfElement(driver, "//div[@class = 'result']"), "Your registration completed");
 	  System.out.println("Register Page-Step 04: Verify Register Success Message");
-	  Assert.assertEquals(registerPage.getSuccessRegisterSucces, "Your registration completed");
+	  Assert.assertEquals(registerPage.getSuccessRegisterSucces(), "Your registration completed");
 	  
 	  waitForElementClickAble(driver, "//a[@class= 'ico-logout']");
 	  clickToElementByXpath(driver, "//a[@class= 'ico-logout']");
@@ -153,7 +153,7 @@ public class Level_03_User_01_Register_Login_Use_Page_Obj extends BasePage {
 	  
 	  Assert.assertEquals(getTextOfElement(driver, "//div[contains(@class, 'message-error')]//li"), "The specified email already exists");
 	  System.out.println("Register Page-Step 04: Verify Email Exist Message");
-	  Assert.assertEquals(registerPage.getEmailExitstsMessage, "The specified email already exists");
+	  Assert.assertEquals(registerPage.getEmailExitstsMessage(), "The specified email already exists");
   }
   
   @Test
@@ -182,7 +182,7 @@ public class Level_03_User_01_Register_Login_Use_Page_Obj extends BasePage {
 	  
 	  Assert.assertEquals(getTextOfElement(driver, "//span[@id = 'Password-error']"), "Password must meet the following rules:\nmust have at least 6 characters");
 	  System.out.println("Register Page-Step 04: Verify Password Wrong Rule Message");
-	  Assert.assertEquals(registerPage.getPasswordWrongRuleMessage, "Password must meet the following rules:\\nmust have at least 6 characters");
+	  Assert.assertEquals(registerPage.getPasswordWrongRuleMessage(), "Password must meet the following rules:\\nmust have at least 6 characters");
   }
   
   @Test
@@ -211,7 +211,7 @@ public class Level_03_User_01_Register_Login_Use_Page_Obj extends BasePage {
 	  
 	  Assert.assertEquals(getTextOfElement(driver, "//span[@id = 'ConfirmPassword-error']"), "The password and confirmation password do not match.");
 	  System.out.println("Register Page-Step 04: Verify Confirm Password Not Match Message");
-	  Assert.assertEquals(registerPage.getConfirmPasswordNotMatchMessage, "The password and confirmation password do not match.");
+	  Assert.assertEquals(registerPage.getConfirmPasswordNotMatchMessage(), "Password must meet the following rules:\\nmust have at least 6 characters");
 	  
   }
 
