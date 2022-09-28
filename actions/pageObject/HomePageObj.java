@@ -1,9 +1,14 @@
 package pageObject;
 
-public class HomePageObj {
+import org.openqa.selenium.WebDriver;
 
-	public void clickToRegisterLink() {
-		// TODO Auto-generated method stub
+
+public class HomePageObj extends BasePage {
+	private WebDriver driver;
+
+	public void clickToRegisterLink(){
+		waitForElementClickAble(driver, HomePageUI.REGISTER_BTN);
+		clickToElementByXpath(driver, HomePageUI.REGISTER_BTN);
 		
 	}
 
