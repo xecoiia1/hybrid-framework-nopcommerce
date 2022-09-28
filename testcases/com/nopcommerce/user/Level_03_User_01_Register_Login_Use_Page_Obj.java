@@ -31,6 +31,9 @@ public class Level_03_User_01_Register_Login_Use_Page_Obj extends BasePage {
 	lastName = "Nguyen";
 	emailAdd = "abc" + generateRandom() + "@mail.com";
 	passWord = "123456";
+	
+	homePage = new HomePageObj(driver);
+	registerPage = new RegisterPageObj(driver);
   }
   
   @Test
@@ -225,8 +228,8 @@ public class Level_03_User_01_Register_Login_Use_Page_Obj extends BasePage {
 //  var element = $$("div.validation-summary-errors")[0];
 //  element.textContent;
  private WebDriver driver;
- private HomePageObj homePage = new HomePageObj(driver);
- private RegisterPageObj registerPage = new RegisterPageObj(driver);
+ private HomePageObj homePage;
+ private RegisterPageObj registerPage;
  private String projectPath = System.getProperty("user.dir");
  private String firstName, lastName, emailAdd, passWord;
 }
