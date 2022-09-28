@@ -23,14 +23,14 @@ public class Level_03_User_01_Register_Login_Use_Page_Obj extends BasePage {
   @BeforeClass
   public void beforeClass() {
 	System.setProperty("webdriver.gecko.driver", projectPath + "\\browserDrivers\\geckodriver.exe");
-	
 	driver = new FirefoxDriver();
-		
 	driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-	
 	driver.get("https://demo.nopcommerce.com/");
 	
+	firstName = "Thanh";
+	lastName = "Nguyen";
 	emailAdd = "abc" + generateRandom() + "@mail.com";
+	passWord = "123456";
   }
   
   @Test
@@ -74,11 +74,11 @@ public class Level_03_User_01_Register_Login_Use_Page_Obj extends BasePage {
 //	  sendkeysToElementByXpath(driver, "//input[@id = 'Password']", "123456");
 //	  sendkeysToElementByXpath(driver, "//input[@id = 'ConfirmPassword']", "123456");
 	  System.out.println("Register Page-Step 02: Input Text to required field");
-	  registerPage.inputToFirstnameTextBox("Thanh");
-	  registerPage.inputToLastnameTextBox("Nguyen");
+	  registerPage.inputToFirstnameTextBox(firstName);
+	  registerPage.inputToLastnameTextBox(lastName);
 	  registerPage.inputToEmailTextBox("blahbla");
-	  registerPage.inputToPasswordTextBox("123456");
-	  registerPage.inputToConfirmPasswordTextBox("123456");
+	  registerPage.inputToPasswordTextBox(passWord);
+	  registerPage.inputToConfirmPasswordTextBox(passWord);
 	  
 //	  waitForElementClickAble(driver, "//button[@id= 'register-button']");
 //	  clickToElementByXpath(driver, "//button[@id= 'register-button']");
@@ -103,11 +103,11 @@ public class Level_03_User_01_Register_Login_Use_Page_Obj extends BasePage {
 //	  sendkeysToElementByXpath(driver, "//input[@id = 'Password']", "123456");
 //	  sendkeysToElementByXpath(driver, "//input[@id = 'ConfirmPassword']", "123456");
 	  System.out.println("Register Page-Step 02: Input Text to required field");
-	  registerPage.inputToFirstnameTextBox("Thanh");
-	  registerPage.inputToLastnameTextBox("Nguyen");
+	  registerPage.inputToFirstnameTextBox(firstName);
+	  registerPage.inputToLastnameTextBox(lastName);
 	  registerPage.inputToEmailTextBox(emailAdd);
-	  registerPage.inputToPasswordTextBox("123456");
-	  registerPage.inputToConfirmPasswordTextBox("123456");
+	  registerPage.inputToPasswordTextBox(passWord);
+	  registerPage.inputToConfirmPasswordTextBox(passWord);
 	  
 //	  waitForElementClickAble(driver, "//button[@id= 'register-button']");
 //	  clickToElementByXpath(driver, "//button[@id= 'register-button']");
@@ -137,11 +137,11 @@ public class Level_03_User_01_Register_Login_Use_Page_Obj extends BasePage {
 //	  sendkeysToElementByXpath(driver, "//input[@id = 'Password']", "123456");
 //	  sendkeysToElementByXpath(driver, "//input[@id = 'ConfirmPassword']", "123456");
 	  System.out.println("Register Page-Step 02: Input Text to required field");
-	  registerPage.inputToFirstnameTextBox("Thanh");
-	  registerPage.inputToLastnameTextBox("Nguyen");
+	  registerPage.inputToFirstnameTextBox(firstName);
+	  registerPage.inputToLastnameTextBox(lastName);
 	  registerPage.inputToEmailTextBox(emailAdd);
-	  registerPage.inputToPasswordTextBox("123456");
-	  registerPage.inputToConfirmPasswordTextBox("123456");
+	  registerPage.inputToPasswordTextBox(passWord);
+	  registerPage.inputToConfirmPasswordTextBox(passWord);
 	  
 //	  waitForElementClickAble(driver, "//button[@id= 'register-button']");
 //	  clickToElementByXpath(driver, "//button[@id= 'register-button']");
@@ -166,8 +166,8 @@ public class Level_03_User_01_Register_Login_Use_Page_Obj extends BasePage {
 //	  sendkeysToElementByXpath(driver, "//input[@id = 'Password']", "123");
 //	  sendkeysToElementByXpath(driver, "//input[@id = 'ConfirmPassword']", "123");
 	  System.out.println("Register Page-Step 02: Input Text to required field");
-	  registerPage.inputToFirstnameTextBox("Thanh");
-	  registerPage.inputToLastnameTextBox("Nguyen");
+	  registerPage.inputToFirstnameTextBox(firstName);
+	  registerPage.inputToLastnameTextBox(lastName);
 	  registerPage.inputToEmailTextBox(emailAdd);
 	  registerPage.inputToPasswordTextBox("123");
 	  registerPage.inputToConfirmPasswordTextBox("123");
@@ -195,11 +195,11 @@ public class Level_03_User_01_Register_Login_Use_Page_Obj extends BasePage {
 //	  sendkeysToElementByXpath(driver, "//input[@id = 'Password']", "123456");
 //	  sendkeysToElementByXpath(driver, "//input[@id = 'ConfirmPassword']", "123567");
 	  System.out.println("Register Page-Step 02: Input Text to required field");
-	  registerPage.inputToFirstnameTextBox("Thanh");
-	  registerPage.inputToLastnameTextBox("Nguyen");
+	  registerPage.inputToFirstnameTextBox(firstName);
+	  registerPage.inputToLastnameTextBox(lastName);
 	  registerPage.inputToEmailTextBox(emailAdd);
-	  registerPage.inputToPasswordTextBox("123456");
-	  registerPage.inputToConfirmPasswordTextBox("123567");
+	  registerPage.inputToPasswordTextBox(passWord);
+	  registerPage.inputToConfirmPasswordTextBox(passWord + "123");
 	  
 //	  waitForElementClickAble(driver, "//button[@id= 'register-button']");
 //	  clickToElementByXpath(driver, "//button[@id= 'register-button']");
@@ -224,10 +224,9 @@ public class Level_03_User_01_Register_Login_Use_Page_Obj extends BasePage {
 //  //Jquery check textcontent
 //  var element = $$("div.validation-summary-errors")[0];
 //  element.textContent;
-  
- private HomePageObj homePage;
- private RegisterPageObj registerPage;
  private WebDriver driver;
+ private HomePageObj homePage = new HomePageObj(driver);
+ private RegisterPageObj registerPage = new RegisterPageObj(driver);
  private String projectPath = System.getProperty("user.dir");
- private String emailAdd;
+ private String firstName, lastName, emailAdd, passWord;
 }

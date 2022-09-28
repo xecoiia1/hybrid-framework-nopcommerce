@@ -11,7 +11,10 @@ import org.openqa.selenium.WebDriver;
 public class RegisterPageObj extends BasePage {
 
 	private WebDriver driver;
-
+	
+	public RegisterPageObj(WebDriver driver) {
+		this.driver = driver;
+	}
 
 	public void clickToRegisterBtn() {
 		waitForElementClickAble(driver, RegisterPageUI.REGISTER_BTN);
