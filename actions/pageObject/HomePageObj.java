@@ -19,6 +19,12 @@ public class HomePageObj extends BasePage {
 		
 	}
 
+	public void clickToLoginLink() {
+		waitForElementClickAble(driver, HomePageUI.LOGIN_BTN);
+		clickToElementByXpath(driver, HomePageUI.LOGIN_BTN);
+		
+	}
+
 
 
 }

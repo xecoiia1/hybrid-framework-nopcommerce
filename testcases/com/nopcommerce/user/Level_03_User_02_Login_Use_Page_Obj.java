@@ -3,7 +3,9 @@ package com.nopcommerce.user;
 import org.testng.annotations.Test;
 
 import pageObject.HomePageObj;
+import pageObject.LoginPageObj;
 import pageObject.RegisterPageObj;
+import pageUI.HomePageUI;
 
 import org.testng.annotations.BeforeClass;
 
@@ -30,36 +32,63 @@ public class Level_03_User_02_Login_Use_Page_Obj  {
 	emailAdd = "abc" + generateRandom() + "@mail.com";
 	passWord = "123456";
 	
+	registerPage = new RegisterPageObj(driver);
+	
+	System.out.println("Precondition_01 - Step 01: Click to Register link");
+	homePage.clickToRegisterLink();
+	  
+    System.out.println("Precondition_01 - Step 02: Input Text to required field");
+	registerPage.inputToFirstnameTextBox(firstName);
+	registerPage.inputToLastnameTextBox(lastName);
+	registerPage.inputToEmailTextBox(emailAdd);
+	registerPage.inputToPasswordTextBox(passWord);
+	registerPage.inputToConfirmPasswordTextBox(passWord);
+	  
+	System.out.println("Precondition_01 - Step 03: Click to Register Button");
+	registerPage.clickToRegisterBtn();
+	  
+	System.out.println("Precondition_01 - Step 04: Verify Register Success Message");
+	Assert.assertEquals(registerPage.getSuccessRegisterSucces(), "Your registration completed");
+	
+	System.out.println("Precondition_01 - Step 05: Click to Logout Button");
+	registerPage.clickToLogoutBtn();
+	
+	homePage = new HomePageObj(driver);
+  }
+  
+  @Test
+  public void Login_01_Empty_Data() {
+	  homePage.clickToLoginLink();
+	  
+	  loginPage = new LoginPageObj(driver);
+	  
+	  loginPage.clickToLoginBtn();
+	  
+	  Assert.assertEquals(loginPage.getErrorMesAtEmailTextBox(), "Please enter your email");
+  }
+  
+  @Test
+  public void Login_02_Invalid_Email() {
 
   }
   
   @Test
-  public void Register_01_Empty_Data() {
+  public void Login_03_Success_Register() {
 
   }
   
   @Test
-  public void Register_02_Invalid_Email() {
+  public void Login_04_Existing_Email() {
 
   }
   
   @Test
-  public void Register_03_Success_Register() {
+  public void Login_05_Password_Less_Than_6_Chars() {
 
   }
   
   @Test
-  public void Register_04_Existing_Email() {
-
-  }
-  
-  @Test
-  public void Register_05_Password_Less_Than_6_Chars() {
-
-  }
-  
-  @Test
-  public void Register_06_Invalid_Confirm_Password(){
+  public void Login_06_Invalid_Confirm_Password(){
 
 	  
   }
@@ -77,6 +106,9 @@ public class Level_03_User_02_Login_Use_Page_Obj  {
 //  var element = $$("div.validation-summary-errors")[0];
 //  element.textContent;
  private WebDriver driver;
+ private HomePageObj homePage;
+ private RegisterPageObj registerPage;
+ private LoginPageObj loginPage;
  private String projectPath = System.getProperty("user.dir");
  private String firstName, lastName, emailAdd, passWord;
 }

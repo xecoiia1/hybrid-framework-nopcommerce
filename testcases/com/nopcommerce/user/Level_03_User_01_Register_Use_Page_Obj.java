@@ -3,6 +3,7 @@ package com.nopcommerce.user;
 import org.testng.annotations.Test;
 
 import pageObject.HomePageObj;
+import pageObject.LoginPageObj;
 import pageObject.RegisterPageObj;
 
 import org.testng.annotations.BeforeClass;
@@ -165,6 +166,7 @@ public class Level_03_User_01_Register_Use_Page_Obj  {
  private WebDriver driver;
  private HomePageObj homePage;
  private RegisterPageObj registerPage;
+ private LoginPageObj loginPage;
  private String projectPath = System.getProperty("user.dir");
  private String firstName, lastName, emailAdd, passWord;
 }
