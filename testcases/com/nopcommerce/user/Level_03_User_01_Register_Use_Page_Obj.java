@@ -16,7 +16,7 @@ import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 
 // Sử dụng extend để kế thừa các hàm từ BasePage mà không cần khai báo
-public class Level_03_User_01_Register_Login_Use_Page_Obj  {
+public class Level_03_User_01_Register_Use_Page_Obj  {
 
   @BeforeClass
   public void beforeClass() {
