@@ -31,7 +31,7 @@ public class Level_03_User_02_Login_Use_Page_Obj  {
 	lastName = "Nguyen";
 	existingEmail = "abc" + generateRandom() + "@mail.com";
 	invalidEmail ="adb@adc@dd";
-	notFoundEmail = "Blag";
+	notFoundEmail = "Blag@gmail.com";
 	passWord = "123456";
 	
 	registerPage = new RegisterPageObj(driver);
@@ -82,13 +82,17 @@ public class Level_03_User_02_Login_Use_Page_Obj  {
 	  System.out.println("Login_02 - Step 02: Input Invalid Email to Email Textbox");
 	  loginPage.inputInvalidEmail(invalidEmail);
 	  
-	  System.out.println("Login_02 - Step 03: Verify Email Text Error");
+	  System.out.println("Login_02 - Step 03: Click to Login Button");
+	  loginPage.clickToLoginBtn();
+	  
+	  System.out.println("Login_02 - Step 04: Verify Email Text Error");
 	  Assert.assertEquals(loginPage.getErrorMesAtEmailTextBox(), "Wrong email");
   }
   
   @Test
-  public void Login_03_Success_Register() {
-
+  public void Login_03_Not_Found_Email() {
+	  System.out.println("Login_02 - Step 01: Click to Login Link");
+	  homePage.clickToLoginLink();
   }
   
   @Test
