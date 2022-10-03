@@ -49,8 +49,8 @@ public class LoginPageObj extends BasePage {
 	}
 
 	public void inputPassWordTextBox(String Password) {
-		waitForAllElementVisible(driver, LoginPageUI.EMAIL_TEXTBOX);
-		sendkeysToElementByXpath(driver, LoginPageUI.EMAIL_TEXTBOX, Password);
+		waitForAllElementVisible(driver, LoginPageUI.PASSWORD_TEXTBOX);
+		sendkeysToElementByXpath(driver, LoginPageUI.PASSWORD_TEXTBOX, Password);
 		
 	}
 }
