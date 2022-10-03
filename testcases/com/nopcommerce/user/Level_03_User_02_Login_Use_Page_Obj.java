@@ -163,7 +163,9 @@ public class Level_03_User_02_Login_Use_Page_Obj  {
 	  loginPage.clickToLoginBtn();
 	  
 	  System.out.println("Login_06 - Step 05: Verify Login Success");
-	  Assert.assertEquals(loginPage.getErrorNotFoundEmail(), "Login was unsuccessful. Please correct the errors and try again./nNo customer account found");
+	  
+	  Assert.assertTrue(homePage.myAccountIsDisplayed());
+	  Assert.assertTrue(homePage.logOutLinkIsDisplayed());
 	  
   }
 

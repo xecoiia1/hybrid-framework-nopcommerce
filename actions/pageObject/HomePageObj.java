@@ -25,6 +25,17 @@ public class HomePageObj extends BasePage {
 		
 	}
 
+	public boolean myAccountIsDisplayed() {
+		waitForElementClickAble(driver, HomePageUI.MY_ACCOUNT_LINK);
+		return isElementDisplay(driver, HomePageUI.MY_ACCOUNT_LINK);
+	}
+
+	public boolean logOutLinkIsDisplayed() {
+		waitForElementClickAble(driver, HomePageUI.LOG_OUT_LINK);
+		return isElementDisplay(driver, HomePageUI.LOG_OUT_LINK);
+	}
+
+
 
 
 }
