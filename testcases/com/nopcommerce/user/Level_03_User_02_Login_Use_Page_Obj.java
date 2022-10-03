@@ -29,7 +29,9 @@ public class Level_03_User_02_Login_Use_Page_Obj  {
 	
 	firstName = "Thanh";
 	lastName = "Nguyen";
-	emailAdd = "abc" + generateRandom() + "@mail.com";
+	existingEmail = "abc" + generateRandom() + "@mail.com";
+	invalidEmail ="adb@adc@dd";
+	notFoundEmail = "Blag";
 	passWord = "123456";
 	
 	registerPage = new RegisterPageObj(driver);
@@ -40,7 +42,7 @@ public class Level_03_User_02_Login_Use_Page_Obj  {
     System.out.println("Precondition_01 - Step 02: Input Text to required field");
 	registerPage.inputToFirstnameTextBox(firstName);
 	registerPage.inputToLastnameTextBox(lastName);
-	registerPage.inputToEmailTextBox(emailAdd);
+	registerPage.inputToEmailTextBox(existingEmail);
 	registerPage.inputToPasswordTextBox(passWord);
 	registerPage.inputToConfirmPasswordTextBox(passWord);
 	  
@@ -58,18 +60,30 @@ public class Level_03_User_02_Login_Use_Page_Obj  {
   
   @Test
   public void Login_01_Empty_Data() {
+	  System.out.println("Login_01 - Step 01: Click to Login Link");
 	  homePage.clickToLoginLink();
 	  
 	  loginPage = new LoginPageObj(driver);
 	  
+	  System.out.println("Login_01 - Step 02: Click to Login Button");
 	  loginPage.clickToLoginBtn();
 	  
+	  System.out.println("Login_01 - Step 03: Verify Email Text Error");
 	  Assert.assertEquals(loginPage.getErrorMesAtEmailTextBox(), "Please enter your email");
   }
   
   @Test
   public void Login_02_Invalid_Email() {
-
+	  System.out.println("Login_02 - Step 01: Click to Login Link");
+	  homePage.clickToLoginLink();
+	  
+	  loginPage = new LoginPageObj(driver);
+	  
+	  System.out.println("Login_02 - Step 02: Input Invalid Email to Email Textbox");
+	  loginPage.inputInvalidEmail(invalidEmail);
+	  
+	  System.out.println("Login_02 - Step 03: Verify Email Text Error");
+	  Assert.assertEquals(loginPage.getErrorMesAtEmailTextBox(), "Wrong email");
   }
   
   @Test
@@ -110,5 +124,5 @@ public class Level_03_User_02_Login_Use_Page_Obj  {
  private RegisterPageObj registerPage;
  private LoginPageObj loginPage;
  private String projectPath = System.getProperty("user.dir");
- private String firstName, lastName, emailAdd, passWord;
+ private String firstName, lastName, existingEmail, invalidEmail, notFoundEmail, passWord;
 }
