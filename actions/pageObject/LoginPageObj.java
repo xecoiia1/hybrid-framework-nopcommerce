@@ -36,5 +36,22 @@ public class LoginPageObj extends BasePage {
 		waitForAllElementVisible(driver, LoginPageUI.EMAIL_ERROR_MES);
 		return getTextOfElement(driver, LoginPageUI.EMAIL_ERROR_MES);
 	}
+
+	public void inputNotFoundEmail(String notFoundEmail) {
+		waitForAllElementVisible(driver, LoginPageUI.EMAIL_TEXTBOX);
+		sendkeysToElementByXpath(driver, LoginPageUI.EMAIL_TEXTBOX, notFoundEmail);
+		
+	}
+
+	public String getErrorNotFoundEmail() {
+		waitForAllElementVisible(driver, LoginPageUI.EMAIL_NOT_FOUND_MES);
+		return getTextOfElement(driver, LoginPageUI.EMAIL_NOT_FOUND_MES);
+	}
+
+	public void inputPassWordTextBox(String Password) {
+		waitForAllElementVisible(driver, LoginPageUI.EMAIL_TEXTBOX);
+		sendkeysToElementByXpath(driver, LoginPageUI.EMAIL_TEXTBOX, Password);
+		
+	}
 }
 

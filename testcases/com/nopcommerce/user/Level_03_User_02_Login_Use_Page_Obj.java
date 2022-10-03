@@ -91,23 +91,79 @@ public class Level_03_User_02_Login_Use_Page_Obj  {
   
   @Test
   public void Login_03_Not_Found_Email() {
-	  System.out.println("Login_02 - Step 01: Click to Login Link");
+	  System.out.println("Login_03 - Step 01: Click to Login Link");
 	  homePage.clickToLoginLink();
+	  
+	  loginPage = new LoginPageObj(driver);
+	  
+	  System.out.println("Login_03 - Step 02: Input Not Found Email to Email Textbox");
+	  loginPage.inputNotFoundEmail(invalidEmail);
+	  
+	  System.out.println("Login_03 - Step 03: Click to Login Button");
+	  loginPage.clickToLoginBtn();
+	  
+	  System.out.println("Login_02 - Step 04: Verify Email Text Error");
+	  Assert.assertEquals(loginPage.getErrorNotFoundEmail(), "Login was unsuccessful. Please correct the errors and try again./nNo customer account found");
   }
   
   @Test
-  public void Login_04_Existing_Email() {
-
+  public void Login_04_Existing_Email_Empty_Password() {
+	  System.out.println("Login_04 - Step 01: Click to Login Link");
+	  homePage.clickToLoginLink();
+	  
+	  loginPage = new LoginPageObj(driver);
+	  
+	  System.out.println("Login_04 - Step 02: Input Not Found Email to Email Textbox");
+	  loginPage.inputNotFoundEmail(existingEmail);
+	  
+	  System.out.println("Login_04 - Step 03: Input Password TextBox");
+	  loginPage.inputPassWordTextBox("");
+	  
+	  System.out.println("Login_04 - Step 04: Click to Login Button");
+	  loginPage.clickToLoginBtn();
+	  
+	  System.out.println("Login_04 - Step 05: Verify Email Text Error");
+	  Assert.assertEquals(loginPage.getErrorNotFoundEmail(), "Login was unsuccessful. Please correct the errors and try again./nNo customer account found");
   }
   
   @Test
-  public void Login_05_Password_Less_Than_6_Chars() {
-
+  public void Login_05_Existing_Email_Wrong_Password() {
+	  System.out.println("Login_05 - Step 01: Click to Login Link");
+	  homePage.clickToLoginLink();
+	  
+	  loginPage = new LoginPageObj(driver);
+	  
+	  System.out.println("Login_05 - Step 02: Input Not Found Email to Email Textbox");
+	  loginPage.inputNotFoundEmail(existingEmail);
+	  
+	  System.out.println("Login_05 - Step 03: Input Password TextBox");
+	  loginPage.inputPassWordTextBox("365498");
+	  
+	  System.out.println("Login_05 - Step 04: Click to Login Button");
+	  loginPage.clickToLoginBtn();
+	  
+	  System.out.println("Login_05 - Step 05: Verify Email Text Error");
+	  Assert.assertEquals(loginPage.getErrorNotFoundEmail(), "Login was unsuccessful. Please correct the errors and try again./nNo customer account found");
   }
   
   @Test
-  public void Login_06_Invalid_Confirm_Password(){
-
+  public void Login_06_Valid_Email_Password(){
+	  System.out.println("Login_06 - Step 01: Click to Login Link");
+	  homePage.clickToLoginLink();
+	  
+	  loginPage = new LoginPageObj(driver);
+	  
+	  System.out.println("Login_06 - Step 02: Input Not Found Email to Email Textbox");
+	  loginPage.inputNotFoundEmail(existingEmail);
+	  
+	  System.out.println("Login_06 - Step 03: Input Password TextBox");
+	  loginPage.inputPassWordTextBox(passWord);
+	  
+	  System.out.println("Login_06 - Step 04: Click to Login Button");
+	  loginPage.clickToLoginBtn();
+	  
+	  System.out.println("Login_06 - Step 05: Verify Login Success");
+	  Assert.assertEquals(loginPage.getErrorNotFoundEmail(), "Login was unsuccessful. Please correct the errors and try again./nNo customer account found");
 	  
   }
 
