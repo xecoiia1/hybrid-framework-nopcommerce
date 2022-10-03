@@ -35,6 +35,7 @@ public class Level_03_User_02_Login_Use_Page_Obj  {
 	passWord = "123456";
 	
 	registerPage = new RegisterPageObj(driver);
+	homePage = new HomePageObj(driver);
 	
 	System.out.println("Precondition_01 - Step 01: Click to Register link");
 	homePage.clickToRegisterLink();
@@ -55,7 +56,6 @@ public class Level_03_User_02_Login_Use_Page_Obj  {
 	System.out.println("Precondition_01 - Step 05: Click to Logout Button");
 	registerPage.clickToLogoutBtn();
 	
-	homePage = new HomePageObj(driver);
   }
   
   @Test
@@ -97,13 +97,13 @@ public class Level_03_User_02_Login_Use_Page_Obj  {
 	  loginPage = new LoginPageObj(driver);
 	  
 	  System.out.println("Login_03 - Step 02: Input Not Found Email to Email Textbox");
-	  loginPage.inputNotFoundEmail(invalidEmail);
+	  loginPage.inputNotFoundEmail(notFoundEmail);
 	  
 	  System.out.println("Login_03 - Step 03: Click to Login Button");
 	  loginPage.clickToLoginBtn();
 	  
 	  System.out.println("Login_02 - Step 04: Verify Email Text Error");
-	  Assert.assertEquals(loginPage.getErrorNotFoundEmail(), "Login was unsuccessful. Please correct the errors and try again./nNo customer account found");
+	  Assert.assertEquals(loginPage.getErrorNotFoundEmail(), "Login was unsuccessful. Please correct the errors and try again.\nNo customer account found");
   }
   
   @Test
@@ -123,7 +123,7 @@ public class Level_03_User_02_Login_Use_Page_Obj  {
 	  loginPage.clickToLoginBtn();
 	  
 	  System.out.println("Login_04 - Step 05: Verify Email Text Error");
-	  Assert.assertEquals(loginPage.getErrorNotFoundEmail(), "Login was unsuccessful. Please correct the errors and try again./nNo customer account found");
+	  Assert.assertEquals(loginPage.getErrorNotFoundEmail(), "Login was unsuccessful. Please correct the errors and try again.\nThe credentials provided are incorrect");
   }
   
   @Test
@@ -143,7 +143,7 @@ public class Level_03_User_02_Login_Use_Page_Obj  {
 	  loginPage.clickToLoginBtn();
 	  
 	  System.out.println("Login_05 - Step 05: Verify Email Text Error");
-	  Assert.assertEquals(loginPage.getErrorNotFoundEmail(), "Login was unsuccessful. Please correct the errors and try again./nNo customer account found");
+	  Assert.assertEquals(loginPage.getErrorNotFoundEmail(), "Login was unsuccessful. Please correct the errors and try again.\nThe credentials provided are incorrect");
   }
   
   @Test
