@@ -2,30 +2,31 @@ package com.nopcommerce.user;
 
 import org.testng.annotations.Test;
 
+import common.BaseTest;
 import pageObject.HomePageObj;
 import pageObject.LoginPageObj;
 import pageObject.RegisterPageObj;
 import pageUI.HomePageUI;
 
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Parameters;
 
 import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 
-// Sử dụng extend để kế thừa các hàm từ BasePage mà không cần khai báo
-public class Level_04_Multi_Browser  {
-
+public class Level_04_Multi_Browser extends BaseTest  {
+  
+  @Parameters("browser")
   @BeforeClass
-  public void beforeClass() {
-	System.setProperty("webdriver.gecko.driver", projectPath + "\\browserDrivers\\geckodriver.exe");
-	driver = new FirefoxDriver();
-	driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-	driver.get("https://demo.nopcommerce.com/");
+  public void beforeClass(String browserName) {
+	driver = getBrowserDriver(browserName);
 	
 	firstName = "Thanh";
 	lastName = "Nguyen";
@@ -185,6 +186,5 @@ public class Level_04_Multi_Browser  {
  private HomePageObj homePage;
  private RegisterPageObj registerPage;
  private LoginPageObj loginPage;
- private String projectPath = System.getProperty("user.dir");
  private String firstName, lastName, existingEmail, invalidEmail, notFoundEmail, passWord;
 }
