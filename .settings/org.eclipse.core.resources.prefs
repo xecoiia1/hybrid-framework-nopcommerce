@@ -1,5 +1,6 @@
 eclipse.preferences.version=1
 encoding//actions/common/BasePage.java=UTF-8
+encoding//actions/common/BaseTest.java=UTF-8
 encoding//javaTester/javaBasic/Topic_07_Array.java=UTF-8
 encoding//javaTester/javaBasic/Topic_08_String.java=UTF-8
 encoding//testcases/com/nopcommerce/user/Level_02_User_01_Register_Login_Use_BaseTest_II.java=UTF-8

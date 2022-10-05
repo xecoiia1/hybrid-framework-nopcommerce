@@ -36,9 +36,20 @@ public class BaseTest {
 			options.addArguments("window-size=1920x1080");
 			driver = new ChromeDriver(options);
 			
+		}else if(browserName.equals("opera")) {
+			System.setProperty("webdriver.opera.driver", projectPath + "\\browserDrivers\\operadriver.exe");
+			driver = new EdgeDriver();
 		}else if(browserName.equals("edge")) {
 			System.setProperty("webdriver.edge.driver", projectPath + "\\browserDrivers\\msedgedriver.exe");
 			driver = new EdgeDriver();
+		
+		}else if(browserName.equals("coccoc")) {
+			System.setProperty("webdriver.edge.driver", projectPath + "\\browserDrivers\\msedgedriver.exe");
+			ChromeOptions options = new ChromeOptions();
+			// Add file path của Cốc Cốc Browser vào
+			options.setBinary("");
+			driver = new ChromeDriver(options);
+		
 		}else {
 			throw new RuntimeException("Browser Name Invalid");
 		}
