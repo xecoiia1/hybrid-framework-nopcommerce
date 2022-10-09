@@ -29,7 +29,10 @@ public class HomePageObjPageFactory extends BasePageFactory {
 	private WebElement loginLink;
 	 
 	@FindBy(using = "//a[@class = 'ico-account']")
-	private WebElement myAccountLink;;
+	private WebElement myAccountLink;
+	
+	@FindBy(using = "//a[@class = 'ico-logout']")
+	private WebElement logoutLink;;
 
 
 	//PageObject/ Action
@@ -47,6 +50,15 @@ public class HomePageObjPageFactory extends BasePageFactory {
 		waitForElementClickAble(driver, myAccountLink);
 		clickToElement(driver, myAccountLink);
 	}
+	
+	public boolean myAccountIsDisplayed() {
+		waitForElementClickAble(driver, myAccountLink);
+		return isElementDisplay(driver, myAccountLink);
+	}
 
+	public boolean logOutLinkIsDisplayed() {
+		waitForElementClickAble(driver, logoutLink);
+		return isElementDisplay(driver, logoutLink);
 
+	}
 }

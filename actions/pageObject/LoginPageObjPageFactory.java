@@ -12,10 +12,10 @@ import pageUI.RegisterPageUI;
 
 import org.openqa.selenium.WebDriver;
 
-public class LoginPageObjPAgeFactory extends BasePageFactory {
+public class LoginPageObjPageFactory extends BasePageFactory {
 	private WebDriver driver;
 
-	public LoginPageObjPAgeFactory(WebDriver driver) {
+	public LoginPageObjPageFactory(WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
