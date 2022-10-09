@@ -1,6 +1,9 @@
 package pageObject;
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.How;
 
 import common.BasePage;
 import pageUI.HomePageUI;
@@ -34,8 +37,13 @@ public class HomePageObj extends BasePage {
 		waitForElementClickAble(driver, HomePageUI.LOG_OUT_LINK);
 		return isElementDisplay(driver, HomePageUI.LOG_OUT_LINK);
 	}
+	
+	
+	@FindBy(how = How.XPATH, using = "//a[@class= 'ico-register']")
+	private WebElement registerLink;
+	
+	@FindBy(using = "//a[@class = 'ico-login']")
+	private WebElement loginLink;
 
-
-
-
+	private WebElement myAccountLink;;
 }
