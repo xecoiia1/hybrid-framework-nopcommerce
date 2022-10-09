@@ -60,8 +60,8 @@ public class LoginPageObjPageFactory extends BasePageFactory {
 	}
 
 	public void inputNotFoundEmail(String notFoundEmail) {
-		waitForElementVisible(driver, emailNotFoundText);
-		sendkeysToElement(driver, emailNotFoundText, notFoundEmail);
+		waitForElementVisible(driver, emailTextBox);
+		sendkeysToElement(driver, emailTextBox, notFoundEmail);
 		
 	}
 

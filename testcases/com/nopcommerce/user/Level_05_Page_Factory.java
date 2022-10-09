@@ -3,11 +3,8 @@ package com.nopcommerce.user;
 import org.testng.annotations.Test;
 
 import common.BaseTest;
-import pageObject.HomePageObj;
 import pageObject.HomePageObjPageFactory;
-import pageObject.LoginPageObj;
 import pageObject.LoginPageObjPageFactory;
-import pageObject.RegisterPageObj;
 import pageObject.RegisterPageObjPageFactory;
 import pageUI.HomePageUI;
 

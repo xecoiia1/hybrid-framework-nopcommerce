@@ -129,8 +129,8 @@ public class RegisterPageObjPageFactory extends BasePageFactory {
 	}
 
 	public String getSuccessRegisterSucces() {
-		waitForElementVisible(driver, registerBtn);
-		return getTextOfElement(driver, registerBtn);
+		waitForElementVisible(driver, registerSuccessMes);
+		return getTextOfElement(driver, registerSuccessMes);
 	}
 
 	public String getErrorMessageWrongAtEmailTestBox() {

@@ -25,13 +25,13 @@ public class HomePageObjPageFactory extends BasePageFactory {
 	@FindBy(how = How.XPATH, using = "//a[@class= 'ico-register']")
 	private WebElement registerLink;
 	
-	@FindBy(using = "//a[@class = 'ico-login']")
+	@FindBy(xpath = "//a[@class = 'ico-login']")
 	private WebElement loginLink;
 	 
-	@FindBy(using = "//a[@class = 'ico-account']")
+	@FindBy(xpath = "//a[@class = 'ico-account']")
 	private WebElement myAccountLink;
 	
-	@FindBy(using = "//a[@class = 'ico-logout']")
+	@FindBy(xpath = "//a[@class = 'ico-logout']")
 	private WebElement logoutLink;;
 
 
