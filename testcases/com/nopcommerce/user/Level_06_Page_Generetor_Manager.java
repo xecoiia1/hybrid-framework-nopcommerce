@@ -15,17 +15,16 @@ import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 
-public class Level_04_Multi_Browser extends BaseTest  {
-  
-  @Parameters("browser")
-  @BeforeClass
-  public void beforeClass(String browserName) {
+// Sử dụng extend để kế thừa các hàm từ BasePage mà không cần khai báo
+public class Level_06_Page_Generetor_Manager extends BaseTest  {
+
+	@Parameters("browser")
+	@BeforeClass
+	public void beforeClass(String browserName) {
 	driver = getBrowserDriver(browserName);
 	
 	firstName = "Thanh";
@@ -173,7 +172,8 @@ public class Level_04_Multi_Browser extends BaseTest  {
   @AfterClass
   public void afterClass() {
 	  driver.quit();
-  }  
+  }
+  
 //  //Jquery check textcontent
 //  var element = $$("div.validation-summary-errors")[0];
 //  element.textContent;
@@ -181,5 +181,6 @@ public class Level_04_Multi_Browser extends BaseTest  {
  private HomePageObj homePage;
  private RegisterPageObj registerPage;
  private LoginPageObj loginPage;
+ private String projectPath = System.getProperty("user.dir");
  private String firstName, lastName, existingEmail, invalidEmail, notFoundEmail, passWord;
 }
