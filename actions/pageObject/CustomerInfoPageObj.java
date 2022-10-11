@@ -7,19 +7,19 @@ import org.openqa.selenium.support.How;
 
 import common.BasePage;
 import pageUI.HomePageUI;
-import pageUI.MyAccountPageUI;
+import pageUI.CustomerInfoPageUI;
 
 import org.openqa.selenium.WebDriver;
 
-public class MyAccountPageObj extends BasePage {
+public class CustomerInfoPageObj extends BasePage {
 	private WebDriver driver;
 	
-	public MyAccountPageObj(WebDriver driver) {
+	public CustomerInfoPageObj(WebDriver driver) {
 		this.driver = driver ;
 	}
 		
 	public void clickToNewLetter() {
-		waitForElementClickAble(driver, MyAccountPageUI.NEWLETTER_CHECKBOX);
-		clickToElementByXpath(driver, MyAccountPageUI.NEWLETTER_CHECKBOX);
+		waitForElementClickAble(driver, CustomerInfoPageUI.NEWLETTER_CHECKBOX);
+		clickToElementByXpath(driver, CustomerInfoPageUI.NEWLETTER_CHECKBOX);
 	}
 }

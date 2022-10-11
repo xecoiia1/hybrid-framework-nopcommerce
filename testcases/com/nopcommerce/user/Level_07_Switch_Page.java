@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 import common.BaseTest;
 import pageObject.HomePageObj;
 import pageObject.LoginPageObj;
-import pageObject.MyAccountPageObj;
+import pageObject.CustomerInfoPageObj;
 import pageObject.PageGeneratorManager;
 import pageObject.RegisterPageObj;
 import pageUI.HomePageUI;
@@ -28,35 +28,12 @@ public class Level_07_Switch_Page extends BaseTest  {
 	@BeforeClass
 	public void beforeClass(String browserName) {
 	driver = getBrowserDriver(browserName);
+	homePage = PageGeneratorManager.getHomePage(driver);
 	
 	firstName = "Thanh";
 	lastName = "Nguyen";
-	existingEmail = "abc" + generateRandom() + "@mail.com";
-	invalidEmail ="adb@adc@dd";
-	notFoundEmail = "Blag@gmail.com";
-	passWord = "123456";
-	
-	homePage = PageGeneratorManager.getHomePage(driver);
-	
-	System.out.println("Precondition_01 - Step 01: Click to Register link");
-	registerPage = homePage.clickToRegisterLink();
-	  
-    System.out.println("Precondition_01 - Step 02: Input Text to required field");
-	registerPage.inputToFirstnameTextBox(firstName);
-	registerPage.inputToLastnameTextBox(lastName);
-	registerPage.inputToEmailTextBox(existingEmail);
-	registerPage.inputToPasswordTextBox(passWord);
-	registerPage.inputToConfirmPasswordTextBox(passWord);
-	  
-	System.out.println("Precondition_01 - Step 03: Click to Register Button");
-	registerPage.clickToRegisterBtn();
-	  
-	System.out.println("Precondition_01 - Step 04: Verify Register Success Message");
-	Assert.assertEquals(registerPage.getSuccessRegisterSucces(), "Your registration completed");
-	
-	System.out.println("Precondition_01 - Step 05: Click to Logout Button");
-	homePage = registerPage.clickToLogoutBtn();
-	
+	email = "abc" + generateRandom() + "@mail.com";
+	passWord = "123456";	
   }
   
   @Test
@@ -67,7 +44,7 @@ public class Level_07_Switch_Page extends BaseTest  {
 	    System.out.println("Precondition_01 - Step 02: Input Text to required field");
 		registerPage.inputToFirstnameTextBox(firstName);
 		registerPage.inputToLastnameTextBox(lastName);
-		registerPage.inputToEmailTextBox(existingEmail);
+		registerPage.inputToEmailTextBox(email);
 		registerPage.inputToPasswordTextBox(passWord);
 		registerPage.inputToConfirmPasswordTextBox(passWord);
 		  
@@ -86,7 +63,7 @@ public class Level_07_Switch_Page extends BaseTest  {
 	  loginPage = homePage.clickToLoginLink();
 	  
 	  System.out.println("Login_06 - Step 02: Input Not Found Email to Email Textbox");
-	  loginPage.inputNotFoundEmail(existingEmail);
+	  loginPage.inputEmail(email);
 	  
 	  System.out.println("Login_06 - Step 03: Input Password TextBox");
 	  loginPage.inputPassWordTextBox(passWord);
@@ -102,7 +79,7 @@ public class Level_07_Switch_Page extends BaseTest  {
   
   @Test
   public void User_03_My_Account() {
-	  
+	  customerInfoPage = homePage.clickToMyAccoutLink();
   }
   
   @Test
@@ -110,6 +87,10 @@ public class Level_07_Switch_Page extends BaseTest  {
 	 
   }
   
+  @Test
+  public void User_05_Switch_Role  () {
+	 
+  }
 
 
   @AfterClass
@@ -124,7 +105,6 @@ public class Level_07_Switch_Page extends BaseTest  {
  private HomePageObj homePage;
  private RegisterPageObj registerPage;
  private LoginPageObj loginPage;
- private MyAccountPageObj myAccountPage;
- private String projectPath = System.getProperty("user.dir");
- private String firstName, lastName, existingEmail, invalidEmail, notFoundEmail, passWord;
+ private CustomerInfoPageObj customerInfoPage;
+ private String firstName, lastName, email, passWord;
 }

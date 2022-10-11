@@ -33,6 +33,12 @@ public class LoginPageObj extends BasePage {
 		
 	}
 	
+	public void inputEmail(String email) {
+		waitForAllElementVisible(driver, LoginPageUI.EMAIL_TEXTBOX);
+		sendkeysToElementByXpath(driver, LoginPageUI.EMAIL_TEXTBOX, email);
+		
+	}
+	
 	public String getInvalidErrorMesAtEmailTextBox() {
 		waitForAllElementVisible(driver, LoginPageUI.EMAIL_ERROR_MES);
 		return getTextOfElement(driver, LoginPageUI.EMAIL_ERROR_MES);
