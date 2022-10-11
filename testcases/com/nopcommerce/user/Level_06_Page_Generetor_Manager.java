@@ -37,7 +37,7 @@ public class Level_06_Page_Generetor_Manager extends BaseTest  {
 	homePage = new HomePageObj(driver);
 	
 	System.out.println("Precondition_01 - Step 01: Click to Register link");
-	homePage.clickToRegisterLink();
+	registerPage = homePage.clickToRegisterLink();
 	  
     System.out.println("Precondition_01 - Step 02: Input Text to required field");
 	registerPage.inputToFirstnameTextBox(firstName);

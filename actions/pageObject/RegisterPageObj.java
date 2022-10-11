@@ -65,9 +65,10 @@ public class RegisterPageObj extends BasePage {
 		return getTextOfElement(driver, RegisterPageUI.EMAIL_EXIST_ERROR_MES);
 	}
 
-	public void clickToLogoutBtn() {
+	public HomePageObj clickToLogoutBtn() {
 		waitForElementClickAble(driver, RegisterPageUI.LOGOUT_BTN);
 		clickToElementByXpath(driver, RegisterPageUI.LOGOUT_BTN);
+		return new HomePageObj(driver);
 		
 	}
 
