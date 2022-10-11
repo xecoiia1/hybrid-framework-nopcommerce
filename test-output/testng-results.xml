@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="18" passed="18" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-10-09T15:30:51Z" name="NopCommerce" finished-at="2022-10-09T15:31:30Z" duration-ms="39139">
+  <suite started-at="2022-10-11T08:11:40Z" name="NopCommerce" finished-at="2022-10-11T08:13:09Z" duration-ms="89193">
     <groups>
     </groups>
-    <test started-at="2022-10-09T15:30:51Z" name="Run on Firefox" finished-at="2022-10-09T15:31:04Z" duration-ms="13393">
-      <class name="com.nopcommerce.user.Level_05_Page_Factory">
-        <test-method is-config="true" signature="beforeClass(java.lang.String)[pri:0, instance:com.nopcommerce.user.Level_05_Page_Factory@23348b5d]" started-at="2022-10-09T15:30:51Z" name="beforeClass" finished-at="2022-10-09T15:30:59Z" duration-ms="7635" status="PASS">
+    <test started-at="2022-10-11T08:11:40Z" name="Run on Firefox" finished-at="2022-10-11T08:11:58Z" duration-ms="17823">
+      <class name="com.nopcommerce.user.Level_06_Page_Generetor_Manager">
+        <test-method is-config="true" signature="beforeClass(java.lang.String)[pri:0, instance:com.nopcommerce.user.Level_06_Page_Generetor_Manager@13b6aecc]" started-at="2022-10-11T08:11:40Z" name="beforeClass" finished-at="2022-10-11T08:11:49Z" duration-ms="8943" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,39 +18,39 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method signature="Login_01_Empty_Data()[pri:0, instance:com.nopcommerce.user.Level_05_Page_Factory@23348b5d]" started-at="2022-10-09T15:30:59Z" name="Login_01_Empty_Data" finished-at="2022-10-09T15:30:59Z" duration-ms="837" status="PASS">
+        <test-method signature="Login_01_Empty_Data()[pri:0, instance:com.nopcommerce.user.Level_06_Page_Generetor_Manager@13b6aecc]" started-at="2022-10-11T08:11:49Z" name="Login_01_Empty_Data" finished-at="2022-10-11T08:11:50Z" duration-ms="1216" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Login_01_Empty_Data -->
-        <test-method signature="Login_02_Invalid_Email()[pri:0, instance:com.nopcommerce.user.Level_05_Page_Factory@23348b5d]" started-at="2022-10-09T15:30:59Z" name="Login_02_Invalid_Email" finished-at="2022-10-09T15:31:00Z" duration-ms="698" status="PASS">
+        <test-method signature="Login_02_Invalid_Email()[pri:0, instance:com.nopcommerce.user.Level_06_Page_Generetor_Manager@13b6aecc]" started-at="2022-10-11T08:11:50Z" name="Login_02_Invalid_Email" finished-at="2022-10-11T08:11:51Z" duration-ms="801" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Login_02_Invalid_Email -->
-        <test-method signature="Login_03_Not_Found_Email()[pri:0, instance:com.nopcommerce.user.Level_05_Page_Factory@23348b5d]" started-at="2022-10-09T15:31:00Z" name="Login_03_Not_Found_Email" finished-at="2022-10-09T15:31:01Z" duration-ms="804" status="PASS">
+        <test-method signature="Login_03_Not_Found_Email()[pri:0, instance:com.nopcommerce.user.Level_06_Page_Generetor_Manager@13b6aecc]" started-at="2022-10-11T08:11:51Z" name="Login_03_Not_Found_Email" finished-at="2022-10-11T08:11:52Z" duration-ms="1095" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Login_03_Not_Found_Email -->
-        <test-method signature="Login_04_Existing_Email_Empty_Password()[pri:0, instance:com.nopcommerce.user.Level_05_Page_Factory@23348b5d]" started-at="2022-10-09T15:31:01Z" name="Login_04_Existing_Email_Empty_Password" finished-at="2022-10-09T15:31:02Z" duration-ms="833" status="PASS">
+        <test-method signature="Login_04_Existing_Email_Empty_Password()[pri:0, instance:com.nopcommerce.user.Level_06_Page_Generetor_Manager@13b6aecc]" started-at="2022-10-11T08:11:52Z" name="Login_04_Existing_Email_Empty_Password" finished-at="2022-10-11T08:11:54Z" duration-ms="2056" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Login_04_Existing_Email_Empty_Password -->
-        <test-method signature="Login_05_Existing_Email_Wrong_Password()[pri:0, instance:com.nopcommerce.user.Level_05_Page_Factory@23348b5d]" started-at="2022-10-09T15:31:02Z" name="Login_05_Existing_Email_Wrong_Password" finished-at="2022-10-09T15:31:03Z" duration-ms="828" status="PASS">
+        <test-method signature="Login_05_Existing_Email_Wrong_Password()[pri:0, instance:com.nopcommerce.user.Level_06_Page_Generetor_Manager@13b6aecc]" started-at="2022-10-11T08:11:54Z" name="Login_05_Existing_Email_Wrong_Password" finished-at="2022-10-11T08:11:55Z" duration-ms="1384" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Login_05_Existing_Email_Wrong_Password -->
-        <test-method signature="Login_06_Valid_Email_Password()[pri:0, instance:com.nopcommerce.user.Level_05_Page_Factory@23348b5d]" started-at="2022-10-09T15:31:03Z" name="Login_06_Valid_Email_Password" finished-at="2022-10-09T15:31:04Z" duration-ms="1175" status="PASS">
+        <test-method signature="Login_06_Valid_Email_Password()[pri:0, instance:com.nopcommerce.user.Level_06_Page_Generetor_Manager@13b6aecc]" started-at="2022-10-11T08:11:55Z" name="Login_06_Valid_Email_Password" finished-at="2022-10-11T08:11:57Z" duration-ms="1507" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Login_06_Valid_Email_Password -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.nopcommerce.user.Level_05_Page_Factory@23348b5d]" started-at="2022-10-09T15:31:04Z" name="afterClass" finished-at="2022-10-09T15:31:04Z" duration-ms="568" status="PASS">
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.nopcommerce.user.Level_06_Page_Generetor_Manager@13b6aecc]" started-at="2022-10-11T08:11:57Z" name="afterClass" finished-at="2022-10-11T08:11:58Z" duration-ms="798" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-      </class> <!-- com.nopcommerce.user.Level_05_Page_Factory -->
+      </class> <!-- com.nopcommerce.user.Level_06_Page_Generetor_Manager -->
     </test> <!-- Run on Firefox -->
-    <test started-at="2022-10-09T15:31:04Z" name="Run on Chrome" finished-at="2022-10-09T15:31:17Z" duration-ms="12117">
-      <class name="com.nopcommerce.user.Level_05_Page_Factory">
-        <test-method is-config="true" signature="beforeClass(java.lang.String)[pri:0, instance:com.nopcommerce.user.Level_05_Page_Factory@8c3b9d]" started-at="2022-10-09T15:31:04Z" name="beforeClass" finished-at="2022-10-09T15:31:10Z" duration-ms="6087" status="PASS">
+    <test started-at="2022-10-11T08:11:58Z" name="Run on Chrome" finished-at="2022-10-11T08:12:17Z" duration-ms="19654">
+      <class name="com.nopcommerce.user.Level_06_Page_Generetor_Manager">
+        <test-method is-config="true" signature="beforeClass(java.lang.String)[pri:0, instance:com.nopcommerce.user.Level_06_Page_Generetor_Manager@6ab778a]" started-at="2022-10-11T08:11:58Z" name="beforeClass" finished-at="2022-10-11T08:12:08Z" duration-ms="10092" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -61,39 +61,39 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method signature="Login_01_Empty_Data()[pri:0, instance:com.nopcommerce.user.Level_05_Page_Factory@8c3b9d]" started-at="2022-10-09T15:31:10Z" name="Login_01_Empty_Data" finished-at="2022-10-09T15:31:11Z" duration-ms="694" status="PASS">
+        <test-method signature="Login_01_Empty_Data()[pri:0, instance:com.nopcommerce.user.Level_06_Page_Generetor_Manager@6ab778a]" started-at="2022-10-11T08:12:08Z" name="Login_01_Empty_Data" finished-at="2022-10-11T08:12:09Z" duration-ms="1068" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Login_01_Empty_Data -->
-        <test-method signature="Login_02_Invalid_Email()[pri:0, instance:com.nopcommerce.user.Level_05_Page_Factory@8c3b9d]" started-at="2022-10-09T15:31:11Z" name="Login_02_Invalid_Email" finished-at="2022-10-09T15:31:12Z" duration-ms="578" status="PASS">
+        <test-method signature="Login_02_Invalid_Email()[pri:0, instance:com.nopcommerce.user.Level_06_Page_Generetor_Manager@6ab778a]" started-at="2022-10-11T08:12:09Z" name="Login_02_Invalid_Email" finished-at="2022-10-11T08:12:10Z" duration-ms="901" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Login_02_Invalid_Email -->
-        <test-method signature="Login_03_Not_Found_Email()[pri:0, instance:com.nopcommerce.user.Level_05_Page_Factory@8c3b9d]" started-at="2022-10-09T15:31:12Z" name="Login_03_Not_Found_Email" finished-at="2022-10-09T15:31:13Z" duration-ms="848" status="PASS">
+        <test-method signature="Login_03_Not_Found_Email()[pri:0, instance:com.nopcommerce.user.Level_06_Page_Generetor_Manager@6ab778a]" started-at="2022-10-11T08:12:10Z" name="Login_03_Not_Found_Email" finished-at="2022-10-11T08:12:11Z" duration-ms="1213" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Login_03_Not_Found_Email -->
-        <test-method signature="Login_04_Existing_Email_Empty_Password()[pri:0, instance:com.nopcommerce.user.Level_05_Page_Factory@8c3b9d]" started-at="2022-10-09T15:31:13Z" name="Login_04_Existing_Email_Empty_Password" finished-at="2022-10-09T15:31:14Z" duration-ms="993" status="PASS">
+        <test-method signature="Login_04_Existing_Email_Empty_Password()[pri:0, instance:com.nopcommerce.user.Level_06_Page_Generetor_Manager@6ab778a]" started-at="2022-10-11T08:12:11Z" name="Login_04_Existing_Email_Empty_Password" finished-at="2022-10-11T08:12:12Z" duration-ms="1426" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Login_04_Existing_Email_Empty_Password -->
-        <test-method signature="Login_05_Existing_Email_Wrong_Password()[pri:0, instance:com.nopcommerce.user.Level_05_Page_Factory@8c3b9d]" started-at="2022-10-09T15:31:14Z" name="Login_05_Existing_Email_Wrong_Password" finished-at="2022-10-09T15:31:15Z" duration-ms="971" status="PASS">
+        <test-method signature="Login_05_Existing_Email_Wrong_Password()[pri:0, instance:com.nopcommerce.user.Level_06_Page_Generetor_Manager@6ab778a]" started-at="2022-10-11T08:12:12Z" name="Login_05_Existing_Email_Wrong_Password" finished-at="2022-10-11T08:12:14Z" duration-ms="1483" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Login_05_Existing_Email_Wrong_Password -->
-        <test-method signature="Login_06_Valid_Email_Password()[pri:0, instance:com.nopcommerce.user.Level_05_Page_Factory@8c3b9d]" started-at="2022-10-09T15:31:15Z" name="Login_06_Valid_Email_Password" finished-at="2022-10-09T15:31:16Z" duration-ms="1350" status="PASS">
+        <test-method signature="Login_06_Valid_Email_Password()[pri:0, instance:com.nopcommerce.user.Level_06_Page_Generetor_Manager@6ab778a]" started-at="2022-10-11T08:12:14Z" name="Login_06_Valid_Email_Password" finished-at="2022-10-11T08:12:17Z" duration-ms="3280" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Login_06_Valid_Email_Password -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.nopcommerce.user.Level_05_Page_Factory@8c3b9d]" started-at="2022-10-09T15:31:16Z" name="afterClass" finished-at="2022-10-09T15:31:17Z" duration-ms="594" status="PASS">
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.nopcommerce.user.Level_06_Page_Generetor_Manager@6ab778a]" started-at="2022-10-11T08:12:17Z" name="afterClass" finished-at="2022-10-11T08:12:17Z" duration-ms="186" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-      </class> <!-- com.nopcommerce.user.Level_05_Page_Factory -->
+      </class> <!-- com.nopcommerce.user.Level_06_Page_Generetor_Manager -->
     </test> <!-- Run on Chrome -->
-    <test started-at="2022-10-09T15:31:17Z" name="Run on Edge" finished-at="2022-10-09T15:31:30Z" duration-ms="13595">
-      <class name="com.nopcommerce.user.Level_05_Page_Factory">
-        <test-method is-config="true" signature="beforeClass(java.lang.String)[pri:0, instance:com.nopcommerce.user.Level_05_Page_Factory@26b3fd41]" started-at="2022-10-09T15:31:17Z" name="beforeClass" finished-at="2022-10-09T15:31:24Z" duration-ms="7323" status="PASS">
+    <test started-at="2022-10-11T08:12:17Z" name="Run on Edge" finished-at="2022-10-11T08:13:09Z" duration-ms="51701">
+      <class name="com.nopcommerce.user.Level_06_Page_Generetor_Manager">
+        <test-method is-config="true" signature="beforeClass(java.lang.String)[pri:0, instance:com.nopcommerce.user.Level_06_Page_Generetor_Manager@38e79ae3]" started-at="2022-10-11T08:12:17Z" name="beforeClass" finished-at="2022-10-11T08:13:00Z" duration-ms="42624" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -104,35 +104,35 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method signature="Login_01_Empty_Data()[pri:0, instance:com.nopcommerce.user.Level_05_Page_Factory@26b3fd41]" started-at="2022-10-09T15:31:24Z" name="Login_01_Empty_Data" finished-at="2022-10-09T15:31:25Z" duration-ms="745" status="PASS">
+        <test-method signature="Login_01_Empty_Data()[pri:0, instance:com.nopcommerce.user.Level_06_Page_Generetor_Manager@38e79ae3]" started-at="2022-10-11T08:13:00Z" name="Login_01_Empty_Data" finished-at="2022-10-11T08:13:01Z" duration-ms="1014" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Login_01_Empty_Data -->
-        <test-method signature="Login_02_Invalid_Email()[pri:0, instance:com.nopcommerce.user.Level_05_Page_Factory@26b3fd41]" started-at="2022-10-09T15:31:25Z" name="Login_02_Invalid_Email" finished-at="2022-10-09T15:31:25Z" duration-ms="585" status="PASS">
+        <test-method signature="Login_02_Invalid_Email()[pri:0, instance:com.nopcommerce.user.Level_06_Page_Generetor_Manager@38e79ae3]" started-at="2022-10-11T08:13:01Z" name="Login_02_Invalid_Email" finished-at="2022-10-11T08:13:02Z" duration-ms="987" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Login_02_Invalid_Email -->
-        <test-method signature="Login_03_Not_Found_Email()[pri:0, instance:com.nopcommerce.user.Level_05_Page_Factory@26b3fd41]" started-at="2022-10-09T15:31:25Z" name="Login_03_Not_Found_Email" finished-at="2022-10-09T15:31:26Z" duration-ms="893" status="PASS">
+        <test-method signature="Login_03_Not_Found_Email()[pri:0, instance:com.nopcommerce.user.Level_06_Page_Generetor_Manager@38e79ae3]" started-at="2022-10-11T08:13:02Z" name="Login_03_Not_Found_Email" finished-at="2022-10-11T08:13:03Z" duration-ms="1407" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Login_03_Not_Found_Email -->
-        <test-method signature="Login_04_Existing_Email_Empty_Password()[pri:0, instance:com.nopcommerce.user.Level_05_Page_Factory@26b3fd41]" started-at="2022-10-09T15:31:26Z" name="Login_04_Existing_Email_Empty_Password" finished-at="2022-10-09T15:31:27Z" duration-ms="1009" status="PASS">
+        <test-method signature="Login_04_Existing_Email_Empty_Password()[pri:0, instance:com.nopcommerce.user.Level_06_Page_Generetor_Manager@38e79ae3]" started-at="2022-10-11T08:13:03Z" name="Login_04_Existing_Email_Empty_Password" finished-at="2022-10-11T08:13:05Z" duration-ms="1667" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Login_04_Existing_Email_Empty_Password -->
-        <test-method signature="Login_05_Existing_Email_Wrong_Password()[pri:0, instance:com.nopcommerce.user.Level_05_Page_Factory@26b3fd41]" started-at="2022-10-09T15:31:27Z" name="Login_05_Existing_Email_Wrong_Password" finished-at="2022-10-09T15:31:28Z" duration-ms="1016" status="PASS">
+        <test-method signature="Login_05_Existing_Email_Wrong_Password()[pri:0, instance:com.nopcommerce.user.Level_06_Page_Generetor_Manager@38e79ae3]" started-at="2022-10-11T08:13:05Z" name="Login_05_Existing_Email_Wrong_Password" finished-at="2022-10-11T08:13:07Z" duration-ms="1628" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Login_05_Existing_Email_Wrong_Password -->
-        <test-method signature="Login_06_Valid_Email_Password()[pri:0, instance:com.nopcommerce.user.Level_05_Page_Factory@26b3fd41]" started-at="2022-10-09T15:31:28Z" name="Login_06_Valid_Email_Password" finished-at="2022-10-09T15:31:29Z" duration-ms="1361" status="PASS">
+        <test-method signature="Login_06_Valid_Email_Password()[pri:0, instance:com.nopcommerce.user.Level_06_Page_Generetor_Manager@38e79ae3]" started-at="2022-10-11T08:13:07Z" name="Login_06_Valid_Email_Password" finished-at="2022-10-11T08:13:09Z" duration-ms="2102" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Login_06_Valid_Email_Password -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.nopcommerce.user.Level_05_Page_Factory@26b3fd41]" started-at="2022-10-09T15:31:29Z" name="afterClass" finished-at="2022-10-09T15:31:30Z" duration-ms="660" status="PASS">
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.nopcommerce.user.Level_06_Page_Generetor_Manager@38e79ae3]" started-at="2022-10-11T08:13:09Z" name="afterClass" finished-at="2022-10-11T08:13:09Z" duration-ms="265" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-      </class> <!-- com.nopcommerce.user.Level_05_Page_Factory -->
+      </class> <!-- com.nopcommerce.user.Level_06_Page_Generetor_Manager -->
     </test> <!-- Run on Edge -->
   </suite> <!-- NopCommerce -->
 </testng-results>
