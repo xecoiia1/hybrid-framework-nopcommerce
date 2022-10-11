@@ -35,7 +35,7 @@ public class Level_06_Page_Generetor_Manager extends BaseTest  {
 	notFoundEmail = "Blag@gmail.com";
 	passWord = "123456";
 	
-	PageGeneratorManager.getHomePage(driver);
+	homePage = PageGeneratorManager.getHomePage(driver);
 	
 	System.out.println("Precondition_01 - Step 01: Click to Register link");
 	homePage.clickToRegisterLink();
@@ -94,7 +94,7 @@ public class Level_06_Page_Generetor_Manager extends BaseTest  {
 	  loginPage.inputNotFoundEmail(notFoundEmail);
 	  
 	  System.out.println("Login_03 - Step 03: Click to Login Button");
-	  homePage = loginPage.clickToLoginBtn();
+	  loginPage.clickToLoginBtn();
 	  
 	  System.out.println("Login_02 - Step 04: Verify Email Text Error");
 	  Assert.assertEquals(loginPage.getErrorNotFoundEmail(), "Login was unsuccessful. Please correct the errors and try again.\nNo customer account found");
@@ -112,7 +112,7 @@ public class Level_06_Page_Generetor_Manager extends BaseTest  {
 	  loginPage.inputPassWordTextBox("");
 	  
 	  System.out.println("Login_04 - Step 04: Click to Login Button");
-	  homePage = loginPage.clickToLoginBtn();
+	  loginPage.clickToLoginBtn();
 	  
 	  System.out.println("Login_04 - Step 05: Verify Email Text Error");
 	  Assert.assertEquals(loginPage.getErrorNotFoundEmail(), "Login was unsuccessful. Please correct the errors and try again.\nThe credentials provided are incorrect");
@@ -130,7 +130,7 @@ public class Level_06_Page_Generetor_Manager extends BaseTest  {
 	  loginPage.inputPassWordTextBox("365498");
 	  
 	  System.out.println("Login_05 - Step 04: Click to Login Button");
-	  homePage = loginPage.clickToLoginBtn();
+	  loginPage.clickToLoginBtn();
 	  
 	  System.out.println("Login_05 - Step 05: Verify Email Text Error");
 	  Assert.assertEquals(loginPage.getErrorNotFoundEmail(), "Login was unsuccessful. Please correct the errors and try again.\nThe credentials provided are incorrect");
