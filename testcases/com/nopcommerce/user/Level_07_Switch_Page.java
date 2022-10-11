@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 import common.BaseTest;
 import pageObject.HomePageObj;
 import pageObject.LoginPageObj;
-import pageObject.CustomerInfoPageObj;
+import pageObject.CustomerInforPageObj;
 import pageObject.PageGeneratorManager;
 import pageObject.RegisterPageObj;
 import pageUI.HomePageUI;
@@ -78,8 +78,8 @@ public class Level_07_Switch_Page extends BaseTest  {
   }
   
   @Test
-  public void User_03_My_Account() {
-	  customerInfoPage = homePage.clickToMyAccoutLink();
+  public void User_03_Customer_Infor() {
+	  customerInforPage = homePage.clickToMyAccoutLink();
   }
   
   @Test
@@ -105,6 +105,6 @@ public class Level_07_Switch_Page extends BaseTest  {
  private HomePageObj homePage;
  private RegisterPageObj registerPage;
  private LoginPageObj loginPage;
- private CustomerInfoPageObj customerInfoPage;
+ private CustomerInforPageObj customerInforPage;
  private String firstName, lastName, email, passWord;
 }

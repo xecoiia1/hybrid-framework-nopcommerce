@@ -18,8 +18,8 @@ public class PageGeneratorManager {
 		return new RegisterPageObj(driver);
 	}
 	
-	public static CustomerInfoPageObj getMyAccountPage(WebDriver driver) {
-		return new CustomerInfoPageObj(driver);
+	public static CustomerInforPageObj getMyAccountPage(WebDriver driver) {
+		return new CustomerInforPageObj(driver);
 	}
 	
 }

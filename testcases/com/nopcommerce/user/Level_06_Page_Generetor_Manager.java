@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 import common.BaseTest;
 import pageObject.HomePageObj;
 import pageObject.LoginPageObj;
-import pageObject.CustomerInfoPageObj;
+import pageObject.CustomerInforPageObj;
 import pageObject.PageGeneratorManager;
 import pageObject.RegisterPageObj;
 import pageUI.HomePageUI;
@@ -174,7 +174,7 @@ public class Level_06_Page_Generetor_Manager extends BaseTest  {
  private HomePageObj homePage;
  private RegisterPageObj registerPage;
  private LoginPageObj loginPage;
- private CustomerInfoPageObj myAccountPage;
+ private CustomerInforPageObj myAccountPage;
  private String projectPath = System.getProperty("user.dir");
  private String firstName, lastName, existingEmail, invalidEmail, notFoundEmail, passWord;
 }
