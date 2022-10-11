@@ -3,16 +3,17 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.nopcommerce.user.User_01_Register_Login">
+      <class name="com.nopcommerce.user.Level_07_Switch_Page">
         <methods>
-          <include name="TC_03_Register_Success"/>
-          <include name="beforeClass"/>
-          <include name="TC_04_Register_Existing_Email"/>
-          <include name="TC_05_Register_Password_Less_Than_6_Chars"/>
-          <include name="TC_06_Register_Invalid_Confirm_Password"/>
+          <include name="User_02_Login"/>
+          <include name="User_01_Register"/>
+          <include name="User_03_My_Account"/>
           <include name="afterClass"/>
+          <include name="User_04_Switch_Page"/>
+          <include name="beforeClass"/>
+          <include name="User_05_Switch_Role"/>
         </methods>
-      </class> <!-- com.nopcommerce.user.User_01_Register_Login -->
+      </class> <!-- com.nopcommerce.user.Level_07_Switch_Page -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

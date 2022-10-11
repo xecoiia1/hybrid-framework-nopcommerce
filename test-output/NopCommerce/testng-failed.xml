@@ -4,52 +4,15 @@
   <test thread-count="5" name="Run on Firefox(failed)">
     <parameter name="browser" value="firefox"/>
     <classes>
-      <class name="com.nopcommerce.user.Level_05_Page_Factory">
+      <class name="com.nopcommerce.user.Level_07_Switch_Page">
         <methods>
-          <include name="Login_06_Valid_Email_Password"/>
-          <include name="Login_01_Empty_Data"/>
-          <include name="Login_03_Not_Found_Email"/>
-          <include name="Login_04_Existing_Email_Empty_Password"/>
-          <include name="beforeClass"/>
+          <include name="User_02_Login"/>
+          <include name="User_01_Register"/>
+          <include name="User_03_My_Account"/>
           <include name="afterClass"/>
-          <include name="Login_02_Invalid_Email"/>
-          <include name="Login_05_Existing_Email_Wrong_Password"/>
+          <include name="beforeClass"/>
         </methods>
-      </class> <!-- com.nopcommerce.user.Level_05_Page_Factory -->
+      </class> <!-- com.nopcommerce.user.Level_07_Switch_Page -->
     </classes>
   </test> <!-- Run on Firefox(failed) -->
-  <test thread-count="5" name="Run on Chrome(failed)">
-    <parameter name="browser" value="chrome"/>
-    <classes>
-      <class name="com.nopcommerce.user.Level_05_Page_Factory">
-        <methods>
-          <include name="Login_06_Valid_Email_Password"/>
-          <include name="Login_01_Empty_Data"/>
-          <include name="Login_03_Not_Found_Email"/>
-          <include name="Login_04_Existing_Email_Empty_Password"/>
-          <include name="beforeClass"/>
-          <include name="afterClass"/>
-          <include name="Login_02_Invalid_Email"/>
-          <include name="Login_05_Existing_Email_Wrong_Password"/>
-        </methods>
-      </class> <!-- com.nopcommerce.user.Level_05_Page_Factory -->
-    </classes>
-  </test> <!-- Run on Chrome(failed) -->
-  <test thread-count="5" name="Run on Edge(failed)">
-    <parameter name="browser" value="edge"/>
-    <classes>
-      <class name="com.nopcommerce.user.Level_05_Page_Factory">
-        <methods>
-          <include name="Login_06_Valid_Email_Password"/>
-          <include name="Login_01_Empty_Data"/>
-          <include name="Login_03_Not_Found_Email"/>
-          <include name="Login_04_Existing_Email_Empty_Password"/>
-          <include name="beforeClass"/>
-          <include name="afterClass"/>
-          <include name="Login_02_Invalid_Email"/>
-          <include name="Login_05_Existing_Email_Wrong_Password"/>
-        </methods>
-      </class> <!-- com.nopcommerce.user.Level_05_Page_Factory -->
-    </classes>
-  </test> <!-- Run on Edge(failed) -->
 </suite> <!-- Failed suite [NopCommerce] -->
