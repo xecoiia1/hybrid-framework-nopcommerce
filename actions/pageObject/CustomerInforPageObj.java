@@ -22,4 +22,9 @@ public class CustomerInforPageObj extends BasePage {
 		waitForElementClickAble(driver, CustomerInforPageUI.NEWLETTER_CHECKBOX);
 		clickToElementByXpath(driver, CustomerInforPageUI.NEWLETTER_CHECKBOX);
 	}
+	
+	public boolean isCustomerInforPageDisplayed() {
+		waitForElementVisible(driver, CustomerInforPageUI.CUSTOMER_INFOR_HEADER);
+		return isElementDisplay(driver, CustomerInforPageUI.CUSTOMER_INFOR_HEADER);
+	}
 }
