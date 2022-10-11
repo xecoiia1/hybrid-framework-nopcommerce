@@ -16,11 +16,11 @@ public class HomePageObj extends BasePage {
 		this.driver = driver ;
 	}
 	
-	public void clickToRegisterLink(){
+	public RegisterPageObj clickToRegisterLink(){
 		waitForElementClickAble(driver, HomePageUI.REGISTER_BTN);
 		clickToElementByXpath(driver, HomePageUI.REGISTER_BTN);
-		
-	}
+		return new RegisterPageObj(driver);
+		}
 
 	public void clickToLoginLink() {
 		waitForElementClickAble(driver, HomePageUI.LOGIN_BTN);
