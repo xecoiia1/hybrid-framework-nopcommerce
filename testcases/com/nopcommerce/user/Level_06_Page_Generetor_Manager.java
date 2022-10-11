@@ -5,6 +5,7 @@ import org.testng.annotations.Test;
 import common.BaseTest;
 import pageObject.HomePageObj;
 import pageObject.LoginPageObj;
+import pageObject.PageGeneratorManager;
 import pageObject.RegisterPageObj;
 import pageUI.HomePageUI;
 
@@ -34,10 +35,10 @@ public class Level_06_Page_Generetor_Manager extends BaseTest  {
 	notFoundEmail = "Blag@gmail.com";
 	passWord = "123456";
 	
-	homePage = new HomePageObj(driver);
+	PageGeneratorManager.getHomePage(driver);
 	
 	System.out.println("Precondition_01 - Step 01: Click to Register link");
-	registerPage = homePage.clickToRegisterLink();
+	homePage.clickToRegisterLink();
 	  
     System.out.println("Precondition_01 - Step 02: Input Text to required field");
 	registerPage.inputToFirstnameTextBox(firstName);
@@ -53,19 +54,17 @@ public class Level_06_Page_Generetor_Manager extends BaseTest  {
 	Assert.assertEquals(registerPage.getSuccessRegisterSucces(), "Your registration completed");
 	
 	System.out.println("Precondition_01 - Step 05: Click to Logout Button");
-	registerPage.clickToLogoutBtn();
+	homePage = registerPage.clickToLogoutBtn();
 	
   }
   
   @Test
   public void Login_01_Empty_Data() {
 	  System.out.println("Login_01 - Step 01: Click to Login Link");
-	  homePage.clickToLoginLink();
-	  
-	  loginPage = new LoginPageObj(driver);
+	  loginPage = homePage.clickToLoginLink();
 	  
 	  System.out.println("Login_01 - Step 02: Click to Login Button");
-	  loginPage.clickToLoginBtn();
+	  homePage = loginPage.clickToLoginBtn();
 	  
 	  System.out.println("Login_01 - Step 03: Verify Email Text Error");
 	  Assert.assertEquals(loginPage.getErrorMesAtEmailTextBox(), "Please enter your email");
@@ -74,15 +73,13 @@ public class Level_06_Page_Generetor_Manager extends BaseTest  {
   @Test
   public void Login_02_Invalid_Email() {
 	  System.out.println("Login_02 - Step 01: Click to Login Link");
-	  homePage.clickToLoginLink();
-	  
-	  loginPage = new LoginPageObj(driver);
+	  loginPage = homePage.clickToLoginLink();
 	  
 	  System.out.println("Login_02 - Step 02: Input Invalid Email to Email Textbox");
 	  loginPage.inputInvalidEmail(invalidEmail);
 	  
 	  System.out.println("Login_02 - Step 03: Click to Login Button");
-	  loginPage.clickToLoginBtn();
+	  homePage = loginPage.clickToLoginBtn();
 	  
 	  System.out.println("Login_02 - Step 04: Verify Email Text Error");
 	  Assert.assertEquals(loginPage.getErrorMesAtEmailTextBox(), "Wrong email");
@@ -91,15 +88,13 @@ public class Level_06_Page_Generetor_Manager extends BaseTest  {
   @Test
   public void Login_03_Not_Found_Email() {
 	  System.out.println("Login_03 - Step 01: Click to Login Link");
-	  homePage.clickToLoginLink();
-	  
-	  loginPage = new LoginPageObj(driver);
-	  
+	  loginPage = homePage.clickToLoginLink();
+	  	  
 	  System.out.println("Login_03 - Step 02: Input Not Found Email to Email Textbox");
 	  loginPage.inputNotFoundEmail(notFoundEmail);
 	  
 	  System.out.println("Login_03 - Step 03: Click to Login Button");
-	  loginPage.clickToLoginBtn();
+	  homePage = loginPage.clickToLoginBtn();
 	  
 	  System.out.println("Login_02 - Step 04: Verify Email Text Error");
 	  Assert.assertEquals(loginPage.getErrorNotFoundEmail(), "Login was unsuccessful. Please correct the errors and try again.\nNo customer account found");
@@ -108,10 +103,8 @@ public class Level_06_Page_Generetor_Manager extends BaseTest  {
   @Test
   public void Login_04_Existing_Email_Empty_Password() {
 	  System.out.println("Login_04 - Step 01: Click to Login Link");
-	  homePage.clickToLoginLink();
-	  
-	  loginPage = new LoginPageObj(driver);
-	  
+	  loginPage = homePage.clickToLoginLink();
+	  	  
 	  System.out.println("Login_04 - Step 02: Input Not Found Email to Email Textbox");
 	  loginPage.inputNotFoundEmail(existingEmail);
 	  
@@ -119,7 +112,7 @@ public class Level_06_Page_Generetor_Manager extends BaseTest  {
 	  loginPage.inputPassWordTextBox("");
 	  
 	  System.out.println("Login_04 - Step 04: Click to Login Button");
-	  loginPage.clickToLoginBtn();
+	  homePage = loginPage.clickToLoginBtn();
 	  
 	  System.out.println("Login_04 - Step 05: Verify Email Text Error");
 	  Assert.assertEquals(loginPage.getErrorNotFoundEmail(), "Login was unsuccessful. Please correct the errors and try again.\nThe credentials provided are incorrect");
@@ -128,10 +121,8 @@ public class Level_06_Page_Generetor_Manager extends BaseTest  {
   @Test
   public void Login_05_Existing_Email_Wrong_Password() {
 	  System.out.println("Login_05 - Step 01: Click to Login Link");
-	  homePage.clickToLoginLink();
-	  
-	  loginPage = new LoginPageObj(driver);
-	  
+	  loginPage = homePage.clickToLoginLink();
+	  	  
 	  System.out.println("Login_05 - Step 02: Input Not Found Email to Email Textbox");
 	  loginPage.inputNotFoundEmail(existingEmail);
 	  
@@ -139,7 +130,7 @@ public class Level_06_Page_Generetor_Manager extends BaseTest  {
 	  loginPage.inputPassWordTextBox("365498");
 	  
 	  System.out.println("Login_05 - Step 04: Click to Login Button");
-	  loginPage.clickToLoginBtn();
+	  homePage = loginPage.clickToLoginBtn();
 	  
 	  System.out.println("Login_05 - Step 05: Verify Email Text Error");
 	  Assert.assertEquals(loginPage.getErrorNotFoundEmail(), "Login was unsuccessful. Please correct the errors and try again.\nThe credentials provided are incorrect");
@@ -148,9 +139,7 @@ public class Level_06_Page_Generetor_Manager extends BaseTest  {
   @Test
   public void Login_06_Valid_Email_Password(){
 	  System.out.println("Login_06 - Step 01: Click to Login Link");
-	  homePage.clickToLoginLink();
-	  
-	  loginPage = new LoginPageObj(driver);
+	  loginPage = homePage.clickToLoginLink();
 	  
 	  System.out.println("Login_06 - Step 02: Input Not Found Email to Email Textbox");
 	  loginPage.inputNotFoundEmail(existingEmail);
@@ -159,7 +148,7 @@ public class Level_06_Page_Generetor_Manager extends BaseTest  {
 	  loginPage.inputPassWordTextBox(passWord);
 	  
 	  System.out.println("Login_06 - Step 04: Click to Login Button");
-	  loginPage.clickToLoginBtn();
+	  homePage = loginPage.clickToLoginBtn();
 	  
 	  System.out.println("Login_06 - Step 05: Verify Login Success");
 	  

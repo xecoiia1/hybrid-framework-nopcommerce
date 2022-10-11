@@ -20,9 +20,10 @@ public class LoginPageObj extends BasePage {
 		return getTextOfElement(driver, LoginPageUI.EMAIL_ERROR_MES);
 	}
 
-	public void clickToLoginBtn() {
+	public HomePageObj clickToLoginBtn() {
 		waitForElementClickAble(driver, LoginPageUI.LOGIN_BTN);
 		clickToElementByXpath(driver, LoginPageUI.LOGIN_BTN);
+		return PageGeneratorManager.getHomePage(driver);
 		
 	}
 

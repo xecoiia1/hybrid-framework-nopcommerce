@@ -68,7 +68,7 @@ public class RegisterPageObj extends BasePage {
 	public HomePageObj clickToLogoutBtn() {
 		waitForElementClickAble(driver, RegisterPageUI.LOGOUT_BTN);
 		clickToElementByXpath(driver, RegisterPageUI.LOGOUT_BTN);
-		return new HomePageObj(driver);
+		return PageGeneratorManager.getHomePage(driver);
 		
 	}
 
