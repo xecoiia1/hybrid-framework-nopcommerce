@@ -18,4 +18,8 @@ public class PageGeneratorManager {
 		return new RegisterPageObj(driver);
 	}
 	
+	public static MyAccountPageObj getMyAccountPage(WebDriver driver) {
+		return new MyAccountPageObj(driver);
+	}
+	
 }

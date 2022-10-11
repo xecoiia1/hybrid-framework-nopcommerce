@@ -39,6 +39,12 @@ public class HomePageObj extends BasePage {
 		return isElementDisplay(driver, HomePageUI.LOG_OUT_LINK);
 	}
 	
+	public MyAccountPageObj clickToMyAccoutLink() {
+		waitForElementClickAble(driver, HomePageUI.MY_ACCOUNT_LINK);
+		clickToElementByXpath(driver, HomePageUI.MY_ACCOUNT_LINK);
+		return PageGeneratorManager.getMyAccountPage(driver);
+	}
+	
 	
 	@FindBy(how = How.XPATH, using = "//a[@class= 'ico-register']")
 	private WebElement registerLink;
