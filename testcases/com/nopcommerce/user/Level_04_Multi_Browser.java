@@ -3,9 +3,9 @@ package com.nopcommerce.user;
 import org.testng.annotations.Test;
 
 import common.BaseTest;
-import pageObject.nopCommerce.portal.HomePageObj;
-import pageObject.nopCommerce.portal.LoginPageObj;
-import pageObject.nopCommerce.portal.RegisterPageObj;
+import pageObject.nopCommerce.user.UserHomePageObj;
+import pageObject.nopCommerce.user.UserLoginPageObj;
+import pageObject.nopCommerce.user.UserRegisterPageObj;
 import pageUI.HomePageUI;
 
 import org.testng.annotations.BeforeClass;
@@ -35,8 +35,8 @@ public class Level_04_Multi_Browser extends BaseTest  {
 	notFoundEmail = "Blag@gmail.com";
 	passWord = "123456";
 	
-	registerPage = new RegisterPageObj(driver);
-	homePage = new HomePageObj(driver);
+	registerPage = new UserRegisterPageObj(driver);
+	homePage = new UserHomePageObj(driver);
 	
 	System.out.println("Precondition_01 - Step 01: Click to Register link");
 	homePage.clickToRegisterLink();
@@ -64,7 +64,7 @@ public class Level_04_Multi_Browser extends BaseTest  {
 	  System.out.println("Login_01 - Step 01: Click to Login Link");
 	  homePage.clickToLoginLink();
 	  
-	  loginPage = new LoginPageObj(driver);
+	  loginPage = new UserLoginPageObj(driver);
 	  
 	  System.out.println("Login_01 - Step 02: Click to Login Button");
 	  loginPage.clickToLoginBtn();
@@ -78,7 +78,7 @@ public class Level_04_Multi_Browser extends BaseTest  {
 	  System.out.println("Login_02 - Step 01: Click to Login Link");
 	  homePage.clickToLoginLink();
 	  
-	  loginPage = new LoginPageObj(driver);
+	  loginPage = new UserLoginPageObj(driver);
 	  
 	  System.out.println("Login_02 - Step 02: Input Invalid Email to Email Textbox");
 	  loginPage.inputInvalidEmail(invalidEmail);
@@ -95,7 +95,7 @@ public class Level_04_Multi_Browser extends BaseTest  {
 	  System.out.println("Login_03 - Step 01: Click to Login Link");
 	  homePage.clickToLoginLink();
 	  
-	  loginPage = new LoginPageObj(driver);
+	  loginPage = new UserLoginPageObj(driver);
 	  
 	  System.out.println("Login_03 - Step 02: Input Not Found Email to Email Textbox");
 	  loginPage.inputNotFoundEmail(notFoundEmail);
@@ -112,7 +112,7 @@ public class Level_04_Multi_Browser extends BaseTest  {
 	  System.out.println("Login_04 - Step 01: Click to Login Link");
 	  homePage.clickToLoginLink();
 	  
-	  loginPage = new LoginPageObj(driver);
+	  loginPage = new UserLoginPageObj(driver);
 	  
 	  System.out.println("Login_04 - Step 02: Input Not Found Email to Email Textbox");
 	  loginPage.inputNotFoundEmail(existingEmail);
@@ -132,7 +132,7 @@ public class Level_04_Multi_Browser extends BaseTest  {
 	  System.out.println("Login_05 - Step 01: Click to Login Link");
 	  homePage.clickToLoginLink();
 	  
-	  loginPage = new LoginPageObj(driver);
+	  loginPage = new UserLoginPageObj(driver);
 	  
 	  System.out.println("Login_05 - Step 02: Input Not Found Email to Email Textbox");
 	  loginPage.inputNotFoundEmail(existingEmail);
@@ -152,7 +152,7 @@ public class Level_04_Multi_Browser extends BaseTest  {
 	  System.out.println("Login_06 - Step 01: Click to Login Link");
 	  homePage.clickToLoginLink();
 	  
-	  loginPage = new LoginPageObj(driver);
+	  loginPage = new UserLoginPageObj(driver);
 	  
 	  System.out.println("Login_06 - Step 02: Input Not Found Email to Email Textbox");
 	  loginPage.inputNotFoundEmail(existingEmail);
@@ -178,8 +178,8 @@ public class Level_04_Multi_Browser extends BaseTest  {
 //  var element = $$("div.validation-summary-errors")[0];
 //  element.textContent;
  private WebDriver driver;
- private HomePageObj homePage;
- private RegisterPageObj registerPage;
- private LoginPageObj loginPage;
+ private UserHomePageObj homePage;
+ private UserRegisterPageObj registerPage;
+ private UserLoginPageObj loginPage;
  private String firstName, lastName, existingEmail, invalidEmail, notFoundEmail, passWord;
 }

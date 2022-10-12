@@ -1,4 +1,4 @@
-package pageObject.nopCommerce.portal;
+package pageObject.nopCommerce.user;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -6,23 +6,24 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 
 import common.BasePage;
+import common.PageGeneratorManager;
 import pageUI.HomePageUI;
 import org.openqa.selenium.WebDriver;
 
-public class HomePageObj extends BasePage {
+public class UserHomePageObj extends BasePage {
 	private WebDriver driver;
 	
-	public HomePageObj(WebDriver driver) {
+	public UserHomePageObj(WebDriver driver) {
 		this.driver = driver ;
 	}
 	
-	public RegisterPageObj clickToRegisterLink(){
+	public UserRegisterPageObj clickToRegisterLink(){
 		waitForElementClickAble(driver, HomePageUI.REGISTER_BTN);
 		clickToElementByXpath(driver, HomePageUI.REGISTER_BTN);
 		return PageGeneratorManager.getRegisterPage(driver);
 		}
 
-	public LoginPageObj clickToLoginLink() {
+	public UserLoginPageObj clickToLoginLink() {
 		waitForElementClickAble(driver, HomePageUI.LOGIN_BTN);
 		clickToElementByXpath(driver, HomePageUI.LOGIN_BTN);
 		return PageGeneratorManager.getLoginPage(driver);
@@ -39,7 +40,7 @@ public class HomePageObj extends BasePage {
 		return isElementDisplay(driver, HomePageUI.LOG_OUT_LINK);
 	}
 	
-	public CustomerInforPageObj clickToMyAccoutLink() {
+	public UserCustomerInforPageObj clickToMyAccoutLink() {
 		waitForElementClickAble(driver, HomePageUI.MY_ACCOUNT_LINK);
 		clickToElementByXpath(driver, HomePageUI.MY_ACCOUNT_LINK);
 		return PageGeneratorManager.getMyAccountPage(driver);

@@ -3,9 +3,9 @@ package com.nopcommerce.user;
 import org.testng.annotations.Test;
 
 import common.BaseTest;
-import pageObject.nopCommerce.portal.HomePageObjPageFactory;
-import pageObject.nopCommerce.portal.LoginPageObjPageFactory;
-import pageObject.nopCommerce.portal.RegisterPageObjPageFactory;
+import pageObject.nopCommerce.user.UserHomePageObjPageFactory;
+import pageObject.nopCommerce.user.UserLoginPageObjPageFactory;
+import pageObject.nopCommerce.user.UserRegisterPageObjPageFactory;
 import pageUI.HomePageUI;
 
 import org.testng.annotations.BeforeClass;
@@ -34,8 +34,8 @@ public class Level_05_Page_Factory extends BaseTest  {
 	notFoundEmail = "Blag@gmail.com";
 	passWord = "123456";
 	
-	registerPage = new RegisterPageObjPageFactory(driver);
-	homePage = new HomePageObjPageFactory(driver);
+	registerPage = new UserRegisterPageObjPageFactory(driver);
+	homePage = new UserHomePageObjPageFactory(driver);
 	
 	System.out.println("Precondition_01 - Step 01: Click to Register link");
 	homePage.clickToRegisterLink();
@@ -63,7 +63,7 @@ public class Level_05_Page_Factory extends BaseTest  {
 	  System.out.println("Login_01 - Step 01: Click to Login Link");
 	  homePage.clickToLoginLink();
 	  
-	  loginPage = new LoginPageObjPageFactory(driver);
+	  loginPage = new UserLoginPageObjPageFactory(driver);
 	  
 	  System.out.println("Login_01 - Step 02: Click to Login Button");
 	  loginPage.clickToLoginBtn();
@@ -77,7 +77,7 @@ public class Level_05_Page_Factory extends BaseTest  {
 	  System.out.println("Login_02 - Step 01: Click to Login Link");
 	  homePage.clickToLoginLink();
 	  
-	  loginPage = new LoginPageObjPageFactory(driver);
+	  loginPage = new UserLoginPageObjPageFactory(driver);
 	  
 	  System.out.println("Login_02 - Step 02: Input Invalid Email to Email Textbox");
 	  loginPage.inputInvalidEmail(invalidEmail);
@@ -94,7 +94,7 @@ public class Level_05_Page_Factory extends BaseTest  {
 	  System.out.println("Login_03 - Step 01: Click to Login Link");
 	  homePage.clickToLoginLink();
 	  
-	  loginPage = new LoginPageObjPageFactory(driver);
+	  loginPage = new UserLoginPageObjPageFactory(driver);
 	  
 	  System.out.println("Login_03 - Step 02: Input Not Found Email to Email Textbox");
 	  loginPage.inputNotFoundEmail(notFoundEmail);
@@ -111,7 +111,7 @@ public class Level_05_Page_Factory extends BaseTest  {
 	  System.out.println("Login_04 - Step 01: Click to Login Link");
 	  homePage.clickToLoginLink();
 	  
-	  loginPage = new LoginPageObjPageFactory(driver);
+	  loginPage = new UserLoginPageObjPageFactory(driver);
 	  
 	  System.out.println("Login_04 - Step 02: Input Not Found Email to Email Textbox");
 	  loginPage.inputNotFoundEmail(existingEmail);
@@ -131,7 +131,7 @@ public class Level_05_Page_Factory extends BaseTest  {
 	  System.out.println("Login_05 - Step 01: Click to Login Link");
 	  homePage.clickToLoginLink();
 	  
-	  loginPage = new LoginPageObjPageFactory(driver);
+	  loginPage = new UserLoginPageObjPageFactory(driver);
 	  
 	  System.out.println("Login_05 - Step 02: Input Not Found Email to Email Textbox");
 	  loginPage.inputNotFoundEmail(existingEmail);
@@ -151,7 +151,7 @@ public class Level_05_Page_Factory extends BaseTest  {
 	  System.out.println("Login_06 - Step 01: Click to Login Link");
 	  homePage.clickToLoginLink();
 	  
-	  loginPage = new LoginPageObjPageFactory(driver);
+	  loginPage = new UserLoginPageObjPageFactory(driver);
 	  
 	  System.out.println("Login_06 - Step 02: Input Not Found Email to Email Textbox");
 	  loginPage.inputNotFoundEmail(existingEmail);
@@ -182,9 +182,9 @@ public class Level_05_Page_Factory extends BaseTest  {
 //  var element = $$("div.validation-summary-errors")[0];
 //  element.textContent;
  private WebDriver driver;
- private HomePageObjPageFactory homePage;
- private RegisterPageObjPageFactory  registerPage;
- private LoginPageObjPageFactory  loginPage;
+ private UserHomePageObjPageFactory homePage;
+ private UserRegisterPageObjPageFactory  registerPage;
+ private UserLoginPageObjPageFactory  loginPage;
  private String projectPath = System.getProperty("user.dir");
  private String firstName, lastName, existingEmail, invalidEmail, notFoundEmail, passWord;
 }

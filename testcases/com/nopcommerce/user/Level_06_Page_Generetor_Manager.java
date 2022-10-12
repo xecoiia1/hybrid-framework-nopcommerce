@@ -3,11 +3,11 @@ package com.nopcommerce.user;
 import org.testng.annotations.Test;
 
 import common.BaseTest;
-import pageObject.nopCommerce.portal.CustomerInforPageObj;
-import pageObject.nopCommerce.portal.HomePageObj;
-import pageObject.nopCommerce.portal.LoginPageObj;
-import pageObject.nopCommerce.portal.PageGeneratorManager;
-import pageObject.nopCommerce.portal.RegisterPageObj;
+import common.PageGeneratorManager;
+import pageObject.nopCommerce.user.UserCustomerInforPageObj;
+import pageObject.nopCommerce.user.UserHomePageObj;
+import pageObject.nopCommerce.user.UserLoginPageObj;
+import pageObject.nopCommerce.user.UserRegisterPageObj;
 import pageUI.HomePageUI;
 
 import org.testng.annotations.BeforeClass;
@@ -168,10 +168,10 @@ public class Level_06_Page_Generetor_Manager extends BaseTest  {
 //  var element = $$("div.validation-summary-errors")[0];
 //  element.textContent;
  private WebDriver driver;
- private HomePageObj homePage;
- private RegisterPageObj registerPage;
- private LoginPageObj loginPage;
- private CustomerInforPageObj myAccountPage;
+ private UserHomePageObj homePage;
+ private UserRegisterPageObj registerPage;
+ private UserLoginPageObj loginPage;
+ private UserCustomerInforPageObj myAccountPage;
  private String projectPath = System.getProperty("user.dir");
  private String firstName, lastName, existingEmail, invalidEmail, notFoundEmail, passWord;
 }

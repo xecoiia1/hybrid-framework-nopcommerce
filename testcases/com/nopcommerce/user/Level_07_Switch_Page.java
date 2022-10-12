@@ -8,14 +8,14 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import common.BaseTest;
-import pageObject.nopCommerce.portal.AddressPageObj;
-import pageObject.nopCommerce.portal.CustomerInforPageObj;
-import pageObject.nopCommerce.portal.HomePageObj;
-import pageObject.nopCommerce.portal.LoginPageObj;
-import pageObject.nopCommerce.portal.MyProductReviewPageObj;
-import pageObject.nopCommerce.portal.PageGeneratorManager;
-import pageObject.nopCommerce.portal.RegisterPageObj;
-import pageObject.nopCommerce.portal.RewardPointPageObj;
+import common.PageGeneratorManager;
+import pageObject.nopCommerce.user.UserAddressPageObj;
+import pageObject.nopCommerce.user.UserCustomerInforPageObj;
+import pageObject.nopCommerce.user.UserHomePageObj;
+import pageObject.nopCommerce.user.UserLoginPageObj;
+import pageObject.nopCommerce.user.UserMyProductReviewPageObj;
+import pageObject.nopCommerce.user.UserRegisterPageObj;
+import pageObject.nopCommerce.user.UserRewardPointPageObj;
 
 public class Level_07_Switch_Page extends BaseTest  {
 
@@ -102,12 +102,12 @@ public class Level_07_Switch_Page extends BaseTest  {
 //  var element = $$("div.validation-summary-errors")[0];
 //  element.textContent;
  private WebDriver driver;
- private HomePageObj homePage;
- private RegisterPageObj registerPage;
- private LoginPageObj loginPage;
- private AddressPageObj addressPage;
- private RewardPointPageObj rewardPage;
- private MyProductReviewPageObj myProductPage;
- private CustomerInforPageObj customerInforPage;
+ private UserHomePageObj homePage;
+ private UserRegisterPageObj registerPage;
+ private UserLoginPageObj loginPage;
+ private UserAddressPageObj addressPage;
+ private UserRewardPointPageObj rewardPage;
+ private UserMyProductReviewPageObj myProductPage;
+ private UserCustomerInforPageObj customerInforPage;
  private String firstName, lastName, email, passWord;
 }

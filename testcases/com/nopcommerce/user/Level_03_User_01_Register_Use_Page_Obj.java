@@ -2,9 +2,9 @@ package com.nopcommerce.user;
 
 import org.testng.annotations.Test;
 
-import pageObject.nopCommerce.portal.HomePageObj;
-import pageObject.nopCommerce.portal.LoginPageObj;
-import pageObject.nopCommerce.portal.RegisterPageObj;
+import pageObject.nopCommerce.user.UserHomePageObj;
+import pageObject.nopCommerce.user.UserLoginPageObj;
+import pageObject.nopCommerce.user.UserRegisterPageObj;
 
 import org.testng.annotations.BeforeClass;
 
@@ -31,8 +31,8 @@ public class Level_03_User_01_Register_Use_Page_Obj  {
 	emailAdd = "abc" + generateRandom() + "@mail.com";
 	passWord = "123456";
 	
-	homePage = new HomePageObj(driver);
-	registerPage = new RegisterPageObj(driver);
+	homePage = new UserHomePageObj(driver);
+	registerPage = new UserRegisterPageObj(driver);
   }
   
   @Test
@@ -164,9 +164,9 @@ public class Level_03_User_01_Register_Use_Page_Obj  {
 //  var element = $$("div.validation-summary-errors")[0];
 //  element.textContent;
  private WebDriver driver;
- private HomePageObj homePage;
- private RegisterPageObj registerPage;
- private LoginPageObj loginPage;
+ private UserHomePageObj homePage;
+ private UserRegisterPageObj registerPage;
+ private UserLoginPageObj loginPage;
  private String projectPath = System.getProperty("user.dir");
  private String firstName, lastName, emailAdd, passWord;
 }

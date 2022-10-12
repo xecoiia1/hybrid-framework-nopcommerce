@@ -20,11 +20,10 @@ import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import pageObject.nopCommerce.portal.AddressPageObj;
-import pageObject.nopCommerce.portal.CustomerInforPageObj;
-import pageObject.nopCommerce.portal.MyProductReviewPageObj;
-import pageObject.nopCommerce.portal.PageGeneratorManager;
-import pageObject.nopCommerce.portal.RewardPointPageObj;
+import pageObject.nopCommerce.user.UserAddressPageObj;
+import pageObject.nopCommerce.user.UserCustomerInforPageObj;
+import pageObject.nopCommerce.user.UserMyProductReviewPageObj;
+import pageObject.nopCommerce.user.UserRewardPointPageObj;
 import pageUI.BasePageUI;
 import pageUI.CustomerInforPageUI;
 
@@ -391,25 +390,25 @@ public class BasePage extends BasePageUI {
 		explixitWait.until(ExpectedConditions.elementToBeClickable(getByXpath(xpathLocator)));
 	}
 	
-	public MyProductReviewPageObj openMyProductReviewPage(WebDriver driver) {
+	public UserMyProductReviewPageObj openMyProductReviewPage(WebDriver driver) {
 		waitForElementClickAble(driver, BasePageUI.MY_PRODUCT_REVIEWS_PAGE);
 		clickToElementByXpath(driver, BasePageUI.MY_PRODUCT_REVIEWS_PAGE);
 		return PageGeneratorManager.getMyProductReviewPage(driver);
 	}
 	
-	public RewardPointPageObj openRewardPage(WebDriver driver) {
+	public UserRewardPointPageObj openRewardPage(WebDriver driver) {
 		waitForElementClickAble(driver, BasePageUI.REWARD_POINT_PAGE);
 		clickToElementByXpath(driver, BasePageUI.REWARD_POINT_PAGE);
 		return PageGeneratorManager.getRewardPage(driver);
 	}
 	
-	public AddressPageObj openAddressPage(WebDriver driver) {
+	public UserAddressPageObj openAddressPage(WebDriver driver) {
 		waitForElementClickAble(driver, BasePageUI.ADDRESS_PAGE);
 		clickToElementByXpath(driver, BasePageUI.ADDRESS_PAGE);
 		return PageGeneratorManager.getAddressPage(driver);
 	}
 	
-	public CustomerInforPageObj openCustomerInforPage(WebDriver driver) {
+	public UserCustomerInforPageObj openCustomerInforPage(WebDriver driver) {
 		waitForElementClickAble(driver, BasePageUI.CUSTOMER_INFO_PAGE);
 		clickToElementByXpath(driver, BasePageUI.CUSTOMER_INFO_PAGE);
 		return PageGeneratorManager.getCustomerInfor(driver);

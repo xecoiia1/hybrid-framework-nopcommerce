@@ -1,4 +1,4 @@
-package pageObject.nopCommerce.portal;
+package pageObject.nopCommerce.user;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -11,11 +11,11 @@ import pageUI.CustomerInforPageUI;
 
 import org.openqa.selenium.WebDriver;
 
-public class MyProductReviewPageObj extends BasePage {
+public class UserAddressPageObj extends BasePage {
 	private WebDriver driver;
 	
-	public MyProductReviewPageObj(WebDriver driver) {
+	public UserAddressPageObj(WebDriver driver) {
 		this.driver = driver ;
 	}
-}		
-
+		
+}

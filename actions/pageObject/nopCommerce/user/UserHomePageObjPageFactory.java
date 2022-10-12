@@ -1,4 +1,4 @@
-package pageObject.nopCommerce.portal;
+package pageObject.nopCommerce.user;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -11,10 +11,10 @@ import common.BasePageFactory;
 import pageUI.HomePageUI;
 import org.openqa.selenium.WebDriver;
 
-public class HomePageObjPageFactory extends BasePageFactory {
+public class UserHomePageObjPageFactory extends BasePageFactory {
 	private WebDriver driver;
 	
-	public HomePageObjPageFactory(WebDriver driver) {
+	public UserHomePageObjPageFactory(WebDriver driver) {
 		this.driver = driver ;
 		PageFactory.initElements(driver, this);
 	}
