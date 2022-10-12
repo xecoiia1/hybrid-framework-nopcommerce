@@ -2,7 +2,7 @@ package pageObject.nopCommerce.user;
 
 import common.BasePage;
 import common.PageGeneratorManager;
-import pageUI.RegisterPageUI;
+import pageUI.nopCommerce.user.RegisterPageUI;
 
 import org.openqa.selenium.WebDriver;
 
@@ -68,7 +68,7 @@ public class UserRegisterPageObj extends BasePage {
 	public UserHomePageObj clickToLogoutBtn() {
 		waitForElementClickAble(driver, RegisterPageUI.LOGOUT_BTN);
 		clickToElementByXpath(driver, RegisterPageUI.LOGOUT_BTN);
-		return PageGeneratorManager.getHomePage(driver);
+		return PageGeneratorManager.getUserHomePage(driver);
 		
 	}
 

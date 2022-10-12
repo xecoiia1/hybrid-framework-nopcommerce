@@ -8,7 +8,7 @@ import pageObject.nopCommerce.user.UserCustomerInforPageObj;
 import pageObject.nopCommerce.user.UserHomePageObj;
 import pageObject.nopCommerce.user.UserLoginPageObj;
 import pageObject.nopCommerce.user.UserRegisterPageObj;
-import pageUI.HomePageUI;
+import pageUI.nopCommerce.user.HomePageUI;
 
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;

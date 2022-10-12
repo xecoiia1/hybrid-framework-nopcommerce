@@ -6,8 +6,8 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 
 import common.BasePage;
-import pageUI.HomePageUI;
-import pageUI.CustomerInforPageUI;
+import pageUI.nopCommerce.user.CustomerInforPageUI;
+import pageUI.nopCommerce.user.HomePageUI;
 
 import org.openqa.selenium.WebDriver;
 

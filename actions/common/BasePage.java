@@ -24,8 +24,8 @@ import pageObject.nopCommerce.user.UserAddressPageObj;
 import pageObject.nopCommerce.user.UserCustomerInforPageObj;
 import pageObject.nopCommerce.user.UserMyProductReviewPageObj;
 import pageObject.nopCommerce.user.UserRewardPointPageObj;
-import pageUI.BasePageUI;
-import pageUI.CustomerInforPageUI;
+import pageUI.nopCommerce.user.BasePageUI;
+import pageUI.nopCommerce.user.CustomerInforPageUI;
 
 //Common class
 public class BasePage extends BasePageUI {

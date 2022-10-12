@@ -1,4 +1,4 @@
-package pageUI;
+package pageUI.nopCommerce.user;
 
 public class RegisterPageUI {
 	public static final String FISRT_NAME_TEXTBOX = "//input[@id = 'FirstName']";

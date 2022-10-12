@@ -7,7 +7,8 @@ import org.openqa.selenium.support.How;
 
 import common.BasePage;
 import common.PageGeneratorManager;
-import pageUI.HomePageUI;
+import pageUI.nopCommerce.user.HomePageUI;
+
 import org.openqa.selenium.WebDriver;
 
 public class UserHomePageObj extends BasePage {
@@ -20,13 +21,13 @@ public class UserHomePageObj extends BasePage {
 	public UserRegisterPageObj clickToRegisterLink(){
 		waitForElementClickAble(driver, HomePageUI.REGISTER_BTN);
 		clickToElementByXpath(driver, HomePageUI.REGISTER_BTN);
-		return PageGeneratorManager.getRegisterPage(driver);
+		return PageGeneratorManager.getUserRegisterPage(driver);
 		}
 
 	public UserLoginPageObj clickToLoginLink() {
 		waitForElementClickAble(driver, HomePageUI.LOGIN_BTN);
 		clickToElementByXpath(driver, HomePageUI.LOGIN_BTN);
-		return PageGeneratorManager.getLoginPage(driver);
+		return PageGeneratorManager.getUserLoginPage(driver);
 		
 	}
 
@@ -43,7 +44,7 @@ public class UserHomePageObj extends BasePage {
 	public UserCustomerInforPageObj clickToMyAccoutLink() {
 		waitForElementClickAble(driver, HomePageUI.MY_ACCOUNT_LINK);
 		clickToElementByXpath(driver, HomePageUI.MY_ACCOUNT_LINK);
-		return PageGeneratorManager.getMyAccountPage(driver);
+		return PageGeneratorManager.getUserMyAccountPage(driver);
 	}
 	
 	

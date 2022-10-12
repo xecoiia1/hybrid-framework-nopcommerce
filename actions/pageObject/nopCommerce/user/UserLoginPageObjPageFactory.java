@@ -7,8 +7,8 @@ import org.openqa.selenium.support.PageFactory;
 
 import common.BasePage;
 import common.BasePageFactory;
-import pageUI.LoginPageUI;
-import pageUI.RegisterPageUI;
+import pageUI.nopCommerce.user.LoginPageUI;
+import pageUI.nopCommerce.user.RegisterPageUI;
 
 import org.openqa.selenium.WebDriver;
 

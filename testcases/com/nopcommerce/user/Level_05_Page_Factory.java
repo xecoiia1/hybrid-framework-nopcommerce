@@ -6,7 +6,7 @@ import common.BaseTest;
 import pageObject.nopCommerce.user.UserHomePageObjPageFactory;
 import pageObject.nopCommerce.user.UserLoginPageObjPageFactory;
 import pageObject.nopCommerce.user.UserRegisterPageObjPageFactory;
-import pageUI.HomePageUI;
+import pageUI.nopCommerce.user.HomePageUI;
 
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;

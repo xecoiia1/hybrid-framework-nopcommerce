@@ -1,4 +1,4 @@
-package pageUI;
+package pageUI.nopCommerce.user;
 
 public class HomePageUI {
 	public static final String REGISTER_BTN = "//a[@class= 'ico-register']";

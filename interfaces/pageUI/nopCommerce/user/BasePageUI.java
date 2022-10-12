@@ -1,4 +1,4 @@
-package pageUI;
+package pageUI.nopCommerce.user;
 
 public class BasePageUI {
 	public static final String CUSTOMER_INFO_PAGE = "//div[@class='listbox']//a[text()='Customer info']";

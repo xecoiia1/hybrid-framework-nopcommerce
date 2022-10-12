@@ -4,8 +4,8 @@ import org.openqa.selenium.WebDriver;
 
 import common.BasePage;
 import common.PageGeneratorManager;
-import pageUI.LoginPageUI;
-import pageUI.RegisterPageUI;
+import pageUI.nopCommerce.user.LoginPageUI;
+import pageUI.nopCommerce.user.RegisterPageUI;
 
 import org.openqa.selenium.WebDriver;
 
@@ -24,7 +24,7 @@ public class UserLoginPageObj extends BasePage {
 	public UserHomePageObj clickToLoginBtn() {
 		waitForElementClickAble(driver, LoginPageUI.LOGIN_BTN);
 		clickToElementByXpath(driver, LoginPageUI.LOGIN_BTN);
-		return PageGeneratorManager.getHomePage(driver);
+		return PageGeneratorManager.getUserHomePage(driver);
 		
 	}
 
