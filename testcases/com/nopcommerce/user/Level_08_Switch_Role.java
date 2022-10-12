@@ -35,7 +35,7 @@ public class Level_08_Switch_Role extends BaseTest  {
   }
   
   @Test
-  public void Role_01_User() {
+  public void Role_01_User_To_Admin() {
 	  userLoginPage = userHomePage.clickToLoginLink();
 	  
 	  //Login as user role
@@ -43,16 +43,18 @@ public class Level_08_Switch_Role extends BaseTest  {
 	  	  
 	  Assert.assertTrue(userHomePage.myAccountIsDisplayed());
 	  Assert.assertTrue(userHomePage.logOutLinkIsDisplayed());
-  }
-  
-  @Test
-  public void Role_02_Admin() {	  
+	  
 	  userHomePage.openPageURL(driver, GlobalConstants.ADMIN_PAGE_URL);
 	  adminLoginPage = PageGeneratorManager.getAdminLoginPage(driver);
 	  
 	  adminDashboardPage = adminLoginPage.loginAsAdmin(adminEmail, adminPassword);
 	  
 	  Assert.assertTrue(adminDashboardPage.isDashBoardDisplayed());
+  }
+  
+  @Test
+  public void Role_02_Admin_To_User() {	  
+
 	  
 	  
   }  
