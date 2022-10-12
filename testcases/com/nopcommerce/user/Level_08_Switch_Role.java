@@ -10,6 +10,7 @@ import org.testng.annotations.Test;
 import common.BaseTest;
 import common.GlobalConstants;
 import common.PageGeneratorManager;
+import pageObject.nopCommerce.admin.AdminDashboardPageObj;
 import pageObject.nopCommerce.admin.AdminLoginPageObj;
 import pageObject.nopCommerce.user.UserAddressPageObj;
 import pageObject.nopCommerce.user.UserCustomerInforPageObj;
@@ -27,8 +28,10 @@ public class Level_08_Switch_Role extends BaseTest  {
 	driver = getBrowserDriver(browserName);
 	userHomePage = PageGeneratorManager.getUserHomePage(driver);
 	
-	email = "thanhnguyen@mail.com";
-	passWord = "123456";	
+	userEmail = "thanhnguyen@mail.com";
+	userPassword = "123456";
+	adminEmail = "admin@yourstore.com";
+	adminPassword = "admin";
   }
   
   @Test
@@ -36,7 +39,7 @@ public class Level_08_Switch_Role extends BaseTest  {
 	  userLoginPage = userHomePage.clickToLoginLink();
 	  
 	  //Login as user role
-	  userHomePage = userLoginPage.loginAsUser(email, passWord);
+	  userHomePage = userLoginPage.loginAsUser(userEmail, userPassword);
 	  	  
 	  Assert.assertTrue(userHomePage.myAccountIsDisplayed());
 	  Assert.assertTrue(userHomePage.logOutLinkIsDisplayed());
@@ -46,6 +49,8 @@ public class Level_08_Switch_Role extends BaseTest  {
   public void Role_02_Admin() {	  
 	  userHomePage.openPageURL(driver, GlobalConstants.ADMIN_PAGE_URL);
 	  adminLoginPage = PageGeneratorManager.getAdminLoginPage(driver);
+	  
+	  adminDashboardPage = adminLoginPage.loginAsAdmin(adminEmail, adminPassword);
 	  
 	  
   }  
@@ -61,5 +66,7 @@ public class Level_08_Switch_Role extends BaseTest  {
  private UserHomePageObj userHomePage;
  private UserLoginPageObj userLoginPage;
  private AdminLoginPageObj adminLoginPage;
- private String email, passWord;
+ private AdminDashboardPageObj adminDashboardPage;
+ private String userEmail, userPassword , adminEmail, adminPassword;
+ 
 }

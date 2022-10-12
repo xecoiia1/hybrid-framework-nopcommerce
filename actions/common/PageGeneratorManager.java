@@ -2,6 +2,7 @@ package common;
 
 import org.openqa.selenium.WebDriver;
 
+import pageObject.nopCommerce.admin.AdminDashboardPageObj;
 import pageObject.nopCommerce.admin.AdminLoginPageObj;
 import pageObject.nopCommerce.user.UserAddressPageObj;
 import pageObject.nopCommerce.user.UserCustomerInforPageObj;
@@ -49,6 +50,10 @@ public class PageGeneratorManager {
 	
 	public static AdminLoginPageObj getAdminLoginPage(WebDriver driver) {
 		return new AdminLoginPageObj(driver);
+	}
+	
+	public static AdminDashboardPageObj getAdminDashboardPage(WebDriver driver) {
+		return new AdminDashboardPageObj(driver);
 	}
 
 
