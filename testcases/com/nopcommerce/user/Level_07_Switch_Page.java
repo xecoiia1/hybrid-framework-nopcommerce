@@ -8,14 +8,14 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import common.BaseTest;
-import pageObject.AddressPageObj;
-import pageObject.CustomerInforPageObj;
-import pageObject.HomePageObj;
-import pageObject.LoginPageObj;
-import pageObject.MyProductReviewPageObj;
-import pageObject.PageGeneratorManager;
-import pageObject.RegisterPageObj;
-import pageObject.RewardPointPageObj;
+import pageObject.nopCommerce.portal.AddressPageObj;
+import pageObject.nopCommerce.portal.CustomerInforPageObj;
+import pageObject.nopCommerce.portal.HomePageObj;
+import pageObject.nopCommerce.portal.LoginPageObj;
+import pageObject.nopCommerce.portal.MyProductReviewPageObj;
+import pageObject.nopCommerce.portal.PageGeneratorManager;
+import pageObject.nopCommerce.portal.RegisterPageObj;
+import pageObject.nopCommerce.portal.RewardPointPageObj;
 
 public class Level_07_Switch_Page extends BaseTest  {
 

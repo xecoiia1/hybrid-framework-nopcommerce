@@ -20,11 +20,11 @@ import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import pageObject.AddressPageObj;
-import pageObject.CustomerInforPageObj;
-import pageObject.MyProductReviewPageObj;
-import pageObject.PageGeneratorManager;
-import pageObject.RewardPointPageObj;
+import pageObject.nopCommerce.portal.AddressPageObj;
+import pageObject.nopCommerce.portal.CustomerInforPageObj;
+import pageObject.nopCommerce.portal.MyProductReviewPageObj;
+import pageObject.nopCommerce.portal.PageGeneratorManager;
+import pageObject.nopCommerce.portal.RewardPointPageObj;
 import pageUI.BasePageUI;
 import pageUI.CustomerInforPageUI;
 

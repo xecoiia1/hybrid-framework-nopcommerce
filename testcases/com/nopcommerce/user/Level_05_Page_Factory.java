@@ -3,9 +3,9 @@ package com.nopcommerce.user;
 import org.testng.annotations.Test;
 
 import common.BaseTest;
-import pageObject.HomePageObjPageFactory;
-import pageObject.LoginPageObjPageFactory;
-import pageObject.RegisterPageObjPageFactory;
+import pageObject.nopCommerce.portal.HomePageObjPageFactory;
+import pageObject.nopCommerce.portal.LoginPageObjPageFactory;
+import pageObject.nopCommerce.portal.RegisterPageObjPageFactory;
 import pageUI.HomePageUI;
 
 import org.testng.annotations.BeforeClass;

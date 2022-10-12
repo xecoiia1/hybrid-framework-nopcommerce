@@ -1,4 +1,4 @@
-package pageObject;
+package pageObject.nopCommerce.portal;
 
 import common.BasePage;
 

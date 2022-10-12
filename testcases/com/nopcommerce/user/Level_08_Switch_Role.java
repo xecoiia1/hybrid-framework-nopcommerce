@@ -8,14 +8,15 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import common.BaseTest;
-import pageObject.AddressPageObj;
-import pageObject.CustomerInforPageObj;
-import pageObject.HomePageObj;
-import pageObject.LoginPageObj;
-import pageObject.MyProductReviewPageObj;
-import pageObject.PageGeneratorManager;
-import pageObject.RegisterPageObj;
-import pageObject.RewardPointPageObj;
+import common.GlobalConstants;
+import pageObject.nopCommerce.portal.AddressPageObj;
+import pageObject.nopCommerce.portal.CustomerInforPageObj;
+import pageObject.nopCommerce.portal.HomePageObj;
+import pageObject.nopCommerce.portal.LoginPageObj;
+import pageObject.nopCommerce.portal.MyProductReviewPageObj;
+import pageObject.nopCommerce.portal.PageGeneratorManager;
+import pageObject.nopCommerce.portal.RegisterPageObj;
+import pageObject.nopCommerce.portal.RewardPointPageObj;
 
 public class Level_08_Switch_Role extends BaseTest  {
 
@@ -33,24 +34,18 @@ public class Level_08_Switch_Role extends BaseTest  {
   public void Role_01_User() {
 	  loginPage = homePage.clickToLoginLink();
 	  
-	  System.out.println("Login_06 - Step 02: Input Not Found Email to Email Textbox");
-	  loginPage.inputEmail(email);
-	  
-	  System.out.println("Login_06 - Step 03: Input Password TextBox");
-	  loginPage.inputPassWordTextBox(passWord);
-	  
-	  System.out.println("Login_06 - Step 04: Click to Login Button");
-	  homePage = loginPage.clickToLoginBtn();
-	  
-	  System.out.println("Login_06 - Step 05: Verify Login Success");
-	  
+	  //Login as user role
+	  homePage = loginPage.loginAsUser(email, passWord);
+	  	  
 	  Assert.assertTrue(homePage.myAccountIsDisplayed());
 	  Assert.assertTrue(homePage.logOutLinkIsDisplayed());
   }
   
   @Test
   public void Role_02_Admin() {	  
-
+	  homePage.openPageURL(driver, GlobalConstants.ADMIN_PAGE_URL);
+	  
+	  
 	  
   }  
   @AfterClass

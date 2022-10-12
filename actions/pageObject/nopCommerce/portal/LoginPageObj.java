@@ -1,4 +1,4 @@
-package pageObject;
+package pageObject.nopCommerce.portal;
 
 import org.openqa.selenium.WebDriver;
 
@@ -58,6 +58,13 @@ public class LoginPageObj extends BasePage {
 	public void inputPassWordTextBox(String Password) {
 		waitForAllElementVisible(driver, LoginPageUI.PASSWORD_TEXTBOX);
 		sendkeysToElementByXpath(driver, LoginPageUI.PASSWORD_TEXTBOX, Password);
+		
+	}
+
+	public HomePageObj loginAsUser(String email, String password) {
+		inputEmail(email);
+		inputPassWordTextBox(password);
+		return clickToLoginBtn();
 		
 	}
 }

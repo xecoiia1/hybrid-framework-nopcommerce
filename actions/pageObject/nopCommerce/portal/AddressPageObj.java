@@ -1,4 +1,4 @@
-package pageObject;
+package pageObject.nopCommerce.portal;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -11,10 +11,11 @@ import pageUI.CustomerInforPageUI;
 
 import org.openqa.selenium.WebDriver;
 
-public class RewardPointPageObj extends BasePage {
+public class AddressPageObj extends BasePage {
 	private WebDriver driver;
 	
-	public RewardPointPageObj(WebDriver driver) {
+	public AddressPageObj(WebDriver driver) {
 		this.driver = driver ;
 	}
+		
 }
