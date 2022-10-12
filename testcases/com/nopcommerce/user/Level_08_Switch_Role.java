@@ -28,7 +28,7 @@ public class Level_08_Switch_Role extends BaseTest  {
 	driver = getBrowserDriver(browserName);
 	userHomePage = PageGeneratorManager.getUserHomePage(driver);
 	
-	userEmail = "thanhnguyen@mail.com";
+	userEmail = "thanhnguyen@gmail.com";
 	userPassword = "123456";
 	adminEmail = "admin@yourstore.com";
 	adminPassword = "admin";
@@ -51,6 +51,8 @@ public class Level_08_Switch_Role extends BaseTest  {
 	  adminLoginPage = PageGeneratorManager.getAdminLoginPage(driver);
 	  
 	  adminDashboardPage = adminLoginPage.loginAsAdmin(adminEmail, adminPassword);
+	  
+	  Assert.assertTrue(adminDashboardPage.isDashBoardDisplayed());
 	  
 	  
   }  
