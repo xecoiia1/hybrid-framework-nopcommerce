@@ -393,25 +393,25 @@ public class BasePage extends BasePageUI {
 	public UserMyProductReviewPageObj openMyProductReviewPage(WebDriver driver) {
 		waitForElementClickAble(driver, BasePageUI.MY_PRODUCT_REVIEWS_PAGE);
 		clickToElementByXpath(driver, BasePageUI.MY_PRODUCT_REVIEWS_PAGE);
-		return PageGeneratorManager.getMyProductReviewPage(driver);
+		return PageGeneratorManager.getUserMyProductReviewPage(driver);
 	}
 	
 	public UserRewardPointPageObj openRewardPage(WebDriver driver) {
 		waitForElementClickAble(driver, BasePageUI.REWARD_POINT_PAGE);
 		clickToElementByXpath(driver, BasePageUI.REWARD_POINT_PAGE);
-		return PageGeneratorManager.getRewardPage(driver);
+		return PageGeneratorManager.getUserRewardPage(driver);
 	}
 	
 	public UserAddressPageObj openAddressPage(WebDriver driver) {
 		waitForElementClickAble(driver, BasePageUI.ADDRESS_PAGE);
 		clickToElementByXpath(driver, BasePageUI.ADDRESS_PAGE);
-		return PageGeneratorManager.getAddressPage(driver);
+		return PageGeneratorManager.getUserAddressPage(driver);
 	}
 	
 	public UserCustomerInforPageObj openCustomerInforPage(WebDriver driver) {
 		waitForElementClickAble(driver, BasePageUI.CUSTOMER_INFO_PAGE);
 		clickToElementByXpath(driver, BasePageUI.CUSTOMER_INFO_PAGE);
-		return PageGeneratorManager.getCustomerInfor(driver);
+		return PageGeneratorManager.getUserCustomerInfor(driver);
 	}
 	
 	private long longTimeOut = 30;

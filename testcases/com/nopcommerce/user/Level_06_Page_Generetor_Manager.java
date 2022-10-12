@@ -36,7 +36,7 @@ public class Level_06_Page_Generetor_Manager extends BaseTest  {
 	notFoundEmail = "Blag@gmail.com";
 	passWord = "123456";
 	
-	homePage = PageGeneratorManager.getHomePage(driver);
+	homePage = PageGeneratorManager.getUserHomePage(driver);
 	
 	System.out.println("Precondition_01 - Step 01: Click to Register link");
 	registerPage = homePage.clickToRegisterLink();
