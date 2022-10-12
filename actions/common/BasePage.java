@@ -20,8 +20,16 @@ import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import pageObject.AddressPageObj;
+import pageObject.CustomerInforPageObj;
+import pageObject.MyProductReviewPageObj;
+import pageObject.PageGeneratorManager;
+import pageObject.RewardPointPageObj;
+import pageUI.BasePageUI;
+import pageUI.CustomerInforPageUI;
+
 //Common class
-public class BasePage {
+public class BasePage extends BasePageUI {
 	
 	// Che giấu đi việc khởi tạo của 1 đối tượng
 	public static BasePage getBasePageObj() {
@@ -381,6 +389,30 @@ public class BasePage {
 		WebDriverWait explixitWait = new WebDriverWait(driver, longTimeOut);
 		
 		explixitWait.until(ExpectedConditions.elementToBeClickable(getByXpath(xpathLocator)));
+	}
+	
+	public MyProductReviewPageObj openMyProductReviewPage(WebDriver driver) {
+		waitForElementClickAble(driver, BasePageUI.MY_PRODUCT_REVIEWS_PAGE);
+		clickToElementByXpath(driver, BasePageUI.MY_PRODUCT_REVIEWS_PAGE);
+		return PageGeneratorManager.getMyProductReviewPage(driver);
+	}
+	
+	public RewardPointPageObj openRewardPage(WebDriver driver) {
+		waitForElementClickAble(driver, BasePageUI.REWARD_POINT_PAGE);
+		clickToElementByXpath(driver, BasePageUI.REWARD_POINT_PAGE);
+		return PageGeneratorManager.getRewardPage(driver);
+	}
+	
+	public AddressPageObj openAddressPage(WebDriver driver) {
+		waitForElementClickAble(driver, BasePageUI.ADDRESS_PAGE);
+		clickToElementByXpath(driver, BasePageUI.ADDRESS_PAGE);
+		return PageGeneratorManager.getAddressPage(driver);
+	}
+	
+	public CustomerInforPageObj openCustomerInforPage(WebDriver driver) {
+		waitForElementClickAble(driver, BasePageUI.CUSTOMER_INFO_PAGE);
+		clickToElementByXpath(driver, BasePageUI.CUSTOMER_INFO_PAGE);
+		return PageGeneratorManager.getCustomerInfor(driver);
 	}
 	
 	private long longTimeOut = 30;

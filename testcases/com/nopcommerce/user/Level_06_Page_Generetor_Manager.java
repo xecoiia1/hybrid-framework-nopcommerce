@@ -156,9 +156,6 @@ public class Level_06_Page_Generetor_Manager extends BaseTest  {
 	  Assert.assertTrue(homePage.myAccountIsDisplayed());
 	  Assert.assertTrue(homePage.logOutLinkIsDisplayed());
 	  
-	  myAccountPage = homePage.clickToMyAccoutLink();
-	  
-	  myAccountPage.clickToNewLetter();
 	  
   }
 

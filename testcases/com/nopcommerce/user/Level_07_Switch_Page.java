@@ -1,25 +1,21 @@
 package com.nopcommerce.user;
 
+import org.openqa.selenium.WebDriver;
+import org.testng.Assert;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import common.BaseTest;
+import pageObject.AddressPageObj;
+import pageObject.CustomerInforPageObj;
 import pageObject.HomePageObj;
 import pageObject.LoginPageObj;
-import pageObject.CustomerInforPageObj;
+import pageObject.MyProductReviewPageObj;
 import pageObject.PageGeneratorManager;
 import pageObject.RegisterPageObj;
-import pageUI.HomePageUI;
-
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.Parameters;
-
-import java.util.Random;
-import java.util.concurrent.TimeUnit;
-
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
-import org.testng.Assert;
-import org.testng.annotations.AfterClass;
+import pageObject.RewardPointPageObj;
 
 // Sử dụng extend để kế thừa các hàm từ BasePage mà không cần khai báo
 public class Level_07_Switch_Page extends BaseTest  {
@@ -75,16 +71,27 @@ public class Level_07_Switch_Page extends BaseTest  {
 	  
 	  Assert.assertTrue(homePage.myAccountIsDisplayed());
 	  Assert.assertTrue(homePage.logOutLinkIsDisplayed());
+	  
   }
   
   @Test
   public void User_03_Customer_Infor() {
 	  customerInforPage = homePage.clickToMyAccoutLink();
+	  
+	  Assert.assertTrue(customerInforPage.isCustomerInforPageDisplayed());
   }
   
   @Test
   public void User_04_Switch_Page() {
-	 
+	  addressPage = customerInforPage.openAddressPage(driver);
+	  
+	  rewardPage = addressPage.openRewardPage(driver);
+	  
+	  myProductPage = rewardPage.openMyProductReviewPage(driver);
+	  
+	  customerInforPage = myProductPage.openCustomerInforPage(driver);
+	  
+	  rewardPage = customerInforPage.openRewardPage(driver);
   }
   
   @Test
@@ -105,6 +112,9 @@ public class Level_07_Switch_Page extends BaseTest  {
  private HomePageObj homePage;
  private RegisterPageObj registerPage;
  private LoginPageObj loginPage;
+ private AddressPageObj addressPage;
+ private RewardPointPageObj rewardPage;
+ private MyProductReviewPageObj myProductPage;
  private CustomerInforPageObj customerInforPage;
  private String firstName, lastName, email, passWord;
 }
