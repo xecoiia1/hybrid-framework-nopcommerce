@@ -17,7 +17,7 @@ import pageObject.PageGeneratorManager;
 import pageObject.RegisterPageObj;
 import pageObject.RewardPointPageObj;
 
-public class Level_07_Switch_Page extends BaseTest  {
+public class Level_08_Switch_Role extends BaseTest  {
 
 	@Parameters("browser")
 	@BeforeClass
