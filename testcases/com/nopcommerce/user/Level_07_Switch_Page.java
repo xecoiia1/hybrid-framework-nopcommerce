@@ -95,7 +95,7 @@ public class Level_07_Switch_Page extends BaseTest  {
   }
   
   @Test
-  public void User_05_Switch_Role  () {
+  public void User_05_Switch_Role() {
 	 
   }
 
