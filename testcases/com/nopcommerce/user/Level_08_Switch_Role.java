@@ -25,36 +25,12 @@ public class Level_08_Switch_Role extends BaseTest  {
 	driver = getBrowserDriver(browserName);
 	homePage = PageGeneratorManager.getHomePage(driver);
 	
-	firstName = "Thanh";
-	lastName = "Nguyen";
-	email = "abc" + generateRandom() + "@mail.com";
+	email = "thanhnguyen@mail.com";
 	passWord = "123456";	
   }
   
   @Test
-  public void User_01_Register() {
-		System.out.println("Precondition_01 - Step 01: Click to Register link");
-		registerPage = homePage.clickToRegisterLink();
-		  
-	    System.out.println("Precondition_01 - Step 02: Input Text to required field");
-		registerPage.inputToFirstnameTextBox(firstName);
-		registerPage.inputToLastnameTextBox(lastName);
-		registerPage.inputToEmailTextBox(email);
-		registerPage.inputToPasswordTextBox(passWord);
-		registerPage.inputToConfirmPasswordTextBox(passWord);
-		  
-		System.out.println("Precondition_01 - Step 03: Click to Register Button");
-		registerPage.clickToRegisterBtn();
-		  
-		System.out.println("Precondition_01 - Step 04: Verify Register Success Message");
-		Assert.assertEquals(registerPage.getSuccessRegisterSucces(), "Your registration completed");
-		
-		System.out.println("Precondition_01 - Step 05: Click to Logout Button");
-		homePage = registerPage.clickToLogoutBtn();
-  }
-  
-  @Test
-  public void User_02_Login() {	  
+  public void Role_01_User() {
 	  loginPage = homePage.clickToLoginLink();
 	  
 	  System.out.println("Login_06 - Step 02: Input Not Found Email to Email Textbox");
@@ -70,29 +46,13 @@ public class Level_08_Switch_Role extends BaseTest  {
 	  
 	  Assert.assertTrue(homePage.myAccountIsDisplayed());
 	  Assert.assertTrue(homePage.logOutLinkIsDisplayed());
-	  
   }
   
   @Test
-  public void User_03_Customer_Infor() {
-	  customerInforPage = homePage.clickToMyAccoutLink();
+  public void Role_02_Admin() {	  
+
 	  
-	  Assert.assertTrue(customerInforPage.isCustomerInforPageDisplayed());
-  }
-  
-  @Test
-  public void User_04_Switch_Page() {
-	  addressPage = customerInforPage.openAddressPage(driver);
-	  
-	  rewardPage = addressPage.openRewardPage(driver);
-	  
-	  myProductPage = rewardPage.openMyProductReviewPage(driver);
-	  
-	  customerInforPage = myProductPage.openCustomerInforPage(driver);
-	  
-	  rewardPage = customerInforPage.openRewardPage(driver);
-  }
-  
+  }  
   @AfterClass
   public void afterClass() {
 	  driver.quit();
@@ -103,11 +63,6 @@ public class Level_08_Switch_Role extends BaseTest  {
 //  element.textContent;
  private WebDriver driver;
  private HomePageObj homePage;
- private RegisterPageObj registerPage;
  private LoginPageObj loginPage;
- private AddressPageObj addressPage;
- private RewardPointPageObj rewardPage;
- private MyProductReviewPageObj myProductPage;
- private CustomerInforPageObj customerInforPage;
- private String firstName, lastName, email, passWord;
+ private String email, passWord;
 }
