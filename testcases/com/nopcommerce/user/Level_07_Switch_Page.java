@@ -17,7 +17,6 @@ import pageObject.PageGeneratorManager;
 import pageObject.RegisterPageObj;
 import pageObject.RewardPointPageObj;
 
-// Sử dụng extend để kế thừa các hàm từ BasePage mà không cần khai báo
 public class Level_07_Switch_Page extends BaseTest  {
 
 	@Parameters("browser")
