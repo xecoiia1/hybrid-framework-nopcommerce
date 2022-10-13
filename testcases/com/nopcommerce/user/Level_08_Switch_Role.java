@@ -44,19 +44,40 @@ public class Level_08_Switch_Role extends BaseTest  {
 	  Assert.assertTrue(userHomePage.myAccountIsDisplayed());
 	  Assert.assertTrue(userHomePage.logOutLinkIsDisplayed());
 	  
+	  //HomePage -> My Account Page
+	  userMyAccPage = userHomePage.clickToMyAccoutLink();
+	  
+	  //My Account -> HomePage
+	  userHomePage = userMyAccPage.clickToLogoutBtnUser(driver);
+	  
+	  //HomePage -> Open admin page -> Login Page(Admin)
 	  userHomePage.openPageURL(driver, GlobalConstants.ADMIN_PAGE_URL);
 	  adminLoginPage = PageGeneratorManager.getAdminLoginPage(driver);
 	  
+	  //Login as Admin role
 	  adminDashboardPage = adminLoginPage.loginAsAdmin(adminEmail, adminPassword);
 	  
 	  Assert.assertTrue(adminDashboardPage.isDashBoardDisplayed());
+	  
+	  //Dashboard Page -> click Logout -> Login Page(Admin)
+	  adminLoginPage = adminDashboardPage.clickToLogoutBtnAdmin(driver);
   }
   
   @Test
-  public void Role_02_Admin_To_User() {	  
-
+  public void Role_02_Admin_To_User() {	
+	  //LoginPage(Admin) -> HomePage(User)
+	  adminLoginPage.openPageURL(driver, GlobalConstants.PORTAL_PAGE_URL);
 	  
+	  userHomePage = PageGeneratorManager.getUserHomePage(driver);
 	  
+	  //HomePage(User) -> LoginPage(User)
+	  userLoginPage = userHomePage.clickToLoginLink();
+	  
+	  //Login as user role
+	  userHomePage = userLoginPage.loginAsUser(userEmail, userPassword);
+	  
+	  Assert.assertTrue(userHomePage.myAccountIsDisplayed());
+	  Assert.assertTrue(userHomePage.logOutLinkIsDisplayed());
   }  
   @AfterClass
   public void afterClass() {
@@ -69,6 +90,7 @@ public class Level_08_Switch_Role extends BaseTest  {
  private WebDriver driver;
  private UserHomePageObj userHomePage;
  private UserLoginPageObj userLoginPage;
+ private UserCustomerInforPageObj userMyAccPage;
  private AdminLoginPageObj adminLoginPage;
  private AdminDashboardPageObj adminDashboardPage;
  private String userEmail, userPassword , adminEmail, adminPassword;

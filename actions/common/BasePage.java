@@ -20,8 +20,10 @@ import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import pageObject.nopCommerce.admin.AdminLoginPageObj;
 import pageObject.nopCommerce.user.UserAddressPageObj;
 import pageObject.nopCommerce.user.UserCustomerInforPageObj;
+import pageObject.nopCommerce.user.UserHomePageObj;
 import pageObject.nopCommerce.user.UserMyProductReviewPageObj;
 import pageObject.nopCommerce.user.UserRewardPointPageObj;
 import pageUI.nopCommerce.user.BasePageUI;
@@ -412,6 +414,18 @@ public class BasePage extends BasePageUI {
 		waitForElementClickAble(driver, BasePageUI.CUSTOMER_INFO_PAGE);
 		clickToElementByXpath(driver, BasePageUI.CUSTOMER_INFO_PAGE);
 		return PageGeneratorManager.getUserCustomerInfor(driver);
+	}
+	
+	public UserHomePageObj clickToLogoutBtnUser(WebDriver driver) {
+		waitForElementClickAble(driver, BasePageUI.LOGOUT_BTN_USER);
+		clickToElementByXpath(driver, BasePageUI.LOGOUT_BTN_USER);
+		return PageGeneratorManager.getUserHomePage(driver);
+	}
+	
+	public AdminLoginPageObj clickToLogoutBtnAdmin(WebDriver driver) {
+		waitForElementClickAble(driver, BasePageUI.LOGOUT_BTN_ADMIN);
+		clickToElementByXpath(driver, BasePageUI.LOGOUT_BTN_ADMIN);
+		return PageGeneratorManager.getAdminLoginPage(driver);
 	}
 	
 	private long longTimeOut = 30;
