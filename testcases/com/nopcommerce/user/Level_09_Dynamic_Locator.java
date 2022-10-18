@@ -96,6 +96,16 @@ public class Level_09_Dynamic_Locator extends BaseTest  {
 	  
   }
   
+  @Test
+  public void User_04_Dynamic_Page_02() {	  
+	  customerInforPage.openPagesAtMyAccountByPageName(driver, "My product reviews");
+	  myProductPage = PageGeneratorManager.getUserMyProductReviewPage(driver);
+	  
+	  myProductPage.openPagesAtMyAccountByPageName(driver, "Reward points");
+	  rewardPage = PageGeneratorManager.getUserRewardPage(driver);
+	  
+  }
+  
   @AfterClass
   public void afterClass() {
 	  driver.quit();

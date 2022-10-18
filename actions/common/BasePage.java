@@ -534,6 +534,12 @@ public class BasePage extends BasePageUI {
 		}
 	}
 	
+	public void openPagesAtMyAccountByPageName(WebDriver driver, String pageName) {
+		waitForElementClickAble(driver, BasePageUI.DYNAMIC_MY_ACCOUNT_PAGE, pageName);
+		clickToElement(driver, BasePageUI.DYNAMIC_MY_ACCOUNT_PAGE, pageName);
+
+	}
+	
 	private long longTimeOut = 30;
 	
 	private long shortTimeOut = 5;
