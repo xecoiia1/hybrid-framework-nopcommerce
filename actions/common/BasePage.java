@@ -474,6 +474,7 @@ public class BasePage extends BasePageUI {
 		explixitWait.until(ExpectedConditions.elementToBeClickable(getByLocator(getDynamicXpath(locatorType, dynamicValues))));
 	}
 	
+	//Tối ưu ở Level 07_Switch_Page
 	public UserMyProductReviewPageObj openMyProductReviewPage(WebDriver driver) {
 		waitForElementClickAble(driver, BasePageUI.MY_PRODUCT_REVIEWS_PAGE);
 		clickToElementByXpath(driver, BasePageUI.MY_PRODUCT_REVIEWS_PAGE);
@@ -498,6 +499,7 @@ public class BasePage extends BasePageUI {
 		return PageGeneratorManager.getUserCustomerInfor(driver);
 	}
 	
+	//Tối ưu ở Level 08_Switch_Role
 	public UserHomePageObj clickToLogoutBtnUser(WebDriver driver) {
 		waitForElementClickAble(driver, BasePageUI.LOGOUT_BTN_USER);
 		clickToElementByXpath(driver, BasePageUI.LOGOUT_BTN_USER);
@@ -505,9 +507,28 @@ public class BasePage extends BasePageUI {
 	}
 	
 	public AdminLoginPageObj clickToLogoutBtnAdmin(WebDriver driver) {
+
 		waitForElementClickAble(driver, BasePageUI.LOGOUT_BTN_ADMIN);
 		clickToElementByXpath(driver, BasePageUI.LOGOUT_BTN_ADMIN);
 		return PageGeneratorManager.getAdminLoginPage(driver);
+	}
+	
+	//Tối ưu ở Level 09_Dynamic_Locator
+	public BasePage openPagesAtMyAccountByName(WebDriver driver, String pageName) {
+		waitForElementClickAble(driver, BasePageUI.DYNAMIC_MY_ACCOUNT_PAGE, pageName);
+		clickToElement(driver, BasePageUI.DYNAMIC_MY_ACCOUNT_PAGE, pageName);
+		switch (pageName) {
+		case "Customer info": 
+			return PageGeneratorManager.getUserCustomerInfor(driver);
+		case "Addresses": 
+			return PageGeneratorManager.getUserAddressPage(driver);
+		case "Reward points": 
+			return PageGeneratorManager.getUserRewardPage(driver);
+		case "My product reviews": 
+			return PageGeneratorManager.getUserMyProductReviewPage(driver);
+		default:
+			throw new RuntimeException("Invalid PageName at My Account area");
+		}
 	}
 	
 	private long longTimeOut = 30;
