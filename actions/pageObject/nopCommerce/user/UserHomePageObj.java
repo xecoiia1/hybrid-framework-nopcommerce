@@ -19,6 +19,7 @@ public class UserHomePageObj extends BasePage {
 	}
 	
 	public UserRegisterPageObj clickToRegisterLink(){
+		System.out.println(HomePageUI.REGISTER_BTN);
 		waitForElementClickAble(driver, HomePageUI.REGISTER_BTN);
 		clickToElementByXpath(driver, HomePageUI.REGISTER_BTN);
 		return PageGeneratorManager.getUserRegisterPage(driver);

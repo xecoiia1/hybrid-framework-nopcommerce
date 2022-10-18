@@ -2,17 +2,17 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [NopCommerce]">
   <test thread-count="5" name="Run on Firefox(failed)">
-    <parameter name="browser" value="firefox"/>
+    <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="com.nopcommerce.user.Level_07_Switch_Page">
+      <class name="com.nopcommerce.user.Level_09_Dynamic_Locator">
         <methods>
-          <include name="User_02_Login"/>
-          <include name="User_01_Register"/>
-          <include name="User_03_My_Account"/>
+          <include name="User_01_Register_Login"/>
+          <include name="User_03_Dynamic_Page_01"/>
+          <include name="User_02_Switch_Page"/>
           <include name="afterClass"/>
           <include name="beforeClass"/>
         </methods>
-      </class> <!-- com.nopcommerce.user.Level_07_Switch_Page -->
+      </class> <!-- com.nopcommerce.user.Level_09_Dynamic_Locator -->
     </classes>
   </test> <!-- Run on Firefox(failed) -->
 </suite> <!-- Failed suite [NopCommerce] -->

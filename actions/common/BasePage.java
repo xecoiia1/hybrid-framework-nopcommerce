@@ -28,6 +28,7 @@ import pageObject.nopCommerce.user.UserMyProductReviewPageObj;
 import pageObject.nopCommerce.user.UserRewardPointPageObj;
 import pageUI.nopCommerce.user.BasePageUI;
 import pageUI.nopCommerce.user.CustomerInforPageUI;
+import pageUI.nopCommerce.user.HomePageUI;
 
 //Common class
 public class BasePage extends BasePageUI {
@@ -148,13 +149,13 @@ public class BasePage extends BasePageUI {
 		if (locatorType.startsWith("id=")||locatorType.startsWith("ID=")||locatorType.startsWith("Id=")) {
 			 by = by.id(locatorType.substring(3));
 		}else if(locatorType.startsWith("class=")||locatorType.startsWith("CLASS=")||locatorType.startsWith("Class=")) {
-			by = by.id(locatorType.substring(6));
+			by = by.className(locatorType.substring(6));
 		}else if(locatorType.startsWith("name=")||locatorType.startsWith("NAME=")||locatorType.startsWith("Name=")){
-			by = by.id(locatorType.substring(5));
+			by = by.name(locatorType.substring(5));
 		}else if(locatorType.startsWith("css=")||locatorType.startsWith("CSS=")||locatorType.startsWith("Css=")) {
-			by = by.id(locatorType.substring(4));
+			by = by.cssSelector(locatorType.substring(4));
 		}else if(locatorType.startsWith("xpath=")||locatorType.startsWith("XPATH=")||locatorType.startsWith("Xpath=")) {
-			by = by.id(locatorType.substring(6));
+			by = by.xpath(locatorType.substring(6));
 		}else {
 			throw new RuntimeException("Locator is not supported");
 		}
@@ -466,6 +467,8 @@ public class BasePage extends BasePageUI {
 		WebDriverWait explixitWait = new WebDriverWait(driver, longTimeOut);
 		
 		explixitWait.until(ExpectedConditions.elementToBeClickable(getByLocator(locatorType)));
+		
+		System.out.println(locatorType);
 	}
 	
 	public void waitForElementClickAble(WebDriver driver, String locatorType, String...dynamicValues) {
