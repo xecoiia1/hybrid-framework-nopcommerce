@@ -2,7 +2,7 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [NopCommerce]">
   <test thread-count="5" name="Run on Firefox(failed)">
-    <parameter name="browser" value="chrome"/>
+    <parameter name="browser" value="firefox"/>
     <classes>
       <class name="com.nopcommerce.user.Level_09_Dynamic_Locator">
         <methods>

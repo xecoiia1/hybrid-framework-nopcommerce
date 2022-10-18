@@ -147,15 +147,15 @@ public class BasePage extends BasePageUI {
 	private By getByLocator(String locatorType) {
 		By by = null;
 		if (locatorType.startsWith("id=")||locatorType.startsWith("ID=")||locatorType.startsWith("Id=")) {
-			 by = by.id(locatorType.substring(3));
+			 by = By.id(locatorType.substring(3));
 		}else if(locatorType.startsWith("class=")||locatorType.startsWith("CLASS=")||locatorType.startsWith("Class=")) {
-			by = by.className(locatorType.substring(6));
+			by = By.className(locatorType.substring(6));
 		}else if(locatorType.startsWith("name=")||locatorType.startsWith("NAME=")||locatorType.startsWith("Name=")){
-			by = by.name(locatorType.substring(5));
+			by = By.name(locatorType.substring(5));
 		}else if(locatorType.startsWith("css=")||locatorType.startsWith("CSS=")||locatorType.startsWith("Css=")) {
-			by = by.cssSelector(locatorType.substring(4));
+			by = By.cssSelector(locatorType.substring(4));
 		}else if(locatorType.startsWith("xpath=")||locatorType.startsWith("XPATH=")||locatorType.startsWith("Xpath=")) {
-			by = by.xpath(locatorType.substring(6));
+			by = By.xpath(locatorType.substring(6));
 		}else {
 			throw new RuntimeException("Locator is not supported");
 		}

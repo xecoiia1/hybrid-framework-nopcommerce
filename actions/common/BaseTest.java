@@ -60,6 +60,7 @@ public class BaseTest {
 		}
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		driver.get("https://demo.nopcommerce.com/");
+		driver.manage().window().maximize();
 		return driver;
 	}
 
