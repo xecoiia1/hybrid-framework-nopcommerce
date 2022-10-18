@@ -32,56 +32,49 @@ public class Level_09_Dynamic_Locator extends BaseTest  {
   }
   
   @Test
-  public void User_01_Register() {
-		System.out.println("Precondition_01 - Step 01: Click to Register link");
+  public void User_01_Register_Login() {
+		System.out.println("Register_Login_01 - Step 01: Click to Register link");
 		registerPage = homePage.clickToRegisterLink();
 		  
-	    System.out.println("Precondition_01 - Step 02: Input Text to required field");
+	    System.out.println("Register_Login_01 - Step 02: Input Text to required field");
 		registerPage.inputToFirstnameTextBox(firstName);
 		registerPage.inputToLastnameTextBox(lastName);
 		registerPage.inputToEmailTextBox(email);
 		registerPage.inputToPasswordTextBox(passWord);
 		registerPage.inputToConfirmPasswordTextBox(passWord);
 		  
-		System.out.println("Precondition_01 - Step 03: Click to Register Button");
+		System.out.println("Register_Login_01 - Step 03: Click to Register Button");
 		registerPage.clickToRegisterBtn();
 		  
-		System.out.println("Precondition_01 - Step 04: Verify Register Success Message");
+		System.out.println("Register_Login_01 - Step 04: Verify Register Success Message");
 		Assert.assertEquals(registerPage.getSuccessRegisterSucces(), "Your registration completed");
 		
-		System.out.println("Precondition_01 - Step 05: Click to Logout Button");
+		System.out.println("Register_Login_01 - Step 05: Click to Logout Button");
 		homePage = registerPage.clickToLogoutBtn();
+		
+		loginPage = homePage.clickToLoginLink();
+		  
+		System.out.println("Register_Login_01 - Step 06: Input Not Found Email to Email Textbox");
+		loginPage.inputEmail(email);
+		  
+		System.out.println("Register_Login_01 - Step 08: Input Password TextBox");
+		loginPage.inputPassWordTextBox(passWord);
+		  
+		System.out.println("Register_Login_01 - Step 09: Click to Login Button");
+		homePage = loginPage.clickToLoginBtn();
+		  
+		System.out.println("Register_Login_01 - Step 09: Verify Login Success");
+		  
+		Assert.assertTrue(homePage.myAccountIsDisplayed());
+		Assert.assertTrue(homePage.logOutLinkIsDisplayed());
+		  
+		customerInforPage = homePage.clickToMyAccoutLink();
+		  
+		Assert.assertTrue(customerInforPage.isCustomerInforPageDisplayed());
   }
-  
+    
   @Test
-  public void User_02_Login() {	  
-	  loginPage = homePage.clickToLoginLink();
-	  
-	  System.out.println("Login_06 - Step 02: Input Not Found Email to Email Textbox");
-	  loginPage.inputEmail(email);
-	  
-	  System.out.println("Login_06 - Step 03: Input Password TextBox");
-	  loginPage.inputPassWordTextBox(passWord);
-	  
-	  System.out.println("Login_06 - Step 04: Click to Login Button");
-	  homePage = loginPage.clickToLoginBtn();
-	  
-	  System.out.println("Login_06 - Step 05: Verify Login Success");
-	  
-	  Assert.assertTrue(homePage.myAccountIsDisplayed());
-	  Assert.assertTrue(homePage.logOutLinkIsDisplayed());
-	  
-  }
-  
-  @Test
-  public void User_03_Customer_Infor() {
-	  customerInforPage = homePage.clickToMyAccoutLink();
-	  
-	  Assert.assertTrue(customerInforPage.isCustomerInforPageDisplayed());
-  }
-  
-  @Test
-  public void User_04_Switch_Page() {
+  public void User_02_Switch_Page() {
 	  addressPage = customerInforPage.openAddressPage(driver);
 	  
 	  rewardPage = addressPage.openRewardPage(driver);
