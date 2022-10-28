@@ -1,6 +1,6 @@
 package exception;
 
-public class BrowserNotSupport extends Exception {
+public class BrowserNotSupport extends IllegalArgumentException {
 
 	private static final long serialVersionUID = 1L;
 	
