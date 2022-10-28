@@ -11,11 +11,12 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 
+import exception.BrowserNotSupport;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class BaseTest {
 	private WebDriver driver;
-	protected WebDriver getBrowserDriver(String browserName) {
+	protected WebDriver getBrowserDriver(String browserName) throws BrowserNotSupport {
 		if(browserName.equals("firefox")) {
 			WebDriverManager.firefoxdriver().setup();
 			driver = new FirefoxDriver();
@@ -49,6 +50,7 @@ public class BaseTest {
 			driver = new EdgeDriver();
 		
 		}else if(browserName.equals("coccoc")) {
+			//Cốc cốc driver sẽ dùng chrome driver nhưng là trừ đi 5 -6 version
 			WebDriverManager.chromedriver().driverVersion("").setup();
 			ChromeOptions options = new ChromeOptions();
 			// Add file path của Cốc Cốc Browser vào
@@ -56,7 +58,7 @@ public class BaseTest {
 			driver = new ChromeDriver(options);
 		
 		}else {
-			throw new RuntimeException("Browser Name Invalid");
+			throw new BrowserNotSupport(browserName);
 		}
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		driver.get("https://demo.nopcommerce.com/");
