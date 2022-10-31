@@ -540,9 +540,9 @@ public class BasePage extends BasePageUI {
 
 	}
 	
-	private long longTimeOut = 30;
+	private long longTimeOut = GlobalConstants.LONG_TIMEOUT;
 	
-	private long shortTimeOut = 5;
+	private long shortTimeOut = GlobalConstants.SHORT_TIMEOUT;
 
 
 
