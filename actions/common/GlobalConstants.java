@@ -9,4 +9,7 @@ public class GlobalConstants {
 	
 	//Tạo đường dẫn cho cả Window/Linux/Mac
 	public static final String UPLOAD_FOLDER = PROJECT_PATH + File.separator + "";
+	public static final String DOWNLOAD_FOLDER = PROJECT_PATH + File.separator + "";
+	public static final String BROWSER_LOG = PROJECT_PATH + File.separator + "browserLogs";
+	public static final String DRAG_DROP_HTML = PROJECT_PATH + File.separator + "";
 }
