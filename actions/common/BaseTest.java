@@ -16,6 +16,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class BaseTest {
 	private WebDriver driver;
+	
 	protected WebDriver getBrowserDriver(String browserName) {
 		if(browserName.equals("firefox")) {
 			WebDriverManager.firefoxdriver().setup();
@@ -54,18 +55,22 @@ public class BaseTest {
 			WebDriverManager.chromedriver().driverVersion("").setup();
 			ChromeOptions options = new ChromeOptions();
 			// Add file path của Cốc Cốc Browser vào
-			options.setBinary("");
+			if(GlobalConstants.OS_NAME.startsWith("Windows")) {
+				options.setBinary("");
+			}else {
+				options.setBinary(".....");
+			}
 			driver = new ChromeDriver(options);
 		
 		}else {
 			throw new BrowserNotSupport(browserName);
 		}
-		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-		driver.get("https://demo.nopcommerce.com/");
+		driver.manage().timeouts().implicitlyWait(GlobalConstants.LONG_TIMEOUT, TimeUnit.SECONDS);
+		driver.get(GlobalConstants.PORTAL_PAGE_URL);
 		driver.manage().window().maximize();
 		return driver;
 	}
-
+	
 	  public int generateRandom() {
 		  Random rand = new Random();
 		  return rand.nextInt(9999);
