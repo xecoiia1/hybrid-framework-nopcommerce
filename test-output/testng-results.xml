@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-11-01T08:50:06Z" name="NopCommerce" finished-at="2022-11-01T08:50:17Z" duration-ms="11474">
+  <suite started-at="2022-11-01T09:45:27Z" name="NopCommerce" finished-at="2022-11-01T09:45:39Z" duration-ms="12458">
     <groups>
     </groups>
-    <test started-at="2022-11-01T08:50:06Z" name="Run on Firefox" finished-at="2022-11-01T08:50:17Z" duration-ms="11474">
+    <test started-at="2022-11-01T09:45:27Z" name="Run on Firefox" finished-at="2022-11-01T09:45:39Z" duration-ms="12458">
       <class name="com.jquery.datatable.Level_10_DataTable_DataGrid">
-        <test-method is-config="true" signature="beforeClass(java.lang.String, java.lang.String)[pri:0, instance:com.jquery.datatable.Level_10_DataTable_DataGrid@bccb269]" started-at="2022-11-01T08:50:06Z" name="beforeClass" finished-at="2022-11-01T08:50:15Z" duration-ms="9173" status="PASS">
+        <test-method is-config="true" signature="beforeClass(java.lang.String, java.lang.String)[pri:0, instance:com.jquery.datatable.Level_10_DataTable_DataGrid@bccb269]" started-at="2022-11-01T09:45:27Z" name="beforeClass" finished-at="2022-11-01T09:45:37Z" duration-ms="10099" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -23,15 +23,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method signature="Table_01_Paging()[pri:0, instance:com.jquery.datatable.Level_10_DataTable_DataGrid@bccb269]" started-at="2022-11-01T08:50:15Z" name="Table_01_Paging" finished-at="2022-11-01T08:50:17Z" duration-ms="1497" status="PASS">
+        <test-method signature="Table_01_Paging()[pri:0, instance:com.jquery.datatable.Level_10_DataTable_DataGrid@bccb269]" started-at="2022-11-01T09:45:37Z" name="Table_01_Paging" finished-at="2022-11-01T09:45:38Z" duration-ms="1205" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Table_01_Paging -->
-        <test-method signature="Table_02()[pri:0, instance:com.jquery.datatable.Level_10_DataTable_DataGrid@bccb269]" started-at="2022-11-01T08:50:17Z" name="Table_02" finished-at="2022-11-01T08:50:17Z" duration-ms="1" status="PASS">
+        <test-method signature="Table_02_Enter_Header_Textbox()[pri:0, instance:com.jquery.datatable.Level_10_DataTable_DataGrid@bccb269]" started-at="2022-11-01T09:45:38Z" name="Table_02_Enter_Header_Textbox" finished-at="2022-11-01T09:45:38Z" duration-ms="344" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Table_02 -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.jquery.datatable.Level_10_DataTable_DataGrid@bccb269]" started-at="2022-11-01T08:50:17Z" name="afterClass" finished-at="2022-11-01T08:50:17Z" duration-ms="787" status="PASS">
+        </test-method> <!-- Table_02_Enter_Header_Textbox -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.jquery.datatable.Level_10_DataTable_DataGrid@bccb269]" started-at="2022-11-01T09:45:38Z" name="afterClass" finished-at="2022-11-01T09:45:39Z" duration-ms="786" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
