@@ -10,6 +10,7 @@ import javax.swing.Action;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -31,7 +32,7 @@ import pageUI.nopCommerce.user.CustomerInforPageUI;
 import pageUI.nopCommerce.user.HomePageUI;
 
 //Common class
-public class BasePageJquery extends BasePageUI {
+public class BasePageJquery {
 	
 	// Che giấu đi việc khởi tạo của 1 đối tượng
 	public static BasePageJquery getBasePageObj() {
@@ -316,6 +317,16 @@ public class BasePageJquery extends BasePageUI {
 	public void hoverMouseToElement(WebDriver driver, String locatorType) {
 		Actions action =new Actions(driver);
 		action.moveToElement(getElementByXpath(driver, locatorType)).perform();
+	}
+	
+	public void pressKeyToElement(WebDriver driver, String locatorType, Keys key) {
+		Actions action =new Actions(driver);
+		action.sendKeys(getElementByXpath(driver, locatorType), key).perform();
+	}
+	
+	public void pressKeyToElement(WebDriver driver, String locatorType, Keys key, String...dynamicValues) {
+		Actions action =new Actions(driver);
+		action.sendKeys(getElementByXpath(driver, getDynamicXpath(locatorType, dynamicValues)), key).perform();
 	}
 	
 	//Add các hàm của JavaExecutor

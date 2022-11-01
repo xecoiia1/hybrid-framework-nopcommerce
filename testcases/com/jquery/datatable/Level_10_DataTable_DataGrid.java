@@ -1,5 +1,7 @@
 package com.jquery.datatable;
 
+import static org.testng.Assert.assertTrue;
+
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
@@ -34,20 +36,26 @@ public class Level_10_DataTable_DataGrid extends BaseTestJquery  {
   @Test
   public void Table_01_Paging() {
 		homePage.openPagingPageByPageNumber("10");
+		Assert.assertTrue(homePage.isPageNumberActived("10"));
 		
 		homePage.openPagingPageByPageNumber("15");
+		Assert.assertTrue(homePage.isPageNumberActived("15"));
 		
 		homePage.openPagingPageByPageNumber("18");
+		Assert.assertTrue(homePage.isPageNumberActived("18"));
 		
 		homePage.openPagingPageByPageNumber("19");
+		Assert.assertTrue(homePage.isPageNumberActived("19"));
   }
     
   @Test
   public void Table_02_Enter_Header_Textbox() {
+	  	homePage.refreshPage(driver);
 	  	homePage.enterToHeaderTextboxByLabel("Country", "Argentina");
 	  	homePage.enterToHeaderTextboxByLabel("Females", "338282");
 	  	homePage.enterToHeaderTextboxByLabel("Males", "349238");
 	  	homePage.enterToHeaderTextboxByLabel("Total", "687522");
+	  	homePage.sleepInSecond(3);
   }
   
   @AfterClass
