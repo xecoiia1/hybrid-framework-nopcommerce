@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [NopCommerce]">
+  <parameter name="url" value="https://www.jqueryscript.net/demo/CRUD-Data-Grid-Plugin-jQuery-Quickgrid/"/>
   <test thread-count="5" name="Run on Firefox(failed)">
     <parameter name="browser" value="firefox"/>
     <classes>
-      <class name="com.nopcommerce.user.Level_09_Dynamic_Locator">
+      <class name="com.jquery.datatable.Level_10_DataTable_DataGrid">
         <methods>
-          <include name="User_01_Register_Login"/>
-          <include name="User_03_Dynamic_Page_01"/>
-          <include name="User_02_Switch_Page"/>
+          <include name="Table_01_Paging"/>
           <include name="afterClass"/>
+          <include name="Table_02_Enter_Header_Textbox"/>
           <include name="beforeClass"/>
         </methods>
-      </class> <!-- com.nopcommerce.user.Level_09_Dynamic_Locator -->
+      </class> <!-- com.jquery.datatable.Level_10_DataTable_DataGrid -->
     </classes>
   </test> <!-- Run on Firefox(failed) -->
 </suite> <!-- Failed suite [NopCommerce] -->
