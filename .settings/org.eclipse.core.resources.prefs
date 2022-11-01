@@ -2,10 +2,19 @@ eclipse.preferences.version=1
 encoding//actions/common/BasePage.java=UTF-8
 encoding//actions/common/BasePageFactory.java=UTF-8
 encoding//actions/common/BaseTest.java=UTF-8
+encoding//actions/common/GlobalConstants.java=UTF-8
+encoding//actions/commonJquery/BasePageJquery.java=UTF-8
+encoding//actions/commonJquery/BaseTestJquery.java=UTF-8
+encoding//actions/commonJquery/GlobalConstants.java=UTF-8
 encoding//javaTester/javaBasic/Topic_07_Array.java=UTF-8
 encoding//javaTester/javaBasic/Topic_08_String.java=UTF-8
 encoding//javaTester/javaBasic/Topic_09_String_Format.java=UTF-8
+<<<<<<< HEAD
 encoding//javaTester/javaOOP/Topic_01_Non_Access_Modifier.java=UTF-8
+=======
+encoding//javaTester/javaBasic/Topic_10_Obj_Class.java=UTF-8
+encoding//testcases/com/jquery/datatable/Level_10_DataTable_DataGrid.java=UTF-8
+>>>>>>> branch 'master' of https://github.com/xecoiia1/hybrid-framework-nopcommerce.git
 encoding//testcases/com/nopcommerce/user/Level_02_User_01_Register_Login_Use_BaseTest_II.java=UTF-8
 encoding//testcases/com/nopcommerce/user/Level_02_User_01_Register_Login_Use_BaseTest_III.java=UTF-8
 encoding//testcases/com/nopcommerce/user/Level_03_User_01_Register_Use_Page_Obj.java=UTF-8

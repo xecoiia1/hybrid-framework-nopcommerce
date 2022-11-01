@@ -9,6 +9,7 @@ import org.testng.annotations.Test;
 
 import common.BaseTest;
 import common.PageGeneratorManager;
+import exception.BrowserNotSupport;
 import pageObject.nopCommerce.user.UserAddressPageObj;
 import pageObject.nopCommerce.user.UserCustomerInforPageObj;
 import pageObject.nopCommerce.user.UserHomePageObj;
@@ -21,7 +22,7 @@ public class Level_07_Switch_Page extends BaseTest  {
 
 	@Parameters("browser")
 	@BeforeClass
-	public void beforeClass(String browserName) {
+	public void beforeClass(String browserName) throws BrowserNotSupport {
 	driver = getBrowserDriver(browserName);
 	homePage = PageGeneratorManager.getUserHomePage(driver);
 	

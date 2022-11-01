@@ -4,6 +4,7 @@ import org.testng.annotations.Test;
 
 import common.BaseTest;
 import common.PageGeneratorManager;
+import exception.BrowserNotSupport;
 import pageObject.nopCommerce.user.UserCustomerInforPageObj;
 import pageObject.nopCommerce.user.UserHomePageObj;
 import pageObject.nopCommerce.user.UserLoginPageObj;
@@ -26,7 +27,7 @@ public class Level_06_Page_Generetor_Manager extends BaseTest  {
 
 	@Parameters("browser")
 	@BeforeClass
-	public void beforeClass(String browserName) {
+	public void beforeClass(String browserName) throws BrowserNotSupport {
 	driver = getBrowserDriver(browserName);
 	
 	firstName = "Thanh";

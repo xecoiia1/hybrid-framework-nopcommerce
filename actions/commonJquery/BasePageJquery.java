@@ -1,4 +1,4 @@
-package common;
+package commonJquery;
 
 import java.awt.event.ActionEvent;
 import java.beans.PropertyChangeListener;
@@ -31,11 +31,11 @@ import pageUI.nopCommerce.user.CustomerInforPageUI;
 import pageUI.nopCommerce.user.HomePageUI;
 
 //Common class
-public class BasePage extends BasePageUI {
+public class BasePageJquery extends BasePageUI {
 	
 	// Che giấu đi việc khởi tạo của 1 đối tượng
-	public static BasePage getBasePageObj() {
-		return new BasePage();
+	public static BasePageJquery getBasePageObj() {
+		return new BasePageJquery();
 	}
 	
 	// Hàm này mở 1 URL
@@ -478,61 +478,6 @@ public class BasePage extends BasePageUI {
 	}
 	
 	//Tối ưu ở Level 07_Switch_Page
-	public UserMyProductReviewPageObj openMyProductReviewPage(WebDriver driver) {
-		waitForElementClickAble(driver, BasePageUI.MY_PRODUCT_REVIEWS_PAGE);
-		clickToElementByXpath(driver, BasePageUI.MY_PRODUCT_REVIEWS_PAGE);
-		return PageGeneratorManager.getUserMyProductReviewPage(driver);
-	}
-	
-	public UserRewardPointPageObj openRewardPage(WebDriver driver) {
-		waitForElementClickAble(driver, BasePageUI.REWARD_POINT_PAGE);
-		clickToElementByXpath(driver, BasePageUI.REWARD_POINT_PAGE);
-		return PageGeneratorManager.getUserRewardPage(driver);
-	}
-	
-	public UserAddressPageObj openAddressPage(WebDriver driver) {
-		waitForElementClickAble(driver, BasePageUI.ADDRESS_PAGE);
-		clickToElementByXpath(driver, BasePageUI.ADDRESS_PAGE);
-		return PageGeneratorManager.getUserAddressPage(driver);
-	}
-	
-	public UserCustomerInforPageObj openCustomerInforPage(WebDriver driver) {
-		waitForElementClickAble(driver, BasePageUI.CUSTOMER_INFO_PAGE);
-		clickToElementByXpath(driver, BasePageUI.CUSTOMER_INFO_PAGE);
-		return PageGeneratorManager.getUserCustomerInfor(driver);
-	}
-	
-	//Tối ưu ở Level 08_Switch_Role
-	public UserHomePageObj clickToLogoutBtnUser(WebDriver driver) {
-		waitForElementClickAble(driver, BasePageUI.LOGOUT_BTN_USER);
-		clickToElementByXpath(driver, BasePageUI.LOGOUT_BTN_USER);
-		return PageGeneratorManager.getUserHomePage(driver);
-	}
-	
-	public AdminLoginPageObj clickToLogoutBtnAdmin(WebDriver driver) {
-
-		waitForElementClickAble(driver, BasePageUI.LOGOUT_BTN_ADMIN);
-		clickToElementByXpath(driver, BasePageUI.LOGOUT_BTN_ADMIN);
-		return PageGeneratorManager.getAdminLoginPage(driver);
-	}
-	
-	//Tối ưu ở Level 09_Dynamic_Locator
-	public BasePage openPagesAtMyAccountByName(WebDriver driver, String pageName) {
-		waitForElementClickAble(driver, BasePageUI.DYNAMIC_MY_ACCOUNT_PAGE, pageName);
-		clickToElement(driver, BasePageUI.DYNAMIC_MY_ACCOUNT_PAGE, pageName);
-		switch (pageName) {
-		case "Customer info": 
-			return PageGeneratorManager.getUserCustomerInfor(driver);
-		case "Addresses": 
-			return PageGeneratorManager.getUserAddressPage(driver);
-		case "Reward points": 
-			return PageGeneratorManager.getUserRewardPage(driver);
-		case "My product reviews": 
-			return PageGeneratorManager.getUserMyProductReviewPage(driver);
-		default:
-			throw new RuntimeException("Invalid PageName at My Account area");
-		}
-	}
 	
 	public void openPagesAtMyAccountByPageName(WebDriver driver, String pageName) {
 		waitForElementClickAble(driver, BasePageUI.DYNAMIC_MY_ACCOUNT_PAGE, pageName);

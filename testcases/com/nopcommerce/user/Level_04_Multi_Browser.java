@@ -3,6 +3,7 @@ package com.nopcommerce.user;
 import org.testng.annotations.Test;
 
 import common.BaseTest;
+import exception.BrowserNotSupport;
 import pageObject.nopCommerce.user.UserHomePageObj;
 import pageObject.nopCommerce.user.UserLoginPageObj;
 import pageObject.nopCommerce.user.UserRegisterPageObj;
@@ -25,7 +26,7 @@ public class Level_04_Multi_Browser extends BaseTest  {
   
   @Parameters("browser")
   @BeforeClass
-  public void beforeClass(String browserName) {
+  public void beforeClass(String browserName) throws BrowserNotSupport {
 	driver = getBrowserDriver(browserName);
 	
 	firstName = "Thanh";

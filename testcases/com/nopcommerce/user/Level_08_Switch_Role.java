@@ -10,6 +10,7 @@ import org.testng.annotations.Test;
 import common.BaseTest;
 import common.GlobalConstants;
 import common.PageGeneratorManager;
+import exception.BrowserNotSupport;
 import pageObject.nopCommerce.admin.AdminDashboardPageObj;
 import pageObject.nopCommerce.admin.AdminLoginPageObj;
 import pageObject.nopCommerce.user.UserAddressPageObj;
@@ -24,7 +25,7 @@ public class Level_08_Switch_Role extends BaseTest  {
 
 	@Parameters("browser")
 	@BeforeClass
-	public void beforeClass(String browserName) {
+	public void beforeClass(String browserName) throws BrowserNotSupport {
 	driver = getBrowserDriver(browserName);
 	userHomePage = PageGeneratorManager.getUserHomePage(driver);
 	

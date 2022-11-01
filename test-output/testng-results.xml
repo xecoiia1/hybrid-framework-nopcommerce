@@ -1,44 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-10-18T17:30:23Z" name="NopCommerce" finished-at="2022-10-18T17:30:37Z" duration-ms="14317">
+  <suite started-at="2022-11-01T09:45:27Z" name="NopCommerce" finished-at="2022-11-01T09:45:39Z" duration-ms="12458">
     <groups>
     </groups>
-    <test started-at="2022-10-18T17:30:23Z" name="Run on Firefox" finished-at="2022-10-18T17:30:37Z" duration-ms="14317">
-      <class name="com.nopcommerce.user.Level_09_Dynamic_Locator">
-        <test-method is-config="true" signature="beforeClass(java.lang.String)[pri:0, instance:com.nopcommerce.user.Level_09_Dynamic_Locator@38afe297]" started-at="2022-10-18T17:30:23Z" name="beforeClass" finished-at="2022-10-18T17:30:26Z" duration-ms="3662" status="PASS">
+    <test started-at="2022-11-01T09:45:27Z" name="Run on Firefox" finished-at="2022-11-01T09:45:39Z" duration-ms="12458">
+      <class name="com.jquery.datatable.Level_10_DataTable_DataGrid">
+        <test-method is-config="true" signature="beforeClass(java.lang.String, java.lang.String)[pri:0, instance:com.jquery.datatable.Level_10_DataTable_DataGrid@bccb269]" started-at="2022-11-01T09:45:27Z" name="beforeClass" finished-at="2022-11-01T09:45:37Z" duration-ms="10099" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[chrome]]>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://www.jqueryscript.net/demo/CRUD-Data-Grid-Plugin-jQuery-Quickgrid/]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method signature="User_01_Register_Login()[pri:0, instance:com.nopcommerce.user.Level_09_Dynamic_Locator@38afe297]" started-at="2022-10-18T17:30:26Z" name="User_01_Register_Login" finished-at="2022-10-18T17:30:32Z" duration-ms="5745" status="PASS">
+        <test-method signature="Table_01_Paging()[pri:0, instance:com.jquery.datatable.Level_10_DataTable_DataGrid@bccb269]" started-at="2022-11-01T09:45:37Z" name="Table_01_Paging" finished-at="2022-11-01T09:45:38Z" duration-ms="1205" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- User_01_Register_Login -->
-        <test-method signature="User_02_Switch_Page()[pri:0, instance:com.nopcommerce.user.Level_09_Dynamic_Locator@38afe297]" started-at="2022-10-18T17:30:32Z" name="User_02_Switch_Page" finished-at="2022-10-18T17:30:34Z" duration-ms="2539" status="PASS">
+        </test-method> <!-- Table_01_Paging -->
+        <test-method signature="Table_02_Enter_Header_Textbox()[pri:0, instance:com.jquery.datatable.Level_10_DataTable_DataGrid@bccb269]" started-at="2022-11-01T09:45:38Z" name="Table_02_Enter_Header_Textbox" finished-at="2022-11-01T09:45:38Z" duration-ms="344" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- User_02_Switch_Page -->
-        <test-method signature="User_03_Dynamic_Page_01()[pri:0, instance:com.nopcommerce.user.Level_09_Dynamic_Locator@38afe297]" started-at="2022-10-18T17:30:34Z" name="User_03_Dynamic_Page_01" finished-at="2022-10-18T17:30:36Z" duration-ms="1052" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- User_03_Dynamic_Page_01 -->
-        <test-method signature="User_04_Dynamic_Page_02()[pri:0, instance:com.nopcommerce.user.Level_09_Dynamic_Locator@38afe297]" started-at="2022-10-18T17:30:36Z" name="User_04_Dynamic_Page_02" finished-at="2022-10-18T17:30:36Z" duration-ms="706" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- User_04_Dynamic_Page_02 -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.nopcommerce.user.Level_09_Dynamic_Locator@38afe297]" started-at="2022-10-18T17:30:36Z" name="afterClass" finished-at="2022-10-18T17:30:37Z" duration-ms="598" status="PASS">
+        </test-method> <!-- Table_02_Enter_Header_Textbox -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.jquery.datatable.Level_10_DataTable_DataGrid@bccb269]" started-at="2022-11-01T09:45:38Z" name="afterClass" finished-at="2022-11-01T09:45:39Z" duration-ms="786" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-      </class> <!-- com.nopcommerce.user.Level_09_Dynamic_Locator -->
+      </class> <!-- com.jquery.datatable.Level_10_DataTable_DataGrid -->
     </test> <!-- Run on Firefox -->
   </suite> <!-- NopCommerce -->
 </testng-results>
