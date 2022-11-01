@@ -45,6 +45,9 @@ public class Level_10_DataTable_DataGrid extends BaseTestJquery  {
   @Test
   public void Table_02_Enter_Header_Textbox() {
 	  	homePage.enterToHeaderTextboxByLabel("Country", "Argentina");
+	  	homePage.enterToHeaderTextboxByLabel("Females", "338282");
+	  	homePage.enterToHeaderTextboxByLabel("Males", "349238");
+	  	homePage.enterToHeaderTextboxByLabel("Total", "687522");
   }
   
   @AfterClass

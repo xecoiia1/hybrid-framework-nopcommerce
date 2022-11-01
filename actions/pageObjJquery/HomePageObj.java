@@ -19,7 +19,8 @@ public class HomePageObj extends BasePage {
 	}
 
 	public void enterToHeaderTextboxByLabel(String headerLabel, String value) {
-		
+		waitForAllElementVisible(driver, HomePageUI.HEADER_TEXTBOX_BY_LABEL, headerLabel);
+		sendkeysToElementByXpath(driver, HomePageUI.HEADER_TEXTBOX_BY_LABEL, value, headerLabel);
 		
 	}
 	
