@@ -9,6 +9,7 @@ import org.testng.annotations.Test;
 
 import common.BaseTest;
 import common.PageGeneratorManager;
+import commonJquery.BaseTestJquery;
 import exception.BrowserNotSupport;
 import pageObject.nopCommerce.user.UserAddressPageObj;
 import pageObject.nopCommerce.user.UserCustomerInforPageObj;
@@ -18,21 +19,21 @@ import pageObject.nopCommerce.user.UserMyProductReviewPageObj;
 import pageObject.nopCommerce.user.UserRegisterPageObj;
 import pageObject.nopCommerce.user.UserRewardPointPageObj;
 
-public class Level_10_DataTable_DataGrid extends BaseTest  {
+public class Level_10_DataTable_DataGrid extends BaseTestJquery  {
 
-	@Parameters("browser")
+	@Parameters({"browser","url"})
 	@BeforeClass
-	public void beforeClass(String browserName) throws BrowserNotSupport {
-	driver = getBrowserDriver(browserName);	
+	public void beforeClass(String browserName, String appUrl) throws BrowserNotSupport {
+	driver = getBrowserDriver(browserName, appUrl);	
   }
   
   @Test
-  public void User_01_Register_Login() {
+  public void Table_01() {
 		
   }
     
   @Test
-  public void User_02_Switch_Page() {
+  public void Table_02() {
 	 
   }
   
