@@ -33,7 +33,7 @@ public class Level_10_DataTable_DataGrid extends BaseTestJquery  {
 	homePage = PageGeneratorManagerJQuery.getHomePage(driver);
   }
   
-  @Test
+  
   public void Table_01_Paging() {
 		homePage.openPagingPageByPageNumber("10");
 		Assert.assertTrue(homePage.isPageNumberActived("10"));
@@ -48,7 +48,7 @@ public class Level_10_DataTable_DataGrid extends BaseTestJquery  {
 		Assert.assertTrue(homePage.isPageNumberActived("19"));
   }
     
-  @Test
+ 
   public void Table_02_Enter_Header_Textbox() {
 	  	homePage.refreshPage(driver);
 	  	homePage.enterToHeaderTextboxByLabel("Country", "Argentina");

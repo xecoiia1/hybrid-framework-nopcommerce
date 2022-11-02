@@ -37,21 +37,30 @@ public class HomePageObj extends BasePageJquery {
 		return isElementDisplay(driver, HomePageUI.PAGINATION_PAGE_ACTIVED_BY_NUMBER, pageNumber);
 	}
 
-	public void getValueEachRowAtAllPage() {
+	public List getValueEachRowAtAllPage() {
 		int totalPage = getElementSize(driver, HomePageUI.TOTAL_PAGINATION);
 		
-		List<String> allRowValue = new ArrayList<String>();
+		List<String> allRowValueAllPage = new ArrayList<String>();
 		
 		//Duyệt qua tất cả page number
-		for (int index = 0; index < totalPage; index++) {
+		for (int index = 1; index <= totalPage; index++) {
 			clickToElement(driver, HomePageUI.PAGINATION__BY_INDEX, String.valueOf(index));
 			sleepInSecond(1);
 			
+			//Get text của all row mỗi page và đưa vào array List
 			List<WebElement> allRowValueEachPage = getListElementByXpath(driver, HomePageUI.ALL_ROW_EACH_PAGE);
 			for (WebElement eachRow : allRowValueEachPage) {
-				
+				allRowValueAllPage.add(eachRow.getText());
 			}
 		}
+		
+		//In tất cả các giá trị row ra 
+		for (String value : allRowValueAllPage) {
+			System.out.println("***************************");
+			System.out.println(value);
+		}
+		return allRowValueAllPage;
+		
 		
 	}
 	
