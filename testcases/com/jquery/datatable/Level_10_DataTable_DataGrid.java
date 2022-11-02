@@ -2,6 +2,8 @@ package com.jquery.datatable;
 
 import static org.testng.Assert.assertTrue;
 
+import java.util.List;
+
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
@@ -26,6 +28,7 @@ import pageUI.Jquery.HomePageUI;
 
 public class Level_10_DataTable_DataGrid extends BaseTestJquery  {
 	HomePageObj homePage;
+	List<String> allCountryValues;
 
 	@Parameters({"browser","url"})
 	@BeforeClass
@@ -61,7 +64,7 @@ public class Level_10_DataTable_DataGrid extends BaseTestJquery  {
   
   @Test
   public void Table_03_Enter_Header_Textbox() {
-	 homePage.getValueEachRowAtAllPage();
+	  allCountryValues = homePage.getValueEachRowAtAllPage();
 	 
   }
   @AfterClass
