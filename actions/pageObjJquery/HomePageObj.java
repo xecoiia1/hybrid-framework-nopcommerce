@@ -1,6 +1,7 @@
 package pageObjJquery;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
 import org.openqa.selenium.Keys;
@@ -47,6 +48,9 @@ public class HomePageObj extends BasePageJquery {
 			sleepInSecond(1);
 			
 			List<WebElement> allRowValueEachPage = getListElementByXpath(driver, HomePageUI.ALL_ROW_EACH_PAGE);
+			for (WebElement eachRow : allRowValueEachPage) {
+				
+			}
 		}
 		
 	}
