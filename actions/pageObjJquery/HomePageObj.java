@@ -48,7 +48,7 @@ public class HomePageObj extends BasePageJquery {
 			sleepInSecond(1);
 			
 			//Get text của all row mỗi page và đưa vào array List
-			List<WebElement> allRowValueEachPage = getListElementByXpath(driver, HomePageUI.ALL_ROW_EACH_PAGE);
+			List<WebElement> allRowValueEachPage = getListWebElement(driver, HomePageUI.ALL_ROW_EACH_PAGE);
 			for (WebElement eachRow : allRowValueEachPage) {
 				allRowValueAllPage.add(eachRow.getText());
 			}

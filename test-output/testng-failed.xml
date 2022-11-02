@@ -7,9 +7,8 @@
     <classes>
       <class name="com.jquery.datatable.Level_10_DataTable_DataGrid">
         <methods>
-          <include name="Table_01_Paging"/>
+          <include name="Table_03_Enter_Header_Textbox"/>
           <include name="afterClass"/>
-          <include name="Table_02_Enter_Header_Textbox"/>
           <include name="beforeClass"/>
         </methods>
       </class> <!-- com.jquery.datatable.Level_10_DataTable_DataGrid -->
