@@ -5,6 +5,7 @@ import java.util.List;
 
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 
 import common.BasePage;
 import commonJquery.BasePageJquery;
@@ -45,7 +46,7 @@ public class HomePageObj extends BasePageJquery {
 			clickToElement(driver, HomePageUI.PAGINATION__BY_INDEX, String.valueOf(index));
 			sleepInSecond(1);
 			
-			List<String> allRowValueEachPage = 
+			List<WebElement> allRowValueEachPage = getListElementByXpath(driver, HomePageUI.ALL_ROW_EACH_PAGE);
 		}
 		
 	}
