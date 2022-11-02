@@ -164,11 +164,11 @@ public class BasePageJquery {
 		return by;
 	}
 	
-	private WebElement getElementByXpath(WebDriver driver, String locatorType) {
+	public WebElement getElementByXpath(WebDriver driver, String locatorType) {
 		return driver.findElement(getByLocator(locatorType));
 	}
 	
-	private List<WebElement> getListElementByXpath(WebDriver driver, String locatorType) {
+	public List<WebElement> getListElementByXpath(WebDriver driver, String locatorType) {
 		return driver.findElements(getByLocator(locatorType));
 	}
 		

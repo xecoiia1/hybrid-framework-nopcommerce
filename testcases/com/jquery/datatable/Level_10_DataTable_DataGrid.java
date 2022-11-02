@@ -58,6 +58,9 @@ public class Level_10_DataTable_DataGrid extends BaseTestJquery  {
 	  	homePage.sleepInSecond(3);
   }
   
+  public void Table_03_Enter_Header_Textbox() {
+	 homePage.getValueEachRowAtAllPage();
+  }
   @AfterClass
   public void afterClass() {
 	  driver.quit();

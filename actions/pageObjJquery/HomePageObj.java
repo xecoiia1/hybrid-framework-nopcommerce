@@ -1,5 +1,8 @@
 package pageObjJquery;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 
@@ -30,6 +33,21 @@ public class HomePageObj extends BasePageJquery {
 	public boolean isPageNumberActived(String pageNumber) {
 		waitForElementVisible(driver, HomePageUI.PAGINATION_PAGE_ACTIVED_BY_NUMBER, pageNumber);
 		return isElementDisplay(driver, HomePageUI.PAGINATION_PAGE_ACTIVED_BY_NUMBER, pageNumber);
+	}
+
+	public void getValueEachRowAtAllPage() {
+		int totalPage = getElementSize(driver, HomePageUI.TOTAL_PAGINATION);
+		
+		List<String> allRowValue = new ArrayList<String>();
+		
+		//Duyệt qua tất cả page number
+		for (int index = 0; index < totalPage; index++) {
+			clickToElement(driver, HomePageUI.PAGINATION__BY_INDEX, String.valueOf(index));
+			sleepInSecond(1);
+			
+			List<String> allRowValueEachPage = 
+		}
+		
 	}
 	
 	
