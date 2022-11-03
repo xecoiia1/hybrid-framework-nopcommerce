@@ -12,4 +12,5 @@ public class HomePageUI {
 	//Index của cái cột mình cần action
 	public static final String COLUMN_INDEX_BY_NAME = "xpath=//tr/td[text() ='%s']/preceding-sibling::td";
 	public static final String TEXTBOX_BY_COLUMN_INDEX_AND_ROW_INDEX = "xpath=//tbody/tr[%s]/td[%s]/input";
+	public static final String DROPDOWN_BY_COLUMN_INDEX_AND_ROW_INDEX = "xpath=//tbody/tr[%s]/td[%s]/select";
 }

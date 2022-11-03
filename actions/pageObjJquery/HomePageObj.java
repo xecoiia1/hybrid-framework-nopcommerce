@@ -95,17 +95,21 @@ public class HomePageObj extends BasePageJquery {
 		return allRowValueAllPage;
 	}
 
-	public void enterToTextboxAtRowNumberByColumnName(String columnName, String rowNumber, String value) {
+	public void enterToTextboxAtRowNumberByColumnName(String columnName, String rowNumber, String valueToEnter) {
 		// Get column index dựa vào tên cột
-		int columnIndex = getElementSize(driver, HomePageUI.COLUMN_INDEX_BY_NAME, columnName + 1);
-		
-		System.out.println(columnName);
-		System.out.println(HomePageUI.COLUMN_INDEX_BY_NAME);
-		System.out.println(columnIndex);
-		
+		int columnIndex = getElementSize(driver, HomePageUI.COLUMN_INDEX_BY_NAME, columnName) +1;
+				
 		// Sendkey vào row nào 
 		waitForElementVisible(driver, HomePageUI.TEXTBOX_BY_COLUMN_INDEX_AND_ROW_INDEX, rowNumber, String.valueOf(columnIndex));
-		sendkeysToElementByXpath(driver, HomePageUI.TEXTBOX_BY_COLUMN_INDEX_AND_ROW_INDEX, value, rowNumber, String.valueOf(columnIndex));
+		sendkeysToElementByXpath(driver, HomePageUI.TEXTBOX_BY_COLUMN_INDEX_AND_ROW_INDEX, valueToEnter, rowNumber, String.valueOf(columnIndex));
+		
+	}
+
+	public void selectDropdownByColumnNameAtRowNumber(String columnName, String rowNumber, String valueToSelect) {
+		int columnIndex = getElementSize(driver, HomePageUI.COLUMN_INDEX_BY_NAME, columnName) +1;
+		
+		// Sendkey vào row nào 
+		waitForElementClickAble(driver, HomePageUI.TEXTBOX_BY_COLUMN_INDEX_AND_ROW_INDEX, rowNumber, String.valueOf(columnIndex));
 		
 	}
 	

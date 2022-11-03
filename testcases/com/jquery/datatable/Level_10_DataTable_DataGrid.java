@@ -74,11 +74,16 @@ public class Level_10_DataTable_DataGrid extends BaseTestJquery  {
 	 
   }
   @Test
-  public void Table_04_Enter_To_Textbox_At_Any_Row() {
+  public void Table_04_Action_At_Any_Row() {
 	  // Value để nhập dữ liệu
 	  // Row number, column index
 	  
 	   homePage.enterToTextboxAtRowNumberByColumnName("Album", "1", "Michael 97");
+	   homePage.enterToTextboxAtRowNumberByColumnName("Artist", "1", "Taylor");
+	   homePage.enterToTextboxAtRowNumberByColumnName("Year", "1", "2000");
+	   homePage.enterToTextboxAtRowNumberByColumnName("Price", "1", "15");
+	   
+	   homePage.selectDropdownByColumnNameAtRowNumber("", "", "");
   }
   @AfterClass
   public void afterClass() {
