@@ -104,8 +104,9 @@ public class HomePageObj extends BasePageJquery {
 		
 	}
 
-	public void clickToButtonByRowNumber(String string, String string2) {
-		// TODO Auto-generated method stub
+	public void clickToButtonByRowNumber(String rowNumber, String iconName) {
+		waitForElementClickAble(driver, HomePageUI.ICON_NAME_BY_ROW_NUMBER, rowNumber, iconName);
+		clickToElement(driver, HomePageUI.ICON_NAME_BY_ROW_NUMBER, rowNumber, iconName);
 		
 	}
 	

@@ -95,7 +95,23 @@ public class Level_10_DataTable_DataGrid extends BaseTestJquery  {
 	   homePage.unCheckToCheckBoxByColumnNameAtRowNumber("With Poster?","2");
 	   homePage.unCheckToCheckBoxByColumnNameAtRowNumber("With Poster?","4");
 	   
-	   homePage.clickToButtonByRowNumber("", "");
+	   homePage.clickToButtonByRowNumber("1", "Remove Current Row");
+	   
+	   homePage.clickToButtonByRowNumber("1", "Insert Row Above");
+	   
+	   homePage.clickToButtonByRowNumber("3", "Move Up");
+	   
+	   homePage.clickToButtonByRowNumber("5", "Remove Current Row");
+	   
+	   homePage.clickToButtonByRowNumber("4", "Remove Current Row");
+	   
+	   homePage.clickToButtonByRowNumber("3", "Remove Current Row");
+	   
+	   homePage.clickToButtonByRowNumber("2", "Remove Current Row");
+	   
+	   homePage.clickToButtonByRowNumber("1", "Remove Current Row");
+	   
+	   
 	   homePage.sleepInSecond(20);
   }
   @AfterClass
