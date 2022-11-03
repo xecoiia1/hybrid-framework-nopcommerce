@@ -16,5 +16,10 @@ public class AdminDashboardPageObj extends BasePage {
 	public boolean isDashBoardDisplayed() {
 		return isElementDisplay(driver, AdminDashboardPageUI.DASHBOARD_HEADER);
 	}
+
+	public AdminLoginPageObj clickToLogoutBtnAdmin(WebDriver driver2) {
+		// TODO Auto-generated method stub
+		return null;
+	}
 	
 }

@@ -83,7 +83,9 @@ public class Level_10_DataTable_DataGrid extends BaseTestJquery  {
 	   homePage.enterToTextboxAtRowNumberByColumnName("Year", "1", "2000");
 	   homePage.enterToTextboxAtRowNumberByColumnName("Price", "1", "15");
 	   
-	   homePage.selectDropdownByColumnNameAtRowNumber("", "", "");
+	   homePage.selectDropdownByColumnNameAtRowNumber("Origin", "1", "Hong Kong");
+	   homePage.selectDropdownByColumnNameAtRowNumber("Origin", "1", "Japan");
+	   homePage.selectDropdownByColumnNameAtRowNumber("Origin", "1", "Taiwan");
   }
   @AfterClass
   public void afterClass() {

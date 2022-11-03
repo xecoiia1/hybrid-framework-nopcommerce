@@ -37,8 +37,8 @@ import pageUI.nopCommerce.user.HomePageUI;
 public class BasePage extends BasePageUI {
 	
 	// Che giấu đi việc khởi tạo của 1 đối tượng
-		public static BasePageJquery getBasePageObj() {
-			return new BasePageJquery();
+		public static BasePage getBasePageObj() {
+			return new BasePage();
 		}
 		
 		// Hàm này mở 1 URL

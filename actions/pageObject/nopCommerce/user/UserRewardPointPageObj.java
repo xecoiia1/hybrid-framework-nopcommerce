@@ -17,4 +17,14 @@ public class UserRewardPointPageObj extends BasePage {
 	public UserRewardPointPageObj(WebDriver driver) {
 		this.driver = driver ;
 	}
+
+	public UserMyProductReviewPageObj openMyProductReviewPage(WebDriver driver2) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public UserAddressPageObj openPagesAtMyAccountByName(WebDriver driver2, String string) {
+		// TODO Auto-generated method stub
+		return null;
+	}
 }
