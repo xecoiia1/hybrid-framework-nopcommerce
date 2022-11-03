@@ -286,9 +286,23 @@ public class BasePageJquery {
 			element.click();
 		}
 	}
+	
+	public void checkToDefaultCheckBoxRadio(WebDriver driver, String locatorType, String...dynamicLocator) {
+		WebElement element = getWebElement(driver, getDynamicXpath(locatorType, dynamicLocator));
+		if(!element.isSelected()) {
+			element.click();
+		}
+	}
 
 	public void unCheckToDefaultCheckBoxRadio(WebDriver driver, String locatorType) {
 		WebElement element = getWebElement(driver, locatorType);
+		if(element.isSelected()) {
+			element.click();
+		}
+	}
+	
+	public void unCheckToDefaultCheckBoxRadio(WebDriver driver, String locatorType, String...dynamicLocator) {
+		WebElement element = getWebElement(driver, getDynamicXpath(locatorType, dynamicLocator));
 		if(element.isSelected()) {
 			element.click();
 		}

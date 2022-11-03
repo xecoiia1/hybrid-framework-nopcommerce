@@ -88,6 +88,26 @@ public class HomePageObj extends BasePageJquery {
 		waitForElementClickAble(driver, HomePageUI.LOAD_BUTTON);
 		clickToElementByJS(driver, HomePageUI.LOAD_BUTTON);
 	}
+
+	public void checkToCheckBoxByColumnNameAtRowNumber(String columnName, String rowNumber) {
+		int columnIndex = getElementSize(driver, HomePageUI.COLUMN_INDEX_BY_NAME, columnName) +1;
+		waitForElementClickAble(driver, HomePageUI.CHECKBOX_BY_COLUMN_INDEX_AND_ROW_INDEX, rowNumber, String.valueOf(columnIndex));
+		checkToDefaultCheckBoxRadio(driver, HomePageUI.CHECKBOX_BY_COLUMN_INDEX_AND_ROW_INDEX, rowNumber, String.valueOf(columnIndex));
+		
+		
+	}
+
+	public void unCheckToCheckBoxByColumnNameAtRowNumber(String columnName, String rowNumber) {
+		int columnIndex = getElementSize(driver, HomePageUI.COLUMN_INDEX_BY_NAME, columnName) +1;
+		waitForElementClickAble(driver, HomePageUI.CHECKBOX_BY_COLUMN_INDEX_AND_ROW_INDEX, rowNumber, String.valueOf(columnIndex));
+		unCheckToDefaultCheckBoxRadio(driver, HomePageUI.CHECKBOX_BY_COLUMN_INDEX_AND_ROW_INDEX, rowNumber, String.valueOf(columnIndex));
+		
+	}
+
+	public void clickToButtonByRowNumber(String string, String string2) {
+		// TODO Auto-generated method stub
+		
+	}
 	
 	
 }

@@ -88,6 +88,14 @@ public class Level_10_DataTable_DataGrid extends BaseTestJquery  {
 	   homePage.selectDropdownByColumnNameAtRowNumber("Origin", "5", "Hong Kong");
 	   homePage.selectDropdownByColumnNameAtRowNumber("Origin", "4", "Japan");
 	   homePage.selectDropdownByColumnNameAtRowNumber("Origin", "3", "Taiwan");
+	   
+	   homePage.checkToCheckBoxByColumnNameAtRowNumber("With Poster?","3");
+	   homePage.checkToCheckBoxByColumnNameAtRowNumber("With Poster?","5");
+	   homePage.unCheckToCheckBoxByColumnNameAtRowNumber("With Poster?","1");
+	   homePage.unCheckToCheckBoxByColumnNameAtRowNumber("With Poster?","2");
+	   homePage.unCheckToCheckBoxByColumnNameAtRowNumber("With Poster?","4");
+	   
+	   homePage.clickToButtonByRowNumber("", "");
 	   homePage.sleepInSecond(20);
   }
   @AfterClass
