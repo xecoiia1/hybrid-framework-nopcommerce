@@ -482,8 +482,6 @@ public class BasePageJquery {
 		WebDriverWait explixitWait = new WebDriverWait(driver, longTimeOut);
 		
 		explixitWait.until(ExpectedConditions.elementToBeClickable(getByLocator(locatorType)));
-		
-		System.out.println(locatorType);
 	}
 	
 	public void waitForElementClickAble(WebDriver driver, String locatorType, String...dynamicValues) {

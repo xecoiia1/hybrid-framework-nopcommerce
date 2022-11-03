@@ -38,36 +38,6 @@ public class HomePageObj extends BasePageJquery {
 		waitForElementVisible(driver, HomePageUI.PAGINATION_PAGE_ACTIVED_BY_NUMBER, pageNumber);
 		return isElementDisplay(driver, HomePageUI.PAGINATION_PAGE_ACTIVED_BY_NUMBER, pageNumber);
 	}
-
-//	public List<String> getValueEachRowAtAllPage() {
-//		int totalPage = getElementSize(driver, HomePageUI.TOTAL_PAGINATION);
-//		
-//		List<String> allRowValueAllPage = new ArrayList<String>();
-//		
-//		//Dùng Set thì khi lưu vào sẽ chỉ lưu 1 giá trị, không lưu trùng
-//		Set<String> allRowValueUniqueAllPage = new HashSet<String>();
-//		
-//		//Duyệt qua tất cả page number
-//		for (int index = 1; index <= totalPage; index++) {
-//			clickToElement(driver, HomePageUI.PAGINATION__BY_INDEX, String.valueOf(index));
-//			//sleepInSecond(1);
-//			
-//			//Get text của all row mỗi page và đưa vào array List
-//			List<WebElement> allRowValueEachPage = getListWebElement(driver, HomePageUI.ALL_ROW_EACH_PAGE);
-//			for (WebElement eachRow : allRowValueEachPage) {
-//				allRowValueAllPage.add(eachRow.getText());
-//			}
-//		}
-//		
-//		//In tất cả các giá trị row ra 
-//		for (String value : allRowValueAllPage) {
-//			System.out.println("***************************");
-//			System.out.println(value);
-//		}
-//		return allRowValueAllPage;
-//		
-//		
-//	}
 	
 
 	public List<String> getValueEachRowAtAllPage() {
@@ -112,6 +82,11 @@ public class HomePageObj extends BasePageJquery {
 		waitForElementClickAble(driver, HomePageUI.DROPDOWN_BY_COLUMN_INDEX_AND_ROW_INDEX, rowNumber, String.valueOf(columnIndex));
 		selectItemDefaulDropDown(driver, HomePageUI.DROPDOWN_BY_COLUMN_INDEX_AND_ROW_INDEX, valueToSelect, rowNumber, String.valueOf(columnIndex));
 		
+	}
+
+	public void clickToLoadButton() {
+		waitForElementClickAble(driver, HomePageUI.LOAD_BUTTON);
+		clickToElementByJS(driver, HomePageUI.LOAD_BUTTON);
 	}
 	
 	

@@ -75,17 +75,20 @@ public class Level_10_DataTable_DataGrid extends BaseTestJquery  {
   }
   @Test
   public void Table_04_Action_At_Any_Row() {
+	  
+	  homePage.clickToLoadButton();
 	  // Value để nhập dữ liệu
 	  // Row number, column index
 	  
 	   homePage.enterToTextboxAtRowNumberByColumnName("Album", "1", "Michael 97");
-	   homePage.enterToTextboxAtRowNumberByColumnName("Artist", "1", "Taylor");
-	   homePage.enterToTextboxAtRowNumberByColumnName("Year", "1", "2000");
-	   homePage.enterToTextboxAtRowNumberByColumnName("Price", "1", "15");
+	   homePage.enterToTextboxAtRowNumberByColumnName("Artist", "2", "Taylor");
+	   homePage.enterToTextboxAtRowNumberByColumnName("Year", "3", "2000");
+	   homePage.enterToTextboxAtRowNumberByColumnName("Price", "4", "15");
 	   
-	   homePage.selectDropdownByColumnNameAtRowNumber("Origin", "1", "Hong Kong");
-	   homePage.selectDropdownByColumnNameAtRowNumber("Origin", "1", "Japan");
-	   homePage.selectDropdownByColumnNameAtRowNumber("Origin", "1", "Taiwan");
+	   homePage.selectDropdownByColumnNameAtRowNumber("Origin", "5", "Hong Kong");
+	   homePage.selectDropdownByColumnNameAtRowNumber("Origin", "4", "Japan");
+	   homePage.selectDropdownByColumnNameAtRowNumber("Origin", "3", "Taiwan");
+	   homePage.sleepInSecond(20);
   }
   @AfterClass
   public void afterClass() {
