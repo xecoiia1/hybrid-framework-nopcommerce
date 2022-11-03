@@ -39,34 +39,60 @@ public class HomePageObj extends BasePageJquery {
 		return isElementDisplay(driver, HomePageUI.PAGINATION_PAGE_ACTIVED_BY_NUMBER, pageNumber);
 	}
 
+//	public List<String> getValueEachRowAtAllPage() {
+//		int totalPage = getElementSize(driver, HomePageUI.TOTAL_PAGINATION);
+//		
+//		List<String> allRowValueAllPage = new ArrayList<String>();
+//		
+//		//Dùng Set thì khi lưu vào sẽ chỉ lưu 1 giá trị, không lưu trùng
+//		Set<String> allRowValueUniqueAllPage = new HashSet<String>();
+//		
+//		//Duyệt qua tất cả page number
+//		for (int index = 1; index <= totalPage; index++) {
+//			clickToElement(driver, HomePageUI.PAGINATION__BY_INDEX, String.valueOf(index));
+//			//sleepInSecond(1);
+//			
+//			//Get text của all row mỗi page và đưa vào array List
+//			List<WebElement> allRowValueEachPage = getListWebElement(driver, HomePageUI.ALL_ROW_EACH_PAGE);
+//			for (WebElement eachRow : allRowValueEachPage) {
+//				allRowValueAllPage.add(eachRow.getText());
+//			}
+//		}
+//		
+//		//In tất cả các giá trị row ra 
+//		for (String value : allRowValueAllPage) {
+//			System.out.println("***************************");
+//			System.out.println(value);
+//		}
+//		return allRowValueAllPage;
+//		
+//		
+//	}
+	
+
 	public List<String> getValueEachRowAtAllPage() {
 		int totalPage = getElementSize(driver, HomePageUI.TOTAL_PAGINATION);
-		
+		System.out.println("Total size = " + totalPage);
+
 		List<String> allRowValueAllPage = new ArrayList<String>();
-		
-		//Dùng Set thì khi lưu vào sẽ chỉ lưu 1 giá trị, không lưu trùng
-		Set<String> allRowValueUniqueAllPage = new HashSet<String>();
-		
-		//Duyệt qua tất cả page number
-		for (int index = 1; index <= totalPage; index++) {
-			clickToElement(driver, HomePageUI.PAGINATION__BY_INDEX, String.valueOf(index));
-			//sleepInSecond(1);
-			
-			//Get text của all row mỗi page và đưa vào array List
-			List<WebElement> allRowValueEachPage = getListWebElement(driver, HomePageUI.ALL_ROW_EACH_PAGE);
-			for (WebElement eachRow : allRowValueEachPage) {
+
+		// Duyệt qua tất cả các page
+		for (int i = 1; i <= totalPage; i++) {
+			clickToElement(driver, HomePageUI.PAGINATION_PAGE_BY_NUMBER, String.valueOf(i));
+
+			List<WebElement> allRownElementEachPage = getListWebElement(driver, HomePageUI.ALL_ROW_EACH_PAGE);
+			// Get text cua tat ca row mỗi page đưa vào ArrayList
+			for (WebElement eachRow : allRownElementEachPage) {
 				allRowValueAllPage.add(eachRow.getText());
 			}
 		}
-		
-		//In tất cả các giá trị row ra 
+		// In tất cả giá trị row - tất cả các page
 		for (String value : allRowValueAllPage) {
-			System.out.println("***************************");
+			System.out.println("-----------------------------------");
 			System.out.println(value);
 		}
+
 		return allRowValueAllPage;
-		
-		
 	}
 	
 	
