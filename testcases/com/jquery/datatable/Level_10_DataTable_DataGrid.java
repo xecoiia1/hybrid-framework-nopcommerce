@@ -28,7 +28,8 @@ import pageUI.Jquery.HomePageUI;
 
 public class Level_10_DataTable_DataGrid extends BaseTestJquery  {
 	HomePageObj homePage;
-	List<String> allCountryValues;
+	List<String> actualAllCountryValues;
+	List<String> expectedAllCountryValues;
 
 	@Parameters({"browser","url"})
 	@BeforeClass
@@ -62,10 +63,22 @@ public class Level_10_DataTable_DataGrid extends BaseTestJquery  {
 	  	homePage.sleepInSecond(3);
   }
   
-  @Test
+  
   public void Table_03_Enter_Header_Textbox() {
-	  allCountryValues = homePage.getValueEachRowAtAllPage();
+	  //Đọc dữ liệu trong file txt
+	  //Lưu vào 1 List<String> = ExpectedValues = expectedAllCountryValues
+	  
+	  actualAllCountryValues = homePage.getValueEachRowAtAllPage();
+	  
+	  Assert.assertEquals(actualAllCountryValues, expectedAllCountryValues);
 	 
+  }
+  @Test
+  public void Table_04_Enter_To_Textbox_At_Any_Row() {
+	  // Value để nhập dữ liệu
+	  // Row number, column index
+	  
+	   homePage.enterToTextboxAtRowNumberByColumnName("Album", "1", "Michael 97");
   }
   @AfterClass
   public void afterClass() {

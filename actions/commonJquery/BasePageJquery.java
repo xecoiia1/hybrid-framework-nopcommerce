@@ -275,6 +275,10 @@ public class BasePageJquery {
 	public int getElementSize(WebDriver driver, String locatorType) {
 		return getListWebElement(driver, locatorType).size();
 	}
+	
+	public int getElementSize(WebDriver driver, String locatorType, String...dynamicLocator) {
+		return getListWebElement(driver, getDynamicXpath(locatorType, dynamicLocator)).size();
+	}
 
 	public void checkToDefaultCheckBoxRadio(WebDriver driver, String locatorType) {
 		WebElement element = getWebElement(driver, locatorType);
@@ -429,13 +433,13 @@ public class BasePageJquery {
 	public void waitForElementVisible(WebDriver driver, String locatorType) {
 		WebDriverWait explixitWait = new WebDriverWait(driver, longTimeOut);
 		
-		explixitWait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(getByLocator(locatorType)));
+		explixitWait.until(ExpectedConditions.visibilityOfElementLocated(getByLocator(locatorType)));
 	}
 	
 	public void waitForElementVisible(WebDriver driver, String locatorType, String...dynamicValues) {
 		WebDriverWait explixitWait = new WebDriverWait(driver, longTimeOut);
 		
-		explixitWait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(getByLocator(getDynamicXpath(locatorType, dynamicValues))));
+		explixitWait.until(ExpectedConditions.visibilityOfElementLocated(getByLocator(getDynamicXpath(locatorType, dynamicValues))));
 	}
 	
 	public void waitForAllElementVisible(WebDriver driver, String locatorType) {

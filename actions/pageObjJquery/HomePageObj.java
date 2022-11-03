@@ -80,7 +80,7 @@ public class HomePageObj extends BasePageJquery {
 		for (int i = 1; i <= totalPage; i++) {
 			clickToElement(driver, HomePageUI.PAGINATION_PAGE_BY_NUMBER, String.valueOf(i));
 
-			List<WebElement> allRownElementEachPage = getListWebElement(driver, HomePageUI.ALL_ROW_EACH_PAGE);
+			List<WebElement> allRownElementEachPage = getListWebElement(driver, HomePageUI.ALL_ROW_COUNTRY_EACH_PAGE);
 			// Get text cua tat ca row mỗi page đưa vào ArrayList
 			for (WebElement eachRow : allRownElementEachPage) {
 				allRowValueAllPage.add(eachRow.getText());
@@ -88,11 +88,25 @@ public class HomePageObj extends BasePageJquery {
 		}
 		// In tất cả giá trị row - tất cả các page
 		for (String value : allRowValueAllPage) {
-			System.out.println("-----------------------------------");
+			//System.out.println("-----------------------------------");
 			System.out.println(value);
 		}
 
 		return allRowValueAllPage;
+	}
+
+	public void enterToTextboxAtRowNumberByColumnName(String columnName, String rowNumber, String value) {
+		// Get column index dựa vào tên cột
+		int columnIndex = getElementSize(driver, HomePageUI.COLUMN_INDEX_BY_NAME, columnName + 1);
+		
+		System.out.println(columnName);
+		System.out.println(HomePageUI.COLUMN_INDEX_BY_NAME);
+		System.out.println(columnIndex);
+		
+		// Sendkey vào row nào 
+		waitForElementVisible(driver, HomePageUI.TEXTBOX_BY_COLUMN_INDEX_AND_ROW_INDEX, rowNumber, String.valueOf(columnIndex));
+		sendkeysToElementByXpath(driver, HomePageUI.TEXTBOX_BY_COLUMN_INDEX_AND_ROW_INDEX, value, rowNumber, String.valueOf(columnIndex));
+		
 	}
 	
 	
