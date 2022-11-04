@@ -14,7 +14,6 @@ import org.testng.annotations.Test;
 import common.BaseTest;
 import common.PageGeneratorManager;
 import commonJquery.BaseTestJquery;
-import commonUploadFiles.BaseTestJqueryUploadFiles;
 import exception.BrowserNotSupport;
 import pageObjJquery.HomePageObj;
 import pageObjJquery.PageGeneratorManagerJQuery;
@@ -27,7 +26,7 @@ import pageObject.nopCommerce.user.UserRegisterPageObj;
 import pageObject.nopCommerce.user.UserRewardPointPageObj;
 import pageUI.Jquery.HomePageUI;
 
-public class Level_11_Upload_Files extends BaseTestJqueryUploadFiles  {
+public class Level_11_Upload_Files extends BaseTestJquery  {
 
 	@Parameters({"browser","url"})
 	@BeforeClass
@@ -37,7 +36,7 @@ public class Level_11_Upload_Files extends BaseTestJqueryUploadFiles  {
   
   @Test
   public void Upload_01_One_File_Per_Time() {
-		
+		System.out.println(System.getProperty("user.dir"));
   }
   
   @Test

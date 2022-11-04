@@ -507,9 +507,16 @@ public class BasePageJquery {
 	//Tối ưu ở Level 07_Switch_Page
 	
 	public void openPagesAtMyAccountByPageName(WebDriver driver, String pageName) {
+
 		waitForElementClickAble(driver, BasePageUI.DYNAMIC_MY_ACCOUNT_PAGE, pageName);
 		clickToElement(driver, BasePageUI.DYNAMIC_MY_ACCOUNT_PAGE, pageName);
 
+	}
+	
+	//Hàm upload File/Multi Files 
+	
+	public void uploadMultiFiles(WebDriver driver, String...filesName) {
+			String filePath = System.getProperty("user.dir");
 	}
 	
 	private long longTimeOut = GlobalConstants.LONG_TIMEOUT;
