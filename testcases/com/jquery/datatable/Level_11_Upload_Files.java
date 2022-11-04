@@ -14,6 +14,7 @@ import org.testng.annotations.Test;
 import common.BaseTest;
 import common.PageGeneratorManager;
 import commonJquery.BaseTestJquery;
+import commonUploadFiles.BaseTestJqueryUploadFiles;
 import exception.BrowserNotSupport;
 import pageObjJquery.HomePageObj;
 import pageObjJquery.PageGeneratorManagerJQuery;
@@ -26,7 +27,7 @@ import pageObject.nopCommerce.user.UserRegisterPageObj;
 import pageObject.nopCommerce.user.UserRewardPointPageObj;
 import pageUI.Jquery.HomePageUI;
 
-public class Level_11_Upload_Files extends BaseTestJquery  {
+public class Level_11_Upload_Files extends BaseTestJqueryUploadFiles  {
 
 	@Parameters({"browser","url"})
 	@BeforeClass
