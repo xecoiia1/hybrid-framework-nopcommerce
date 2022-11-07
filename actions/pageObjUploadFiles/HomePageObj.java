@@ -12,13 +12,33 @@ import org.openqa.selenium.WebElement;
 
 import common.BasePage;
 import commonJquery.BasePageJquery;
-import pageUI.Jquery.HomePageUI;
+import commonJquery.GlobalConstants;
+import pageUI.Jquery.uploadFile.HomePageUI;
 
 public class HomePageObj extends BasePageJquery {
 	WebDriver driver;
 
 	public HomePageObj(WebDriver driver) {
 		this.driver = driver;
+	}
+
+	public boolean isFileLoadedByName(String fileName) {
+		waitForElementVisible(driver, HomePageUI.FILE_NAME_LOADED, fileName);
+		return isElementDisplay(driver, HomePageUI.FILE_NAME_LOADED, fileName);
+	}
+	
+	public boolean isFileUpLoadedByName(String fileName) {
+		waitForElementVisible(driver, HomePageUI.FILE_NAME_UPLOADED, fileName);
+		return isElementDisplay(driver, HomePageUI.FILE_NAME_UPLOADED, fileName);
+	}
+
+	public void clickToStartButton() {
+		List<WebElement> startButtons = getListWebElement(driver, HomePageUI.START_BUTTON);
+		
+		for (WebElement startButton : startButtons) {
+			startButton.click();
+			sleepInSecond(GlobalConstants.SHORT_TIMEOUT);
+		}		
 	}
 	
 	

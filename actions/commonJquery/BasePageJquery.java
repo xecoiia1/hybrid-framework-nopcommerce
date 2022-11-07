@@ -519,6 +519,8 @@ public class BasePageJquery {
 	public void uploadMultiFiles(WebDriver driver, String...filesName) {
 			// Đường dẫn của thư mục Upload File
 			String filePath = GlobalConstants.UPLOAD_FILE;
+			
+			// Đường dẫn của tất cả các file
 			String fullFileName = "";
 			for (String file: filesName) {
 				fullFileName = fullFileName + filePath + file + "\n";

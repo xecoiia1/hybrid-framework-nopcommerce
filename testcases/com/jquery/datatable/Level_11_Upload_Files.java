@@ -27,16 +27,27 @@ import pageObject.nopCommerce.user.UserRewardPointPageObj;
 import pageUI.Jquery.HomePageUI;
 
 public class Level_11_Upload_Files extends BaseTestJquery  {
+	
+	String indonesiaFileName = "Indonesia.jpg";
+	String thaiLandFileName = "Thai_Lan.jpg";
+	String vietnamFileName = "Viet_Nam.jpg";
+	String mitchellFileName = "mitchell-orr-Ztfns5iC_xs-unsplash.jpg";
+	String[] multiFiles = {indonesiaFileName, thaiLandFileName, vietnamFileName, mitchellFileName};
 
 	@Parameters({"browser","url"})
 	@BeforeClass
 	public void beforeClass(String browserName, String appUrl) throws BrowserNotSupport {
-	driver = getBrowserDriver(browserName, appUrl);	
+	driver = getBrowserDriver(browserName, appUrl);
+	
   }
   
   @Test
   public void Upload_01_One_File_Per_Time() {
-		
+	homePage.uploadMultiFiles(driver, indonesiaFileName);
+	
+	Assert.assertTrue(homePage.isFileLoadedByName("indonesiaFileName"));
+	
+	homePage.clickToStartButton();
   }
   
   @Test
@@ -54,5 +65,6 @@ public class Level_11_Upload_Files extends BaseTestJquery  {
 //  var element = $$("div.validation-summary-errors")[0];
 //  element.textContent;
  private WebDriver driver;
+ private pageObjUploadFiles.HomePageObj homePage;
 
 }
