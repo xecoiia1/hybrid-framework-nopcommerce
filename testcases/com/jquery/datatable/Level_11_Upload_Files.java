@@ -48,6 +48,8 @@ public class Level_11_Upload_Files extends BaseTestJquery  {
 	Assert.assertTrue(homePage.isFileLoadedByName("indonesiaFileName"));
 	
 	homePage.clickToStartButton();
+	
+	Assert.assertTrue(homePage.isFileImageUpLoadedByName("indonesiaFileName"));
   }
   
   @Test

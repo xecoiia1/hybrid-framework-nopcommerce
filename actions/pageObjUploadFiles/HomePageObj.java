@@ -27,9 +27,9 @@ public class HomePageObj extends BasePageJquery {
 		return isElementDisplay(driver, HomePageUI.FILE_NAME_LOADED, fileName);
 	}
 	
-	public boolean isFileUpLoadedByName(String fileName) {
-		waitForElementVisible(driver, HomePageUI.FILE_NAME_UPLOADED, fileName);
-		return isElementDisplay(driver, HomePageUI.FILE_NAME_UPLOADED, fileName);
+	public boolean isFileLinksUpLoadedByName(String fileName) {
+		waitForElementVisible(driver, HomePageUI.FILE_NAME_UPLOADED_LINKS, fileName);
+		return isElementDisplay(driver, HomePageUI.FILE_NAME_UPLOADED_LINKS, fileName);
 	}
 
 	public void clickToStartButton() {
@@ -39,6 +39,11 @@ public class HomePageObj extends BasePageJquery {
 			startButton.click();
 			sleepInSecond(GlobalConstants.SHORT_TIMEOUT);
 		}		
+	}
+
+	public boolean isFileImageUpLoadedByName(String fileName) {
+		waitForElementVisible(driver, HomePageUI.FILE_NAME_UPLOADED_IMAGE, fileName);
+		return isImageLoaded(driver, HomePageUI.FILE_NAME_UPLOADED_IMAGE, fileName);
 	}
 	
 	
