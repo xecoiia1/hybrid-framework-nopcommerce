@@ -39,21 +39,56 @@ public class Level_11_Upload_Files extends BaseTestJquery  {
 	public void beforeClass(String browserName, String appUrl) throws BrowserNotSupport {
 	driver = getBrowserDriver(browserName, appUrl);
 	
+	homePage = PageGeneratorManagerJQuery.getHomePage(driver);
+	
   }
   
   @Test
   public void Upload_01_One_File_Per_Time() {
+	// Step1 : Load Single File
 	homePage.uploadMultiFiles(driver, indonesiaFileName);
 	
-	Assert.assertTrue(homePage.isFileLoadedByName("indonesiaFileName"));
+	// Step2: Verify single file loaded success
+	Assert.assertTrue(homePage.isFileLoadedByName(indonesiaFileName));
 	
+	// Step3: Click to Start button
 	homePage.clickToStartButton();
 	
-	Assert.assertTrue(homePage.isFileImageUpLoadedByName("indonesiaFileName"));
+	// Step4: Verify single file link uploaded success
+	Assert.assertTrue(homePage.isFileLinksUpLoadedByName(indonesiaFileName));
+	
+	// Step5: Verify single file image uploaded success
+	Assert.assertTrue(homePage.isFileImageUpLoadedByName(indonesiaFileName));
   }
   
   @Test
   public void Upload_02_Multi_Files_Per_Time() {
+	 homePage.refreshPage(driver);
+	// Step1 : Load Multi File
+	homePage.uploadMultiFiles(driver, multiFiles);
+		
+	// Step2: Verify single file loaded success
+	// indonesiaFileName, thaiLandFileName, vietnamFileName, mitchellFileName
+	Assert.assertTrue(homePage.isFileLoadedByName(indonesiaFileName));
+	Assert.assertTrue(homePage.isFileLoadedByName(thaiLandFileName));
+	Assert.assertTrue(homePage.isFileLoadedByName(vietnamFileName));
+	Assert.assertTrue(homePage.isFileLoadedByName(mitchellFileName));
+		
+	// Step3: Click to Start button
+	homePage.clickToStartButton();
+		
+	// Step4: Verify single file link uploaded success
+	Assert.assertTrue(homePage.isFileLinksUpLoadedByName(indonesiaFileName));
+	Assert.assertTrue(homePage.isFileLinksUpLoadedByName(thaiLandFileName));
+	Assert.assertTrue(homePage.isFileLinksUpLoadedByName(vietnamFileName));
+	Assert.assertTrue(homePage.isFileLinksUpLoadedByName(mitchellFileName));
+		
+	// Step5: Verify single file image uploaded success
+	Assert.assertTrue(homePage.isFileImageUpLoadedByName(indonesiaFileName));
+	Assert.assertTrue(homePage.isFileImageUpLoadedByName(thaiLandFileName));
+	Assert.assertTrue(homePage.isFileImageUpLoadedByName(vietnamFileName));
+	Assert.assertTrue(homePage.isFileImageUpLoadedByName(mitchellFileName));
+	  
 		
   }
   
