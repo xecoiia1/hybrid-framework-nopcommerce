@@ -39,7 +39,7 @@ public class Level_11_Upload_Files extends BaseTestJquery  {
 	public void beforeClass(String browserName, String appUrl) throws BrowserNotSupport {
 	driver = getBrowserDriver(browserName, appUrl);
 	
-	homePage = PageGeneratorManagerJQuery.getHomePage(driver);
+	homePage = pageObjUploadFiles.PageGeneratorManagerJQuery.getHomePage(driver);
 	
   }
   
