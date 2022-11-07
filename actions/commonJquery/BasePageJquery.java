@@ -21,12 +21,14 @@ import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import pageObjUploadFiles.HomePageObj;
 import pageObject.nopCommerce.admin.AdminLoginPageObj;
 import pageObject.nopCommerce.user.UserAddressPageObj;
 import pageObject.nopCommerce.user.UserCustomerInforPageObj;
 import pageObject.nopCommerce.user.UserHomePageObj;
 import pageObject.nopCommerce.user.UserMyProductReviewPageObj;
 import pageObject.nopCommerce.user.UserRewardPointPageObj;
+import pageUI.Jquery.uploadFile.BasePageJQueryUI;
 import pageUI.nopCommerce.user.BasePageUI;
 import pageUI.nopCommerce.user.CustomerInforPageUI;
 import pageUI.nopCommerce.user.HomePageUI;
@@ -513,10 +515,16 @@ public class BasePageJquery {
 
 	}
 	
-	//Hàm upload File/Multi Files 
-	
+	//Hàm upload File/Multi Files 	
 	public void uploadMultiFiles(WebDriver driver, String...filesName) {
-			String filePath = System.getProperty("user.dir");
+			// Đường dẫn của thư mục Upload File
+			String filePath = GlobalConstants.UPLOAD_FILE;
+			String fullFileName = "";
+			for (String file: filesName) {
+				fullFileName = fullFileName + filePath + file + "\n";
+			}
+			fullFileName = fullFileName.trim();
+			getWebElement(driver, BasePageJQueryUI.UPLOAD_FILE).sendKeys(fullFileName);
 	}
 	
 	private long longTimeOut = GlobalConstants.LONG_TIMEOUT;

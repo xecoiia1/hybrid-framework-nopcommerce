@@ -36,7 +36,7 @@ public class Level_11_Upload_Files extends BaseTestJquery  {
   
   @Test
   public void Upload_01_One_File_Per_Time() {
-		System.out.println(System.getProperty("user.dir"));
+		
   }
   
   @Test
