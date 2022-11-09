@@ -10,6 +10,8 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.testng.Assert;
+import org.testng.Reporter;
 
 import exception.BrowserNotSupport;
 import io.github.bonigarcia.wdm.WebDriverManager;
@@ -124,6 +126,51 @@ public class BaseTestJquery {
 		driver.manage().window().maximize();
 		return driver;
 	}
+	
+	private boolean verifyTrue(boolean condition) {
+		boolean pass = true;
+		try {
+			System.out.println(" -------------------------- PASSED -------------------------- ");
+			Assert.assertTrue(condition);
+		} catch (Throwable e) {
+			System.out.println(" -------------------------- FAILED -------------------------- ");
+			pass = false;
+
+			// Add lỗi vào ReportNG
+			VerificationFailures.getFailures().addFailureForTest(Reporter.getCurrentTestResult(), e);
+			Reporter.getCurrentTestResult().setThrowable(e);
+		}
+		return pass;
+	}
+
+	private boolean verifyFalse(boolean condition) {
+		boolean pass = true;
+		try {
+			System.out.println(" -------------------------- PASSED -------------------------- ");
+			Assert.assertFalse(condition);
+		} catch (Throwable e) {
+			System.out.println(" -------------------------- FAILED -------------------------- ");
+			pass = false;
+			VerificationFailures.getFailures().addFailureForTest(Reporter.getCurrentTestResult(), e);
+			Reporter.getCurrentTestResult().setThrowable(e);
+		}
+		return pass;
+	}
+
+	private boolean verifyEquals(Object actual, Object expected) {
+		boolean pass = true; 
+		try {
+			Assert.assertEquals(actual, expected);
+			System.out.println(" -------------------------- PASSED -------------------------- ");
+		} catch (Throwable e) {
+			pass = false;
+			System.out.println(" -------------------------- FAILED -------------------------- ");
+			VerificationFailures.getFailures().addFailureForTest(Reporter.getCurrentTestResult(), e);
+			Reporter.getCurrentTestResult().setThrowable(e);
+		}
+		return pass;
+	}
+
 	
 	  public int generateRandom() {
 		  Random rand = new Random();
