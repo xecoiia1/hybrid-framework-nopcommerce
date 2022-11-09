@@ -127,7 +127,7 @@ public class BaseTestJquery {
 		return driver;
 	}
 	
-	private boolean verifyTrue(boolean condition) {
+	public boolean verifyTrue(boolean condition) {
 		boolean pass = true;
 		try {
 			System.out.println(" -------------------------- PASSED -------------------------- ");
@@ -143,7 +143,7 @@ public class BaseTestJquery {
 		return pass;
 	}
 
-	private boolean verifyFalse(boolean condition) {
+	public boolean verifyFalse(boolean condition) {
 		boolean pass = true;
 		try {
 			System.out.println(" -------------------------- PASSED -------------------------- ");
@@ -157,7 +157,7 @@ public class BaseTestJquery {
 		return pass;
 	}
 
-	private boolean verifyEquals(Object actual, Object expected) {
+	public boolean verifyEquals(Object actual, Object expected) {
 		boolean pass = true; 
 		try {
 			Assert.assertEquals(actual, expected);
