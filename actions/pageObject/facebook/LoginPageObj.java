@@ -23,6 +23,16 @@ public class LoginPageObj extends BasePageJquery {
 		return isElementDisplay(driver, LoginPageUI.EMAIL_ADDRESS_TEXTBOX);
 	}
 
+	public void enterToEmailaddressTextBox(String emailAddress) {
+		waitForElementVisible(driver, LoginPageUI.EMAIL_ADDRESS_TEXTBOX);
+		sendkeysToElementByXpath(driver, LoginPageUI.EMAIL_ADDRESS_TEXTBOX, emailAddress);
+		
+	}
+
+	public boolean isConfirmEmailAddressTextboxDisplayed() {
+		return isElementDisplay(driver, LoginPageUI.CONFIRM_EMAIL_ADDRESS_TEXTBOX);
+	}
+
 
 	
 	

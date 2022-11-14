@@ -35,17 +35,31 @@ public class Level_13_Element_Undisplayed extends BaseTestJquery  {
   public void TC_01_Verify_Element_Displayed() {
 	loginPage.clickToCreateNewAccountButton();
 	
+	// Nếu 1 hàm chỉ mong đợi để verify element displayed thôi - kết hợp cả wait + isDisplayed
+	// waitForElementVisible
+	// isElementDisplayed
 	verifyTrue(loginPage.isEmailAddressTextboxDisplayed());
   }
   
   @Test
   public void TC_02_Verify_Element_Undisplayed_In_DOM() {
-
+	  //Nếu như mình mong đợi 1 hàm vừa verify displayed/ undisplayed thì không được kết hợp wait
+	  
+     // Verify True - mong đợi Confirm Email displayed
+	 loginPage.enterToEmailaddressTextBox("t12345567@gmail.com");
+	 loginPage.sleepInSecond(3);
+	 verifyTrue(loginPage.isConfirmEmailAddressTextboxDisplayed());
+	  
+	 // Verify False - mong đợi Confirm Email Undisplayed 
+	 loginPage.enterToEmailaddressTextBox("");
+	 loginPage.sleepInSecond(3);
+	 verifyFalse(loginPage.isConfirmEmailAddressTextboxDisplayed());
   }
   
   @Test
   public void TC_03_Verify_Element_Undisplayed_Not_In_DOM() {
-
+	  
+	  
   }
   
   

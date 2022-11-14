@@ -314,6 +314,14 @@ public class BasePageJquery {
 		return getWebElement(driver, locatorType).isDisplayed();
 	}
 	
+	public Boolean isElementUnDisplay(WebDriver driver, String locatorType) {
+		boolean status = true;
+		if(getWebElement(driver, locatorType).isDisplayed()) {
+			status = false;
+		}
+		return status;
+	}
+	
 	public Boolean isElementDisplay(WebDriver driver, String locatorType, String...dynamicValues) {
 		return getWebElement(driver, getDynamicXpath(locatorType, dynamicValues)).isDisplayed();
 	}
