@@ -38,6 +38,10 @@ public class LoginPageObj extends BasePageJquery {
 		clickToElementByXpath(driver, LoginPageUI.CLOSE_ICON);
 	}
 
+	public boolean isConfirmEmailAddressTextboxUndisplayed() {
+		return isElementUndisplayed(driver, LoginPageUI.CONFIRM_EMAIL_ADDRESS_TEXTBOX);
+	}
+
 
 	
 	

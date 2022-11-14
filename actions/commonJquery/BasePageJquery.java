@@ -4,6 +4,7 @@ import java.awt.event.ActionEvent;
 import java.beans.PropertyChangeListener;
 import java.util.List;
 import java.util.Set;
+import java.util.concurrent.TimeUnit;
 
 import javax.swing.Action;
 
@@ -319,6 +320,29 @@ public class BasePageJquery {
 			return getWebElement(driver, locatorType).isDisplayed();
 		} catch (NoSuchElementException e) {
 			// Case 3: Undisplayed: Trả về false
+			return false;
+		}
+	}
+	
+	public void overrideGlobalTimeout(WebDriver driver, long timeOut) {
+		driver.manage().timeouts().implicitlyWait(timeOut, TimeUnit.SECONDS);
+	}
+	
+	public boolean isElementUndisplayed(WebDriver driver, String locator) {
+		overrideGlobalTimeout(driver, shortTimeOut);
+		List<WebElement> elements = getListWebElement(driver, locator);
+		overrideGlobalTimeout(driver, longTimeOut);
+		
+		//Case: Element không có trong DOM
+		if (elements.size() == 0) {
+			System.out.println("Element not in DOM");
+			return true;
+		//Case: Element Có trong DOM nhưng hiển thị/ không hiển thị	
+		} else if (elements.size() > 0 && !elements.get(0).isDisplayed()) {
+			System.out.println("Element in DOM");
+			return true;
+		} else {
+			System.out.println("Element in DOM and displayed");
 			return false;
 		}
 	}

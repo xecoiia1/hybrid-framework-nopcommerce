@@ -38,6 +38,7 @@ public class Level_13_Element_Undisplayed extends BaseTestJquery  {
 	 loginPage.enterToEmailaddressTextBox("t12345567@gmail.com");
 	 loginPage.sleepInSecond(3);
 	 verifyTrue(loginPage.isConfirmEmailAddressTextboxDisplayed());
+	 
   }
   
   @Test
@@ -47,7 +48,8 @@ public class Level_13_Element_Undisplayed extends BaseTestJquery  {
 	 // Verify False - mong đợi Confirm Email Undisplayed 
 	 loginPage.enterToEmailaddressTextBox("");
 	 loginPage.sleepInSecond(3);
-	 verifyFalse(loginPage.isConfirmEmailAddressTextboxDisplayed());
+	 //verifyFalse(loginPage.isConfirmEmailAddressTextboxDisplayed());
+	 verifyTrue(loginPage.isConfirmEmailAddressTextboxUndisplayed());
   }
   
   @Test
@@ -58,7 +60,9 @@ public class Level_13_Element_Undisplayed extends BaseTestJquery  {
 	  // Hàm isDisplayed không kiểm tra 1 element không có trong DOM
 	  // Khi close cái form register đi thì Confirm Email không còn trong DOM nữa
 	  
-	  verifyFalse(loginPage.isConfirmEmailAddressTextboxDisplayed());
+	  //verifyFalse(loginPage.isConfirmEmailAddressTextboxDisplayed());
+	  
+	  verifyTrue(loginPage.isConfirmEmailAddressTextboxUndisplayed());
 	  
   }
   
