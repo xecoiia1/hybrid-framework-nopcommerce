@@ -11,6 +11,7 @@ import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -311,7 +312,15 @@ public class BasePageJquery {
 	}
 	
 	public Boolean isElementDisplay(WebDriver driver, String locatorType) {
-		return getWebElement(driver, locatorType).isDisplayed();
+		try {
+			// Nếu tìm thấy Element:
+			// Case 1: Displayed: Trả về True
+			// Case 2: Undisplayed: Trả về False
+			return getWebElement(driver, locatorType).isDisplayed();
+		} catch (NoSuchElementException e) {
+			// Case 3: Undisplayed: Trả về false
+			return false;
+		}
 	}
 	
 	public Boolean isElementUnDisplay(WebDriver driver, String locatorType) {

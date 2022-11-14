@@ -33,6 +33,11 @@ public class LoginPageObj extends BasePageJquery {
 		return isElementDisplay(driver, LoginPageUI.CONFIRM_EMAIL_ADDRESS_TEXTBOX);
 	}
 
+	public void clickCloseIconAtRegisterForm() {
+		waitForElementClickAble(driver, LoginPageUI.CLOSE_ICON);
+		clickToElementByXpath(driver, LoginPageUI.CLOSE_ICON);
+	}
+
 
 	
 	
