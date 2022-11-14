@@ -17,13 +17,7 @@ import commonJquery.BaseTestJquery;
 import exception.BrowserNotSupport;
 import pageObjJquery.HomePageObj;
 import pageObjJquery.PageGeneratorManagerJQuery;
-import pageObject.nopCommerce.user.UserAddressPageObj;
-import pageObject.nopCommerce.user.UserCustomerInforPageObj;
-import pageObject.nopCommerce.user.UserHomePageObj;
-import pageObject.nopCommerce.user.UserLoginPageObj;
-import pageObject.nopCommerce.user.UserMyProductReviewPageObj;
-import pageObject.nopCommerce.user.UserRegisterPageObj;
-import pageObject.nopCommerce.user.UserRewardPointPageObj;
+import pageObject.facebook.LoginPageObj;
 import pageUI.Jquery.HomePageUI;
 
 public class Level_13_Element_Undisplayed extends BaseTestJquery  {
@@ -34,12 +28,14 @@ public class Level_13_Element_Undisplayed extends BaseTestJquery  {
 	public void beforeClass(String browserName, String appUrl) throws BrowserNotSupport {
 	driver = getBrowserDriver(browserName, appUrl);
 	
-	
+	loginPage = pageObject.facebook.PageGeneratorManager.getLoginPage(driver);
   }
   
   @Test
   public void TC_01_Verify_Element_Displayed() {
-	  
+	loginPage.clickToCreateNewAccountButton();
+	
+	verifyTrue(loginPage.isEmailAddressTextboxDisplayed());
   }
   
   @Test
@@ -62,6 +58,6 @@ public class Level_13_Element_Undisplayed extends BaseTestJquery  {
 //  var element = $$("div.validation-summary-errors")[0];
 //  element.textContent;
  private WebDriver driver;
-
+ private LoginPageObj loginPage;
 
 }
