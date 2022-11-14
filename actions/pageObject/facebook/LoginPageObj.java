@@ -39,6 +39,7 @@ public class LoginPageObj extends BasePageJquery {
 	}
 
 	public boolean isConfirmEmailAddressTextboxUndisplayed() {
+		waitForElementUndisplayed(driver, LoginPageUI.CONFIRM_EMAIL_ADDRESS_TEXTBOX);
 		return isElementUndisplayed(driver, LoginPageUI.CONFIRM_EMAIL_ADDRESS_TEXTBOX);
 	}
 

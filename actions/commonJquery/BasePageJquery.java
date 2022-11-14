@@ -553,6 +553,13 @@ public class BasePageJquery {
 		explixitWait.until(ExpectedConditions.elementToBeClickable(getByLocator(getDynamicXpath(locatorType, dynamicValues))));
 	}
 	
+	public void waitForElementUndisplayed(WebDriver driver, String locatorType) {
+		WebDriverWait explicitWait = new WebDriverWait(driver, shortTimeOut);
+		overrideGlobalTimeout(driver, shortTimeOut);
+		explicitWait.until(ExpectedConditions.invisibilityOfElementLocated(getByLocator(locatorType)));
+		overrideGlobalTimeout(driver, longTimeOut);
+	}
+	
 	//Tối ưu ở Level 07_Switch_Page
 	
 	public void openPagesAtMyAccountByPageName(WebDriver driver, String pageName) {
