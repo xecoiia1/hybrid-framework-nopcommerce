@@ -7,3 +7,35 @@
 [INFO ] [2022-11-15 17:12:22,049] Register - Step 07: Click to Register Button
 [INFO ] [2022-11-15 17:12:23,459] Register - Step 08: Verify Register Success Message
 [INFO ] [2022-11-15 17:12:23,538] Register - Step 09: Click to Logout Button
+[INFO ] [2022-11-15 17:23:21,480] Register - Step 01: Click to Register link
+[INFO ] [2022-11-15 17:23:22,201] Register - Step 02: Input FirstName to required field 'Thanh'
+[INFO ] [2022-11-15 17:23:22,307] Register - Step 03: Input LastName to required field 'Nguyen'
+[INFO ] [2022-11-15 17:23:22,364] Register - Step 04: Input Email to required field 'abc6275@mail.com'
+[INFO ] [2022-11-15 17:23:22,705] Register - Step 05: Input Password to required field '123456'
+[INFO ] [2022-11-15 17:23:22,755] Register - Step 06: Input Confirm Password to required field '123456'
+[INFO ] [2022-11-15 17:23:22,807] Register - Step 07: Click to Register Button
+[INFO ] [2022-11-15 17:23:23,952] Register - Step 08: Verify Register Success Message
+[INFO ] [2022-11-15 17:23:23,991] Register - Step 09: Click to Logout Button
+[INFO ] [2022-11-15 17:23:24,726] Login - Step 01: Navigate to Login Button
+[INFO ] [2022-11-15 17:23:27,921] Login - Step 02: Input Not Found Email to Email Textbox 'abc6275@mail.com'
+[INFO ] [2022-11-15 17:23:27,977] Login - Step 03:  Input Password TextBox '123456'
+[INFO ] [2022-11-15 17:23:28,033] Login - Step 04:  Click to Login Button
+[INFO ] [2022-11-15 17:23:28,693] Login - Step 05:  Verify Login Success
+[INFO ] [2022-11-15 17:23:28,805] Login - Step 06: Navigate to MyAccoutLink
+[INFO ] [2022-11-15 17:23:30,756] Login - Step 07: Verify Login Success
+[INFO ] [2022-11-15 17:23:57,572] Register - Step 01: Click to Register link
+[INFO ] [2022-11-15 17:23:59,277] Register - Step 02: Input FirstName to required field 'Thanh'
+[INFO ] [2022-11-15 17:23:59,470] Register - Step 03: Input LastName to required field 'Nguyen'
+[INFO ] [2022-11-15 17:23:59,654] Register - Step 04: Input Email to required field 'abc4651@mail.com'
+[INFO ] [2022-11-15 17:23:59,900] Register - Step 05: Input Password to required field '123456'
+[INFO ] [2022-11-15 17:24:00,106] Register - Step 06: Input Confirm Password to required field '123456'
+[INFO ] [2022-11-15 17:24:00,311] Register - Step 07: Click to Register Button
+[INFO ] [2022-11-15 17:24:02,526] Register - Step 08: Verify Register Success Message
+[INFO ] [2022-11-15 17:24:02,615] Register - Step 09: Click to Logout Button
+[INFO ] [2022-11-15 17:24:03,411] Login - Step 01: Navigate to Login Button
+[INFO ] [2022-11-15 17:24:04,485] Login - Step 02: Input Not Found Email to Email Textbox 'abc4651@mail.com'
+[INFO ] [2022-11-15 17:24:04,730] Login - Step 03:  Input Password TextBox '123456'
+[INFO ] [2022-11-15 17:24:04,939] Login - Step 04:  Click to Login Button
+[INFO ] [2022-11-15 17:24:05,743] Login - Step 05:  Verify Login Success
+[INFO ] [2022-11-15 17:24:05,933] Login - Step 06: Navigate to MyAccoutLink
+[INFO ] [2022-11-15 17:24:07,979] Login - Step 07: Verify Login Success
