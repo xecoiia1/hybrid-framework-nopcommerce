@@ -1,0 +1,9 @@
+[INFO ] [2022-11-15 17:12:20,406] Register - Step 01: Click to Register link
+[INFO ] [2022-11-15 17:12:21,148] Register - Step 02: Input FirstName to required field 'Thanh'
+[INFO ] [2022-11-15 17:12:21,333] Register - Step 03: Input LastName to required field 'Nguyen'
+[INFO ] [2022-11-15 17:12:21,510] Register - Step 04: Input Email to required field 'abc4190@mail.com'
+[INFO ] [2022-11-15 17:12:21,697] Register - Step 05: Input Password to required field '123456'
+[INFO ] [2022-11-15 17:12:21,875] Register - Step 06: Input Confirm Password to required field '123456'
+[INFO ] [2022-11-15 17:12:22,049] Register - Step 07: Click to Register Button
+[INFO ] [2022-11-15 17:12:23,459] Register - Step 08: Verify Register Success Message
+[INFO ] [2022-11-15 17:12:23,538] Register - Step 09: Click to Logout Button
