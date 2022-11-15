@@ -3,6 +3,8 @@ package commonJquery;
 import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -18,6 +20,12 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class BaseTestJquery {
 	private WebDriver driver;
+	
+	protected final Log log;
+	
+	protected BaseTestJquery() {
+		log = LogFactory.getLog(getClass());
+	}
 	
 	protected WebDriver getBrowserDriver(String browserName) {
 		if(browserName.equals("firefox")) {
@@ -171,6 +179,7 @@ public class BaseTestJquery {
 		return pass;
 	}
 
+	
 	
 	  public int generateRandom() {
 		  Random rand = new Random();
