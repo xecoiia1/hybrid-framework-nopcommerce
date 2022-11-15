@@ -62,7 +62,7 @@ public class Level_14_Log_ReportNG extends BaseTestJquery  {
 		log.info("Register - Step 09: Click to Logout Button");
 		homePage = registerPage.clickToLogoutBtn();
  }
-  
+  @Test
   public void User_02_Login() {
 	    log.info("Login - Step 01: Navigate to Login Button");
 		loginPage = homePage.clickToLoginLink();
