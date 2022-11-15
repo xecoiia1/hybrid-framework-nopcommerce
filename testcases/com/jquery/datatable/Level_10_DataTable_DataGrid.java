@@ -65,7 +65,7 @@ public class Level_10_DataTable_DataGrid extends BaseTestJquery  {
   
   
   public void Table_03_Enter_Header_Textbox() {
-	  //Đọc dữ liệu trong file txt
+	  //Đọc dữ liệu trong file tx
 	  //Lưu vào 1 List<String> = ExpectedValues = expectedAllCountryValues
 	  
 	  actualAllCountryValues = homePage.getValueEachRowAtAllPage();
