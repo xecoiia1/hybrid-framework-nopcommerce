@@ -34,47 +34,58 @@ public class Level_14_Log_ReportNG extends BaseTestJquery  {
   }
   
   @Test
-  public void User_01_Register_Login() {
-	  	log.info("");
-		System.out.println("Register_Login_01 - Step 01: Click to Register link");
+  public void User_01_Register() {
+	  	log.info("Register - Step 01: Click to Register link");
 		registerPage = homePage.clickToRegisterLink();
-		  
-	    System.out.println("Register_Login_01 - Step 02: Input Text to required field");
+		
+		log.info("Register - Step 02: Input FirstName to required field '" + firstName +"'" );
 		registerPage.inputToFirstnameTextBox(firstName);
+		
+		log.info("Register - Step 03: Input LastName to required field '" + lastName +"'" );
 		registerPage.inputToLastnameTextBox(lastName);
+		
+		log.info("Register - Step 04: Input Email to required field '" + email +"'" );
 		registerPage.inputToEmailTextBox(email);
+		
+		log.info("Register - Step 05: Input Password to required field '" + passWord +"'" );
 		registerPage.inputToPasswordTextBox(passWord);
+		
+		log.info("Register - Step 06: Input Confirm Password to required field '" + passWord +"'" );
 		registerPage.inputToConfirmPasswordTextBox(passWord);
-		  
-		System.out.println("Register_Login_01 - Step 03: Click to Register Button");
+		
+		log.info("Register - Step 07: Click to Register Button");
 		registerPage.clickToRegisterBtn();
-		  
-		System.out.println("Register_Login_01 - Step 04: Verify Register Success Message");
+		
+		log.info("Register - Step 08: Verify Register Success Message");
 		verifyEquals(registerPage.getSuccessRegisterSucces(), "Your registration completed");
 		
-		System.out.println("Register_Login_01 - Step 05: Click to Logout Button");
+		log.info("Register - Step 09: Click to Logout Button");
 		homePage = registerPage.clickToLogoutBtn();
-		
+ }
+  
+  public void User_02_Login() {
+	    log.info("Login - Step 01: Navigate to Login Button");
 		loginPage = homePage.clickToLoginLink();
-		  
-		System.out.println("Register_Login_01 - Step 06: Input Not Found Email to Email Textbox");
+		
+		log.info("Login - Step 02: Input Not Found Email to Email Textbox '" + email +"'" );
 		loginPage.inputEmail(email);
-		  
-		System.out.println("Register_Login_01 - Step 08: Input Password TextBox");
+		
+		log.info("Login - Step 03:  Input Password TextBox '" + passWord +"'" );
 		loginPage.inputPassWordTextBox(passWord);
-		  
-		System.out.println("Register_Login_01 - Step 09: Click to Login Button");
+		
+		log.info("Login - Step 04:  Click to Login Button");
 		homePage = loginPage.clickToLoginBtn();
-		  
-		System.out.println("Register_Login_01 - Step 09: Verify Login Success");
-		  
+		
+		log.info("Login - Step 05:  Verify Login Success");
 		verifyTrue(homePage.myAccountIsDisplayed());
 		verifyTrue(homePage.logOutLinkIsDisplayed());
-		  
+		
+		log.info("Login - Step 06: Navigate to MyAccoutLink");
 		customerInforPage = homePage.clickToMyAccoutLink();
-		  
+		
+		log.info("Login - Step 07: Verify Login Success");
 		verifyTrue(customerInforPage.isCustomerInforPageDisplayed());
-  }  
+  }
   @AfterClass
   public void afterClass() {
 	  driver.quit();
