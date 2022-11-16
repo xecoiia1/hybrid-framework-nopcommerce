@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-11-15T10:23:54Z" name="NopCommerce" finished-at="2022-11-15T10:24:08Z" duration-ms="13815">
+  <suite started-at="2022-11-16T07:47:52Z" name="NopCommerce" finished-at="2022-11-16T07:48:04Z" duration-ms="12153">
     <groups>
     </groups>
-    <test started-at="2022-11-15T10:23:54Z" name="Run on Firefox" finished-at="2022-11-15T10:24:08Z" duration-ms="13815">
+    <test started-at="2022-11-16T07:47:52Z" name="Run on Firefox" finished-at="2022-11-16T07:48:04Z" duration-ms="12153">
       <class name="com.nopcommerce.user.Level_14_Log_ReportNG">
-        <test-method is-config="true" signature="beforeClass(java.lang.String)[pri:0, instance:com.nopcommerce.user.Level_14_Log_ReportNG@52b1beb6]" started-at="2022-11-15T10:23:54Z" name="beforeClass" finished-at="2022-11-15T10:23:57Z" duration-ms="3159" status="PASS">
+        <test-method is-config="true" signature="beforeClass(java.lang.String)[pri:0, instance:com.nopcommerce.user.Level_14_Log_ReportNG@3ad83a66]" started-at="2022-11-16T07:47:52Z" name="beforeClass" finished-at="2022-11-16T07:47:56Z" duration-ms="3923" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,15 +18,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method signature="User_01_Register()[pri:0, instance:com.nopcommerce.user.Level_14_Log_ReportNG@52b1beb6]" started-at="2022-11-15T10:23:57Z" name="User_01_Register" finished-at="2022-11-15T10:24:03Z" duration-ms="5841" status="PASS">
+        <test-method signature="User_01_Register()[pri:0, instance:com.nopcommerce.user.Level_14_Log_ReportNG@3ad83a66]" started-at="2022-11-16T07:47:56Z" name="User_01_Register" finished-at="2022-11-16T07:48:01Z" duration-ms="4837" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- User_01_Register -->
-        <test-method signature="User_02_Login()[pri:0, instance:com.nopcommerce.user.Level_14_Log_ReportNG@52b1beb6]" started-at="2022-11-15T10:24:03Z" name="User_02_Login" finished-at="2022-11-15T10:24:08Z" duration-ms="4658" status="PASS">
+        <test-method signature="User_02_Login()[pri:0, instance:com.nopcommerce.user.Level_14_Log_ReportNG@3ad83a66]" started-at="2022-11-16T07:48:01Z" name="User_02_Login" finished-at="2022-11-16T07:48:04Z" duration-ms="3191" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- User_02_Login -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.nopcommerce.user.Level_14_Log_ReportNG@52b1beb6]" started-at="2022-11-15T10:24:08Z" name="afterClass" finished-at="2022-11-15T10:24:08Z" duration-ms="137" status="PASS">
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.nopcommerce.user.Level_14_Log_ReportNG@3ad83a66]" started-at="2022-11-16T07:48:04Z" name="afterClass" finished-at="2022-11-16T07:48:04Z" duration-ms="183" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
