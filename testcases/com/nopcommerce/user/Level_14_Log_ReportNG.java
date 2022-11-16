@@ -84,7 +84,7 @@ public class Level_14_Log_ReportNG extends BaseTestJquery  {
 		customerInforPage = homePage.clickToMyAccoutLink();
 		
 		log.info("Login - Step 07: Verify Login Success");
-		verifyTrue(customerInforPage.isCustomerInforPageDisplayed());
+		verifyFalse(customerInforPage.isCustomerInforPageDisplayed());
   }
   @AfterClass
   public void afterClass() {

@@ -1,17 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [NopCommerce]">
-  <parameter name="url" value="https://www.jqueryscript.net/demo/jQuery-Dynamic-Data-Grid-Plugin-appendGrid/"/>
+  <listeners>
+    <listener class-name="commonJquery.MethodListener"/>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+  </listeners>
   <test thread-count="5" name="Run on Firefox(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="com.jquery.datatable.Level_10_DataTable_DataGrid">
+      <class name="com.nopcommerce.user.Level_14_Log_ReportNG">
         <methods>
-          <include name="Table_04_Action_At_Any_Row"/>
-          <include name="afterClass"/>
           <include name="beforeClass"/>
+          <include name="afterClass"/>
+          <include name="User_02_Login"/>
         </methods>
-      </class> <!-- com.jquery.datatable.Level_10_DataTable_DataGrid -->
+      </class> <!-- com.nopcommerce.user.Level_14_Log_ReportNG -->
     </classes>
   </test> <!-- Run on Firefox(failed) -->
 </suite> <!-- Failed suite [NopCommerce] -->
