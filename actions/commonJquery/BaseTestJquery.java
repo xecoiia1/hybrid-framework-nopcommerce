@@ -179,11 +179,14 @@ public class BaseTestJquery {
 		return pass;
 	}
 
-	
+	public WebDriver getDriverInstance() {
+		return this.driver;
+	}
 	
 	  public int generateRandom() {
 		  Random rand = new Random();
 		  return rand.nextInt(9999);
 	  }
+
 }
 
