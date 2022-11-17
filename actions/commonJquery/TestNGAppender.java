@@ -1,4 +1,4 @@
-package common;
+package commonJquery;
 
 import org.apache.log4j.AppenderSkeleton;
 import org.apache.log4j.spi.LoggingEvent;
