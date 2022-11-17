@@ -57,7 +57,7 @@ public class Level_15_ReportNG_Screenshot extends BaseTestJquery  {
 		registerPage.clickToRegisterBtn();
 		
 		log.info("Register - Step 08: Verify Register Success Message");
-		verifyEquals(registerPage.getSuccessRegisterSucces(), "Your registration completed");
+		Assert.assertEquals(registerPage.getSuccessRegisterSucces(), "Your registration completed");
 		
 		log.info("Register - Step 09: Click to Logout Button");
 		homePage = registerPage.clickToLogoutBtn();
@@ -77,14 +77,14 @@ public class Level_15_ReportNG_Screenshot extends BaseTestJquery  {
 		homePage = loginPage.clickToLoginBtn();
 		
 		log.info("Login - Step 05:  Verify Login Success");
-		verifyTrue(homePage.myAccountIsDisplayed());
-		verifyTrue(homePage.logOutLinkIsDisplayed());
+		Assert.assertTrue(homePage.myAccountIsDisplayed());
+		Assert.assertTrue(homePage.logOutLinkIsDisplayed());
 		
 		log.info("Login - Step 06: Navigate to MyAccoutLink");
 		customerInforPage = homePage.clickToMyAccoutLink();
 		
 		log.info("Login - Step 07: Verify Login Success");
-		verifyFalse(customerInforPage.isCustomerInforPageDisplayed());
+		Assert.assertFalse(customerInforPage.isCustomerInforPageDisplayed());
   }
   @AfterClass
   public void afterClass() {

@@ -4,9 +4,9 @@
            failures="1"
            errors="0"
            skipped="0"
-           time="6.890">
+           time="6.532">
   <properties />
-            <testcase name="User_02_Login" time="3.092" classname="com.nopcommerce.user.Level_15_ReportNG_Screenshot">
+            <testcase name="User_02_Login" time="2.870" classname="com.nopcommerce.user.Level_15_ReportNG_Screenshot">
                 <failure type="java.lang.AssertionError"
                   message="expected [false] but found [true]"
               >
@@ -15,7 +15,6 @@
   org.testng.Assert.failNotEquals(Assert.java:776)
   org.testng.Assert.assertFalse(Assert.java:65)
   org.testng.Assert.assertFalse(Assert.java:75)
-  commonJquery.BaseTestJquery.verifyFalse(BaseTestJquery.java:158)
   com.nopcommerce.user.Level_15_ReportNG_Screenshot.User_02_Login(Level_15_ReportNG_Screenshot.java:87)
   java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
   java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
@@ -48,6 +47,6 @@
           </testcase>
   
   
-            <testcase name="User_01_Register" time="3.798" classname="com.nopcommerce.user.Level_15_ReportNG_Screenshot" />
+            <testcase name="User_01_Register" time="3.662" classname="com.nopcommerce.user.Level_15_ReportNG_Screenshot" />
       
 </testsuite>
