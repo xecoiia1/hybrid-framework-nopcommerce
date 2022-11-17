@@ -87,3 +87,19 @@
 [INFO ] [2022-11-16 14:56:32,150] Login - Step 05:  Verify Login Success
 [INFO ] [2022-11-16 14:56:32,349] Login - Step 06: Navigate to MyAccoutLink
 [INFO ] [2022-11-16 14:56:33,013] Login - Step 07: Verify Login Success
+[INFO ] [2022-11-17 15:59:59,279] Register - Step 01: Click to Register link
+[INFO ] [2022-11-17 16:00:00,099] Register - Step 02: Input FirstName to required field 'Thanh'
+[INFO ] [2022-11-17 16:00:00,311] Register - Step 03: Input LastName to required field 'Nguyen'
+[INFO ] [2022-11-17 16:00:00,532] Register - Step 04: Input Email to required field 'abc4105@mail.com'
+[INFO ] [2022-11-17 16:00:00,770] Register - Step 05: Input Password to required field '123456'
+[INFO ] [2022-11-17 16:00:00,966] Register - Step 06: Input Confirm Password to required field '123456'
+[INFO ] [2022-11-17 16:00:01,159] Register - Step 07: Click to Register Button
+[INFO ] [2022-11-17 16:00:02,236] Register - Step 08: Verify Register Success Message
+[INFO ] [2022-11-17 16:00:02,311] Register - Step 09: Click to Logout Button
+[INFO ] [2022-11-17 16:00:03,076] Login - Step 01: Navigate to Login Button
+[INFO ] [2022-11-17 16:00:03,837] Login - Step 02: Input Not Found Email to Email Textbox 'abc4105@mail.com'
+[INFO ] [2022-11-17 16:00:04,081] Login - Step 03:  Input Password TextBox '123456'
+[INFO ] [2022-11-17 16:00:04,274] Login - Step 04:  Click to Login Button
+[INFO ] [2022-11-17 16:00:05,160] Login - Step 05:  Verify Login Success
+[INFO ] [2022-11-17 16:00:05,354] Login - Step 06: Navigate to MyAccoutLink
+[INFO ] [2022-11-17 16:00:06,089] Login - Step 07: Verify Login Success

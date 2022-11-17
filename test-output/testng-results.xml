@@ -2,76 +2,79 @@
 <testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
   <reporter-output>
     <line>
-      <![CDATA[[INFO ] [2022-11-16 14:56:25,966] Register - Step 01: Click to Register link
+      <![CDATA[[INFO ] [2022-11-17 15:59:59,279] Register - Step 01: Click to Register link
 ]]>
     </line>
     <line>
-      <![CDATA[[INFO ] [2022-11-16 14:56:26,654] Register - Step 02: Input FirstName to required field 'Thanh'
+      <![CDATA[[INFO ] [2022-11-17 16:00:00,099] Register - Step 02: Input FirstName to required field 'Thanh'
 ]]>
     </line>
     <line>
-      <![CDATA[[INFO ] [2022-11-16 14:56:26,892] Register - Step 03: Input LastName to required field 'Nguyen'
+      <![CDATA[[INFO ] [2022-11-17 16:00:00,311] Register - Step 03: Input LastName to required field 'Nguyen'
 ]]>
     </line>
     <line>
-      <![CDATA[[INFO ] [2022-11-16 14:56:27,125] Register - Step 04: Input Email to required field 'abc9413@mail.com'
+      <![CDATA[[INFO ] [2022-11-17 16:00:00,532] Register - Step 04: Input Email to required field 'abc4105@mail.com'
 ]]>
     </line>
     <line>
-      <![CDATA[[INFO ] [2022-11-16 14:56:27,402] Register - Step 05: Input Password to required field '123456'
+      <![CDATA[[INFO ] [2022-11-17 16:00:00,770] Register - Step 05: Input Password to required field '123456'
 ]]>
     </line>
     <line>
-      <![CDATA[[INFO ] [2022-11-16 14:56:27,631] Register - Step 06: Input Confirm Password to required field '123456'
+      <![CDATA[[INFO ] [2022-11-17 16:00:00,966] Register - Step 06: Input Confirm Password to required field '123456'
 ]]>
     </line>
     <line>
-      <![CDATA[[INFO ] [2022-11-16 14:56:27,812] Register - Step 07: Click to Register Button
+      <![CDATA[[INFO ] [2022-11-17 16:00:01,159] Register - Step 07: Click to Register Button
 ]]>
     </line>
     <line>
-      <![CDATA[[INFO ] [2022-11-16 14:56:29,437] Register - Step 08: Verify Register Success Message
+      <![CDATA[[INFO ] [2022-11-17 16:00:02,236] Register - Step 08: Verify Register Success Message
 ]]>
     </line>
     <line>
-      <![CDATA[[INFO ] [2022-11-16 14:56:29,525] Register - Step 09: Click to Logout Button
+      <![CDATA[[INFO ] [2022-11-17 16:00:02,311] Register - Step 09: Click to Logout Button
 ]]>
     </line>
     <line>
-      <![CDATA[[INFO ] [2022-11-16 14:56:30,328] Login - Step 01: Navigate to Login Button
+      <![CDATA[[INFO ] [2022-11-17 16:00:03,076] Login - Step 01: Navigate to Login Button
 ]]>
     </line>
     <line>
-      <![CDATA[[INFO ] [2022-11-16 14:56:30,968] Login - Step 02: Input Not Found Email to Email Textbox 'abc9413@mail.com'
+      <![CDATA[[INFO ] [2022-11-17 16:00:03,837] Login - Step 02: Input Not Found Email to Email Textbox 'abc4105@mail.com'
 ]]>
     </line>
     <line>
-      <![CDATA[[INFO ] [2022-11-16 14:56:31,210] Login - Step 03:  Input Password TextBox '123456'
+      <![CDATA[[INFO ] [2022-11-17 16:00:04,081] Login - Step 03:  Input Password TextBox '123456'
 ]]>
     </line>
     <line>
-      <![CDATA[[INFO ] [2022-11-16 14:56:31,389] Login - Step 04:  Click to Login Button
+      <![CDATA[[INFO ] [2022-11-17 16:00:04,274] Login - Step 04:  Click to Login Button
 ]]>
     </line>
     <line>
-      <![CDATA[[INFO ] [2022-11-16 14:56:32,150] Login - Step 05:  Verify Login Success
+      <![CDATA[[INFO ] [2022-11-17 16:00:05,160] Login - Step 05:  Verify Login Success
 ]]>
     </line>
     <line>
-      <![CDATA[[INFO ] [2022-11-16 14:56:32,349] Login - Step 06: Navigate to MyAccoutLink
+      <![CDATA[[INFO ] [2022-11-17 16:00:05,354] Login - Step 06: Navigate to MyAccoutLink
 ]]>
     </line>
     <line>
-      <![CDATA[[INFO ] [2022-11-16 14:56:33,013] Login - Step 07: Verify Login Success
+      <![CDATA[[INFO ] [2022-11-17 16:00:06,089] Login - Step 07: Verify Login Success
 ]]>
+    </line>
+    <line>
+      <![CDATA[<br><a href="data:image/png;base64,D:\eclipse_Workspace\Framework\reportNGImages\User_02_Login_17_11_2022_04_00_06.png"><img src="data:image/png;base64,D:\eclipse_Workspace\Framework\reportNGImages\User_02_Login_17_11_2022_04_00_06.png" height='100' width='150'/> </a></br>]]>
     </line>
   </reporter-output>
-  <suite started-at="2022-11-16T07:56:22Z" name="NopCommerce" finished-at="2022-11-16T07:56:33Z" duration-ms="10372">
+  <suite started-at="2022-11-17T08:59:54Z" name="NopCommerce" finished-at="2022-11-17T09:00:06Z" duration-ms="12218">
     <groups>
     </groups>
-    <test started-at="2022-11-16T07:56:22Z" name="Run on Firefox" finished-at="2022-11-16T07:56:33Z" duration-ms="10372">
-      <class name="com.nopcommerce.user.Level_14_Log_ReportNG">
-        <test-method is-config="true" signature="beforeClass(java.lang.String)[pri:0, instance:com.nopcommerce.user.Level_14_Log_ReportNG@5f8e8a9d]" started-at="2022-11-16T07:56:22Z" name="beforeClass" finished-at="2022-11-16T07:56:25Z" duration-ms="3038" status="PASS">
+    <test started-at="2022-11-17T08:59:54Z" name="Run on Firefox" finished-at="2022-11-17T09:00:06Z" duration-ms="12218">
+      <class name="com.nopcommerce.user.Level_15_ReportNG_Screenshot">
+        <test-method is-config="true" signature="beforeClass(java.lang.String)[pri:0, instance:com.nopcommerce.user.Level_15_ReportNG_Screenshot@5745ca0e]" started-at="2022-11-17T08:59:54Z" name="beforeClass" finished-at="2022-11-17T08:59:59Z" duration-ms="4975" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -82,47 +85,47 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method signature="User_01_Register()[pri:0, instance:com.nopcommerce.user.Level_14_Log_ReportNG@5f8e8a9d]" started-at="2022-11-16T07:56:25Z" name="User_01_Register" finished-at="2022-11-16T07:56:30Z" duration-ms="4363" status="PASS">
+        <test-method signature="User_01_Register()[pri:0, instance:com.nopcommerce.user.Level_15_ReportNG_Screenshot@5745ca0e]" started-at="2022-11-17T08:59:59Z" name="User_01_Register" finished-at="2022-11-17T09:00:03Z" duration-ms="3798" status="PASS">
           <reporter-output>
             <line>
-              <![CDATA[[INFO ] [2022-11-16 14:56:25,966] Register - Step 01: Click to Register link
+              <![CDATA[[INFO ] [2022-11-17 15:59:59,279] Register - Step 01: Click to Register link
 ]]>
             </line>
             <line>
-              <![CDATA[[INFO ] [2022-11-16 14:56:26,654] Register - Step 02: Input FirstName to required field 'Thanh'
+              <![CDATA[[INFO ] [2022-11-17 16:00:00,099] Register - Step 02: Input FirstName to required field 'Thanh'
 ]]>
             </line>
             <line>
-              <![CDATA[[INFO ] [2022-11-16 14:56:26,892] Register - Step 03: Input LastName to required field 'Nguyen'
+              <![CDATA[[INFO ] [2022-11-17 16:00:00,311] Register - Step 03: Input LastName to required field 'Nguyen'
 ]]>
             </line>
             <line>
-              <![CDATA[[INFO ] [2022-11-16 14:56:27,125] Register - Step 04: Input Email to required field 'abc9413@mail.com'
+              <![CDATA[[INFO ] [2022-11-17 16:00:00,532] Register - Step 04: Input Email to required field 'abc4105@mail.com'
 ]]>
             </line>
             <line>
-              <![CDATA[[INFO ] [2022-11-16 14:56:27,402] Register - Step 05: Input Password to required field '123456'
+              <![CDATA[[INFO ] [2022-11-17 16:00:00,770] Register - Step 05: Input Password to required field '123456'
 ]]>
             </line>
             <line>
-              <![CDATA[[INFO ] [2022-11-16 14:56:27,631] Register - Step 06: Input Confirm Password to required field '123456'
+              <![CDATA[[INFO ] [2022-11-17 16:00:00,966] Register - Step 06: Input Confirm Password to required field '123456'
 ]]>
             </line>
             <line>
-              <![CDATA[[INFO ] [2022-11-16 14:56:27,812] Register - Step 07: Click to Register Button
+              <![CDATA[[INFO ] [2022-11-17 16:00:01,159] Register - Step 07: Click to Register Button
 ]]>
             </line>
             <line>
-              <![CDATA[[INFO ] [2022-11-16 14:56:29,437] Register - Step 08: Verify Register Success Message
+              <![CDATA[[INFO ] [2022-11-17 16:00:02,236] Register - Step 08: Verify Register Success Message
 ]]>
             </line>
             <line>
-              <![CDATA[[INFO ] [2022-11-16 14:56:29,525] Register - Step 09: Click to Logout Button
+              <![CDATA[[INFO ] [2022-11-17 16:00:02,311] Register - Step 09: Click to Logout Button
 ]]>
             </line>
           </reporter-output>
         </test-method> <!-- User_01_Register -->
-        <test-method signature="User_02_Login()[pri:0, instance:com.nopcommerce.user.Level_14_Log_ReportNG@5f8e8a9d]" started-at="2022-11-16T07:56:30Z" name="User_02_Login" finished-at="2022-11-16T07:56:33Z" duration-ms="2775" status="FAIL">
+        <test-method signature="User_02_Login()[pri:0, instance:com.nopcommerce.user.Level_15_ReportNG_Screenshot@5745ca0e]" started-at="2022-11-17T09:00:03Z" name="User_02_Login" finished-at="2022-11-17T09:00:06Z" duration-ms="3092" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [false] but found [true]]]>
@@ -134,7 +137,7 @@ at org.testng.Assert.failNotEquals(Assert.java:776)
 at org.testng.Assert.assertFalse(Assert.java:65)
 at org.testng.Assert.assertFalse(Assert.java:75)
 at commonJquery.BaseTestJquery.verifyFalse(BaseTestJquery.java:158)
-at com.nopcommerce.user.Level_14_Log_ReportNG.User_02_Login(Level_14_Log_ReportNG.java:87)
+at com.nopcommerce.user.Level_15_ReportNG_Screenshot.User_02_Login(Level_15_ReportNG_Screenshot.java:87)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -165,40 +168,43 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
             <line>
-              <![CDATA[[INFO ] [2022-11-16 14:56:30,328] Login - Step 01: Navigate to Login Button
+              <![CDATA[[INFO ] [2022-11-17 16:00:03,076] Login - Step 01: Navigate to Login Button
 ]]>
             </line>
             <line>
-              <![CDATA[[INFO ] [2022-11-16 14:56:30,968] Login - Step 02: Input Not Found Email to Email Textbox 'abc9413@mail.com'
+              <![CDATA[[INFO ] [2022-11-17 16:00:03,837] Login - Step 02: Input Not Found Email to Email Textbox 'abc4105@mail.com'
 ]]>
             </line>
             <line>
-              <![CDATA[[INFO ] [2022-11-16 14:56:31,210] Login - Step 03:  Input Password TextBox '123456'
+              <![CDATA[[INFO ] [2022-11-17 16:00:04,081] Login - Step 03:  Input Password TextBox '123456'
 ]]>
             </line>
             <line>
-              <![CDATA[[INFO ] [2022-11-16 14:56:31,389] Login - Step 04:  Click to Login Button
+              <![CDATA[[INFO ] [2022-11-17 16:00:04,274] Login - Step 04:  Click to Login Button
 ]]>
             </line>
             <line>
-              <![CDATA[[INFO ] [2022-11-16 14:56:32,150] Login - Step 05:  Verify Login Success
+              <![CDATA[[INFO ] [2022-11-17 16:00:05,160] Login - Step 05:  Verify Login Success
 ]]>
             </line>
             <line>
-              <![CDATA[[INFO ] [2022-11-16 14:56:32,349] Login - Step 06: Navigate to MyAccoutLink
+              <![CDATA[[INFO ] [2022-11-17 16:00:05,354] Login - Step 06: Navigate to MyAccoutLink
 ]]>
             </line>
             <line>
-              <![CDATA[[INFO ] [2022-11-16 14:56:33,013] Login - Step 07: Verify Login Success
+              <![CDATA[[INFO ] [2022-11-17 16:00:06,089] Login - Step 07: Verify Login Success
 ]]>
+            </line>
+            <line>
+              <![CDATA[<br><a href="data:image/png;base64,D:\eclipse_Workspace\Framework\reportNGImages\User_02_Login_17_11_2022_04_00_06.png"><img src="data:image/png;base64,D:\eclipse_Workspace\Framework\reportNGImages\User_02_Login_17_11_2022_04_00_06.png" height='100' width='150'/> </a></br>]]>
             </line>
           </reporter-output>
         </test-method> <!-- User_02_Login -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.nopcommerce.user.Level_14_Log_ReportNG@5f8e8a9d]" started-at="2022-11-16T07:56:33Z" name="afterClass" finished-at="2022-11-16T07:56:33Z" duration-ms="178" status="PASS">
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.nopcommerce.user.Level_15_ReportNG_Screenshot@5745ca0e]" started-at="2022-11-17T09:00:06Z" name="afterClass" finished-at="2022-11-17T09:00:06Z" duration-ms="162" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-      </class> <!-- com.nopcommerce.user.Level_14_Log_ReportNG -->
+      </class> <!-- com.nopcommerce.user.Level_15_ReportNG_Screenshot -->
     </test> <!-- Run on Firefox -->
   </suite> <!-- NopCommerce -->
 </testng-results>
