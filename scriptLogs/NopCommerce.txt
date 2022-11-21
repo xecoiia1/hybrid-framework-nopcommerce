@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 [INFO ] [2022-11-17 22:11:06,222] Register - Step 01: Click to Register link
 [INFO ] [2022-11-17 22:11:07,486] Register - Step 02: Input FirstName to required field 'Thanh'
 [INFO ] [2022-11-17 22:11:07,599] Register - Step 03: Input LastName to required field 'Nguyen'
@@ -14,3 +15,6 @@
 [INFO ] [2022-11-17 22:11:10,946] Login - Step 05:  Verify Login Success
 [INFO ] [2022-11-17 22:11:11,029] Login - Step 06: Navigate to MyAccoutLink
 [INFO ] [2022-11-17 22:11:11,536] Login - Step 07: Verify Login Success
+=======
+[INFO ] [2022-11-21 11:23:44,221] Register - Step 04: Input Email to required field 'abc5026@mail.com'
+>>>>>>> branch 'master' of https://github.com/xecoiia1/hybrid-framework-nopcommerce.git

@@ -159,6 +159,7 @@ public class BaseTestJquery {
 		} catch (Throwable e) {
 			System.out.println(" -------------------------- FAILED -------------------------- ");
 			pass = false;
+			// Add lỗi vào ReportNG
 			VerificationFailures.getFailures().addFailureForTest(Reporter.getCurrentTestResult(), e);
 			Reporter.getCurrentTestResult().setThrowable(e);
 		}
@@ -173,6 +174,7 @@ public class BaseTestJquery {
 		} catch (Throwable e) {
 			pass = false;
 			System.out.println(" -------------------------- FAILED -------------------------- ");
+			// Add lỗi vào ReportNG
 			VerificationFailures.getFailures().addFailureForTest(Reporter.getCurrentTestResult(), e);
 			Reporter.getCurrentTestResult().setThrowable(e);
 		}

@@ -135,6 +135,7 @@
 [INFO ] [2022-11-17 16:08:30,870] Login - Step 05:  Verify Login Success
 [INFO ] [2022-11-17 16:08:31,065] Login - Step 06: Navigate to MyAccoutLink
 [INFO ] [2022-11-17 16:08:31,713] Login - Step 07: Verify Login Success
+<<<<<<< HEAD
 [INFO ] [2022-11-17 22:11:06,222] Register - Step 01: Click to Register link
 [INFO ] [2022-11-17 22:11:07,486] Register - Step 02: Input FirstName to required field 'Thanh'
 [INFO ] [2022-11-17 22:11:07,599] Register - Step 03: Input LastName to required field 'Nguyen'
@@ -151,3 +152,38 @@
 [INFO ] [2022-11-17 22:11:10,946] Login - Step 05:  Verify Login Success
 [INFO ] [2022-11-17 22:11:11,029] Login - Step 06: Navigate to MyAccoutLink
 [INFO ] [2022-11-17 22:11:11,536] Login - Step 07: Verify Login Success
+=======
+[INFO ] [2022-11-21 10:10:05,249] Register - Step 01: Click to Register link
+[INFO ] [2022-11-21 10:10:06,486] Register - Step 02: Input FirstName to required field 'Thanh'
+[INFO ] [2022-11-21 10:10:06,715] Register - Step 03: Input LastName to required field 'Nguyen'
+[INFO ] [2022-11-21 10:10:06,931] Register - Step 04: Input Email to required field 'abc3527@mail.com'
+[INFO ] [2022-11-21 10:10:07,167] Register - Step 05: Input Password to required field '123456'
+[INFO ] [2022-11-21 10:10:07,384] Register - Step 06: Input Confirm Password to required field '123456'
+[INFO ] [2022-11-21 10:10:07,604] Register - Step 07: Click to Register Button
+[INFO ] [2022-11-21 10:10:09,549] Register - Step 08: Verify Register Success Message
+[INFO ] [2022-11-21 10:10:09,644] Register - Step 09: Click to Logout Button
+[INFO ] [2022-11-21 10:10:10,412] Login - Step 01: Navigate to Login Button
+[INFO ] [2022-11-21 10:10:12,423] Login - Step 02: Input Not Found Email to Email Textbox 'abc3527@mail.com'
+[INFO ] [2022-11-21 10:10:12,674] Login - Step 03:  Input Password TextBox '123456'
+[INFO ] [2022-11-21 10:10:12,886] Login - Step 04:  Click to Login Button
+[INFO ] [2022-11-21 10:10:13,602] Login - Step 05:  Verify Login Success
+[INFO ] [2022-11-21 10:10:13,804] Login - Step 06: Navigate to MyAccoutLink
+[INFO ] [2022-11-21 10:10:15,403] Login - Step 07: Verify Login Success
+[INFO ] [2022-11-21 10:44:06,141] Register - Step 01: Click to Register link
+[INFO ] [2022-11-21 10:44:06,840] Register - Step 02: Input FirstName to required field 'Thanh'
+[INFO ] [2022-11-21 10:44:07,029] Register - Step 03: Input LastName to required field 'Nguyen'
+[INFO ] [2022-11-21 10:44:07,234] Register - Step 04: Input Email to required field 'abc3246@mail.com'
+[INFO ] [2022-11-21 10:44:07,468] Register - Step 05: Input Password to required field '123456'
+[INFO ] [2022-11-21 10:44:07,671] Register - Step 06: Input Confirm Password to required field '123456'
+[INFO ] [2022-11-21 10:44:07,874] Register - Step 07: Click to Register Button
+[INFO ] [2022-11-21 10:44:09,023] Register - Step 08: Verify Register Success Message
+[INFO ] [2022-11-21 10:44:09,100] Register - Step 09: Click to Logout Button
+[INFO ] [2022-11-21 10:44:09,920] Login - Step 01: Navigate to Login Button
+[INFO ] [2022-11-21 10:44:10,666] Login - Step 02: Input Not Found Email to Email Textbox 'abc3246@mail.com'
+[INFO ] [2022-11-21 10:44:10,889] Login - Step 03:  Input Password TextBox '123456'
+[INFO ] [2022-11-21 10:44:11,076] Login - Step 04:  Click to Login Button
+[INFO ] [2022-11-21 10:44:11,808] Login - Step 05:  Verify Login Success
+[INFO ] [2022-11-21 10:44:11,997] Login - Step 06: Navigate to MyAccoutLink
+[INFO ] [2022-11-21 10:44:12,833] Login - Step 07: Verify Login Success
+[INFO ] [2022-11-21 11:23:44,221] Register - Step 04: Input Email to required field 'abc5026@mail.com'
+>>>>>>> branch 'master' of https://github.com/xecoiia1/hybrid-framework-nopcommerce.git

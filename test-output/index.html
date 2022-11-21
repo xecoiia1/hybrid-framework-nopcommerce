@@ -102,7 +102,7 @@
                     <div class="method-list-content failed suite-NopCommerce">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-NopCommerce" title="com.nopcommerce.user.Level_15_ReportNG_Screenshot" class="method navigator-link" hash-for-method="User_02_Login">User_02_Login</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-NopCommerce" title="com.nopcommerce.user.Level_16_ExtentV2_Screenshot" class="method navigator-link" hash-for-method="User_02_Login(public void com.nopcommerce.user.Level_16_ExtentV2_Screenshot.User_02_Login(java.lang.reflect.Method...)">User_02_Login(public void com.nopcommerce.user.Level_16_ExtentV2_Screenshot.User_02_Login(java.lang.reflect.Method...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-NopCommerce -->
@@ -116,7 +116,7 @@
                     <div class="method-list-content passed suite-NopCommerce">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-NopCommerce" title="com.nopcommerce.user.Level_15_ReportNG_Screenshot" class="method navigator-link" hash-for-method="User_01_Register">User_01_Register</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-NopCommerce" title="com.nopcommerce.user.Level_16_ExtentV2_Screenshot" class="method navigator-link" hash-for-method="User_01_Register(public void com.nopcommerce.user.Level_16_ExtentV2_Screenshot.User_01_Register(java.lang.reflect.Met...)">User_01_Register(public void com.nopcommerce.user.Level_16_ExtentV2_Screenshot.User_01_Register(java.lang.reflect.Met...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-NopCommerce -->
@@ -134,16 +134,17 @@
           <div class="suite-NopCommerce-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">com.nopcommerce.user.Level_15_ReportNG_Screenshot</span>
+              <span class="class-name">com.nopcommerce.user.Level_16_ExtentV2_Screenshot</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="User_02_Login">
-                  </a> <!-- User_02_Login -->
+                  <a name="User_02_Login(public void com.nopcommerce.user.Level_16_ExtentV2_Screenshot.User_02_Login(java.lang.reflect.Method...)">
+                  </a> <!-- User_02_Login(public void com.nopcommerce.user.Level_16_ExtentV2_Screenshot.User_02_Login(java.lang.reflect.Method...) -->
                   <span class="method-name">User_02_Login</span>
+                  <span class="parameters">(public void com.nopcommerce.user.Level_16_ExtentV2_Screenshot.User_02_Login(java.lang.reflect.Method))</span>
                   <div class="stack-trace">java.lang.AssertionError: expected [false] but found [true]
-	at com.nopcommerce.user.Level_15_ReportNG_Screenshot.User_02_Login(Level_15_ReportNG_Screenshot.java:87)
+	at com.nopcommerce.user.Level_16_ExtentV2_Screenshot.User_02_Login(Level_16_ExtentV2_Screenshot.java:95)
 ... Removed 29 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
@@ -153,14 +154,15 @@
           <div class="suite-NopCommerce-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.nopcommerce.user.Level_15_ReportNG_Screenshot</span>
+              <span class="class-name">com.nopcommerce.user.Level_16_ExtentV2_Screenshot</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="User_01_Register">
-                  </a> <!-- User_01_Register -->
+                  <a name="User_01_Register(public void com.nopcommerce.user.Level_16_ExtentV2_Screenshot.User_01_Register(java.lang.reflect.Met...)">
+                  </a> <!-- User_01_Register(public void com.nopcommerce.user.Level_16_ExtentV2_Screenshot.User_01_Register(java.lang.reflect.Met...) -->
                   <span class="method-name">User_01_Register</span>
+                  <span class="parameters">(public void com.nopcommerce.user.Level_16_ExtentV2_Screenshot.User_01_Register(java.lang.reflect.Method))</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -177,14 +179,14 @@
 &lt;suite name=&quot;NopCommerce&quot;&gt;
   &lt;listeners&gt;
     &lt;listener class-name=&quot;commonJquery.MethodListener&quot;/&gt;
-    &lt;listener class-name=&quot;reportConfig.ReportNGListener&quot;/&gt;
+    &lt;listener class-name=&quot;reportConfig.ExtentReportListenerV2&quot;/&gt;
     &lt;listener class-name=&quot;org.uncommons.reportng.HTMLReporter&quot;/&gt;
     &lt;listener class-name=&quot;org.uncommons.reportng.JUnitXMLReporter&quot;/&gt;
   &lt;/listeners&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Run on Firefox&quot;&gt;
     &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.nopcommerce.user.Level_15_ReportNG_Screenshot&quot;/&gt;
+      &lt;class name=&quot;com.nopcommerce.user.Level_16_ExtentV2_Screenshot&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Run on Firefox --&gt;
 &lt;/suite&gt; &lt;!-- NopCommerce --&gt;
@@ -227,17 +229,31 @@ data.addColumn('number', 'Time (ms)');
 data.addRows(2);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'User_01_Register')
+<<<<<<< HEAD
 data.setCell(0, 2, 'com.nopcommerce.user.Level_15_ReportNG_Screenshot')
 data.setCell(0, 3, 3366);
+=======
+data.setCell(0, 2, 'com.nopcommerce.user.Level_16_ExtentV2_Screenshot')
+data.setCell(0, 3, 4463);
+>>>>>>> branch 'master' of https://github.com/xecoiia1/hybrid-framework-nopcommerce.git
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'User_02_Login')
+<<<<<<< HEAD
 data.setCell(1, 2, 'com.nopcommerce.user.Level_15_ReportNG_Screenshot')
 data.setCell(1, 3, 1989);
+=======
+data.setCell(1, 2, 'com.nopcommerce.user.Level_16_ExtentV2_Screenshot')
+data.setCell(1, 3, 3021);
+>>>>>>> branch 'master' of https://github.com/xecoiia1/hybrid-framework-nopcommerce.git
 window.suiteTableData['NopCommerce']= { tableData: data, tableDiv: 'times-div-NopCommerce'}
 return data;
 }
               </script>
+<<<<<<< HEAD
               <span class="suite-total-time">Total running time: 5 seconds</span>
+=======
+              <span class="suite-total-time">Total running time: 7 seconds</span>
+>>>>>>> branch 'master' of https://github.com/xecoiia1/hybrid-framework-nopcommerce.git
               <div id="times-div-NopCommerce">
               </div> <!-- times-div-NopCommerce -->
             </div> <!-- times-div -->
@@ -249,10 +265,15 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="reporter-method-div">
-              <span class="reporter-method-name">User_01_Register</span>
+              <span class="reporter-method-name">User_01_Register(public void com.nopcommerce.user.Level_16_ExtentV2_Screenshot.User_01_Register(java.lang.reflect.Met...)</span>
               <div class="reporter-method-output-div">
+<<<<<<< HEAD
                 <span class="reporter-method-output">[INFO ] [2022-11-17 22:11:06,222] Register - Step 01: Click to Register link
+=======
+                <span class="reporter-method-output">[INFO ] [2022-11-21 11:23:44,221] Register - Step 04: Input Email to required field 'abc5026@mail.com'
+>>>>>>> branch 'master' of https://github.com/xecoiia1/hybrid-framework-nopcommerce.git
 <br></span>
+<<<<<<< HEAD
                 <span class="reporter-method-output">[INFO ] [2022-11-17 22:11:07,486] Register - Step 02: Input FirstName to required field 'Thanh'
 <br></span>
                 <span class="reporter-method-output">[INFO ] [2022-11-17 22:11:07,599] Register - Step 03: Input LastName to required field 'Nguyen'
@@ -289,6 +310,8 @@ return data;
                 <span class="reporter-method-output">[INFO ] [2022-11-17 22:11:11,536] Login - Step 07: Verify Login Success
 <br></span>
                 <span class="reporter-method-output"><br><a href="data:image/png;base64,E:\Selenium\03 - Hybrid Framework\hybrid-framework-nopcommerce\reportNGImages\User_02_Login_17_11_2022_10_11_11.png"><img src="data:image/png;base64,E:\Selenium\03 - Hybrid Framework\hybrid-framework-nopcommerce\reportNGImages\User_02_Login_17_11_2022_10_11_11.png" height='100' width='150'/> </a></br></span>
+=======
+>>>>>>> branch 'master' of https://github.com/xecoiia1/hybrid-framework-nopcommerce.git
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -306,24 +329,38 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.nopcommerce.user.Level_15_ReportNG_Screenshot</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.nopcommerce.user.Level_16_ExtentV2_Screenshot</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">beforeClass(chrome)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
+<<<<<<< HEAD
                 <span class="method-name">User_01_Register</span>
                 <span class="method-start">4854 ms</span>
+=======
+                <span class="method-name">User_01_Register(public void com.nopcommerce.user.Level_16_ExtentV2_Screenshot.User_01_Register(java.lang.reflect.Met...)</span>
+                <span class="method-start">3902 ms</span>
+>>>>>>> branch 'master' of https://github.com/xecoiia1/hybrid-framework-nopcommerce.git
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
+<<<<<<< HEAD
                 <span class="method-name">User_02_Login</span>
                 <span class="method-start">8222 ms</span>
+=======
+                <span class="method-name">User_02_Login(public void com.nopcommerce.user.Level_16_ExtentV2_Screenshot.User_02_Login(java.lang.reflect.Method...)</span>
+                <span class="method-start">8368 ms</span>
+>>>>>>> branch 'master' of https://github.com/xecoiia1/hybrid-framework-nopcommerce.git
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">afterClass</span>
+<<<<<<< HEAD
                 <span class="method-start">10328 ms</span>
+=======
+                <span class="method-start">11574 ms</span>
+>>>>>>> branch 'master' of https://github.com/xecoiia1/hybrid-framework-nopcommerce.git
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

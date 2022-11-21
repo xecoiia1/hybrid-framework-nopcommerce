@@ -4,9 +4,17 @@
            failures="1"
            errors="0"
            skipped="0"
+<<<<<<< HEAD
            time="5.355">
+=======
+           time="6.772">
+>>>>>>> branch 'master' of https://github.com/xecoiia1/hybrid-framework-nopcommerce.git
   <properties />
+<<<<<<< HEAD
             <testcase name="User_02_Login" time="1.989" classname="com.nopcommerce.user.Level_15_ReportNG_Screenshot">
+=======
+            <testcase name="User_02_Login" time="2.993" classname="com.nopcommerce.user.Level_15_ReportNG_Screenshot">
+>>>>>>> branch 'master' of https://github.com/xecoiia1/hybrid-framework-nopcommerce.git
                 <failure type="java.lang.AssertionError"
                   message="expected [false] but found [true]"
               >
@@ -47,6 +55,10 @@
           </testcase>
   
   
+<<<<<<< HEAD
             <testcase name="User_01_Register" time="3.366" classname="com.nopcommerce.user.Level_15_ReportNG_Screenshot" />
+=======
+            <testcase name="User_01_Register" time="3.779" classname="com.nopcommerce.user.Level_15_ReportNG_Screenshot" />
+>>>>>>> branch 'master' of https://github.com/xecoiia1/hybrid-framework-nopcommerce.git
       
 </testsuite>
