@@ -4,9 +4,9 @@
            failures="1"
            errors="0"
            skipped="0"
-           time="6.532">
+           time="5.355">
   <properties />
-            <testcase name="User_02_Login" time="2.870" classname="com.nopcommerce.user.Level_15_ReportNG_Screenshot">
+            <testcase name="User_02_Login" time="1.989" classname="com.nopcommerce.user.Level_15_ReportNG_Screenshot">
                 <failure type="java.lang.AssertionError"
                   message="expected [false] but found [true]"
               >
@@ -17,9 +17,9 @@
   org.testng.Assert.assertFalse(Assert.java:75)
   com.nopcommerce.user.Level_15_ReportNG_Screenshot.User_02_Login(Level_15_ReportNG_Screenshot.java:87)
   java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-  java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+  java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
   java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-  java.base/java.lang.reflect.Method.invoke(Method.java:568)
+  java.base/java.lang.reflect.Method.invoke(Method.java:564)
   org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
   org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
   org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
@@ -47,6 +47,6 @@
           </testcase>
   
   
-            <testcase name="User_01_Register" time="3.662" classname="com.nopcommerce.user.Level_15_ReportNG_Screenshot" />
+            <testcase name="User_01_Register" time="3.366" classname="com.nopcommerce.user.Level_15_ReportNG_Screenshot" />
       
 </testsuite>
