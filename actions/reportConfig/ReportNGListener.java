@@ -46,11 +46,16 @@ public class ReportNGListener implements ITestListener {
 		Object testClass = result.getInstance();
 		WebDriver webDriver = ((BaseTestJquery) testClass).getDriverInstance();
 
-		String screenshotPath = captureScreenshot(webDriver, result.getName());
+		String screenshotPath = captureScreenshotBase64(webDriver, result.getName());
 		Reporter.getCurrentTestResult();
+		
+		// image file
+		// Reporter.log("<br><a target=\"_blank\" href=\"file:///" + screenshotPath + "\">" + "<img src=\"file:///" + screenshotPath + "\" " + "height='100'
+		// width='150'/> " + "</a></br>");
 
 		// base 64 file
 		Reporter.log("<br><a href=\"data:image/png;base64," + screenshotPath + "\">" + "<img src=\"data:image/png;base64," + screenshotPath + "\" " + "height='100' width='150'/> " + "</a></br>");
+		
 		Reporter.setCurrentTestResult(null);
 		
 	}
@@ -68,6 +73,11 @@ public class ReportNGListener implements ITestListener {
 			return e.getMessage();
 		}
 	}
+	
+	public String captureScreenshotBase64(WebDriver driver, String screenshotName) {
+		return ((TakesScreenshot) driver).getScreenshotAs(OutputType.BASE64);
+	}
+
 
 	@Override
 	public void onTestSkipped(ITestResult arg0) {

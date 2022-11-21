@@ -2,79 +2,16 @@
 <testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
   <reporter-output>
     <line>
-      <![CDATA[[INFO ] [2022-11-17 16:08:25,272] Register - Step 01: Click to Register link
+      <![CDATA[[INFO ] [2022-11-21 11:23:44,221] Register - Step 04: Input Email to required field 'abc5026@mail.com'
 <br>]]>
-    </line>
-    <line>
-      <![CDATA[[INFO ] [2022-11-17 16:08:25,975] Register - Step 02: Input FirstName to required field 'Thanh'
-<br>]]>
-    </line>
-    <line>
-      <![CDATA[[INFO ] [2022-11-17 16:08:26,204] Register - Step 03: Input LastName to required field 'Nguyen'
-<br>]]>
-    </line>
-    <line>
-      <![CDATA[[INFO ] [2022-11-17 16:08:26,441] Register - Step 04: Input Email to required field 'abc9398@mail.com'
-<br>]]>
-    </line>
-    <line>
-      <![CDATA[[INFO ] [2022-11-17 16:08:26,696] Register - Step 05: Input Password to required field '123456'
-<br>]]>
-    </line>
-    <line>
-      <![CDATA[[INFO ] [2022-11-17 16:08:26,912] Register - Step 06: Input Confirm Password to required field '123456'
-<br>]]>
-    </line>
-    <line>
-      <![CDATA[[INFO ] [2022-11-17 16:08:27,118] Register - Step 07: Click to Register Button
-<br>]]>
-    </line>
-    <line>
-      <![CDATA[[INFO ] [2022-11-17 16:08:28,067] Register - Step 08: Verify Register Success Message
-<br>]]>
-    </line>
-    <line>
-      <![CDATA[[INFO ] [2022-11-17 16:08:28,152] Register - Step 09: Click to Logout Button
-<br>]]>
-    </line>
-    <line>
-      <![CDATA[[INFO ] [2022-11-17 16:08:28,927] Login - Step 01: Navigate to Login Button
-<br>]]>
-    </line>
-    <line>
-      <![CDATA[[INFO ] [2022-11-17 16:08:29,610] Login - Step 02: Input Not Found Email to Email Textbox 'abc9398@mail.com'
-<br>]]>
-    </line>
-    <line>
-      <![CDATA[[INFO ] [2022-11-17 16:08:29,865] Login - Step 03:  Input Password TextBox '123456'
-<br>]]>
-    </line>
-    <line>
-      <![CDATA[[INFO ] [2022-11-17 16:08:30,075] Login - Step 04:  Click to Login Button
-<br>]]>
-    </line>
-    <line>
-      <![CDATA[[INFO ] [2022-11-17 16:08:30,870] Login - Step 05:  Verify Login Success
-<br>]]>
-    </line>
-    <line>
-      <![CDATA[[INFO ] [2022-11-17 16:08:31,065] Login - Step 06: Navigate to MyAccoutLink
-<br>]]>
-    </line>
-    <line>
-      <![CDATA[[INFO ] [2022-11-17 16:08:31,713] Login - Step 07: Verify Login Success
-<br>]]>
-    </line>
-    <line>
-      <![CDATA[<br><a href="data:image/png;base64,D:\eclipse_Workspace\Framework\reportNGImages\User_02_Login_17_11_2022_04_08_31.png"><img src="data:image/png;base64,D:\eclipse_Workspace\Framework\reportNGImages\User_02_Login_17_11_2022_04_08_31.png" height='100' width='150'/> </a></br>]]>
     </line>
   </reporter-output>
-  <suite started-at="2022-11-17T09:08:22Z" name="NopCommerce" finished-at="2022-11-17T09:08:32Z" duration-ms="9932">
+  <suite started-at="2022-11-21T04:23:38Z" name="NopCommerce" finished-at="2022-11-21T04:23:50Z" duration-ms="11811">
     <groups>
     </groups>
-    <test started-at="2022-11-17T09:08:22Z" name="Run on Firefox" finished-at="2022-11-17T09:08:32Z" duration-ms="9932">
-      <class name="com.nopcommerce.user.Level_15_ReportNG_Screenshot">
-        <test-method is-config="true" signature="beforeClass(java.lang.String)[pri:0, instance:com.nopcommerce.user.Level_15_ReportNG_Screenshot@5745ca0e]" started-at="2022-11-17T09:08:22Z" name="beforeClass" finished-at="2022-11-17T09:08:25Z" duration-ms="3078" status="PASS">
+    <test started-at="2022-11-21T04:23:38Z" name="Run on Firefox" finished-at="2022-11-21T04:23:50Z" duration-ms="11811">
+      <class name="com.nopcommerce.user.Level_16_ExtentV2_Screenshot">
+        <test-method is-config="true" signature="beforeClass(java.lang.String)[pri:0, instance:com.nopcommerce.user.Level_16_ExtentV2_Screenshot@55cb6996]" started-at="2022-11-21T04:23:38Z" name="beforeClass" finished-at="2022-11-21T04:23:42Z" duration-ms="3895" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -85,47 +22,29 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method signature="User_01_Register()[pri:0, instance:com.nopcommerce.user.Level_15_ReportNG_Screenshot@5745ca0e]" started-at="2022-11-17T09:08:25Z" name="User_01_Register" finished-at="2022-11-17T09:08:28Z" duration-ms="3662" status="PASS">
+        <test-method signature="User_01_Register(java.lang.reflect.Method)[pri:0, instance:com.nopcommerce.user.Level_16_ExtentV2_Screenshot@55cb6996]" started-at="2022-11-21T04:23:42Z" name="User_01_Register" finished-at="2022-11-21T04:23:47Z" duration-ms="4463" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.nopcommerce.user.Level_16_ExtentV2_Screenshot.User_01_Register(java.lang.reflect.Method)]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
             <line>
-              <![CDATA[[INFO ] [2022-11-17 16:08:25,272] Register - Step 01: Click to Register link
-<br>]]>
-            </line>
-            <line>
-              <![CDATA[[INFO ] [2022-11-17 16:08:25,975] Register - Step 02: Input FirstName to required field 'Thanh'
-<br>]]>
-            </line>
-            <line>
-              <![CDATA[[INFO ] [2022-11-17 16:08:26,204] Register - Step 03: Input LastName to required field 'Nguyen'
-<br>]]>
-            </line>
-            <line>
-              <![CDATA[[INFO ] [2022-11-17 16:08:26,441] Register - Step 04: Input Email to required field 'abc9398@mail.com'
-<br>]]>
-            </line>
-            <line>
-              <![CDATA[[INFO ] [2022-11-17 16:08:26,696] Register - Step 05: Input Password to required field '123456'
-<br>]]>
-            </line>
-            <line>
-              <![CDATA[[INFO ] [2022-11-17 16:08:26,912] Register - Step 06: Input Confirm Password to required field '123456'
-<br>]]>
-            </line>
-            <line>
-              <![CDATA[[INFO ] [2022-11-17 16:08:27,118] Register - Step 07: Click to Register Button
-<br>]]>
-            </line>
-            <line>
-              <![CDATA[[INFO ] [2022-11-17 16:08:28,067] Register - Step 08: Verify Register Success Message
-<br>]]>
-            </line>
-            <line>
-              <![CDATA[[INFO ] [2022-11-17 16:08:28,152] Register - Step 09: Click to Logout Button
+              <![CDATA[[INFO ] [2022-11-21 11:23:44,221] Register - Step 04: Input Email to required field 'abc5026@mail.com'
 <br>]]>
             </line>
           </reporter-output>
         </test-method> <!-- User_01_Register -->
-        <test-method signature="User_02_Login()[pri:0, instance:com.nopcommerce.user.Level_15_ReportNG_Screenshot@5745ca0e]" started-at="2022-11-17T09:08:28Z" name="User_02_Login" finished-at="2022-11-17T09:08:31Z" duration-ms="2870" status="FAIL">
+        <test-method signature="User_02_Login(java.lang.reflect.Method)[pri:0, instance:com.nopcommerce.user.Level_16_ExtentV2_Screenshot@55cb6996]" started-at="2022-11-21T04:23:47Z" name="User_02_Login" finished-at="2022-11-21T04:23:50Z" duration-ms="3021" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.nopcommerce.user.Level_16_ExtentV2_Screenshot.User_02_Login(java.lang.reflect.Method)]]>
+              </value>
+            </param>
+          </params>
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [false] but found [true]]]>
@@ -136,7 +55,7 @@ at org.testng.Assert.fail(Assert.java:96)
 at org.testng.Assert.failNotEquals(Assert.java:776)
 at org.testng.Assert.assertFalse(Assert.java:65)
 at org.testng.Assert.assertFalse(Assert.java:75)
-at com.nopcommerce.user.Level_15_ReportNG_Screenshot.User_02_Login(Level_15_ReportNG_Screenshot.java:87)
+at com.nopcommerce.user.Level_16_ExtentV2_Screenshot.User_02_Login(Level_16_ExtentV2_Screenshot.java:95)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -166,44 +85,13 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
             </full-stacktrace>
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
-            <line>
-              <![CDATA[[INFO ] [2022-11-17 16:08:28,927] Login - Step 01: Navigate to Login Button
-<br>]]>
-            </line>
-            <line>
-              <![CDATA[[INFO ] [2022-11-17 16:08:29,610] Login - Step 02: Input Not Found Email to Email Textbox 'abc9398@mail.com'
-<br>]]>
-            </line>
-            <line>
-              <![CDATA[[INFO ] [2022-11-17 16:08:29,865] Login - Step 03:  Input Password TextBox '123456'
-<br>]]>
-            </line>
-            <line>
-              <![CDATA[[INFO ] [2022-11-17 16:08:30,075] Login - Step 04:  Click to Login Button
-<br>]]>
-            </line>
-            <line>
-              <![CDATA[[INFO ] [2022-11-17 16:08:30,870] Login - Step 05:  Verify Login Success
-<br>]]>
-            </line>
-            <line>
-              <![CDATA[[INFO ] [2022-11-17 16:08:31,065] Login - Step 06: Navigate to MyAccoutLink
-<br>]]>
-            </line>
-            <line>
-              <![CDATA[[INFO ] [2022-11-17 16:08:31,713] Login - Step 07: Verify Login Success
-<br>]]>
-            </line>
-            <line>
-              <![CDATA[<br><a href="data:image/png;base64,D:\eclipse_Workspace\Framework\reportNGImages\User_02_Login_17_11_2022_04_08_31.png"><img src="data:image/png;base64,D:\eclipse_Workspace\Framework\reportNGImages\User_02_Login_17_11_2022_04_08_31.png" height='100' width='150'/> </a></br>]]>
-            </line>
           </reporter-output>
         </test-method> <!-- User_02_Login -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.nopcommerce.user.Level_15_ReportNG_Screenshot@5745ca0e]" started-at="2022-11-17T09:08:31Z" name="afterClass" finished-at="2022-11-17T09:08:32Z" duration-ms="134" status="PASS">
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.nopcommerce.user.Level_16_ExtentV2_Screenshot@55cb6996]" started-at="2022-11-21T04:23:50Z" name="afterClass" finished-at="2022-11-21T04:23:50Z" duration-ms="227" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-      </class> <!-- com.nopcommerce.user.Level_15_ReportNG_Screenshot -->
+      </class> <!-- com.nopcommerce.user.Level_16_ExtentV2_Screenshot -->
     </test> <!-- Run on Firefox -->
   </suite> <!-- NopCommerce -->
 </testng-results>

@@ -4,9 +4,9 @@
            failures="1"
            errors="0"
            skipped="0"
-           time="6.532">
+           time="6.772">
   <properties />
-            <testcase name="User_02_Login" time="2.870" classname="com.nopcommerce.user.Level_15_ReportNG_Screenshot">
+            <testcase name="User_02_Login" time="2.993" classname="com.nopcommerce.user.Level_15_ReportNG_Screenshot">
                 <failure type="java.lang.AssertionError"
                   message="expected [false] but found [true]"
               >
@@ -47,6 +47,6 @@
           </testcase>
   
   
-            <testcase name="User_01_Register" time="3.662" classname="com.nopcommerce.user.Level_15_ReportNG_Screenshot" />
+            <testcase name="User_01_Register" time="3.779" classname="com.nopcommerce.user.Level_15_ReportNG_Screenshot" />
       
 </testsuite>
