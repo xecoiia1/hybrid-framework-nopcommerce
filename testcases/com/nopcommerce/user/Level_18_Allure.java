@@ -35,7 +35,7 @@ public class Level_18_Allure extends BaseTestJquery  {
   }
   
   @Test
-  public void User_01_Register(Method method) {
+  public void User_01_Register() {
 
 		registerPage = homePage.clickToRegisterLink();
 		
@@ -65,7 +65,7 @@ public class Level_18_Allure extends BaseTestJquery  {
 		
  }
   @Test
-  public void User_02_Login(Method method) {
+  public void User_02_Login() {
 
 	  	loginPage = homePage.clickToLoginLink();
 		
