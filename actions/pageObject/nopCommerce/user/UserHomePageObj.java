@@ -7,6 +7,7 @@ import org.openqa.selenium.support.How;
 
 import common.BasePage;
 import common.PageGeneratorManager;
+import io.qameta.allure.Step;
 import pageUI.nopCommerce.user.HomePageUI;
 
 import org.openqa.selenium.WebDriver;
@@ -18,30 +19,32 @@ public class UserHomePageObj extends BasePage {
 		this.driver = driver ;
 	}
 	
+	@Step("Navigate to Register Page")
 	public UserRegisterPageObj clickToRegisterLink(){
 		System.out.println(HomePageUI.REGISTER_BTN);
 		waitForElementClickAble(driver, HomePageUI.REGISTER_BTN);
 		clickToElementByXpath(driver, HomePageUI.REGISTER_BTN);
 		return PageGeneratorManager.getUserRegisterPage(driver);
 		}
-
+	@Step("Navigate to Login Page")
 	public UserLoginPageObj clickToLoginLink() {
 		waitForElementClickAble(driver, HomePageUI.LOGIN_BTN);
 		clickToElementByXpath(driver, HomePageUI.LOGIN_BTN);
 		return PageGeneratorManager.getUserLoginPage(driver);
 		
 	}
-
+	@Step("Verify My Account Page is Displayed")
 	public boolean myAccountIsDisplayed() {
 		waitForElementClickAble(driver, HomePageUI.MY_ACCOUNT_LINK);
 		return isElementDisplay(driver, HomePageUI.MY_ACCOUNT_LINK);
 	}
-
+	@Step("Verify Logout Page is Displayed")
 	public boolean logOutLinkIsDisplayed() {
 		waitForElementClickAble(driver, HomePageUI.LOG_OUT_LINK);
 		return isElementDisplay(driver, HomePageUI.LOG_OUT_LINK);
 	}
 	
+	@Step("Navigate to MyAccount Page")
 	public UserCustomerInforPageObj clickToMyAccoutLink() {
 		waitForElementClickAble(driver, HomePageUI.MY_ACCOUNT_LINK);
 		clickToElementByXpath(driver, HomePageUI.MY_ACCOUNT_LINK);

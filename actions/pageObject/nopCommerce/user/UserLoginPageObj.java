@@ -4,6 +4,7 @@ import org.openqa.selenium.WebDriver;
 
 import common.BasePage;
 import common.PageGeneratorManager;
+import io.qameta.allure.Step;
 import pageUI.nopCommerce.user.LoginPageUI;
 import pageUI.nopCommerce.user.RegisterPageUI;
 
@@ -20,7 +21,7 @@ public class UserLoginPageObj extends BasePage {
 		waitForAllElementVisible(driver, LoginPageUI.EMAIL_ERROR_MES);
 		return getTextOfElement(driver, LoginPageUI.EMAIL_ERROR_MES);
 	}
-
+	@Step("Navigate to Login Page")
 	public UserHomePageObj clickToLoginBtn() {
 		waitForElementClickAble(driver, LoginPageUI.LOGIN_BTN);
 		clickToElementByXpath(driver, LoginPageUI.LOGIN_BTN);
@@ -33,7 +34,7 @@ public class UserLoginPageObj extends BasePage {
 		sendkeysToElementByXpath(driver, LoginPageUI.EMAIL_TEXTBOX, invalidEmail);
 		
 	}
-	
+	@Step("Enter to Email textbox with value is {0}")
 	public void inputEmail(String email) {
 		waitForAllElementVisible(driver, LoginPageUI.EMAIL_TEXTBOX);
 		sendkeysToElementByXpath(driver, LoginPageUI.EMAIL_TEXTBOX, email);
@@ -55,7 +56,7 @@ public class UserLoginPageObj extends BasePage {
 		waitForAllElementVisible(driver, LoginPageUI.EMAIL_NOT_FOUND_MES);
 		return getTextOfElement(driver, LoginPageUI.EMAIL_NOT_FOUND_MES);
 	}
-
+	@Step("Enter to Password textbox with value is {0}")
 	public void inputPassWordTextBox(String Password) {
 		waitForAllElementVisible(driver, LoginPageUI.PASSWORD_TEXTBOX);
 		sendkeysToElementByXpath(driver, LoginPageUI.PASSWORD_TEXTBOX, Password);

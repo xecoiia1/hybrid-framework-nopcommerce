@@ -15,6 +15,9 @@ import org.testng.annotations.Test;
 import common.PageGeneratorManager;
 import commonJquery.BaseTestJquery;
 import exception.BrowserNotSupport;
+import io.qameta.allure.Description;
+import io.qameta.allure.Severity;
+import io.qameta.allure.SeverityLevel;
 import pageObject.nopCommerce.user.UserCustomerInforPageObj;
 import pageObject.nopCommerce.user.UserHomePageObj;
 import pageObject.nopCommerce.user.UserLoginPageObj;
@@ -34,6 +37,8 @@ public class Level_18_Allure extends BaseTestJquery  {
 	passWord = "123456";	
   }
   
+  @Description("Register To System")
+  @Severity(SeverityLevel.NORMAL)
   @Test
   public void User_01_Register() {
 
@@ -64,6 +69,8 @@ public class Level_18_Allure extends BaseTestJquery  {
 		homePage = registerPage.clickToLogoutBtn();
 		
  }
+  @Description("Login To System")
+  @Severity(SeverityLevel.NORMAL)
   @Test
   public void User_02_Login() {
 
