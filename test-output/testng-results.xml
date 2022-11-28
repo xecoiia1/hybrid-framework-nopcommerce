@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-11-28T15:17:50Z" name="NopCommerce" finished-at="2022-11-28T15:17:59Z" duration-ms="9201">
+  <suite started-at="2022-11-28T15:25:47Z" name="NopCommerce" finished-at="2022-11-28T15:25:56Z" duration-ms="9359">
     <groups>
     </groups>
-    <test started-at="2022-11-28T15:17:50Z" name="Run on Firefox" finished-at="2022-11-28T15:17:59Z" duration-ms="9201">
+    <test started-at="2022-11-28T15:25:47Z" name="Run on Chrome" finished-at="2022-11-28T15:25:56Z" duration-ms="9359">
       <class name="com.nopcommerce.user.Level_18_Allure">
-        <test-method is-config="true" signature="initBeforeSuite()[pri:0, instance:com.nopcommerce.user.Level_18_Allure@74a6f9c1]" started-at="2022-11-28T15:17:50Z" name="initBeforeSuite" finished-at="2022-11-28T15:17:50Z" duration-ms="11" status="PASS">
+        <test-method is-config="true" signature="initBeforeSuite()[pri:0, instance:com.nopcommerce.user.Level_18_Allure@7f08caf]" started-at="2022-11-28T15:25:47Z" name="initBeforeSuite" finished-at="2022-11-28T15:25:47Z" duration-ms="22" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initBeforeSuite -->
-        <test-method is-config="true" signature="beforeClass(java.lang.String)[pri:0, instance:com.nopcommerce.user.Level_18_Allure@74a6f9c1]" started-at="2022-11-28T15:17:50Z" name="beforeClass" finished-at="2022-11-28T15:17:53Z" duration-ms="3111" status="PASS">
+        <test-method is-config="true" signature="beforeClass(java.lang.String)[pri:0, instance:com.nopcommerce.user.Level_18_Allure@7f08caf]" started-at="2022-11-28T15:25:47Z" name="beforeClass" finished-at="2022-11-28T15:25:50Z" duration-ms="3341" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -22,11 +22,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method signature="User_01_Register()[pri:0, instance:com.nopcommerce.user.Level_18_Allure@74a6f9c1]" started-at="2022-11-28T15:17:53Z" name="User_01_Register" finished-at="2022-11-28T15:17:56Z" duration-ms="3233" status="PASS">
+        <test-method signature="User_01_Register()[pri:0, instance:com.nopcommerce.user.Level_18_Allure@7f08caf]" started-at="2022-11-28T15:25:50Z" name="User_01_Register" finished-at="2022-11-28T15:25:54Z" duration-ms="3175" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- User_01_Register -->
-        <test-method signature="User_02_Login()[pri:0, instance:com.nopcommerce.user.Level_18_Allure@74a6f9c1]" started-at="2022-11-28T15:17:56Z" name="User_02_Login" finished-at="2022-11-28T15:17:58Z" duration-ms="2136" status="FAIL">
+        <test-method signature="User_02_Login()[pri:0, instance:com.nopcommerce.user.Level_18_Allure@7f08caf]" started-at="2022-11-28T15:25:54Z" name="User_02_Login" finished-at="2022-11-28T15:25:56Z" duration-ms="2005" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [false] but found [true]]]>
@@ -69,11 +69,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- User_02_Login -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.nopcommerce.user.Level_18_Allure@74a6f9c1]" started-at="2022-11-28T15:17:58Z" name="afterClass" finished-at="2022-11-28T15:17:59Z" duration-ms="588" status="PASS">
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.nopcommerce.user.Level_18_Allure@7f08caf]" started-at="2022-11-28T15:25:56Z" name="afterClass" finished-at="2022-11-28T15:25:56Z" duration-ms="610" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
       </class> <!-- com.nopcommerce.user.Level_18_Allure -->
-    </test> <!-- Run on Firefox -->
+    </test> <!-- Run on Chrome -->
   </suite> <!-- NopCommerce -->
 </testng-results>
