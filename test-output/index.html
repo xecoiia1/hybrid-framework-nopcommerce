@@ -179,12 +179,12 @@
     &lt;listener class-name=&quot;commonJquery.MethodListener&quot;/&gt;
     &lt;listener class-name=&quot;reportConfig.AllureTestListener&quot;/&gt;
   &lt;/listeners&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Run on Firefox&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Run on Chrome&quot;&gt;
     &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.nopcommerce.user.Level_18_Allure&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Run on Firefox --&gt;
+  &lt;/test&gt; &lt;!-- Run on Chrome --&gt;
 &lt;/suite&gt; &lt;!-- NopCommerce --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -196,7 +196,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Run on Firefox (1 class)</span>
+                <span class="test-name">Run on Chrome (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -226,11 +226,11 @@ data.addRows(2);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'User_01_Register')
 data.setCell(0, 2, 'com.nopcommerce.user.Level_18_Allure')
-data.setCell(0, 3, 3233);
+data.setCell(0, 3, 3175);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'User_02_Login')
 data.setCell(1, 2, 'com.nopcommerce.user.Level_18_Allure')
-data.setCell(1, 3, 2136);
+data.setCell(1, 3, 2005);
 window.suiteTableData['NopCommerce']= { tableData: data, tableDiv: 'times-div-NopCommerce'}
 return data;
 }
@@ -268,21 +268,21 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="configuration-class before">
                 <span class="method-name">beforeClass(chrome)</span>
-                <span class="method-start">19 ms</span>
+                <span class="method-start">34 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">User_01_Register</span>
-                <span class="method-start">3134 ms</span>
+                <span class="method-start">3380 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">User_02_Login</span>
-                <span class="method-start">6410 ms</span>
+                <span class="method-start">6628 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">afterClass</span>
-                <span class="method-start">8622 ms</span>
+                <span class="method-start">8771 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
