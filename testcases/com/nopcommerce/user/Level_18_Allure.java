@@ -93,7 +93,7 @@ public class Level_18_Allure extends BaseTestJquery  {
 		customerInforPage = homePage.clickToMyAccoutLink();
 		
 
-		Assert.assertFalse(customerInforPage.isCustomerInforPageDisplayed());
+		Assert.assertTrue(customerInforPage.isCustomerInforPageDisplayed());
 
   }
   @AfterClass
