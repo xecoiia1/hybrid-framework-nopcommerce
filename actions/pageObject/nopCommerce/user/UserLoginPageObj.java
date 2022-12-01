@@ -4,13 +4,14 @@ import org.openqa.selenium.WebDriver;
 
 import common.BasePage;
 import common.PageGeneratorManager;
+import commonJquery.BasePageJquery;
 import io.qameta.allure.Step;
 import pageUI.nopCommerce.user.LoginPageUI;
 import pageUI.nopCommerce.user.RegisterPageUI;
 
 import org.openqa.selenium.WebDriver;
 
-public class UserLoginPageObj extends BasePage {
+public class UserLoginPageObj extends BasePageJquery {
 	private WebDriver driver;
 
 	public UserLoginPageObj(WebDriver driver) {

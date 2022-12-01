@@ -13,7 +13,8 @@
   <test name="Run on Firefox">
   	<parameter name="browser" value="chrome"/>
     <classes>
-      <class name="com.nopcommerce.user.Level_17_ExtentV3_Screenshot"/>
+      <class name="com.nopcommerce.common.Common_01_Cookies"/>
+      <class name="com.nopcommerce.user.Level_19_Share_Data_C"/>
     </classes>
   </test> <!-- Test -->
 

@@ -10,6 +10,7 @@ import javax.swing.Action;
 
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Cookie;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.NoSuchElementException;
@@ -581,6 +582,17 @@ public class BasePageJquery {
 			}
 			fullFileName = fullFileName.trim();
 			getWebElement(driver, BasePageJQueryUI.UPLOAD_FILE).sendKeys(fullFileName);
+	}
+	
+	public void setCookies(WebDriver driver, Set<Cookie> cookies) {
+		for (Cookie cookie : cookies) {
+			driver.manage().addCookie(cookie);
+		}
+		sleepInSecond(3);
+	}
+	
+	public Set<Cookie> getAllCookies(WebDriver driver) {
+		return driver.manage().getCookies();
 	}
 	
 	private long longTimeOut = GlobalConstants.LONG_TIMEOUT;
