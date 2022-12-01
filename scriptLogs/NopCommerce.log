@@ -187,3 +187,14 @@
 [INFO ] [2022-11-21 10:44:12,833] Login - Step 07: Verify Login Success
 [INFO ] [2022-11-21 11:23:44,221] Register - Step 04: Input Email to required field 'abc5026@mail.com'
 >>>>>>> branch 'master' of https://github.com/xecoiia1/hybrid-framework-nopcommerce.git
+[INFO ] [2022-12-01 14:46:35,193] Login - Step 01: Navigate to Login Button
+[INFO ] [2022-12-01 14:46:36,020] Login - Step 02: Input to Email Textbox 'abc5390@mail.com'
+[INFO ] [2022-12-01 14:46:36,520] Login - Step 03:  Input Password TextBox '123456'
+[INFO ] [2022-12-01 14:46:36,889] Login - Step 04:  Click to Login Button
+[INFO ] [2022-12-01 15:03:10,512] Login - Step 01: Navigate to Login Button
+[INFO ] [2022-12-01 15:03:11,346] Login - Step 02: Input to Email Textbox 'abc4294@mail.com'
+[INFO ] [2022-12-01 15:03:11,648] Login - Step 03:  Input Password TextBox '123456'
+[INFO ] [2022-12-01 15:03:11,868] Login - Step 04:  Click to Login Button
+[INFO ] [2022-12-01 15:48:44,666] Pre-Condition - Step 01: Navigate to Login Button
+[INFO ] [2022-12-01 15:48:45,484] Pre-Condition - Step 02: Set Cookies and reload page
+[INFO ] [2022-12-01 15:48:49,001] Pre-Condition - Step 03:  Verify Login Success

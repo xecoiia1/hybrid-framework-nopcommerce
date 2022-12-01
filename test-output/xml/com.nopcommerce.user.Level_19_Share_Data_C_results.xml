@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Run on Firefox"
+           tests="6"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="0.148">
+  <properties />
+  
+  
+            <testcase name="Search_06_Corect_Manufactorer" time="0.002" classname="com.nopcommerce.user.Level_19_Share_Data_C" />
+                <testcase name="Search_05_Incorect_Manufactorer" time="0.005" classname="com.nopcommerce.user.Level_19_Share_Data_C" />
+                <testcase name="Search_01_Empty_Data" time="0.125" classname="com.nopcommerce.user.Level_19_Share_Data_C" />
+                <testcase name="Search_02_Relative_Product_Name" time="0.008" classname="com.nopcommerce.user.Level_19_Share_Data_C" />
+                <testcase name="Search_03_Absolute_Product_Name" time="0.005" classname="com.nopcommerce.user.Level_19_Share_Data_C" />
+                <testcase name="Search_04_Parent_Category" time="0.003" classname="com.nopcommerce.user.Level_19_Share_Data_C" />
+      
+</testsuite>
