@@ -88,7 +88,7 @@ public class Level_20_Custom_Close_Driver extends BaseTestJquery  {
   }
   @AfterClass
   public void afterClass() {
-	  driver.quit();
+	  closeBrowserAndDriver();
   }
   
 //  //Jquery check textcontent
