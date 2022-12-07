@@ -112,6 +112,4 @@ public class UserRegisterPageObj extends BasePageJquery {
 		return getTextOfElement(driver, RegisterPageUI.CONFIRM_PASSWORD_ERROR_MES);
 	}
 
-
-
 }

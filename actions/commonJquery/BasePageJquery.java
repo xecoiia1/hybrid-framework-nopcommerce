@@ -595,16 +595,55 @@ public class BasePageJquery {
 		return driver.manage().getCookies();
 	}
 	
+	
+	/** Input to dynamic TextBox by ID
+	 * @param driver
+	 * @param textboxID
+	 * @param value
+	 */
 	public void inputToTextBoxByID(WebDriver driver, String textboxID, String value) {
 		waitForElementVisible(driver, BasePageUI.DYNAMIC_TEXTBOX_BY_ID, textboxID);
 		sendkeysToElementByXpath(driver, BasePageUI.DYNAMIC_TEXTBOX_BY_ID, value, textboxID);
 		
 	}
 	
+	/** Input to dynamic Button by Text
+	 * @param driver
+	 * @param buttonText
+	 */
 	public void clickToButtonByText(WebDriver driver, String buttonText) {
 		waitForElementClickAble(driver, BasePageUI.DYNAMIC_BUTTON_BY_TEXT, buttonText);
 		clickToElement(driver, BasePageUI.DYNAMIC_BUTTON_BY_TEXT, buttonText);
 		
+	}
+	
+	/** Select item value dropdown by Name Attribute
+	 * @param driver
+	 * @param dropdownAttributeName
+	 * @param itemValue
+	 */
+	public void selectToDropDownByName(WebDriver driver, String dropdownAttributeName, String itemValue) {
+		waitForElementClickAble(driver, BasePageUI.DYNAMIC_DROPDOWN_BY_NAME, dropdownAttributeName);
+		selectItemDefaulDropDown(driver, BasePageUI.DYNAMIC_DROPDOWN_BY_NAME, itemValue, dropdownAttributeName);
+		
+	}
+	
+	/** Click to Dynamic Radio Button by Label Name
+	 * @param driver
+	 * @param checkBoxLabelName
+	 */
+	public void clickToRadioButtonByLabel(WebDriver driver, String radioButtonLabelName) {
+		waitForElementClickAble(driver, BasePageUI.DYNAMIC_RADIO_BUTTON_BY_LABEL, radioButtonLabelName);
+		checkToDefaultCheckBoxRadio(driver, BasePageUI.DYNAMIC_RADIO_BUTTON_BY_LABEL, radioButtonLabelName);
+	}
+	
+	/** Click to Dynamic CheckBox by Label Name
+	 * @param driver
+	 * @param checkBoxLabelName
+	 */
+	public void clickToCheckBoxByLabel(WebDriver driver, String checkBoxLabelName) {
+		waitForElementClickAble(driver, BasePageUI.DYNAMIC_CHECKBOX_BY_LABEL, checkBoxLabelName);
+		checkToDefaultCheckBoxRadio(driver, BasePageUI.DYNAMIC_CHECKBOX_BY_LABEL, checkBoxLabelName);
 	}
 	
 	private long longTimeOut = GlobalConstants.LONG_TIMEOUT;

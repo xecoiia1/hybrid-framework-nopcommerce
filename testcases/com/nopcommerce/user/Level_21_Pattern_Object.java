@@ -30,13 +30,18 @@ public class Level_21_Pattern_Object extends BaseTestJquery  {
 	firstName = "Thanh";
 	lastName = "Nguyen";
 	email = "abc" + generateRandom() + "@mail.com";
-	passWord = "123456";	
+	passWord = "123456";
+	date = "10";
+	month = "August";
+	year = "1998";
   }
   
   @Test
   public void User_01_Register() {
 	  	log.info("Register - Step 01: Click to Register link");
 		registerPage = homePage.clickToRegisterLink();
+		
+		registerPage.clickToRadioButtonByLabel(driver, "Female");
 		
 		log.info("Register - Step 02: Input FirstName to required field '" + firstName +"'" );
 		//registerPage.inputToFirstnameTextBox(firstName);
@@ -46,9 +51,15 @@ public class Level_21_Pattern_Object extends BaseTestJquery  {
 		//registerPage.inputToLastnameTextBox(lastName);
 		registerPage.inputToTextBoxByID(driver, "LastName", lastName);
 		
+		registerPage.selectToDropDownByName(driver, "DateOfBirthDay", date);
+		registerPage.selectToDropDownByName(driver, "DateOfBirthMonth", month);
+		registerPage.selectToDropDownByName(driver, "DateOfBirthYear", year);
+		
 		log.info("Register - Step 04: Input Email to required field '" + email +"'" );
 		//registerPage.inputToEmailTextBox(email);
 		registerPage.inputToTextBoxByID(driver, "Email", email);
+		
+		registerPage.clickToCheckBoxByLabel(driver, "Newsletter");
 		
 		log.info("Register - Step 05: Input Password to required field '" + passWord +"'" );
 		//registerPage.inputToPasswordTextBox(passWord);
@@ -56,7 +67,7 @@ public class Level_21_Pattern_Object extends BaseTestJquery  {
 		
 		log.info("Register - Step 06: Input Confirm Password to required field '" + passWord +"'" );
 		//registerPage.inputToConfirmPasswordTextBox(passWord);
-		registerPage.inputToTextBoxByID(driver, "Password", passWord);
+		registerPage.inputToTextBoxByID(driver, "ConfirmPassword", passWord);
 							
 		log.info("Register - Step 07: Click to Register Button");
 		//registerPage.clickToRegisterBtn();
@@ -66,16 +77,13 @@ public class Level_21_Pattern_Object extends BaseTestJquery  {
 		Assert.assertEquals(registerPage.getSuccessRegisterSucces(), "Your registration completed");
 		
 		log.info("Register - Step 09: Click to Logout Button");
-		//homePage = registerPage.clickToLogoutBtn();
-		registerPage.clickToButtonByText(driver, "Register");
-		homePage = PageGeneratorManager.getUserHomePage(driver);
+		homePage = registerPage.clickToLogoutBtn();
  }
   @Test
   public void User_02_Login() {
 	    log.info("Login - Step 01: Navigate to Login Button");
-		//loginPage = homePage.clickToLoginLink();
-	    homePage.clickToButtonByText(driver, "Login");
-		
+		loginPage = homePage.clickToLoginLink();
+	   		
 		log.info("Login - Step 02: Input Not Found Email to Email Textbox '" + email +"'" );
 		loginPage.inputEmail(email);
 		
@@ -107,9 +115,7 @@ public class Level_21_Pattern_Object extends BaseTestJquery  {
  private UserHomePageObj homePage;
  private UserRegisterPageObj registerPage;
  private UserLoginPageObj loginPage;
- private UserAddressPageObj addressPage;
- private UserRewardPointPageObj rewardPage;
- private UserMyProductReviewPageObj myProductPage;
  private UserCustomerInforPageObj customerInforPage;
  private String firstName, lastName, email, passWord;
+ private String date, month, year;
 }
