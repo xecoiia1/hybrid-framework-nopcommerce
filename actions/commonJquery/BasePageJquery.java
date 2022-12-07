@@ -595,6 +595,18 @@ public class BasePageJquery {
 		return driver.manage().getCookies();
 	}
 	
+	public void inputToTextBoxByID(WebDriver driver, String textboxID, String value) {
+		waitForElementVisible(driver, BasePageUI.DYNAMIC_TEXTBOX_BY_ID, textboxID);
+		sendkeysToElementByXpath(driver, BasePageUI.DYNAMIC_TEXTBOX_BY_ID, value, textboxID);
+		
+	}
+	
+	public void clickToButtonByText(WebDriver driver, String buttonText) {
+		waitForElementClickAble(driver, BasePageUI.DYNAMIC_BUTTON_BY_TEXT, buttonText);
+		clickToElement(driver, BasePageUI.DYNAMIC_BUTTON_BY_TEXT, buttonText);
+		
+	}
+	
 	private long longTimeOut = GlobalConstants.LONG_TIMEOUT;
 	
 	private long shortTimeOut = GlobalConstants.SHORT_TIMEOUT;

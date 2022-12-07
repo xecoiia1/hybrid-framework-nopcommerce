@@ -55,7 +55,7 @@ public class PageGeneratorManager {
 	public static AdminDashboardPageObj getAdminDashboardPage(WebDriver driver) {
 		return new AdminDashboardPageObj(driver);
 	}
-
+	
 
 
 

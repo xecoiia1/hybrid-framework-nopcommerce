@@ -7,12 +7,13 @@ import org.openqa.selenium.support.How;
 
 import common.BasePage;
 import common.PageGeneratorManager;
+import commonJquery.BasePageJquery;
 import io.qameta.allure.Step;
 import pageUI.nopCommerce.user.HomePageUI;
 
 import org.openqa.selenium.WebDriver;
 
-public class UserHomePageObj extends BasePage {
+public class UserHomePageObj extends BasePageJquery {
 	private WebDriver driver;
 	
 	public UserHomePageObj(WebDriver driver) {
