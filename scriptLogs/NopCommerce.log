@@ -198,3 +198,116 @@
 [INFO ] [2022-12-01 15:48:44,666] Pre-Condition - Step 01: Navigate to Login Button
 [INFO ] [2022-12-01 15:48:45,484] Pre-Condition - Step 02: Set Cookies and reload page
 [INFO ] [2022-12-01 15:48:49,001] Pre-Condition - Step 03:  Verify Login Success
+[INFO ] [2022-12-07 14:11:13,404] Register - Step 01: Click to Register link
+[INFO ] [2022-12-07 14:11:14,304] Register - Step 02: Input FirstName to required field 'Thanh'
+[INFO ] [2022-12-07 14:11:44,858] Login - Step 01: Navigate to Login Button
+[INFO ] [2022-12-07 14:11:45,731] Login - Step 02: Input Not Found Email to Email Textbox 'abc9634@mail.com'
+[INFO ] [2022-12-07 14:11:46,145] Login - Step 03:  Input Password TextBox '123456'
+[INFO ] [2022-12-07 14:11:46,457] Login - Step 04:  Click to Login Button
+[INFO ] [2022-12-07 14:11:47,022] Login - Step 05:  Verify Login Success
+[INFO ] [2022-12-07 14:12:17,442] OS name = windows 10
+[INFO ] [2022-12-07 14:12:17,442] Driver instance name = chromedriver: chrome on windows (6aaf8dca91d340e156b8f701decb28eb)
+[INFO ] [2022-12-07 14:13:17,522] Register - Step 01: Click to Register link
+[INFO ] [2022-12-07 14:13:18,403] Register - Step 02: Input FirstName to required field 'Thanh'
+[INFO ] [2022-12-07 14:13:48,550] Login - Step 01: Navigate to Login Button
+[INFO ] [2022-12-07 14:13:49,608] Login - Step 02: Input Not Found Email to Email Textbox 'abc6604@mail.com'
+[INFO ] [2022-12-07 14:13:50,077] Login - Step 03:  Input Password TextBox '123456'
+[INFO ] [2022-12-07 14:13:50,357] Login - Step 04:  Click to Login Button
+[INFO ] [2022-12-07 14:13:50,994] Login - Step 05:  Verify Login Success
+[INFO ] [2022-12-07 14:14:12,955] OS name = windows 10
+[INFO ] [2022-12-07 14:14:12,956] Driver instance name = chromedriver: chrome on windows (a8b1dc0fe894e6de34e8d5818ad6d1a2)
+[INFO ] [2022-12-07 14:14:32,859] Register - Step 01: Click to Register link
+[INFO ] [2022-12-07 14:14:33,812] Register - Step 02: Input FirstName to required field 'Thanh'
+[INFO ] [2022-12-07 14:14:34,148] Register - Step 03: Input LastName to required field 'Nguyen'
+[INFO ] [2022-12-07 14:14:34,431] Register - Step 04: Input Email to required field 'abc5355@mail.com'
+[INFO ] [2022-12-07 14:14:34,781] Register - Step 05: Input Password to required field '123456'
+[INFO ] [2022-12-07 14:14:35,077] Register - Step 06: Input Confirm Password to required field '123456'
+[INFO ] [2022-12-07 14:14:35,287] Register - Step 07: Click to Register Button
+[INFO ] [2022-12-07 14:14:35,484] Register - Step 08: Verify Register Success Message
+[INFO ] [2022-12-07 14:14:45,334] disconnected: unable to connect to renderer
+  (failed to check if window was closed: disconnected: unable to connect to renderer)
+  (Session info: chrome=108.0.5359.94)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'VN-MF10-NC100VB', ip: '10.218.148.31', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.94, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\THANH5~1.NGU\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:55902}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: a8b1dc0fe894e6de34e8d5818ad6d1a2
+[INFO ] [2022-12-07 14:14:45,741] Login - Step 01: Navigate to Login Button
+[INFO ] [2022-12-07 14:14:45,762] OS name = windows 10
+[INFO ] [2022-12-07 14:14:45,762] Driver instance name = chromedriver: chrome on windows (bf4f554037a4118886776d8f9f4c8815)
+[INFO ] [2022-12-07 14:14:45,768] java.net.ConnectException: Failed to connect to localhost/[0:0:0:0:0:0:0:1]:48080
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'VN-MF10-NC100VB', ip: '10.218.148.31', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: driver.version: RemoteWebDriver
+[INFO ] [2022-12-07 14:15:19,164] Register - Step 01: Click to Register link
+[INFO ] [2022-12-07 14:15:20,755] Register - Step 02: Input FirstName to required field 'Thanh'
+[INFO ] [2022-12-07 14:15:21,036] Register - Step 03: Input LastName to required field 'Nguyen'
+[INFO ] [2022-12-07 14:15:21,369] Register - Step 04: Input Email to required field 'abc3079@mail.com'
+[INFO ] [2022-12-07 14:15:21,716] Register - Step 05: Input Password to required field '123456'
+[INFO ] [2022-12-07 14:15:22,036] Register - Step 06: Input Confirm Password to required field '123456'
+[INFO ] [2022-12-07 14:15:22,375] Register - Step 07: Click to Register Button
+[INFO ] [2022-12-07 14:15:24,724] Register - Step 08: Verify Register Success Message
+[INFO ] [2022-12-07 14:15:24,866] Register - Step 09: Click to Logout Button
+[INFO ] [2022-12-07 14:15:55,006] Login - Step 01: Navigate to Login Button
+[INFO ] [2022-12-07 14:16:18,383] Register - Step 01: Click to Register link
+[INFO ] [2022-12-07 14:16:19,444] Register - Step 02: Input FirstName to required field 'Thanh'
+[INFO ] [2022-12-07 14:16:19,768] Register - Step 03: Input LastName to required field 'Nguyen'
+[INFO ] [2022-12-07 14:16:20,062] Register - Step 04: Input Email to required field 'abc225@mail.com'
+[INFO ] [2022-12-07 14:16:20,398] Register - Step 05: Input Password to required field '123456'
+[INFO ] [2022-12-07 14:16:20,692] Register - Step 06: Input Confirm Password to required field '123456'
+[INFO ] [2022-12-07 14:16:21,037] Register - Step 07: Click to Register Button
+[INFO ] [2022-12-07 14:16:22,569] Register - Step 08: Verify Register Success Message
+[INFO ] [2022-12-07 14:16:22,718] Register - Step 09: Click to Logout Button
+[INFO ] [2022-12-07 14:16:25,149] OS name = windows 10
+[INFO ] [2022-12-07 14:16:25,151] Driver instance name = chromedriver: chrome on windows (bea78302a5943dcc5cdf68d4bbc7cd48)
+[INFO ] [2022-12-07 14:16:25,155] no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=108.0.5359.94)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'VN-MF10-NC100VB', ip: '10.218.148.31', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.94, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\THANH5~1.NGU\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:56107}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: bea78302a5943dcc5cdf68d4bbc7cd48
+[INFO ] [2022-12-07 14:16:25,517] Login - Step 01: Navigate to Login Button
+[INFO ] [2022-12-07 14:16:25,536] OS name = windows 10
+[INFO ] [2022-12-07 14:16:25,536] Driver instance name = chromedriver: chrome on windows (81322ae0bc48378fa725d09a38e827c4)
+[INFO ] [2022-12-07 14:16:25,541] java.net.ConnectException: Failed to connect to localhost/[0:0:0:0:0:0:0:1]:46561
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'VN-MF10-NC100VB', ip: '10.218.148.31', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: driver.version: RemoteWebDriver
+[INFO ] [2022-12-07 14:18:19,029] Register - Step 01: Click to Register link
+[INFO ] [2022-12-07 14:18:20,235] Register - Step 02: Input FirstName to required field 'Thanh'
+[INFO ] [2022-12-07 14:18:20,500] Register - Step 03: Input LastName to required field 'Nguyen'
+[INFO ] [2022-12-07 14:18:20,795] Register - Step 04: Input Email to required field 'abc9396@mail.com'
+[INFO ] [2022-12-07 14:18:21,141] Register - Step 05: Input Password to required field '123456'
+[INFO ] [2022-12-07 14:18:21,398] Register - Step 06: Input Confirm Password to required field '123456'
+[INFO ] [2022-12-07 14:18:21,761] Register - Step 07: Click to Register Button
+[INFO ] [2022-12-07 14:18:23,207] Register - Step 08: Verify Register Success Message
+[INFO ] [2022-12-07 14:18:23,309] Register - Step 09: Click to Logout Button
+[INFO ] [2022-12-07 14:18:24,505] Login - Step 01: Navigate to Login Button
+[INFO ] [2022-12-07 14:18:25,478] Login - Step 02: Input Not Found Email to Email Textbox 'abc9396@mail.com'
+[INFO ] [2022-12-07 14:18:25,778] Login - Step 03:  Input Password TextBox '123456'
+[INFO ] [2022-12-07 14:18:26,053] Login - Step 04:  Click to Login Button
+[INFO ] [2022-12-07 14:18:26,961] Login - Step 05:  Verify Login Success
+[INFO ] [2022-12-07 14:18:27,264] Login - Step 06: Navigate to MyAccoutLink
+[INFO ] [2022-12-07 14:18:29,100] Login - Step 07: Verify Login Success
+[INFO ] [2022-12-07 14:18:29,236] OS name = windows 10
+[INFO ] [2022-12-07 14:18:29,237] Driver instance name = chromedriver: chrome on windows (11554968a12051160969d33771c7b2cb)
+[INFO ] [2022-12-07 14:58:38,512] Register - Step 01: Click to Register link
+[INFO ] [2022-12-07 14:58:41,126] Register - Step 02: Input FirstName to required field 'Thanh'
+[INFO ] [2022-12-07 14:58:41,421] Register - Step 03: Input LastName to required field 'Nguyen'
+[INFO ] [2022-12-07 14:58:42,445] Register - Step 04: Input Email to required field 'abc7234@mail.com'
+[INFO ] [2022-12-07 14:58:43,012] Register - Step 05: Input Password to required field '123456'
+[INFO ] [2022-12-07 14:58:43,346] Register - Step 06: Input Confirm Password to required field '123456'
+[INFO ] [2022-12-07 14:58:43,745] Register - Step 07: Click to Register Button
+[INFO ] [2022-12-07 14:58:46,258] Register - Step 08: Verify Register Success Message
+[INFO ] [2022-12-07 14:58:46,368] Register - Step 09: Click to Logout Button
+[INFO ] [2022-12-07 14:58:47,657] Login - Step 01: Navigate to Login Button
+[INFO ] [2022-12-07 14:58:48,680] Login - Step 02: Input Not Found Email to Email Textbox 'abc7234@mail.com'
+[INFO ] [2022-12-07 14:58:49,097] Login - Step 03:  Input Password TextBox '123456'
+[INFO ] [2022-12-07 14:58:49,385] Login - Step 04:  Click to Login Button
+[INFO ] [2022-12-07 14:58:50,382] Login - Step 05:  Verify Login Success
+[INFO ] [2022-12-07 14:58:50,668] Login - Step 06: Navigate to MyAccoutLink
+[INFO ] [2022-12-07 14:58:55,436] Login - Step 07: Verify Login Success
+[INFO ] [2022-12-07 14:58:55,589] OS name = windows 10
+[INFO ] [2022-12-07 14:58:55,589] Driver instance name = chromedriver: chrome on windows (26ae1f1695f0df4992497c9e0e0a76f0)

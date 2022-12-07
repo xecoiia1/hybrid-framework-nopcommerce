@@ -1,23 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [NopCommerce]">
-  <listeners>
-    <listener class-name="commonJquery.MethodListener"/>
-    <listener class-name="reportConfig.ExtentTestListenerV3"/>
-    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
-    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
-  </listeners>
   <test thread-count="5" name="Run on Firefox(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="com.nopcommerce.user.Level_17_ExtentV3_Screenshot">
+      <class name="com.nopcommerce.user.Level_21_Pattern_Object">
         <methods>
           <include name="afterClass"/>
           <include name="initBeforeSuite"/>
+          <include name="User_02_Login"/>
           <include name="beforeClass"/>
-          <include name="User_02_Login" invocation-numbers="0"/>
         </methods>
-      </class> <!-- com.nopcommerce.user.Level_17_ExtentV3_Screenshot -->
+      </class> <!-- com.nopcommerce.user.Level_21_Pattern_Object -->
     </classes>
   </test> <!-- Run on Firefox(failed) -->
 </suite> <!-- Failed suite [NopCommerce] -->
