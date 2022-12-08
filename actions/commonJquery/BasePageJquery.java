@@ -269,6 +269,10 @@ public class BasePageJquery {
 		return getWebElement(driver, locatorType).getAttribute(name);
 	}
 	
+	public String getElementAttribute(WebDriver driver, String locatorType, String name, String...dynamicLocator) {
+		return getWebElement(driver, getDynamicXpath(locatorType, dynamicLocator)).getAttribute(name);
+	}
+	
 	public String getElementCssValue(WebDriver driver, String locatorType, String cssValue) {
 		return getWebElement(driver, locatorType).getCssValue(cssValue);
 	}
@@ -644,6 +648,16 @@ public class BasePageJquery {
 	public void clickToCheckBoxByLabel(WebDriver driver, String checkBoxLabelName) {
 		waitForElementClickAble(driver, BasePageUI.DYNAMIC_CHECKBOX_BY_LABEL, checkBoxLabelName);
 		checkToDefaultCheckBoxRadio(driver, BasePageUI.DYNAMIC_CHECKBOX_BY_LABEL, checkBoxLabelName);
+	}
+	
+	/** Get value in TextBox by TextBoxID
+	 * @param driver
+	 * @param textboxID
+	 * @return
+	 */
+	public String getTextboxValueByID(WebDriver driver, String textboxID) {
+		waitForAllElementVisible(driver, BasePageUI.DYNAMIC_TEXTBOX_BY_ID, textboxID);
+		return getElementAttribute(driver, BasePageUI.DYNAMIC_TEXTBOX_BY_ID, "value", textboxID);
 	}
 	
 	private long longTimeOut = GlobalConstants.LONG_TIMEOUT;

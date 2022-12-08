@@ -6,12 +6,13 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 
 import common.BasePage;
+import commonJquery.BasePageJquery;
 import pageUI.nopCommerce.user.CustomerInforPageUI;
 import pageUI.nopCommerce.user.HomePageUI;
 
 import org.openqa.selenium.WebDriver;
 
-public class UserCustomerInforPageObj extends BasePage {
+public class UserCustomerInforPageObj extends BasePageJquery {
 	private WebDriver driver;
 	
 	public UserCustomerInforPageObj(WebDriver driver) {
@@ -28,17 +29,17 @@ public class UserCustomerInforPageObj extends BasePage {
 		return isElementDisplay(driver, CustomerInforPageUI.CUSTOMER_INFOR_HEADER);
 	}
 
-	public UserAddressPageObj openAddressPage(WebDriver driver2) {
+	public UserAddressPageObj openAddressPage(WebDriver driver) {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
-	public UserRewardPointPageObj openRewardPage(WebDriver driver2) {
+	public UserRewardPointPageObj openRewardPage(WebDriver driver) {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
-	public UserHomePageObj clickToLogoutBtnUser(WebDriver driver2) {
+	public UserHomePageObj clickToLogoutBtnUser(WebDriver driver) {
 		// TODO Auto-generated method stub
 		return null;
 	}

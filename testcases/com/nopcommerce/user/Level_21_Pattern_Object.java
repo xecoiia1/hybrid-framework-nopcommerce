@@ -101,7 +101,25 @@ public class Level_21_Pattern_Object extends BaseTestJquery  {
 		customerInforPage = homePage.clickToMyAccoutLink();
 		
 		log.info("Login - Step 07: Verify Login Success");
-		Assert.assertFalse(customerInforPage.isCustomerInforPageDisplayed());
+		Assert.assertTrue(customerInforPage.isCustomerInforPageDisplayed());
+  }
+  
+  @Test
+  public void User_03_My_Account() {
+		log.info("My Account - Step 01: Navigate to MyAccoutLink");
+		customerInforPage = homePage.clickToMyAccoutLink();
+		
+		log.info("My Account - Step 02: Verify Login Success");
+		Assert.assertTrue(customerInforPage.isCustomerInforPageDisplayed());
+		
+		log.info("My Account - Step 03: Verify FirstName value is correctly");
+		Assert.assertEquals(customerInforPage.getTextboxValueByID(driver, "FirstName"), firstName);
+		
+		log.info("My Account - Step 04: Verify LastName value is correctly");
+		Assert.assertEquals(customerInforPage.getTextboxValueByID(driver, "LastName"), lastName);
+		
+		log.info("My Account - Step 05: Verify Email value is correctly");
+		Assert.assertEquals(customerInforPage.getTextboxValueByID(driver, "Email"), email);
   }
   @AfterClass(alwaysRun = true)
   public void afterClass() {
