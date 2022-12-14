@@ -13,6 +13,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
+import org.openqa.selenium.firefox.FirefoxProfile;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.testng.Assert;
 import org.testng.Reporter;
@@ -38,10 +39,18 @@ public class BaseTestJquery {
 	protected WebDriver getBrowserDriver(String browserName) {
 		if(browserName.equals("firefox")) {
 			WebDriverManager.firefoxdriver().setup();
-			driver = new FirefoxDriver();
+			
+			//Add Extension to FireFox
+			FirefoxProfile profile = new FirefoxProfile();
+			File translate  = new File(GlobalConstants.PROJECT_PATH + "\\browserExtension\\Google_Translate_Firefox.xpi");
+			profile.addExtension(translate);
+			FirefoxOptions options = new FirefoxOptions();
+			options.setProfile(profile);
+			options.addPreference("intl.accept_languages", "vi-vn, vi, en-us, en");
+			driver = new FirefoxDriver(options);
+		
 		}else if (browserName.equals("h_firefox")){
 			WebDriverManager.firefoxdriver().setup();
-			
 			FirefoxOptions options = new FirefoxOptions();
 			options.addArguments("--headless");
 			options.addArguments("window-size=1920x1080");
@@ -49,10 +58,17 @@ public class BaseTestJquery {
 		    
 		}else if(browserName.equals("chrome")) {
 			WebDriverManager.chromedriver().setup();
-			driver = new ChromeDriver();
+			System.setProperty("webdriver.chrome.arg", "--disable-logging");
+			System.setProperty("webdriver.chrome.silentOutput", "true");
+			
+			//Add Extension to Chrome
+			File file = new File(GlobalConstants.PROJECT_PATH + "\\browserExtension\\Google_Translate_Chrome.crx");
+			ChromeOptions options = new ChromeOptions();
+			options.addExtensions(file);			
+			driver = new ChromeDriver(options);
+			
 		}else if(browserName.equals("h_chrome")) {
 			WebDriverManager.chromedriver().setup();
-			
 			ChromeOptions options = new ChromeOptions();
 			options.addArguments("--headless");
 			options.addArguments("window-size=1920x1080");
@@ -61,9 +77,11 @@ public class BaseTestJquery {
 		}else if(browserName.equals("opera")) {
 			WebDriverManager.operadriver().setup();
 			driver = new EdgeDriver();
+		
 		}else if(browserName.equals("ie")) {
 			WebDriverManager.iedriver().arch32().setup();
 			driver = new InternetExplorerDriver();
+		
 		}else if(browserName.equals("edge")) {
 			WebDriverManager.edgedriver().setup();
 			driver = new EdgeDriver();
