@@ -334,3 +334,139 @@ Driver info: driver.version: RemoteWebDriver
 [INFO ] [2022-12-08 10:15:47,095] My Account - Step 05: Verify Email value is correctly
 [INFO ] [2022-12-08 10:15:47,184] OS name = windows 10
 [INFO ] [2022-12-08 10:15:47,185] Driver instance name = chromedriver: chrome on windows (84b706e2531248771b9e88af61da4ff0)
+[INFO ] [2022-12-14 11:46:20,957] Register - Step 01: Click to Register link
+[INFO ] [2022-12-14 11:46:23,167] Register - Step 02: Input FirstName to required field 'Thanh'
+[INFO ] [2022-12-14 11:46:23,321] Register - Step 03: Input LastName to required field 'Nguyen'
+[INFO ] [2022-12-14 11:46:24,714] Register - Step 04: Input Email to required field 'abc8432@mail.com'
+[INFO ] [2022-12-14 11:46:24,850] Register - Step 05: Input Password to required field '123456'
+[INFO ] [2022-12-14 11:46:25,079] Register - Step 06: Input Confirm Password to required field '123456'
+[INFO ] [2022-12-14 11:46:25,202] Register - Step 07: Click to Register Button
+[INFO ] [2022-12-14 11:46:27,389] Register - Step 08: Verify Register Success Message
+[INFO ] [2022-12-14 11:46:27,460] Register - Step 09: Click to Logout Button
+[INFO ] [2022-12-14 11:46:28,524] Login - Step 01: Navigate to Login Button
+[INFO ] [2022-12-14 11:46:29,906] Login - Step 02: Input Not Found Email to Email Textbox 'abc8432@mail.com'
+[INFO ] [2022-12-14 11:46:30,011] Login - Step 03:  Input Password TextBox '123456'
+[INFO ] [2022-12-14 11:46:30,085] Login - Step 04:  Click to Login Button
+[INFO ] [2022-12-14 11:46:31,140] Login - Step 05:  Verify Login Success
+[INFO ] [2022-12-14 11:46:31,319] Login - Step 06: Navigate to MyAccoutLink
+[INFO ] [2022-12-14 11:46:32,426] Login - Step 07: Verify Login Success
+[INFO ] [2022-12-14 11:46:32,509] My Account - Step 01: Navigate to MyAccoutLink
+[INFO ] [2022-12-14 11:46:33,061] My Account - Step 02: Verify Login Success
+[INFO ] [2022-12-14 11:46:33,168] My Account - Step 03: Verify FirstName value is correctly
+[INFO ] [2022-12-14 11:46:33,216] My Account - Step 04: Verify LastName value is correctly
+[INFO ] [2022-12-14 11:46:33,270] My Account - Step 05: Verify Email value is correctly
+[INFO ] [2022-12-14 11:46:33,325] OS name = windows 10
+[INFO ] [2022-12-14 11:46:33,326] Driver instance name = firefoxdriver: firefox on windows (4854575f-b435-4fbe-9723-272e2025510c)
+[INFO ] [2022-12-14 11:50:22,802] Register - Step 01: Click to Register link
+[INFO ] [2022-12-14 11:50:25,248] Register - Step 02: Input FirstName to required field 'Thanh'
+[INFO ] [2022-12-14 11:50:25,377] Register - Step 03: Input LastName to required field 'Nguyen'
+[INFO ] [2022-12-14 11:50:26,615] Register - Step 04: Input Email to required field 'abc3802@mail.com'
+[INFO ] [2022-12-14 11:50:26,746] Register - Step 05: Input Password to required field '123456'
+[INFO ] [2022-12-14 11:50:26,825] Register - Step 06: Input Confirm Password to required field '123456'
+[INFO ] [2022-12-14 11:50:26,899] Register - Step 07: Click to Register Button
+[INFO ] [2022-12-14 11:50:28,650] Register - Step 08: Verify Register Success Message
+[INFO ] [2022-12-14 11:50:28,731] Register - Step 09: Click to Logout Button
+[INFO ] [2022-12-14 11:50:29,849] Login - Step 01: Navigate to Login Button
+[INFO ] [2022-12-14 11:50:33,082] Login - Step 02: Input Not Found Email to Email Textbox 'abc3802@mail.com'
+[INFO ] [2022-12-14 11:50:33,167] Login - Step 03:  Input Password TextBox '123456'
+[INFO ] [2022-12-14 11:50:33,242] Login - Step 04:  Click to Login Button
+[INFO ] [2022-12-14 11:50:34,024] Login - Step 05:  Verify Login Success
+[INFO ] [2022-12-14 11:50:34,171] Login - Step 06: Navigate to MyAccoutLink
+[INFO ] [2022-12-14 11:50:35,352] Login - Step 07: Verify Login Success
+[INFO ] [2022-12-14 11:50:35,439] My Account - Step 01: Navigate to MyAccoutLink
+[INFO ] [2022-12-14 11:50:35,885] My Account - Step 02: Verify Login Success
+[INFO ] [2022-12-14 11:50:35,956] My Account - Step 03: Verify FirstName value is correctly
+[INFO ] [2022-12-14 11:50:36,002] My Account - Step 04: Verify LastName value is correctly
+[INFO ] [2022-12-14 11:50:36,054] My Account - Step 05: Verify Email value is correctly
+[INFO ] [2022-12-14 11:50:36,110] OS name = windows 10
+[INFO ] [2022-12-14 11:50:36,111] Driver instance name = firefoxdriver: firefox on windows (3fe6395f-ece9-4d05-ba71-ca4ee68d1990)
+[INFO ] [2022-12-14 11:51:48,890] Register - Step 01: Click to Register link
+[INFO ] [2022-12-14 11:51:50,029] Register - Step 02: Input FirstName to required field 'Thanh'
+[INFO ] [2022-12-14 11:51:50,270] Register - Step 03: Input LastName to required field 'Nguyen'
+[INFO ] [2022-12-14 11:51:51,201] Register - Step 04: Input Email to required field 'abc7936@mail.com'
+[INFO ] [2022-12-14 11:51:51,648] Register - Step 05: Input Password to required field '123456'
+[INFO ] [2022-12-14 11:51:51,881] Register - Step 06: Input Confirm Password to required field '123456'
+[INFO ] [2022-12-14 11:51:52,112] Register - Step 07: Click to Register Button
+[INFO ] [2022-12-14 11:51:53,343] Register - Step 08: Verify Register Success Message
+[INFO ] [2022-12-14 11:51:53,454] Register - Step 09: Click to Logout Button
+[INFO ] [2022-12-14 11:51:54,648] Login - Step 01: Navigate to Login Button
+[INFO ] [2022-12-14 11:51:55,541] Login - Step 02: Input Not Found Email to Email Textbox 'abc7936@mail.com'
+[INFO ] [2022-12-14 11:51:55,879] Login - Step 03:  Input Password TextBox '123456'
+[INFO ] [2022-12-14 11:51:56,153] Login - Step 04:  Click to Login Button
+[INFO ] [2022-12-14 11:51:57,064] Login - Step 05:  Verify Login Success
+[INFO ] [2022-12-14 11:51:57,344] Login - Step 06: Navigate to MyAccoutLink
+[INFO ] [2022-12-14 11:51:58,220] Login - Step 07: Verify Login Success
+[INFO ] [2022-12-14 11:51:58,344] My Account - Step 01: Navigate to MyAccoutLink
+[INFO ] [2022-12-14 11:51:58,980] My Account - Step 02: Verify Login Success
+[INFO ] [2022-12-14 11:51:59,106] My Account - Step 03: Verify FirstName value is correctly
+[INFO ] [2022-12-14 11:51:59,224] My Account - Step 04: Verify LastName value is correctly
+[INFO ] [2022-12-14 11:51:59,326] My Account - Step 05: Verify Email value is correctly
+[INFO ] [2022-12-14 11:51:59,437] OS name = windows 10
+[INFO ] [2022-12-14 11:51:59,437] Driver instance name = chromedriver: chrome on windows (91c9c6f3ed0aeeb1945ecebbb281b847)
+[INFO ] [2022-12-14 14:52:19,560] Register - Step 01: Click to Register link
+[INFO ] [2022-12-14 14:52:20,686] Register - Step 02: Input FirstName to required field 'Thanh'
+[INFO ] [2022-12-14 14:52:20,820] Register - Step 03: Input LastName to required field 'Nguyen'
+[INFO ] [2022-12-14 14:52:21,965] Register - Step 04: Input Email to required field 'abc8947@mail.com'
+[INFO ] [2022-12-14 14:52:22,109] Register - Step 05: Input Password to required field '123456'
+[INFO ] [2022-12-14 14:52:22,236] Register - Step 06: Input Confirm Password to required field '123456'
+[INFO ] [2022-12-14 14:52:22,364] Register - Step 07: Click to Register Button
+[INFO ] [2022-12-14 14:52:23,490] Register - Step 08: Verify Register Success Message
+[INFO ] [2022-12-14 14:52:23,837] Register - Step 09: Click to Logout Button
+[INFO ] [2022-12-14 14:52:24,897] Login - Step 01: Navigate to Login Button
+[INFO ] [2022-12-14 14:52:25,672] Login - Step 02: Input Not Found Email to Email Textbox 'abc8947@mail.com'
+[INFO ] [2022-12-14 14:52:25,790] Login - Step 03:  Input Password TextBox '123456'
+[INFO ] [2022-12-14 14:52:25,867] Login - Step 04:  Click to Login Button
+[INFO ] [2022-12-14 14:52:26,694] Login - Step 05:  Verify Login Success
+[INFO ] [2022-12-14 14:52:26,983] Login - Step 06: Navigate to MyAccoutLink
+[INFO ] [2022-12-14 14:52:28,297] Login - Step 07: Verify Login Success
+[INFO ] [2022-12-14 14:52:28,393] My Account - Step 01: Navigate to MyAccoutLink
+[INFO ] [2022-12-14 14:52:28,865] My Account - Step 02: Verify Login Success
+[INFO ] [2022-12-14 14:52:28,982] My Account - Step 03: Verify FirstName value is correctly
+[INFO ] [2022-12-14 14:52:29,047] My Account - Step 04: Verify LastName value is correctly
+[INFO ] [2022-12-14 14:52:29,101] My Account - Step 05: Verify Email value is correctly
+[INFO ] [2022-12-14 14:52:29,167] OS name = windows 10
+[INFO ] [2022-12-14 14:52:29,167] Driver instance name = firefoxdriver: firefox on windows (14cbe5b4-5cc9-43a0-b60d-8136a49332d9)
+[INFO ] [2022-12-14 14:53:19,057] Register - Step 01: Click to Register link
+[INFO ] [2022-12-14 14:53:20,140] Register - Step 02: Input FirstName to required field 'Thanh'
+[INFO ] [2022-12-14 14:53:20,288] Register - Step 03: Input LastName to required field 'Nguyen'
+[INFO ] [2022-12-14 14:53:21,372] Register - Step 04: Input Email to required field 'abc9878@mail.com'
+[INFO ] [2022-12-14 14:53:21,516] Register - Step 05: Input Password to required field '123456'
+[INFO ] [2022-12-14 14:53:21,600] Register - Step 06: Input Confirm Password to required field '123456'
+[INFO ] [2022-12-14 14:53:21,674] Register - Step 07: Click to Register Button
+[INFO ] [2022-12-14 14:53:22,840] Register - Step 08: Verify Register Success Message
+[INFO ] [2022-12-14 14:53:22,924] Register - Step 09: Click to Logout Button
+[INFO ] [2022-12-14 14:53:23,933] Login - Step 01: Navigate to Login Button
+[INFO ] [2022-12-14 14:53:24,700] Login - Step 02: Input Not Found Email to Email Textbox 'abc9878@mail.com'
+[INFO ] [2022-12-14 14:53:24,800] Login - Step 03:  Input Password TextBox '123456'
+[INFO ] [2022-12-14 14:53:24,875] Login - Step 04:  Click to Login Button
+[INFO ] [2022-12-14 14:53:25,692] Login - Step 05:  Verify Login Success
+[INFO ] [2022-12-14 14:53:25,905] Login - Step 06: Navigate to MyAccoutLink
+[INFO ] [2022-12-14 14:53:27,152] Login - Step 07: Verify Login Success
+[INFO ] [2022-12-14 14:53:27,229] My Account - Step 01: Navigate to MyAccoutLink
+[INFO ] [2022-12-14 14:53:27,729] My Account - Step 02: Verify Login Success
+[INFO ] [2022-12-14 14:53:27,826] My Account - Step 03: Verify FirstName value is correctly
+[INFO ] [2022-12-14 14:53:27,873] My Account - Step 04: Verify LastName value is correctly
+[INFO ] [2022-12-14 14:53:27,920] My Account - Step 05: Verify Email value is correctly
+[INFO ] [2022-12-14 14:53:27,976] OS name = windows 10
+[INFO ] [2022-12-14 14:53:27,976] Driver instance name = firefoxdriver: firefox on windows (167cc7bf-728d-418f-81e9-e90bd081af5f)
+[INFO ] [2022-12-14 14:56:05,299] Register - Step 01: Click to Register link
+[INFO ] [2022-12-14 14:56:07,037] Register - Step 02: Input FirstName to required field 'Thanh'
+[INFO ] [2022-12-14 14:56:07,204] Register - Step 03: Input LastName to required field 'Nguyen'
+[INFO ] [2022-12-14 14:56:08,332] Register - Step 04: Input Email to required field 'abc9543@mail.com'
+[INFO ] [2022-12-14 14:56:08,492] Register - Step 05: Input Password to required field '123456'
+[INFO ] [2022-12-14 14:56:08,572] Register - Step 06: Input Confirm Password to required field '123456'
+[INFO ] [2022-12-14 14:56:08,639] Register - Step 07: Click to Register Button
+[INFO ] [2022-12-14 14:56:10,190] Register - Step 08: Verify Register Success Message
+[INFO ] [2022-12-14 14:56:10,269] Register - Step 09: Click to Logout Button
+[INFO ] [2022-12-14 14:56:11,338] Login - Step 01: Navigate to Login Button
+[INFO ] [2022-12-14 14:56:12,220] Login - Step 02: Input Not Found Email to Email Textbox 'abc9543@mail.com'
+[INFO ] [2022-12-14 14:56:12,350] Login - Step 03:  Input Password TextBox '123456'
+[INFO ] [2022-12-14 14:56:12,432] Login - Step 04:  Click to Login Button
+[INFO ] [2022-12-14 14:56:13,566] Login - Step 05:  Verify Login Success
+[INFO ] [2022-12-14 14:56:13,766] Login - Step 06: Navigate to MyAccoutLink
+[INFO ] [2022-12-14 14:56:14,567] Login - Step 07: Verify Login Success
+[INFO ] [2022-12-14 14:56:14,657] My Account - Step 01: Navigate to MyAccoutLink
+[INFO ] [2022-12-14 14:56:15,147] My Account - Step 02: Verify Login Success
+[INFO ] [2022-12-14 14:56:15,219] My Account - Step 03: Verify FirstName value is correctly
+[INFO ] [2022-12-14 14:56:15,264] My Account - Step 04: Verify LastName value is correctly
+[INFO ] [2022-12-14 14:56:15,316] My Account - Step 05: Verify Email value is correctly
