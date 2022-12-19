@@ -56,7 +56,8 @@ public class BaseTestJquery {
 			options.addArguments("window-size=1920x1080");
 		    driver = new FirefoxDriver(options);
 		    
-		}else if(browserName.equals("chrome")) {
+		}
+		else if(browserName.equals("chrome")) {
 			WebDriverManager.chromedriver().setup();
 			System.setProperty("webdriver.chrome.arg", "--disable-logging");
 			System.setProperty("webdriver.chrome.silentOutput", "true");

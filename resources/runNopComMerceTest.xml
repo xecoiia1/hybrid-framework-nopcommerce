@@ -11,7 +11,7 @@
  	
  	
   <test name="Run on Firefox">
-  	<parameter name="browser" value="firefox"/>
+  	<parameter name="browser" value="ie"/>
     <classes>
       <!-- <class name="com.nopcommerce.common.Common_01_Cookies"/> -->
       <class name="com.nopcommerce.user.Level_21_Pattern_Object"/>
