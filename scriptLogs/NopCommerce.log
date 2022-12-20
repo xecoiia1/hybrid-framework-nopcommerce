@@ -470,3 +470,19 @@ Driver info: driver.version: RemoteWebDriver
 [INFO ] [2022-12-14 14:56:15,219] My Account - Step 03: Verify FirstName value is correctly
 [INFO ] [2022-12-14 14:56:15,264] My Account - Step 04: Verify LastName value is correctly
 [INFO ] [2022-12-14 14:56:15,316] My Account - Step 05: Verify Email value is correctly
+[INFO ] [2022-12-19 14:34:26,671] OS name = windows 10
+[INFO ] [2022-12-19 14:34:26,675] Cannot invoke "Object.toString()" because "this.driver" is null
+[INFO ] [2022-12-19 14:38:18,207] OS name = windows 10
+[INFO ] [2022-12-19 14:38:18,208] Cannot invoke "Object.toString()" because "this.driver" is null
+[INFO ] [2022-12-19 14:39:05,952] Register - Step 01: Click to Register link
+[INFO ] [2022-12-19 14:39:36,299] Login - Step 01: Navigate to Login Button
+[INFO ] [2022-12-19 14:40:06,389] My Account - Step 01: Navigate to MyAccoutLink
+[INFO ] [2022-12-19 14:40:36,675] OS name = windows 10
+[INFO ] [2022-12-19 14:40:36,676] Driver instance name = internetexplorerdriver: internet explorer on windows (4c85dfb7-404b-4fb4-8b0e-4fe326e5b3ff)
+[INFO ] [2022-12-19 14:46:38,733] OS name = windows 10
+[INFO ] [2022-12-19 14:46:38,734] Cannot invoke "Object.toString()" because "this.driver" is null
+[INFO ] [2022-12-19 14:47:32,021] Register - Step 01: Click to Register link
+[INFO ] [2022-12-19 14:48:02,465] Login - Step 01: Navigate to Login Button
+[INFO ] [2022-12-19 14:48:32,514] My Account - Step 01: Navigate to MyAccoutLink
+[INFO ] [2022-12-19 14:49:02,751] OS name = windows 10
+[INFO ] [2022-12-19 14:49:02,752] Driver instance name = internetexplorerdriver: internet explorer on windows (7b8b5ca2-76e8-499b-ad1c-fbe5b0a9bedd)
