@@ -18,23 +18,33 @@ import pageObject.nopCommerce.user.UserLoginPageObj;
 import pageObject.nopCommerce.user.UserMyProductReviewPageObj;
 import pageObject.nopCommerce.user.UserRegisterPageObj;
 import pageObject.nopCommerce.user.UserRewardPointPageObj;
+import pageObject.sauceLab.LoginPageObj;
+import pageObject.sauceLab.ProductPageObj;
 
 public class Level_22_Sort_Asc_Desc extends BaseTestJquery  {
 
-	@Parameters("browser")
+	@Parameters({ "browser", "appUrl" })
 	@BeforeClass
-	public void beforeClass(String browserName) throws BrowserNotSupport {
-	driver = getBrowserDriver(browserName);
+	public void beforeClass(String browserName, String sauceLabURL)  {
+	driver = getBrowserDriver(browserName, sauceLabURL );
+	loginPage = pageObject.sauceLab.PageGeneratorManager.getLoginPage(driver);
+	
+	loginPage.enterToUserNameTextBox("standard_user");
+	loginPage.enterToPassWordTextBox("secret_sauce");
+	productPage = loginPage.clickLoginBtn();
 
   }
   
   @Test
   public void Sort_01_Name() {
-	  	
+	productPage.selectItemInProductSortDropdown("Name (A to Z)");
+	
+	productPage.selectItemInProductSortDropdown("Name (Z to A)");
  }
   @Test
   public void Sort_02_Price() {
-	    
+	productPage.selectItemInProductSortDropdown("Price (low to high)");
+	productPage.selectItemInProductSortDropdown("Price (high to low)");
   }
   
   @Test
@@ -51,4 +61,6 @@ public class Level_22_Sort_Asc_Desc extends BaseTestJquery  {
 //  element.textContent;
  private WebDriver driver;
 
+ private LoginPageObj loginPage;
+ private ProductPageObj productPage;
 }
