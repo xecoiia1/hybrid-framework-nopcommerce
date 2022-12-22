@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite parallel="false" name="NopCommerce">
+ 
+ 	<listeners>
+ 		<!-- <listener class-name="commonJquery.MethodListener"></listener>-->
+ 		<!-- <listener class-name="reportConfig.ReportNGListener"></listener >-->
+ 		<!-- <listener class-name="reportConfig.ExtentTestListenerV3"></listener>-->
+ 		<!-- <listener class-name="org.uncommons.reportng.HTMLReporter"></listener> -->
+		<!-- <listener class-name="org.uncommons.reportng.JUnitXMLReporter"></listener> -->
+ 	</listeners>
+ 
+  <parameter name="appUrl" value="https://www.saucedemo.com/"/>
+ 	
+  <test name="Run on Chrome">
+  	<parameter name="browser" value="chrome"/>
+    <classes>
+      <!-- <class name="com.nopcommerce.common.Common_01_Cookies"/> -->
+      <class name="com.saucelab.sort.Level_22_Sort_Asc_Desc"/>
+    </classes>
+  </test> <!-- Test -->
+
+
+</suite> <!-- Suite -->
