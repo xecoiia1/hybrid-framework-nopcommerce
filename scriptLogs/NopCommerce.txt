@@ -1,5 +1,0 @@
-[INFO ] [2022-12-19 14:47:32,021] Register - Step 01: Click to Register link
-[INFO ] [2022-12-19 14:48:02,465] Login - Step 01: Navigate to Login Button
-[INFO ] [2022-12-19 14:48:32,514] My Account - Step 01: Navigate to MyAccoutLink
-[INFO ] [2022-12-19 14:49:02,751] OS name = windows 10
-[INFO ] [2022-12-19 14:49:02,752] Driver instance name = internetexplorerdriver: internet explorer on windows (7b8b5ca2-76e8-499b-ad1c-fbe5b0a9bedd)
