@@ -39,12 +39,21 @@ public class Level_22_Sort_Asc_Desc extends BaseTestJquery  {
   public void Sort_01_Name() {
 	productPage.selectItemInProductSortDropdown("Name (A to Z)");
 	
+	Assert.assertTrue(productPage.isProductNameSortByAscending());
+	
 	productPage.selectItemInProductSortDropdown("Name (Z to A)");
+	
+	Assert.assertTrue(productPage.isProductNameSortByDescending());
  }
   @Test
   public void Sort_02_Price() {
 	productPage.selectItemInProductSortDropdown("Price (low to high)");
+	
+	Assert.assertTrue(productPage.isProductPriceSortByAscending());
+	
 	productPage.selectItemInProductSortDropdown("Price (high to low)");
+	
+	Assert.assertTrue(productPage.isProductPriceSortByDescending());
   }
   
   @Test

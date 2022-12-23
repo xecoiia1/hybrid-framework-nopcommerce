@@ -3,6 +3,7 @@ package pageObject.sauceLab;
 import org.openqa.selenium.WebDriver;
 
 import commonJquery.BasePageJquery;
+import pageUI.sauceLab.LoginPageUI;
 
 public class LoginPageObj extends BasePageJquery {
 	
@@ -12,18 +13,20 @@ public class LoginPageObj extends BasePageJquery {
 		this.driver = driver;
 	}
 
-	public void enterToUserNameTextBox(String string) {
-		// TODO Auto-generated method stub
-		
+	public void enterToUserNameTextBox(String userName) {
+		waitForElementVisible(driver, LoginPageUI.USERNAME_TEXTBOX);
+		sendkeysToElementByXpath(driver, LoginPageUI.USERNAME_TEXTBOX, userName);
 	}
 
-	public void enterToPassWordTextBox(String string) {
-		// TODO Auto-generated method stub
+	public void enterToPassWordTextBox(String password) {
+		waitForElementVisible(driver, LoginPageUI.PASSWORD_TEXTBOX);
+		sendkeysToElementByXpath(driver, LoginPageUI.PASSWORD_TEXTBOX, password);
 		
 	}
 
 	public ProductPageObj clickLoginBtn() {
-		// TODO Auto-generated method stub
-		return null;
+		waitForElementClickAble(driver, LoginPageUI.LOGIN_BTN);
+		clickToElementByXpath(driver, LoginPageUI.LOGIN_BTN);
+		return PageGeneratorManager.getProductPage(driver);
 	}
 }
