@@ -1,49 +1,220 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
+    <line>
+      <![CDATA[[INFO ] [2022-12-28 15:26:27,482] Register - Step 01: Click to Register link
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2022-12-28 15:26:28,337] Register - Step 02: Input FirstName to required field 'Stephanie'
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2022-12-28 15:26:28,569] Register - Step 03: Input LastName to required field 'Kris'
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2022-12-28 15:26:29,320] Register - Step 04: Input Email to required field 'dwain.schmeler@gmail.com'
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2022-12-28 15:26:29,701] Register - Step 05: Input Password to required field 'rql66w9amees7'
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2022-12-28 15:26:29,942] Register - Step 06: Input Confirm Password to required field 'rql66w9amees7'
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2022-12-28 15:26:30,178] Register - Step 07: Click to Register Button
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2022-12-28 15:26:31,209] Register - Step 08: Verify Register Success Message
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2022-12-28 15:26:31,374] Login - Step 01: Navigate to Login Button
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2022-12-28 15:26:31,955] Login - Step 02: Input Not Found Email to Email Textbox 'dwain.schmeler@gmail.com'
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2022-12-28 15:26:32,262] Login - Step 03:  Input Password TextBox 'rql66w9amees7'
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2022-12-28 15:26:32,515] Login - Step 04:  Click to Login Button
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2022-12-28 15:26:33,597] Login - Step 05:  Verify Login Success
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2022-12-28 15:26:33,790] Login - Step 06: Navigate to MyAccoutLink
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2022-12-28 15:26:34,375] Login - Step 07: Verify Login Success
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2022-12-28 15:26:34,456] My Account - Step 01: Navigate to MyAccoutLink
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2022-12-28 15:26:35,022] My Account - Step 02: Verify Login Success
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2022-12-28 15:26:35,097] My Account - Step 03: Verify FirstName value is correctly
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2022-12-28 15:26:35,174] My Account - Step 04: Verify LastName value is correctly
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2022-12-28 15:26:35,252] My Account - Step 05: Verify Email value is correctly
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2022-12-28 15:26:35,332] OS name = windows 10
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2022-12-28 15:26:35,332] Driver instance name = chromedriver: chrome on windows (8047b48c754fb34948a6ae49d8cb8a29)
+<br>]]>
+    </line>
   </reporter-output>
-  <suite started-at="2022-12-23T07:39:24Z" name="SauceLab - Sort" finished-at="2022-12-23T07:39:32Z" duration-ms="8069">
+  <suite started-at="2022-12-28T08:26:23Z" name="NopCommerce" finished-at="2022-12-28T08:26:35Z" duration-ms="12597">
     <groups>
     </groups>
-    <test started-at="2022-12-23T07:39:24Z" name="Run on Chrome" finished-at="2022-12-23T07:39:32Z" duration-ms="8069">
-      <class name="com.saucelab.sort.Level_22_Sort_Asc_Desc">
-        <test-method is-config="true" signature="initBeforeSuite()[pri:0, instance:com.saucelab.sort.Level_22_Sort_Asc_Desc@73302995]" started-at="2022-12-23T07:39:24Z" name="initBeforeSuite" finished-at="2022-12-23T07:39:24Z" duration-ms="32" status="PASS">
+    <test started-at="2022-12-28T08:26:23Z" name="Run on Firefox" finished-at="2022-12-28T08:26:35Z" duration-ms="12597">
+      <class name="com.nopcommerce.user.Level_23_Fake_Data">
+        <test-method is-config="true" signature="initBeforeSuite()[pri:0, instance:com.nopcommerce.user.Level_23_Fake_Data@51133c06]" started-at="2022-12-28T08:26:23Z" name="initBeforeSuite" finished-at="2022-12-28T08:26:23Z" duration-ms="17" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initBeforeSuite -->
-        <test-method is-config="true" signature="beforeClass(java.lang.String, java.lang.String)[pri:0, instance:com.saucelab.sort.Level_22_Sort_Asc_Desc@73302995]" started-at="2022-12-23T07:39:24Z" name="beforeClass" finished-at="2022-12-23T07:39:29Z" duration-ms="5135" status="PASS">
+        <test-method is-config="true" signature="beforeClass(java.lang.String)[pri:0, instance:com.nopcommerce.user.Level_23_Fake_Data@51133c06]" started-at="2022-12-28T08:26:23Z" name="beforeClass" finished-at="2022-12-28T08:26:27Z" duration-ms="4316" status="PASS">
           <params>
             <param index="0">
               <value>
                 <![CDATA[chrome]]>
               </value>
             </param>
-            <param index="1">
-              <value>
-                <![CDATA[https://www.saucedemo.com/]]>
-              </value>
-            </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method signature="Sort_01_Name()[pri:0, instance:com.saucelab.sort.Level_22_Sort_Asc_Desc@73302995]" started-at="2022-12-23T07:39:29Z" name="Sort_01_Name" finished-at="2022-12-23T07:39:30Z" duration-ms="1140" status="PASS">
+        <test-method signature="User_01_Register()[pri:0, instance:com.nopcommerce.user.Level_23_Fake_Data@51133c06]" started-at="2022-12-28T08:26:27Z" name="User_01_Register" finished-at="2022-12-28T08:26:31Z" duration-ms="3889" status="PASS">
           <reporter-output>
+            <line>
+              <![CDATA[[INFO ] [2022-12-28 15:26:27,482] Register - Step 01: Click to Register link
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2022-12-28 15:26:28,337] Register - Step 02: Input FirstName to required field 'Stephanie'
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2022-12-28 15:26:28,569] Register - Step 03: Input LastName to required field 'Kris'
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2022-12-28 15:26:29,320] Register - Step 04: Input Email to required field 'dwain.schmeler@gmail.com'
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2022-12-28 15:26:29,701] Register - Step 05: Input Password to required field 'rql66w9amees7'
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2022-12-28 15:26:29,942] Register - Step 06: Input Confirm Password to required field 'rql66w9amees7'
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2022-12-28 15:26:30,178] Register - Step 07: Click to Register Button
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2022-12-28 15:26:31,209] Register - Step 08: Verify Register Success Message
+<br>]]>
+            </line>
           </reporter-output>
-        </test-method> <!-- Sort_01_Name -->
-        <test-method signature="Sort_02_Price()[pri:0, instance:com.saucelab.sort.Level_22_Sort_Asc_Desc@73302995]" started-at="2022-12-23T07:39:30Z" name="Sort_02_Price" finished-at="2022-12-23T07:39:32Z" duration-ms="1110" status="PASS">
+        </test-method> <!-- User_01_Register -->
+        <test-method signature="User_02_Login()[pri:0, instance:com.nopcommerce.user.Level_23_Fake_Data@51133c06]" started-at="2022-12-28T08:26:31Z" name="User_02_Login" finished-at="2022-12-28T08:26:34Z" duration-ms="3079" status="PASS">
           <reporter-output>
+            <line>
+              <![CDATA[[INFO ] [2022-12-28 15:26:31,374] Login - Step 01: Navigate to Login Button
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2022-12-28 15:26:31,955] Login - Step 02: Input Not Found Email to Email Textbox 'dwain.schmeler@gmail.com'
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2022-12-28 15:26:32,262] Login - Step 03:  Input Password TextBox 'rql66w9amees7'
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2022-12-28 15:26:32,515] Login - Step 04:  Click to Login Button
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2022-12-28 15:26:33,597] Login - Step 05:  Verify Login Success
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2022-12-28 15:26:33,790] Login - Step 06: Navigate to MyAccoutLink
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2022-12-28 15:26:34,375] Login - Step 07: Verify Login Success
+<br>]]>
+            </line>
           </reporter-output>
-        </test-method> <!-- Sort_02_Price -->
-        <test-method signature="User_03_My_Account()[pri:0, instance:com.saucelab.sort.Level_22_Sort_Asc_Desc@73302995]" started-at="2022-12-23T07:39:32Z" name="User_03_My_Account" finished-at="2022-12-23T07:39:32Z" duration-ms="6" status="PASS">
+        </test-method> <!-- User_02_Login -->
+        <test-method signature="User_03_My_Account()[pri:0, instance:com.nopcommerce.user.Level_23_Fake_Data@51133c06]" started-at="2022-12-28T08:26:34Z" name="User_03_My_Account" finished-at="2022-12-28T08:26:35Z" duration-ms="876" status="PASS">
           <reporter-output>
+            <line>
+              <![CDATA[[INFO ] [2022-12-28 15:26:34,456] My Account - Step 01: Navigate to MyAccoutLink
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2022-12-28 15:26:35,022] My Account - Step 02: Verify Login Success
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2022-12-28 15:26:35,097] My Account - Step 03: Verify FirstName value is correctly
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2022-12-28 15:26:35,174] My Account - Step 04: Verify LastName value is correctly
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2022-12-28 15:26:35,252] My Account - Step 05: Verify Email value is correctly
+<br>]]>
+            </line>
           </reporter-output>
         </test-method> <!-- User_03_My_Account -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.saucelab.sort.Level_22_Sort_Asc_Desc@73302995]" started-at="2022-12-23T07:39:32Z" name="afterClass" finished-at="2022-12-23T07:39:32Z" duration-ms="446" status="PASS">
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.nopcommerce.user.Level_23_Fake_Data@51133c06]" started-at="2022-12-28T08:26:35Z" name="afterClass" finished-at="2022-12-28T08:26:35Z" duration-ms="334" status="PASS">
           <reporter-output>
+            <line>
+              <![CDATA[[INFO ] [2022-12-28 15:26:35,332] OS name = windows 10
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2022-12-28 15:26:35,332] Driver instance name = chromedriver: chrome on windows (8047b48c754fb34948a6ae49d8cb8a29)
+<br>]]>
+            </line>
           </reporter-output>
         </test-method> <!-- afterClass -->
-      </class> <!-- com.saucelab.sort.Level_22_Sort_Asc_Desc -->
-    </test> <!-- Run on Chrome -->
-  </suite> <!-- SauceLab - Sort -->
+      </class> <!-- com.nopcommerce.user.Level_23_Fake_Data -->
+    </test> <!-- Run on Firefox -->
+  </suite> <!-- NopCommerce -->
 </testng-results>

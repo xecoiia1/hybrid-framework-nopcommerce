@@ -1,0 +1,22 @@
+[INFO ] [2022-12-28 15:26:27,482] Register - Step 01: Click to Register link
+[INFO ] [2022-12-28 15:26:28,337] Register - Step 02: Input FirstName to required field 'Stephanie'
+[INFO ] [2022-12-28 15:26:28,569] Register - Step 03: Input LastName to required field 'Kris'
+[INFO ] [2022-12-28 15:26:29,320] Register - Step 04: Input Email to required field 'dwain.schmeler@gmail.com'
+[INFO ] [2022-12-28 15:26:29,701] Register - Step 05: Input Password to required field 'rql66w9amees7'
+[INFO ] [2022-12-28 15:26:29,942] Register - Step 06: Input Confirm Password to required field 'rql66w9amees7'
+[INFO ] [2022-12-28 15:26:30,178] Register - Step 07: Click to Register Button
+[INFO ] [2022-12-28 15:26:31,209] Register - Step 08: Verify Register Success Message
+[INFO ] [2022-12-28 15:26:31,374] Login - Step 01: Navigate to Login Button
+[INFO ] [2022-12-28 15:26:31,955] Login - Step 02: Input Not Found Email to Email Textbox 'dwain.schmeler@gmail.com'
+[INFO ] [2022-12-28 15:26:32,262] Login - Step 03:  Input Password TextBox 'rql66w9amees7'
+[INFO ] [2022-12-28 15:26:32,515] Login - Step 04:  Click to Login Button
+[INFO ] [2022-12-28 15:26:33,597] Login - Step 05:  Verify Login Success
+[INFO ] [2022-12-28 15:26:33,790] Login - Step 06: Navigate to MyAccoutLink
+[INFO ] [2022-12-28 15:26:34,375] Login - Step 07: Verify Login Success
+[INFO ] [2022-12-28 15:26:34,456] My Account - Step 01: Navigate to MyAccoutLink
+[INFO ] [2022-12-28 15:26:35,022] My Account - Step 02: Verify Login Success
+[INFO ] [2022-12-28 15:26:35,097] My Account - Step 03: Verify FirstName value is correctly
+[INFO ] [2022-12-28 15:26:35,174] My Account - Step 04: Verify LastName value is correctly
+[INFO ] [2022-12-28 15:26:35,252] My Account - Step 05: Verify Email value is correctly
+[INFO ] [2022-12-28 15:26:35,332] OS name = windows 10
+[INFO ] [2022-12-28 15:26:35,332] Driver instance name = chromedriver: chrome on windows (8047b48c754fb34948a6ae49d8cb8a29)

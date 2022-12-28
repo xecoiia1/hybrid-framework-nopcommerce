@@ -1,23 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [SauceLab - Sort]">
-  <parameter name="appUrl" value="https://www.saucedemo.com/"/>
-  <listeners>
-    <listener class-name="commonJquery.MethodListener"/>
-  </listeners>
-  <test thread-count="5" name="Run on Chrome(failed)">
+<suite name="Failed suite [NopCommerce]">
+  <test thread-count="5" name="Run on Firefox(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="com.saucelab.sort.Level_22_Sort_Asc_Desc">
+      <class name="com.nopcommerce.user.Level_23_Fake_Data">
         <methods>
           <include name="afterClass"/>
-          <include name="User_03_My_Account"/>
-          <include name="initBeforeSuite"/>
-          <include name="Sort_02_Price"/>
-          <include name="Sort_01_Name"/>
           <include name="beforeClass"/>
+          <include name="User_02_Login"/>
+          <include name="initBeforeSuite"/>
+          <include name="User_01_Register"/>
+          <include name="User_03_My_Account"/>
         </methods>
-      </class> <!-- com.saucelab.sort.Level_22_Sort_Asc_Desc -->
+      </class> <!-- com.nopcommerce.user.Level_23_Fake_Data -->
     </classes>
-  </test> <!-- Run on Chrome(failed) -->
-</suite> <!-- Failed suite [SauceLab - Sort] -->
+  </test> <!-- Run on Firefox(failed) -->
+</suite> <!-- Failed suite [NopCommerce] -->

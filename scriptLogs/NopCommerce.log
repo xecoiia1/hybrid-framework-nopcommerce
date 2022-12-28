@@ -486,3 +486,83 @@ Driver info: driver.version: RemoteWebDriver
 [INFO ] [2022-12-19 14:48:32,514] My Account - Step 01: Navigate to MyAccoutLink
 [INFO ] [2022-12-19 14:49:02,751] OS name = windows 10
 [INFO ] [2022-12-19 14:49:02,752] Driver instance name = internetexplorerdriver: internet explorer on windows (7b8b5ca2-76e8-499b-ad1c-fbe5b0a9bedd)
+[INFO ] [2022-12-28 15:20:56,887] OS name = windows 10
+[INFO ] [2022-12-28 15:20:56,889] Driver instance name = internetexplorerdriver: internet explorer on windows (1017b2da-796a-410f-931b-95dafad59ff8)
+[INFO ] [2022-12-28 15:20:56,893] Unable to get browser
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'VN-MF10-NC100VB', ip: '10.218.148.31', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities {acceptInsecureCerts: false, browserName: internet explorer, browserVersion: 11, javascriptEnabled: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:ieOptions: {browserAttachTimeout: 0, elementScrollBehavior: 0, enablePersistentHover: true, ie.browserCommandLineSwitches: , ie.edgechromium: false, ie.edgepath: , ie.ensureCleanSession: false, ie.fileUploadDialogTimeout: 3000, ie.forceCreateProcessApi: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:47220/, nativeEvents: true, requireWindowFocus: false}, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 1017b2da-796a-410f-931b-95dafad59ff8
+[INFO ] [2022-12-28 15:21:13,856] Register - Step 01: Click to Register link
+[INFO ] [2022-12-28 15:21:14,777] Register - Step 02: Input FirstName to required field 'Sherman'
+[INFO ] [2022-12-28 15:21:14,996] Register - Step 03: Input LastName to required field 'Veum'
+[INFO ] [2022-12-28 15:21:15,759] Register - Step 04: Input Email to required field 'pedro.bergnaum@gmail.com'
+[INFO ] [2022-12-28 15:21:16,150] Register - Step 05: Input Password to required field 'a5fq7qeb3rsu'
+[INFO ] [2022-12-28 15:21:16,414] Register - Step 06: Input Confirm Password to required field 'a5fq7qeb3rsu'
+[INFO ] [2022-12-28 15:21:16,657] Register - Step 07: Click to Register Button
+[INFO ] [2022-12-28 15:21:17,736] Register - Step 08: Verify Register Success Message
+[INFO ] [2022-12-28 15:21:17,815] Register - Step 09: Click to Logout Button
+[INFO ] [2022-12-28 15:21:47,967] Login - Step 01: Navigate to Login Button
+[INFO ] [2022-12-28 15:21:48,603] Login - Step 02: Input Not Found Email to Email Textbox 'pedro.bergnaum@gmail.com'
+[INFO ] [2022-12-28 15:21:48,899] Login - Step 03:  Input Password TextBox 'a5fq7qeb3rsu'
+[INFO ] [2022-12-28 15:21:49,130] Login - Step 04:  Click to Login Button
+[INFO ] [2022-12-28 15:21:50,181] Login - Step 05:  Verify Login Success
+[INFO ] [2022-12-28 15:21:50,364] Login - Step 06: Navigate to MyAccoutLink
+[INFO ] [2022-12-28 15:21:50,933] Login - Step 07: Verify Login Success
+[INFO ] [2022-12-28 15:21:51,026] My Account - Step 01: Navigate to MyAccoutLink
+[INFO ] [2022-12-28 15:21:51,641] My Account - Step 02: Verify Login Success
+[INFO ] [2022-12-28 15:21:51,720] My Account - Step 03: Verify FirstName value is correctly
+[INFO ] [2022-12-28 15:21:51,794] My Account - Step 04: Verify LastName value is correctly
+[INFO ] [2022-12-28 15:21:51,874] My Account - Step 05: Verify Email value is correctly
+[INFO ] [2022-12-28 15:21:51,957] OS name = windows 10
+[INFO ] [2022-12-28 15:21:51,957] Driver instance name = chromedriver: chrome on windows (0d69e44d565b4e09bd88b3b216c9c523)
+[INFO ] [2022-12-28 15:23:46,540] Register - Step 01: Click to Register link
+[INFO ] [2022-12-28 15:23:48,943] Register - Step 02: Input FirstName to required field 'Savanna'
+[INFO ] [2022-12-28 15:23:49,167] Register - Step 03: Input LastName to required field 'Senger'
+[INFO ] [2022-12-28 15:23:49,937] Register - Step 04: Input Email to required field 'maile.paucek@yahoo.com'
+[INFO ] [2022-12-28 15:23:50,323] Register - Step 05: Input Password to required field 'mox920f0g3'
+[INFO ] [2022-12-28 15:23:50,565] Register - Step 06: Input Confirm Password to required field 'mox920f0g3'
+[INFO ] [2022-12-28 15:23:50,805] Register - Step 07: Click to Register Button
+[INFO ] [2022-12-28 15:23:51,825] Register - Step 08: Verify Register Success Message
+[INFO ] [2022-12-28 15:23:51,906] Register - Step 09: Click to Logout Button
+[INFO ] [2022-12-28 15:24:08,515] Login - Step 01: Navigate to Login Button
+[INFO ] [2022-12-28 15:24:41,002] My Account - Step 01: Navigate to MyAccoutLink
+[INFO ] [2022-12-28 15:25:13,437] OS name = windows 10
+[INFO ] [2022-12-28 15:25:13,437] Driver instance name = chromedriver: chrome on windows (20868982ee23283f98327b78487705f2)
+[INFO ] [2022-12-28 15:25:45,826] disconnected: unable to connect to renderer
+  (failed to check if window was closed: disconnected: unable to connect to renderer)
+  (Session info: chrome=108.0.5359.125)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'VN-MF10-NC100VB', ip: '10.218.148.31', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\THANH5~1.NGU\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:57057}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 20868982ee23283f98327b78487705f2
+[INFO ] [2022-12-28 15:25:46,189] OS name = windows 10
+[INFO ] [2022-12-28 15:25:46,190] Driver instance name = chromedriver: chrome on windows (c418cb847c3537661eb9e527b85d4bc1)
+[INFO ] [2022-12-28 15:25:46,193] java.net.ConnectException: Failed to connect to localhost/[0:0:0:0:0:0:0:1]:23253
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'VN-MF10-NC100VB', ip: '10.218.148.31', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: driver.version: RemoteWebDriver
+[INFO ] [2022-12-28 15:26:27,482] Register - Step 01: Click to Register link
+[INFO ] [2022-12-28 15:26:28,337] Register - Step 02: Input FirstName to required field 'Stephanie'
+[INFO ] [2022-12-28 15:26:28,569] Register - Step 03: Input LastName to required field 'Kris'
+[INFO ] [2022-12-28 15:26:29,320] Register - Step 04: Input Email to required field 'dwain.schmeler@gmail.com'
+[INFO ] [2022-12-28 15:26:29,701] Register - Step 05: Input Password to required field 'rql66w9amees7'
+[INFO ] [2022-12-28 15:26:29,942] Register - Step 06: Input Confirm Password to required field 'rql66w9amees7'
+[INFO ] [2022-12-28 15:26:30,178] Register - Step 07: Click to Register Button
+[INFO ] [2022-12-28 15:26:31,209] Register - Step 08: Verify Register Success Message
+[INFO ] [2022-12-28 15:26:31,374] Login - Step 01: Navigate to Login Button
+[INFO ] [2022-12-28 15:26:31,955] Login - Step 02: Input Not Found Email to Email Textbox 'dwain.schmeler@gmail.com'
+[INFO ] [2022-12-28 15:26:32,262] Login - Step 03:  Input Password TextBox 'rql66w9amees7'
+[INFO ] [2022-12-28 15:26:32,515] Login - Step 04:  Click to Login Button
+[INFO ] [2022-12-28 15:26:33,597] Login - Step 05:  Verify Login Success
+[INFO ] [2022-12-28 15:26:33,790] Login - Step 06: Navigate to MyAccoutLink
+[INFO ] [2022-12-28 15:26:34,375] Login - Step 07: Verify Login Success
+[INFO ] [2022-12-28 15:26:34,456] My Account - Step 01: Navigate to MyAccoutLink
+[INFO ] [2022-12-28 15:26:35,022] My Account - Step 02: Verify Login Success
+[INFO ] [2022-12-28 15:26:35,097] My Account - Step 03: Verify FirstName value is correctly
+[INFO ] [2022-12-28 15:26:35,174] My Account - Step 04: Verify LastName value is correctly
+[INFO ] [2022-12-28 15:26:35,252] My Account - Step 05: Verify Email value is correctly
+[INFO ] [2022-12-28 15:26:35,332] OS name = windows 10
+[INFO ] [2022-12-28 15:26:35,332] Driver instance name = chromedriver: chrome on windows (8047b48c754fb34948a6ae49d8cb8a29)

@@ -2,18 +2,18 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [NopCommerce]">
   <test thread-count="5" name="Run on Firefox(failed)">
-    <parameter name="browser" value="ie"/>
+    <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="com.nopcommerce.user.Level_21_Pattern_Object">
+      <class name="com.nopcommerce.user.Level_23_Fake_Data">
         <methods>
-          <include name="User_03_My_Account"/>
           <include name="afterClass"/>
-          <include name="User_01_Register"/>
-          <include name="initBeforeSuite"/>
-          <include name="User_02_Login"/>
           <include name="beforeClass"/>
+          <include name="User_02_Login"/>
+          <include name="initBeforeSuite"/>
+          <include name="User_01_Register"/>
+          <include name="User_03_My_Account"/>
         </methods>
-      </class> <!-- com.nopcommerce.user.Level_21_Pattern_Object -->
+      </class> <!-- com.nopcommerce.user.Level_23_Fake_Data -->
     </classes>
   </test> <!-- Run on Firefox(failed) -->
 </suite> <!-- Failed suite [NopCommerce] -->
