@@ -11,10 +11,10 @@
  	
  	
   <test name="Run on Firefox">
-  	<parameter name="browser" value="ie"/>
+  	<parameter name="browser" value="chrome"/>
     <classes>
       <!-- <class name="com.nopcommerce.common.Common_01_Cookies"/> -->
-      <class name="com.nopcommerce.user.Level_21_Pattern_Object"/>
+      <class name="com.nopcommerce.user.Level_23_Fake_Data"/>
     </classes>
   </test> <!-- Test -->
 
