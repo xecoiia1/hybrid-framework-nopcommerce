@@ -7,6 +7,8 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
+import com.nopcommerce.data.UserDataMapper;
+
 import common.PageGeneratorManager;
 import commonJquery.BaseTestJquery;
 import exception.BrowserNotSupport;
@@ -28,6 +30,7 @@ public class Level_23_Fake_Data extends BaseTestJquery  {
 	driver = getBrowserDriver(browserName);
 	homePage = PageGeneratorManager.getUserHomePage(driver);
 	dataFaker = DataHelper.getDataHelper();
+	userData.getUserData();
 	
 	firstName = dataFaker.getFirstName();
 	lastName = dataFaker.getLastName();
@@ -139,4 +142,5 @@ public class Level_23_Fake_Data extends BaseTestJquery  {
  private UserCustomerInforPageObj customerInforPage;
  private String firstName, lastName, email, passWord;
  private String date, month, year;
+ UserDataMapper userData;
 }

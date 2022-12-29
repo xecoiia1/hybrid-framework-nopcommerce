@@ -1,0 +1,15 @@
+	{
+		"firstName": "Thanh",
+		"lastName": "Nguyen",
+		"dob": "27/07/1995",
+		"emailAdd": "abc@gmail.com",
+		"password": "123456",
+		"date": "22",
+		"month": "12",
+		"year": "2021",
+		"Login": {
+			"username": "Automation",
+			"password": "123456"
+		}
+		
+	}
