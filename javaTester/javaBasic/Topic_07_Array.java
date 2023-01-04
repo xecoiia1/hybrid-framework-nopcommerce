@@ -20,7 +20,7 @@ public class Topic_07_Array {
 				}
 			}	
 			System.out.println(x);
-}		
+	}		//
 	@Test
 	public void TC_02_Sum_First_Number_And_Last_Number(){
 		// Bài 2: Tính tổng của số đầu tiên + số cuối cùng trong mảng

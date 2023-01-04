@@ -27,7 +27,7 @@ public class Topic_08_String {
 	//So sánh 2 chuỗi bằng nhau tương đối
 	System.out.println(Name.equalsIgnoreCase(NameLol));
 	
-	}
+	} 
 	@Test
 	public class Topic04_String {
 		String courseName = "Auto Matio Tester";
