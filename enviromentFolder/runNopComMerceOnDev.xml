@@ -12,7 +12,7 @@
  	
  	
  <!-- Global -->
-  <parameter name="enviroment" value="DEV"/>
+  <parameter name="url" value="https://demo.nopcommerce.com/"/>
  	
  	
   <test name="Run on Firefox">

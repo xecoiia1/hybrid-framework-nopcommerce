@@ -108,7 +108,8 @@ public class BaseTestJquery {
 		return driver;
 	}
 
-	protected WebDriver getBrowserDriver(String browserName, String appUrl) {
+	protected WebDriver getBrowserDriver(String browserName, String enviromentName) {
+
 		if(browserName.equals("firefox")) {
 			WebDriverManager.firefoxdriver().setup();
 			driver = new FirefoxDriver();
@@ -157,9 +158,36 @@ public class BaseTestJquery {
 			throw new BrowserNotSupport(browserName);
 		}
 		driver.manage().timeouts().implicitlyWait(GlobalConstants.LONG_TIMEOUT, TimeUnit.SECONDS);
-		driver.get(appUrl);
+		driver.get(getEnvironmentUrl(enviromentName));
 		driver.manage().window().maximize();
 		return driver;
+	}
+	
+	protected String getEnvironmentUrl(String environmentName) {
+		String envUrl = null;
+		EnvironmentList environment = EnvironmentList.valueOf(environmentName.toUpperCase());
+
+		switch (environment) {
+		case DEV:
+			envUrl = "https://demo.nopcommerce.com/";
+			break;
+		case TESTING:
+			envUrl = "https://testing.nopcommerce.com/";
+			break;
+		case STAGING:
+			envUrl = "https://staging.nopcommerce.com/";
+			break;
+		case PRE_PROD:
+			envUrl = "https://pre-prod.nopcommerce.com/";
+			break;
+		case PROD:
+			envUrl = "https://prod.nopcommerce.com/";
+			break;
+		default:
+			envUrl = null;
+			break;
+		}
+		return envUrl;
 	}
 	
 	public boolean verifyTrue(boolean condition) {
@@ -229,6 +257,7 @@ public class BaseTestJquery {
 	}
 	
 	protected void closeBrowserAndDriver() {
+
 		String cmd = "";
 		try {
 			String osName = System.getProperty("os.name").toLowerCase();
@@ -289,7 +318,7 @@ public class BaseTestJquery {
 		}
 	}
 	
-	  public int generateRandom() {
+	public int generateRandom() {
 		  Random rand = new Random();
 		  return rand.nextInt(9999);
 	  }
