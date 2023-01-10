@@ -1,5 +1,6 @@
 package com.nopcommerce.user;
 
+import org.aeonbits.owner.ConfigFactory;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
@@ -21,18 +22,23 @@ import pageObject.nopCommerce.user.UserMyProductReviewPageObj;
 import pageObject.nopCommerce.user.UserRegisterPageObj;
 import pageObject.nopCommerce.user.UserRewardPointPageObj;
 import utilities.DataHelper;
+import utilities.Enviroment;
 
 public class Level_24_Multiple_Enviroment_Owner extends BaseTestJquery  {
+	
+	Enviroment env;
 
 	@Parameters({"browser", "enviroment"})
 	@BeforeClass
 	public void beforeClass(String browserName, String enviromentName) throws BrowserNotSupport {
+		
+	env = ConfigFactory.create(Enviroment.class);
 	driver = getBrowserDriver(browserName);
 	homePage = PageGeneratorManager.getUserHomePage(driver);
 	dataFaker = DataHelper.getDataHelper();
 	userData.getUserData();
 	
-	firstName = dataFaker.getFirstName();
+	firstName = env.dbUser();
 	lastName = dataFaker.getLastName();
 	email = dataFaker.getEmailAdd();
 	passWord = dataFaker.getPassword();

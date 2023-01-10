@@ -163,6 +163,61 @@ public class BaseTestJquery {
 		return driver;
 	}
 	
+	protected WebDriver getBrowserDriverAppURL(String browserName, String appURL) {
+
+		if(browserName.equals("firefox")) {
+			WebDriverManager.firefoxdriver().setup();
+			driver = new FirefoxDriver();
+		}else if (browserName.equals("h_firefox")){
+			WebDriverManager.firefoxdriver().setup();
+			
+			FirefoxOptions options = new FirefoxOptions();
+			options.addArguments("--headless");
+			options.addArguments("window-size=1920x1080");
+		    driver = new FirefoxDriver(options);
+		    
+		}else if(browserName.equals("chrome")) {
+			WebDriverManager.chromedriver().setup();
+			driver = new ChromeDriver();
+		}else if(browserName.equals("h_chrome")) {
+			WebDriverManager.chromedriver().setup();
+			
+			ChromeOptions options = new ChromeOptions();
+			options.addArguments("--headless");
+			options.addArguments("window-size=1920x1080");
+			driver = new ChromeDriver(options);
+			
+		}else if(browserName.equals("opera")) {
+			WebDriverManager.operadriver().setup();
+			driver = new EdgeDriver();
+		}else if(browserName.equals("ie")) {
+			WebDriverManager.iedriver().arch32().setup();
+			driver = new InternetExplorerDriver();
+		}else if(browserName.equals("edge")) {
+			WebDriverManager.edgedriver().setup();
+			driver = new EdgeDriver();
+		
+		}else if(browserName.equals("coccoc")) {
+			//Cốc cốc driver sẽ dùng chrome driver nhưng là trừ đi 5 -6 version
+			WebDriverManager.chromedriver().driverVersion("").setup();
+			ChromeOptions options = new ChromeOptions();
+			// Add file path của Cốc Cốc Browser vào
+			if(GlobalConstants.OS_NAME.startsWith("Windows")) {
+				options.setBinary("");
+			}else {
+				options.setBinary(".....");
+			}
+			driver = new ChromeDriver(options);
+		
+		}else {
+			throw new BrowserNotSupport(browserName);
+		}
+		driver.manage().timeouts().implicitlyWait(GlobalConstants.LONG_TIMEOUT, TimeUnit.SECONDS);
+		driver.get(getEnvironmentUrl(appURL));
+		driver.manage().window().maximize();
+		return driver;
+	}
+	
 	protected String getEnvironmentUrl(String environmentName) {
 		String envUrl = null;
 		EnvironmentList environment = EnvironmentList.valueOf(environmentName.toUpperCase());
