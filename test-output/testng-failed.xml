@@ -1,19 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [NopCommerce]">
+  <parameter name="enviroment" value="staging"/>
   <test thread-count="5" name="Run on Firefox(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="com.nopcommerce.user.Level_23_Fake_Data">
+      <class name="com.nopcommerce.user.Level_24_Multiple_Enviroment_Owner">
         <methods>
           <include name="afterClass"/>
-          <include name="beforeClass"/>
-          <include name="User_02_Login"/>
-          <include name="initBeforeSuite"/>
-          <include name="User_01_Register"/>
           <include name="User_03_My_Account"/>
+          <include name="initBeforeSuite"/>
+          <include name="User_02_Login"/>
+          <include name="beforeClass"/>
+          <include name="User_01_Register"/>
         </methods>
-      </class> <!-- com.nopcommerce.user.Level_23_Fake_Data -->
+      </class> <!-- com.nopcommerce.user.Level_24_Multiple_Enviroment_Owner -->
     </classes>
   </test> <!-- Run on Firefox(failed) -->
 </suite> <!-- Failed suite [NopCommerce] -->

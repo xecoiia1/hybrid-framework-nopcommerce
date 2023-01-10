@@ -12,14 +12,14 @@
  	
  	
  <!-- Global -->
-  <parameter name="enviroment" value="DEV"/>
+   <parameter name="enviroment" value="staging"/> 
  	
  	
   <test name="Run on Firefox">
   	<parameter name="browser" value="chrome"/>
     <classes>
       <!-- <class name="com.nopcommerce.common.Common_01_Cookies"/> -->
-      <class name="com.nopcommerce.user.Level_24_Multiple_Enviroment"/>
+      <class name="com.nopcommerce.user.Level_24_Multiple_Enviroment_Owner"/>
     </classes>
   </test> <!-- Test -->
 

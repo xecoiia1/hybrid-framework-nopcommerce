@@ -213,7 +213,7 @@ public class BaseTestJquery {
 			throw new BrowserNotSupport(browserName);
 		}
 		driver.manage().timeouts().implicitlyWait(GlobalConstants.LONG_TIMEOUT, TimeUnit.SECONDS);
-		driver.get(getEnvironmentUrl(appURL));
+		driver.get(appURL);
 		driver.manage().window().maximize();
 		return driver;
 	}

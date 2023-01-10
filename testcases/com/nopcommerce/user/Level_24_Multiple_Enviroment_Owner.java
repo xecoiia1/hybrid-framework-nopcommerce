@@ -26,17 +26,26 @@ import utilities.Enviroment;
 
 public class Level_24_Multiple_Enviroment_Owner extends BaseTestJquery  {
 	
-	Enviroment env;
+
 
 	@Parameters({"browser", "enviroment"})
 	@BeforeClass
 	public void beforeClass(String browserName, String enviromentName) throws BrowserNotSupport {
-		
-	env = ConfigFactory.create(Enviroment.class);
-	driver = getBrowserDriver(browserName);
+
+	ConfigFactory.setProperty("env", enviromentName);
+	env = ConfigFactory.create(Enviroment.class);	
+	
+	driver = getBrowserDriverAppURL(browserName, env.appUrl());
 	homePage = PageGeneratorManager.getUserHomePage(driver);
 	dataFaker = DataHelper.getDataHelper();
 	userData.getUserData();
+	
+	
+	
+	System.out.println(env.appPassword());
+	System.out.println(env.dbHostName());
+	System.out.println(env.appUser());
+	System.out.println(env.dbUser());
 	
 	firstName = env.dbUser();
 	lastName = dataFaker.getLastName();
@@ -149,4 +158,5 @@ public class Level_24_Multiple_Enviroment_Owner extends BaseTestJquery  {
  private String firstName, lastName, email, passWord;
  private String date, month, year;
  UserDataMapper userData;
+ Enviroment env;
 }

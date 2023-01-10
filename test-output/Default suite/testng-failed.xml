@@ -3,17 +3,16 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.nopcommerce.user.Level_07_Switch_Page">
+      <class name="com.nopcommerce.user.Level_24_Multiple_Enviroment_Owner">
         <methods>
-          <include name="User_02_Login"/>
-          <include name="User_01_Register"/>
-          <include name="User_03_My_Account"/>
           <include name="afterClass"/>
-          <include name="User_04_Switch_Page"/>
+          <include name="User_03_My_Account"/>
+          <include name="initBeforeSuite"/>
+          <include name="User_02_Login"/>
           <include name="beforeClass"/>
-          <include name="User_05_Switch_Role"/>
+          <include name="User_01_Register"/>
         </methods>
-      </class> <!-- com.nopcommerce.user.Level_07_Switch_Page -->
+      </class> <!-- com.nopcommerce.user.Level_24_Multiple_Enviroment_Owner -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
