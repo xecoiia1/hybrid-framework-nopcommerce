@@ -588,3 +588,55 @@ Driver info: driver.version: RemoteWebDriver
 [INFO ] [2023-01-03 15:04:47,400] My Account - Step 05: Verify Email value is correctly
 [INFO ] [2023-01-03 15:04:47,466] OS name = windows 10
 [INFO ] [2023-01-03 15:04:47,466] Driver instance name = chromedriver: chrome on windows (60f0aba747436ca1f7433016ec7f9e94)
+[INFO ] [2023-01-10 14:57:31,943] Register - Step 01: Click to Register link
+[INFO ] [2023-01-10 14:57:34,406] Register - Step 02: Input FirstName to required field 'null'
+[INFO ] [2023-01-10 14:57:34,562] Login - Step 01: Navigate to Login Button
+[INFO ] [2023-01-10 14:57:35,163] Login - Step 02: Input Not Found Email to Email Textbox 'rosamaria.miller@yahoo.com'
+[INFO ] [2023-01-10 14:57:35,517] Login - Step 03:  Input Password TextBox 'ospsv2cnd85v'
+[INFO ] [2023-01-10 14:57:35,794] Login - Step 04:  Click to Login Button
+[INFO ] [2023-01-10 14:57:36,375] Login - Step 05:  Verify Login Success
+[INFO ] [2023-01-10 14:58:06,432] My Account - Step 01: Navigate to MyAccoutLink
+[INFO ] [2023-01-10 14:58:32,768] OS name = windows 10
+[INFO ] [2023-01-10 14:58:32,769] Cannot invoke "Object.toString()" because "this.driver" is null
+[INFO ] [2023-01-10 14:58:36,547] OS name = windows 10
+[INFO ] [2023-01-10 14:58:36,547] Driver instance name = chromedriver: chrome on windows (6b9ce65e724fec6c6060fa802fc88c15)
+[INFO ] [2023-01-10 14:58:36,550] no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=108.0.5359.125)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'VN-MF10-NC100VB', ip: '10.218.148.90', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\THANH5~1.NGU\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:51609}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 6b9ce65e724fec6c6060fa802fc88c15
+[INFO ] [2023-01-10 14:59:49,172] OS name = windows 10
+[INFO ] [2023-01-10 14:59:49,173] Cannot invoke "Object.toString()" because "this.driver" is null
+[INFO ] [2023-01-10 15:01:32,343] OS name = windows 10
+[INFO ] [2023-01-10 15:01:32,344] Cannot invoke "Object.toString()" because "this.driver" is null
+[INFO ] [2023-01-10 15:02:22,721] OS name = windows 10
+[INFO ] [2023-01-10 15:02:22,722] Cannot invoke "Object.toString()" because "this.driver" is null
+[INFO ] [2023-01-10 15:04:00,628] OS name = windows 10
+[INFO ] [2023-01-10 15:04:00,629] Cannot invoke "Object.toString()" because "this.driver" is null
+[INFO ] [2023-01-10 15:10:01,521] Register - Step 01: Click to Register link
+[INFO ] [2023-01-10 15:10:02,493] Register - Step 02: Input FirstName to required field 'kfz2y9e7jxkq@localhost'
+[INFO ] [2023-01-10 15:10:02,867] Register - Step 03: Input LastName to required field 'Heathcote'
+[INFO ] [2023-01-10 15:10:03,713] Register - Step 04: Input Email to required field 'nathanael.considine@yahoo.com'
+[INFO ] [2023-01-10 15:10:04,217] Register - Step 05: Input Password to required field 'xxld6jydis0ptg'
+[INFO ] [2023-01-10 15:10:04,654] Register - Step 06: Input Confirm Password to required field 'xxld6jydis0ptg'
+[INFO ] [2023-01-10 15:10:05,071] Register - Step 07: Click to Register Button
+[INFO ] [2023-01-10 15:10:06,175] Register - Step 08: Verify Register Success Message
+[INFO ] [2023-01-10 15:10:06,342] Login - Step 01: Navigate to Login Button
+[INFO ] [2023-01-10 15:10:06,967] Login - Step 02: Input Not Found Email to Email Textbox 'nathanael.considine@yahoo.com'
+[INFO ] [2023-01-10 15:10:07,284] Login - Step 03:  Input Password TextBox 'xxld6jydis0ptg'
+[INFO ] [2023-01-10 15:10:07,538] Login - Step 04:  Click to Login Button
+[INFO ] [2023-01-10 15:10:08,576] Login - Step 05:  Verify Login Success
+[INFO ] [2023-01-10 15:10:08,773] Login - Step 06: Navigate to MyAccoutLink
+[INFO ] [2023-01-10 15:10:09,383] Login - Step 07: Verify Login Success
+[INFO ] [2023-01-10 15:10:09,467] My Account - Step 01: Navigate to MyAccoutLink
+[INFO ] [2023-01-10 15:10:10,035] My Account - Step 02: Verify Login Success
+[INFO ] [2023-01-10 15:10:10,101] My Account - Step 03: Verify FirstName value is correctly
+[INFO ] [2023-01-10 15:10:10,163] My Account - Step 04: Verify LastName value is correctly
+[INFO ] [2023-01-10 15:10:10,226] My Account - Step 05: Verify Email value is correctly
+[INFO ] [2023-01-10 15:10:10,291] OS name = windows 10
+[INFO ] [2023-01-10 15:10:10,291] Driver instance name = chromedriver: chrome on windows (2f50b86da954e3da7d46f59a3bbfbbda)
+[INFO ] [2023-01-10 15:14:10,874] OS name = windows 10
+[INFO ] [2023-01-10 15:14:10,877] Driver instance name = chromedriver: chrome on windows (e21f31f05f1004c71676836eb01bba46)

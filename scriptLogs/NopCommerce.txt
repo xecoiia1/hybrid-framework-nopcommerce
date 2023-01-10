@@ -1,22 +1,2 @@
-[INFO ] [2023-01-03 15:04:41,526] Register - Step 01: Click to Register link
-[INFO ] [2023-01-03 15:04:42,651] Register - Step 02: Input FirstName to required field 'Cornell'
-[INFO ] [2023-01-03 15:04:42,945] Register - Step 03: Input LastName to required field 'Boyle'
-[INFO ] [2023-01-03 15:04:43,538] Register - Step 04: Input Email to required field 'emmitt.lehner@gmail.com'
-[INFO ] [2023-01-03 15:04:43,736] Register - Step 05: Input Password to required field 'g22bypgk6'
-[INFO ] [2023-01-03 15:04:43,856] Register - Step 06: Input Confirm Password to required field 'g22bypgk6'
-[INFO ] [2023-01-03 15:04:44,013] Register - Step 07: Click to Register Button
-[INFO ] [2023-01-03 15:04:44,667] Register - Step 08: Verify Register Success Message
-[INFO ] [2023-01-03 15:04:44,934] Login - Step 01: Navigate to Login Button
-[INFO ] [2023-01-03 15:04:45,322] Login - Step 02: Input Not Found Email to Email Textbox 'emmitt.lehner@gmail.com'
-[INFO ] [2023-01-03 15:04:45,482] Login - Step 03:  Input Password TextBox 'g22bypgk6'
-[INFO ] [2023-01-03 15:04:45,607] Login - Step 04:  Click to Login Button
-[INFO ] [2023-01-03 15:04:46,261] Login - Step 05:  Verify Login Success
-[INFO ] [2023-01-03 15:04:46,415] Login - Step 06: Navigate to MyAccoutLink
-[INFO ] [2023-01-03 15:04:46,786] Login - Step 07: Verify Login Success
-[INFO ] [2023-01-03 15:04:46,856] My Account - Step 01: Navigate to MyAccoutLink
-[INFO ] [2023-01-03 15:04:47,213] My Account - Step 02: Verify Login Success
-[INFO ] [2023-01-03 15:04:47,277] My Account - Step 03: Verify FirstName value is correctly
-[INFO ] [2023-01-03 15:04:47,337] My Account - Step 04: Verify LastName value is correctly
-[INFO ] [2023-01-03 15:04:47,400] My Account - Step 05: Verify Email value is correctly
-[INFO ] [2023-01-03 15:04:47,466] OS name = windows 10
-[INFO ] [2023-01-03 15:04:47,466] Driver instance name = chromedriver: chrome on windows (60f0aba747436ca1f7433016ec7f9e94)
+[INFO ] [2023-01-10 15:14:10,874] OS name = windows 10
+[INFO ] [2023-01-10 15:14:10,877] Driver instance name = chromedriver: chrome on windows (e21f31f05f1004c71676836eb01bba46)
