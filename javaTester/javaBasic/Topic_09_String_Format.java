@@ -20,7 +20,7 @@ public class Topic_09_String_Format {
 	//1 locator có tới 4, 5, 6 tham số động
 	
 		public static void main(String[] arg) {
-			clickToSideBarLink(CUSTOMER_INFO_PAGE);
+			//clickToSideBarLink(CUSTOMER_INFO_PAGE);
 			clickToSideBarLink(ADDRESS_PAGE);
 			clickToSideBarLink(REWARD_POINT_PAGE);
 			clickToSideBarLink(MY_PRODUCT_REVIEWS_PAGE);
