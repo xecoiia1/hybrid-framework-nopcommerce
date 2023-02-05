@@ -21,7 +21,7 @@ public class MySQLTestConnection {
 		
 		Statement statement = conn.createStatement();
 		
-		String sql = "Select Emp.Emp_Id, Emp.First_Name, Emp.Last_Name, Emp.Dept_Id From Employee Emp;";
+		String sql = "SELECT * FROM `wp_users`";
 		
 		//Thực thi câu lện SQL trả về đối tượng ResultSet.
 		ResultSet rs = statement.executeQuery(sql);
@@ -29,14 +29,14 @@ public class MySQLTestConnection {
 		//Duyệt trên kết quả rồi trả về
 		while (rs.next()) {
 			//Di chuyển con trỏ xuống bản ghi kế tiếp.
-			int empId = rs.getInt(1);
-			String empFirstName = rs.getString(2);
-			String empLastName = rs.getString("Last_Name");
+			int userID = rs.getInt(1);
+			String userLogin = rs.getString(2);
+			String userEmail = rs.getString("user_email");
 			
 			System.out.println("------------------");
-			System.out.println("Emp Id:" + empId);
-			System.out.println("Emp FirstName:" + empFirstName);
-			System.out.println("Emp LastName:" + empLastName);
+			System.out.println("userID:" + userID);
+			System.out.println("userLogin:" + userLogin);
+			System.out.println("userEmail:" + userEmail);
 			
 		}
 		// Đóng kết nối
