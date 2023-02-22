@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite parallel="false" name="WordPress - Admin">
+ 
+ 	<listeners>
+ 		<!-- <listener class-name="commonJquery.MethodListener"></listener>-->
+ 		<!-- <listener class-name="reportConfig.ReportNGListener"></listener >-->
+ 		<!-- <listener class-name="reportConfig.ExtentTestListenerV3"></listener>-->
+ 		<!-- <listener class-name="org.uncommons.reportng.HTMLReporter"></listener> -->
+		<!-- <listener class-name="org.uncommons.reportng.JUnitXMLReporter"></listener> -->
+ 	</listeners>
+ 	
+ 	
+ 	
+ <!-- Global -->
+   <parameter name="urlAdmin" value="https://localhost/wp-admin/"/>
+   <parameter name="urlUser" value="https://localhost/"/> 
+ 	
+ 	
+  <test name="Run on Chrome">
+  	<parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.nopcommerce.user.Level_24_Multiple_Enviroment_Owner"/>
+    </classes>
+    
+    <packages>
+    	<package name = "" />
+    </packages>
+  </test> <!-- Test -->
+
+
+</suite> <!-- Suite -->

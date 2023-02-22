@@ -23,7 +23,7 @@ import exception.BrowserNotSupport;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class BaseTestJquery {
-	private WebDriver driver;
+	protected WebDriver driver;
 	
 	protected final Log log;
 	
