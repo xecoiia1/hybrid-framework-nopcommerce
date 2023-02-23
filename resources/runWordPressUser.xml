@@ -23,9 +23,9 @@
       <class name="com.nopcommerce.user.Level_24_Multiple_Enviroment_Owner"/>
     </classes>
     
-    <packages>
+    <!--<packages>
     	<package name = "" />
-    </packages>
+    </packages> -->
   </test> <!-- Test -->
 
 

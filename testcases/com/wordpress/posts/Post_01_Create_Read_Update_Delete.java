@@ -8,26 +8,88 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import commonJquery.BaseTestJquery;
-import exception.BrowserNotSupport;
+import pageObjects.wordpress.admin.AdminDashboardPO;
+import pageObjects.wordpress.admin.AdminLoginPO;
+import pageObjects.wordpress.admin.AdminPostAddNewPO;
+import pageObjects.wordpress.admin.AdminPostSearchPO;
+import pageObjects.wordpress.admin.PageGeneratorManager;
+import pageUIs.wordpress.admin.AdminPostSeachPageUI;
+
 
 
 public class Post_01_Create_Read_Update_Delete extends BaseTestJquery  {
-
-	@Parameters("browser")
-	@BeforeClass
-	public void beforeClass(String browserName) throws BrowserNotSupport {
-	driver = getBrowserDriver(browserName);
 	
+	String adminUser = "automationfc";
+	String adminPassword = "automationfc";
+	String searchPostUrl;
+	String postTitleValue = "";
+	String postBodyValue = "";
+	
+	@Parameters({"browser", "adminUrl"})
+	@BeforeClass
+	public void beforeClass(String browserName, String adminUrl) {
+		
+	  log.info("Precondition - Step 01: Open Browser and adminUrl");
+	
+	  driver = getBrowserDriverAppURL(browserName, adminUrl);
+	
+	  adminLoginPage = PageGeneratorManager.getAdminLoginPage(driver);
+	
+	  log.info("Precondition - Step 02: Enter to Username textbox with value: " + adminUser);
+	  
+	  adminLoginPage.enterUsernameTextBox();
+	
+	  log.info("Precondition - Step 03: Enter to Password textbox with value: " + adminPassword);
+	  
+	  adminLoginPage.enterPasswordTextBox();
+	 
+	  log.info("Precondition - Step 04: Click to Login button ");
+	  
+	  adminLoginPage.clickToLoginBtn();
+	
+	  adminDashboardPage = PageGeneratorManager.getAdminDashboardPage(driver);
+	
+	  log.info("Precondition - Step 05: Click to Login button ");
   }
   
   @Test
   public void Post_01_Create_New_Post() {
-	  log.info("");
-
+	  log.info("Create_Post - Step 01: Click to 'Posts' menu Link");
+	  searchPostUrl = "";
+	  
+	  adminDashboardPage.clickToPostMenuLink();
+	  
+	  adminPostSeachPage = PageGeneratorManager.getAdminPostSeachPage(driver);
+	  
+	  log.info("Create_Post - Step 02: Click to 'Add New' button");
+	  
+	  adminPostSeachPage.clickToAddNewBtn();
+	  
+	  adminPostAddNewPage = PageGeneratorManager.getAdminPostAddNewPage(driver);
+	  
+	  log.info("Create_Post - Step 03: Enter to post title"); 
+	  
+	  adminPostAddNewPage.enterToPostTitle(postTitle);
+	  
+	  log.info("Create_Post - Step 04: Enter to body");
+	  
+	  adminPostAddNewPage.enterToPostBody(postBody);
+	  
+	  log.info("Create_Post - Step 05: Click to 'Publish' button");
+	  
+	  adminPostAddNewPage.clickToPublishBtn();
+	  
+	  log.info("Create_Post - Step 06: Verify 'Post published' message is displayed"); 
+	  
+	  adminPostAddNewPage.isPostPublishMessDisplayed("Post published.");
  }
   @Test
   public void Post_02_Search_Post() {
-
+	  log.info("Search_Post - Step 01: Open 'Search Post' page");
+	  
+	  adminPostAddNewPage.openSearchPostPageUrl(searchPostUrl);
+	  
+	  adminPostSeachPage = PageGeneratorManager.getAdminPostSeachPage(driver);
   }
   
   @Test
@@ -48,6 +110,9 @@ public class Post_01_Create_Read_Update_Delete extends BaseTestJquery  {
 	  closeBrowserAndDriver();
   }
   
-
-
+  WebDriver driver;
+  AdminLoginPO adminLoginPage;
+  AdminDashboardPO adminDashboardPage;
+  AdminPostSearchPO adminPostSeachPage;
+  AdminPostAddNewPO adminPostAddNewPage;
 }
