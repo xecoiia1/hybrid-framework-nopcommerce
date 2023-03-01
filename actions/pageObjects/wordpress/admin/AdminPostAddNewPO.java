@@ -19,6 +19,8 @@ public class AdminPostAddNewPO extends BasePageJquery {
 
 	public void enterToPostBody(String postBodyValue) {
 		waitForElementVisible(driver, AdminPostAddNewPageUI.POST_BODY_TEXTBOX);
+		clickToElementByXpath(driver, AdminPostAddNewPageUI.POST_BODY_TEXTBOX);
+		sleepInSecond(2);
 		sendkeysToElementByXpath(driver, AdminPostAddNewPageUI.POST_BODY_TEXTBOX, postBodyValue);		
 	}
 
