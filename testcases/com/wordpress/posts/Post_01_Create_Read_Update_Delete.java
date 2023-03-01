@@ -37,43 +37,37 @@ public class Post_01_Create_Read_Update_Delete extends BaseTestJquery  {
 	
 	  log.info("Precondition - Step 02: Enter to Username textbox with value: " + adminUser);
 	  
-	  adminLoginPage.enterUsernameTextBox();
+	  adminLoginPage.enterUsernameTextBox(adminUser);
 	
 	  log.info("Precondition - Step 03: Enter to Password textbox with value: " + adminPassword);
 	  
-	  adminLoginPage.enterPasswordTextBox();
+	  adminLoginPage.enterPasswordTextBox(adminPassword);
 	 
 	  log.info("Precondition - Step 04: Click to Login button ");
 	  
-	  adminLoginPage.clickToLoginBtn();
+	  adminDashboardPage = adminLoginPage.clickToLoginBtn();
 	
-	  adminDashboardPage = PageGeneratorManager.getAdminDashboardPage(driver);
-	
-	  log.info("Precondition - Step 05: Click to Login button ");
   }
   
   @Test
   public void Post_01_Create_New_Post() {
 	  log.info("Create_Post - Step 01: Click to 'Posts' menu Link");
-	  searchPostUrl = "";
 	  
-	  adminDashboardPage.clickToPostMenuLink();
+	  adminPostSeachPage= adminDashboardPage.clickToPostMenuLink();
 	  
-	  adminPostSeachPage = PageGeneratorManager.getAdminPostSeachPage(driver);
+	  log.info("Create_Post - Step 02: Get 'Search Post' Page URL");
+	  searchPostUrl = adminPostSeachPage.getPageURL(driver);
 	  
 	  log.info("Create_Post - Step 02: Click to 'Add New' button");
-	  
-	  adminPostSeachPage.clickToAddNewBtn();
-	  
-	  adminPostAddNewPage = PageGeneratorManager.getAdminPostAddNewPage(driver);
+	  adminPostAddNewPage = adminPostSeachPage.clickToAddNewBtn();
 	  
 	  log.info("Create_Post - Step 03: Enter to post title"); 
 	  
-	  adminPostAddNewPage.enterToPostTitle(postTitle);
+	  adminPostAddNewPage.enterToPostTitle(postTitleValue);
 	  
 	  log.info("Create_Post - Step 04: Enter to body");
 	  
-	  adminPostAddNewPage.enterToPostBody(postBody);
+	  adminPostAddNewPage.enterToPostBody(postBodyValue);
 	  
 	  log.info("Create_Post - Step 05: Click to 'Publish' button");
 	  
