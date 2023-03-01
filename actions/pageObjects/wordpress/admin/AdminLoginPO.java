@@ -27,7 +27,7 @@ public class AdminLoginPO extends BasePageJquery {
 
 	public AdminDashboardPO clickToLoginBtn() {
 		waitForElementClickAble(driver, AdminLoginPageUI.LOGIN_BTN);
-		clickToButtonByText(driver, AdminLoginPageUI.LOGIN_BTN);
+		clickToElementByXpath(driver, AdminLoginPageUI.LOGIN_BTN);
 		return PageGeneratorManager.getAdminDashboardPage(driver);
 	}
 

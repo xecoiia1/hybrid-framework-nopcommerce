@@ -15,7 +15,7 @@ public class AdminDashboardPO extends BasePageJquery {
 
 	public AdminPostSearchPO clickToPostMenuLink() {
 		waitForElementClickAble(driver, AdminDashboardPageUI.POST_MENU_LINK);
-		clickToButtonByText(driver, AdminDashboardPageUI.POST_MENU_LINK);
+		clickToElementByXpath(driver, AdminDashboardPageUI.POST_MENU_LINK);
 		return PageGeneratorManager.getAdminPostSeachPage(driver);
 	}
 }

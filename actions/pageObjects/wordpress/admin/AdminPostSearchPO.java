@@ -15,7 +15,7 @@ public class AdminPostSearchPO extends BasePageJquery {
 
 	public AdminPostAddNewPO clickToAddNewBtn() {
 		waitForElementClickAble(driver, AdminPostSeachPageUI.ADD_NEW_BTN);
-		clickToButtonByText(driver, AdminPostSeachPageUI.ADD_NEW_BTN);
+		clickToElementByXpath(driver, AdminPostSeachPageUI.ADD_NEW_BTN);
 		return PageGeneratorManager.getAdminPostAddNewPage(driver);
 	}
 

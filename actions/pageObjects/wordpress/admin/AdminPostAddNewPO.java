@@ -2,7 +2,10 @@ package pageObjects.wordpress.admin;
 
 import org.openqa.selenium.WebDriver;
 
-public class AdminPostAddNewPO {
+import commonJquery.BasePageJquery;
+import pageUIs.wordpress.admin.AdminPostAddNewPageUI;
+
+public class AdminPostAddNewPO extends BasePageJquery {
 	WebDriver driver;
 	
 	public AdminPostAddNewPO(WebDriver driver) {
@@ -10,28 +13,28 @@ public class AdminPostAddNewPO {
 	}
 
 	public void enterToPostTitle(String postTitleValue) {
-		// TODO Auto-generated method stub
-		
+		waitForElementVisible(driver, AdminPostAddNewPageUI.POST_TITLE_TEXTBOX);
+		sendkeysToElementByXpath(driver, AdminPostAddNewPageUI.POST_TITLE_TEXTBOX, postTitleValue);
 	}
 
 	public void enterToPostBody(String postBodyValue) {
-		// TODO Auto-generated method stub
-		
+		waitForElementVisible(driver, AdminPostAddNewPageUI.POST_BODY_TEXTBOX);
+		sendkeysToElementByXpath(driver, AdminPostAddNewPageUI.POST_BODY_TEXTBOX, postBodyValue);		
 	}
 
 	public void clickToPublishBtn() {
-		// TODO Auto-generated method stub
-		
+		waitForElementClickAble(driver, AdminPostAddNewPageUI.PUBLISH_BTN);
+		clickToElementByXpath(driver, AdminPostAddNewPageUI.PUBLISH_BTN);
 	}
 
-	public void isPostPublishMessDisplayed(String string) {
-		// TODO Auto-generated method stub
-		
+	public boolean isPostPublishMessDisplayed(String postPublishedMessage) {
+		waitForAllElementVisible(driver, AdminPostAddNewPageUI.PUBLISHED_MESSAGE, postPublishedMessage);
+		return isElementDisplay(driver, AdminPostAddNewPageUI.PUBLISHED_MESSAGE, postPublishedMessage);
 	}
 
-	public void openSearchPostPageUrl(String searchPostUrl) {
-		// TODO Auto-generated method stub
-		
+	public AdminPostSearchPO openSearchPostPageUrl(String searchPostUrl) {
+		openPageURL(driver, searchPostUrl);
+		return PageGeneratorManager.getAdminPostSeachPage(driver);
 	}
 
 }

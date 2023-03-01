@@ -22,16 +22,17 @@ public class Post_01_Create_Read_Update_Delete extends BaseTestJquery  {
 	String adminUser = "automationfc";
 	String adminPassword = "automationfc";
 	String searchPostUrl;
-	String postTitleValue = "";
-	String postBodyValue = "";
+	int randomNumber = generateRandom();
+	String postTitleValue = "Live Coding Title" + randomNumber;
+	String postBodyValue = "Live Coding Title" + randomNumber;
 	
-	@Parameters({"browser", "adminUrl"})
+	@Parameters({"browser", "adminURL"})
 	@BeforeClass
-	public void beforeClass(String browserName, String adminUrl) {
+	public void beforeClass(String browserName, String adminURL) {
 		
 	  log.info("Precondition - Step 01: Open Browser and adminUrl");
 	
-	  driver = getBrowserDriverAppURL(browserName, adminUrl);
+	  driver = getBrowserDriverAppURL(browserName, adminURL);
 	
 	  adminLoginPage = PageGeneratorManager.getAdminLoginPage(driver);
 	
@@ -75,15 +76,14 @@ public class Post_01_Create_Read_Update_Delete extends BaseTestJquery  {
 	  
 	  log.info("Create_Post - Step 06: Verify 'Post published' message is displayed"); 
 	  
-	  adminPostAddNewPage.isPostPublishMessDisplayed("Post published.");
+	  verifyTrue(adminPostAddNewPage.isPostPublishMessDisplayed("Post published."));
  }
   @Test
   public void Post_02_Search_Post() {
 	  log.info("Search_Post - Step 01: Open 'Search Post' page");
 	  
-	  adminPostAddNewPage.openSearchPostPageUrl(searchPostUrl);
-	  
-	  adminPostSeachPage = PageGeneratorManager.getAdminPostSeachPage(driver);
+	  adminPostSeachPage =  adminPostAddNewPage.openSearchPostPageUrl(searchPostUrl);
+	 
   }
   
   @Test

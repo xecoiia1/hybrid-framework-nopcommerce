@@ -12,19 +12,16 @@
  	
  	
  <!-- Global -->
-   <parameter name="urlAdmin" value="https://localhost/wp-admin/"/>
+   <parameter name="adminURL" value="https://localhost/wp-admin/"/>
    <parameter name="urlUser" value="https://localhost/"/> 
  	
  	
   <test name="Run on Chrome">
   	<parameter name="browser" value="chrome"/>
     <classes>
-      <class name="com.nopcommerce.user.Level_24_Multiple_Enviroment_Owner"/>
+      <class name="com.wordpress.posts.Post_01_Create_Read_Update_Delete"/>
     </classes>
     
-    <packages>
-    	<package name = "" />
-    </packages>
   </test> <!-- Test -->
 
 
