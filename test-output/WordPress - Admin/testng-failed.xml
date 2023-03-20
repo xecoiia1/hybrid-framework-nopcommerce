@@ -11,11 +11,7 @@
           <include name="Post_01_Create_New_Post"/>
           <include name="initBeforeSuite"/>
           <include name="beforeClass"/>
-          <include name="Post_04_Edit_Post"/>
-          <include name="Post_05_Delete_Post"/>
-          <include name="Post_02_Search_Post"/>
           <include name="afterClass"/>
-          <include name="Post_03_View_Post"/>
         </methods>
       </class> <!-- com.wordpress.posts.Post_01_Create_Read_Update_Delete -->
     </classes>
