@@ -74,7 +74,11 @@ public class Post_01_Create_Read_Update_Delete extends BaseTestJquery  {
 	  
 	  adminPostAddNewPage.clickToPublishBtn();
 	  
-	  log.info("Create_Post - Step 06: Verify 'Post published' message is displayed"); 
+	  log.info("Create_Post - Step 07: Click to 'Publish Verify'button"); 
+	  
+	  adminPostAddNewPage.clicktoPublishBtnConfirm();
+	  
+	  log.info("Create_Post - Step 08: Verify 'Post published' message is displayed"); 
 	  
 	  verifyTrue(adminPostAddNewPage.isPostPublishMessDisplayed("Post published."));
  }

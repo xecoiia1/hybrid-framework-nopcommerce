@@ -18,8 +18,8 @@ public class AdminPostAddNewPO extends BasePageJquery {
 	}
 
 	public void enterToPostBody(String postBodyValue) {
-		waitForElementClickAble(driver, AdminPostAddNewPageUI.POST_BODY_TEXTBOX);
-		clickToElementByXpath(driver, AdminPostAddNewPageUI.POST_BODY_TEXTBOX);
+		waitForElementClickAble(driver, AdminPostAddNewPageUI.POST_BODY_TEXTBOX_BUTTON);
+		clickToElementByXpath(driver, AdminPostAddNewPageUI.POST_BODY_TEXTBOX_BUTTON);
 		sleepInSecond(2);
 		sendkeysToElementByXpath(driver, AdminPostAddNewPageUI.POST_BODY_TEXTBOX, postBodyValue);		
 	}
@@ -27,6 +27,11 @@ public class AdminPostAddNewPO extends BasePageJquery {
 	public void clickToPublishBtn() {
 		waitForElementClickAble(driver, AdminPostAddNewPageUI.PUBLISH_BTN);
 		clickToElementByXpath(driver, AdminPostAddNewPageUI.PUBLISH_BTN);
+	}
+	
+	public void clicktoPublishBtnConfirm() {
+		waitForElementClickAble(driver, AdminPostAddNewPageUI.PUBLISH_CONFIRM_BTN);
+		clickToElementByXpath(driver, AdminPostAddNewPageUI.PUBLISH_CONFIRM_BTN);
 	}
 
 	public boolean isPostPublishMessDisplayed(String postPublishedMessage) {

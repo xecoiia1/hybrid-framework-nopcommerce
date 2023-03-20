@@ -178,7 +178,9 @@ public class BaseTestJquery {
 		    
 		}else if(browserName.equals("chrome")) {
 			WebDriverManager.chromedriver().setup();
-			driver = new ChromeDriver();
+			ChromeOptions options = new ChromeOptions();
+			options.setAcceptInsecureCerts(true);
+			driver = new ChromeDriver(options);
 		}else if(browserName.equals("h_chrome")) {
 			WebDriverManager.chromedriver().setup();
 			
