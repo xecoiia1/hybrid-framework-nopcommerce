@@ -8,11 +8,11 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import commonJquery.BaseTestJquery;
-import pageObjects.wordpress.admin.AdminDashboardPO;
-import pageObjects.wordpress.admin.AdminLoginPO;
-import pageObjects.wordpress.admin.AdminPostAddNewPO;
-import pageObjects.wordpress.admin.AdminPostSearchPO;
-import pageObjects.wordpress.admin.PageGeneratorManager;
+import pageObjects.wordpress.AdminDashboardPO;
+import pageObjects.wordpress.AdminLoginPO;
+import pageObjects.wordpress.AdminPostAddNewPO;
+import pageObjects.wordpress.AdminPostSearchPO;
+import pageObjects.wordpress.PageGeneratorManager;
 import pageUIs.wordpress.admin.AdminPostSeachPageUI;
 
 
@@ -23,8 +23,9 @@ public class Post_01_Create_Read_Update_Delete extends BaseTestJquery  {
 	String adminPassword = "automationfc";
 	String searchPostUrl;
 	int randomNumber = generateRandom();
-	String postTitleValue = "Live Coding Title" + randomNumber;
-	String postBodyValue = "Live Coding Title" + randomNumber;
+	String postTitleValue = "Live Coding Title " + randomNumber;
+	String postBodyValue = "Live Coding Title " + randomNumber;
+	String authorName = "automationfc";
 	
 	@Parameters({"browser", "adminURL"})
 	@BeforeClass
@@ -83,17 +84,29 @@ public class Post_01_Create_Read_Update_Delete extends BaseTestJquery  {
 	  verifyTrue(adminPostAddNewPage.isPostPublishMessDisplayed("Post published."));
  }
   @Test
-  public void Post_02_Search_Post() {
+  public void Post_02_Search_And_View_Post() {
 	  log.info("Search_Post - Step 01: Open 'Search Post' page");
 	  
 	  adminPostSeachPage =  adminPostAddNewPage.openSearchPostPageUrl(searchPostUrl);
+	  
+	  log.info("Search_Post - Step 02: Enter to searh textbox");
+	  
+	  log.info("Search_Post - Step 03: Click to 'Search Posts' button");
+	  
+	  log.info("Search_Post - Step 04: Verify Search Table contain '" + postTitleValue + "'" );
+	  
+	  log.info("Search_Post - Step 05: Verify Search Table contain  '" + authorName + "'" );
+	  
+	  log.info("Search_Post - Step 06: Open End User site");
+	  
+	  log.info("Search_Post - Step 07: Verify Post Title displayed at Home Page");
+	  
+	  log.info("Search_Post - Step 08: Click to Post Title");
+	  
+	  log.info("Search_Post - Step 09: Verify Post infor displayed at Post detail page");
 	 
   }
-  
-  @Test
-  public void Post_03_View_Post() {
-
-  } 
+   
   @Test
   public void Post_04_Edit_Post() {
 	  
