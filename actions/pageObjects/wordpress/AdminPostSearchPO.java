@@ -3,7 +3,7 @@ package pageObjects.wordpress;
 import org.openqa.selenium.WebDriver;
 
 import commonJquery.BasePageJquery;
-import pageUIs.wordpress.admin.AdminPostSeachPageUI;
+import pageUIs.wordpress.AdminPostSeachPageUI;
 
 public class AdminPostSearchPO extends BasePageJquery {
 	

@@ -3,7 +3,7 @@ package pageObjects.wordpress;
 import org.openqa.selenium.WebDriver;
 
 import commonJquery.BasePageJquery;
-import pageUIs.wordpress.admin.AdminPostAddNewPageUI;
+import pageUIs.wordpress.AdminPostAddNewPageUI;
 
 public class AdminPostAddNewPO extends BasePageJquery {
 	WebDriver driver;

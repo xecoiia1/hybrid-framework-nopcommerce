@@ -3,7 +3,7 @@ package pageObjects.wordpress;
 import org.openqa.selenium.WebDriver;
 
 import commonJquery.BasePageJquery;
-import pageUIs.wordpress.admin.AdminDashboardPageUI;
+import pageUIs.wordpress.AdminDashboardPageUI;
 
 public class AdminDashboardPO extends BasePageJquery {
 	

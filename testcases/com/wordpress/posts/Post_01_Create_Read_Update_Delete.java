@@ -13,7 +13,9 @@ import pageObjects.wordpress.AdminLoginPO;
 import pageObjects.wordpress.AdminPostAddNewPO;
 import pageObjects.wordpress.AdminPostSearchPO;
 import pageObjects.wordpress.PageGeneratorManager;
-import pageUIs.wordpress.admin.AdminPostSeachPageUI;
+import pageObjects.wordpress.UserHomePO;
+import pageObjects.wordpress.UserPostDetailPO;
+import pageUIs.wordpress.AdminPostSeachPageUI;
 
 
 
@@ -126,4 +128,6 @@ public class Post_01_Create_Read_Update_Delete extends BaseTestJquery  {
   AdminDashboardPO adminDashboardPage;
   AdminPostSearchPO adminPostSeachPage;
   AdminPostAddNewPO adminPostAddNewPage;
+  UserHomePO userHomePage;
+  UserPostDetailPO userPostDetailPage;
 }
