@@ -13,7 +13,7 @@
  	
  <!-- Global -->
    <parameter name="adminURL" value="https://localhost/wp-admin/"/>
-   <parameter name="urlUser" value="https://localhost/"/> 
+   <parameter name="userURL" value="https://localhost/"/> 
  	
  	
   <test name="Run on Chrome">

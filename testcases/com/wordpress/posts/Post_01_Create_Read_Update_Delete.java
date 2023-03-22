@@ -25,30 +25,33 @@ public class Post_01_Create_Read_Update_Delete extends BaseTestJquery  {
 	String adminPassword = "automationfc";
 	String searchPostUrl;
 	int randomNumber = generateRandom();
-	String postTitleValue = "Live Coding Title " + randomNumber;
-	String postBodyValue = "Live Coding Title " + randomNumber;
+	String postTitle = "Live Coding Title " + randomNumber;
+	String postBody = "Live Coding Title " + randomNumber;
 	String authorName = "automationfc";
+	String adminURL, endUserURL;
+	String currentDay = getCurrentDay();
 	
-	@Parameters({"browser", "adminURL"})
+	@Parameters({"browser", "adminURL", "userURL"})
 	@BeforeClass
-	public void beforeClass(String browserName, String adminURL) {
+	public void beforeClass(String browserName, String adminURL, String endUserURL) {
 		
 	  log.info("Precondition - Step 01: Open Browser and adminUrl");
+	  
+	  this.adminURL = adminURL;
+	  
+	  this.endUserURL = endUserURL;
 	
 	  driver = getBrowserDriverAppURL(browserName, adminURL);
 	
 	  adminLoginPage = PageGeneratorManager.getAdminLoginPage(driver);
-	
+	  
 	  log.info("Precondition - Step 02: Enter to Username textbox with value: " + adminUser);
-	  
 	  adminLoginPage.enterUsernameTextBox(adminUser);
-	
+	  
 	  log.info("Precondition - Step 03: Enter to Password textbox with value: " + adminPassword);
-	  
 	  adminLoginPage.enterPasswordTextBox(adminPassword);
-	 
-	  log.info("Precondition - Step 04: Click to Login button ");
 	  
+	  log.info("Precondition - Step 04: Click to Login button ");
 	  adminDashboardPage = adminLoginPage.clickToLoginBtn();
 	
   }
@@ -56,7 +59,6 @@ public class Post_01_Create_Read_Update_Delete extends BaseTestJquery  {
   @Test
   public void Post_01_Create_New_Post() {
 	  log.info("Create_Post - Step 01: Click to 'Posts' menu Link");
-	  
 	  adminPostSeachPage= adminDashboardPage.clickToPostMenuLink();
 	  
 	  log.info("Create_Post - Step 02: Get 'Search Post' Page URL");
@@ -66,48 +68,55 @@ public class Post_01_Create_Read_Update_Delete extends BaseTestJquery  {
 	  adminPostAddNewPage = adminPostSeachPage.clickToAddNewBtn();
 	  
 	  log.info("Create_Post - Step 03: Enter to post title"); 
-	  
-	  adminPostAddNewPage.enterToPostTitle(postTitleValue);
+	  adminPostAddNewPage.enterToPostTitle(postTitle);
 	  
 	  log.info("Create_Post - Step 04: Enter to body");
-	  
-	  adminPostAddNewPage.enterToPostBody(postBodyValue);
+	  adminPostAddNewPage.enterToPostBody(postBody);
 	  
 	  log.info("Create_Post - Step 05: Click to 'Publish' button");
-	  
 	  adminPostAddNewPage.clickToPublishBtn();
 	  
 	  log.info("Create_Post - Step 07: Click to 'Publish Verify'button"); 
-	  
 	  adminPostAddNewPage.clicktoPublishBtnConfirm();
 	  
 	  log.info("Create_Post - Step 08: Verify 'Post published' message is displayed"); 
-	  
 	  verifyTrue(adminPostAddNewPage.isPostPublishMessDisplayed("Post published."));
  }
   @Test
   public void Post_02_Search_And_View_Post() {
 	  log.info("Search_Post - Step 01: Open 'Search Post' page");
-	  
 	  adminPostSeachPage =  adminPostAddNewPage.openSearchPostPageUrl(searchPostUrl);
 	  
 	  log.info("Search_Post - Step 02: Enter to searh textbox");
+	  adminPostSeachPage.enterToSearchTextBox(postTitle);
 	  
 	  log.info("Search_Post - Step 03: Click to 'Search Posts' button");
+	  adminPostSeachPage.clickToSearchPostsButton();
 	  
-	  log.info("Search_Post - Step 04: Verify Search Table contain '" + postTitleValue + "'" );
-	  
+	  log.info("Search_Post - Step 04: Verify Search Table contain '" + postTitle + "'" );
+	  verifyTrue(adminPostSeachPage.isPostSearchTableDisplayed("Title",postTitle));
 	  log.info("Search_Post - Step 05: Verify Search Table contain  '" + authorName + "'" );
+	  verifyTrue(adminPostSeachPage.isPostSearchTableDisplayed("Author" ,authorName));
 	  
 	  log.info("Search_Post - Step 06: Open End User site");
+	  userHomePage = adminPostSeachPage.openEndUserSite(this.endUserURL);
 	  
 	  log.info("Search_Post - Step 07: Verify Post Title displayed at Home Page");
+	  verifyTrue(userHomePage.isPostInforDisplayed(postTitle));
+	  verifyTrue(userHomePage.isPostInforDisplayed(postBody));
+	  verifyTrue(userHomePage.isPostInforDisplayed(authorName));
+	  verifyTrue(userHomePage.isPostInforDisplayed currentDay));
 	  
 	  log.info("Search_Post - Step 08: Click to Post Title");
+	  userHomePage.clicktoPostTitlte(postTitle);
 	  
 	  log.info("Search_Post - Step 09: Verify Post infor displayed at Post detail page");
-	 
-  }
+	  verifyTrue(userPostDetailPage.isPostInforDisplayed(postTitle));
+	  verifyTrue(userPostDetailPage.isPostInforDisplayed(postBody));
+	  verifyTrue(userPostDetailPage.isPostInforDisplayed(authorName));
+	  verifyTrue(userPostDetailPage.isPostInforDisplayed(authorName));
+	  
+	 }
    
   @Test
   public void Post_04_Edit_Post() {
