@@ -105,7 +105,7 @@ public class Post_01_Create_Read_Update_Delete extends BaseTestJquery  {
 	  verifyTrue(userHomePage.isPostInforDisplayed(postTitle));
 	  verifyTrue(userHomePage.isPostInforDisplayed(postBody));
 	  verifyTrue(userHomePage.isPostInforDisplayed(authorName));
-	  verifyTrue(userHomePage.isPostInforDisplayed currentDay));
+	  verifyTrue(userHomePage.isPostInforDisplayed(currentDay));
 	  
 	  log.info("Search_Post - Step 08: Click to Post Title");
 	  userHomePage.clicktoPostTitlte(postTitle);

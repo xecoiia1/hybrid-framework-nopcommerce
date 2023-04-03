@@ -19,4 +19,24 @@ public class AdminPostSearchPO extends BasePageJquery {
 		return PageGeneratorManager.getAdminPostAddNewPage(driver);
 	}
 
+	public void enterToSearchTextBox(String postTitle) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void clickToSearchPostsButton() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public boolean isPostSearchTableDisplayed(String string, String postTitle) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	public UserHomePO openEndUserSite(String endUserURL) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 }

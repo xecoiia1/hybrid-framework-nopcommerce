@@ -31,6 +31,7 @@ import pageObject.nopCommerce.user.UserCustomerInforPageObj;
 import pageObject.nopCommerce.user.UserHomePageObj;
 import pageObject.nopCommerce.user.UserMyProductReviewPageObj;
 import pageObject.nopCommerce.user.UserRewardPointPageObj;
+import pageObjects.wordpress.UserHomePO;
 import pageUI.Jquery.uploadFile.BasePageJQueryUI;
 import pageUI.nopCommerce.user.BasePageUI;
 import pageUI.nopCommerce.user.CustomerInforPageUI;
@@ -658,6 +659,12 @@ public class BasePageJquery {
 	public String getTextboxValueByID(WebDriver driver, String textboxID) {
 		waitForAllElementVisible(driver, BasePageUI.DYNAMIC_TEXTBOX_BY_ID, textboxID);
 		return getElementAttribute(driver, BasePageUI.DYNAMIC_TEXTBOX_BY_ID, "value", textboxID);
+	}
+	
+	//Switch Role
+	public UserHomePO openEndUserSite(WebDriver driver,  String endUserURL) {
+		// TODO Auto-generated method stub
+		return null;
 	}
 	
 	private long longTimeOut = GlobalConstants.LONG_TIMEOUT;
