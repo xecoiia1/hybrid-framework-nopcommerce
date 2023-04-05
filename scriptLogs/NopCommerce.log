@@ -655,3 +655,268 @@ Session ID: 6b9ce65e724fec6c6060fa802fc88c15
 [INFO ] [2023-03-20 20:57:22,414] Search_Post - Step 01: Open 'Search Post' page
 [INFO ] [2023-03-20 20:57:23,775] OS name = windows 10
 [INFO ] [2023-03-20 20:57:23,775] Driver instance name = chromedriver: chrome on windows (297ce42ce976d9835f5d03e71c5cb25f)
+[INFO ] [2023-04-05 22:08:23,958] Precondition - Step 01: Open Browser and adminUrl
+[INFO ] [2023-04-05 22:08:49,339] Precondition - Step 02: Enter to Username textbox with value: automationfc
+[INFO ] [2023-04-05 22:08:49,440] Precondition - Step 03: Enter to Password textbox with value: automationfc
+[INFO ] [2023-04-05 22:08:49,531] Precondition - Step 04: Click to Login button 
+[INFO ] [2023-04-05 22:08:58,727] Create_Post - Step 01: Click to 'Posts' menu Link
+[INFO ] [2023-04-05 22:09:00,400] Create_Post - Step 02: Get 'Search Post' Page URL
+[INFO ] [2023-04-05 22:09:00,405] Create_Post - Step 02: Click to 'Add New' button
+[INFO ] [2023-04-05 22:09:06,108] Create_Post - Step 03: Enter to post title
+[INFO ] [2023-04-05 22:09:06,659] Create_Post - Step 04: Enter to body
+[INFO ] [2023-04-05 22:09:09,142] Create_Post - Step 05: Click to 'Publish' button
+[INFO ] [2023-04-05 22:09:09,270] Create_Post - Step 07: Click to 'Publish Verify'button
+[INFO ] [2023-04-05 22:09:09,544] Create_Post - Step 08: Verify 'Post published' message is displayed
+[INFO ] [2023-04-05 22:09:10,837] Search_Post - Step 01: Open 'Search Post' page
+[INFO ] [2023-04-05 22:09:11,929] Search_Post - Step 02: Enter to searh textbox
+[INFO ] [2023-04-05 22:09:11,981] OS name = windows 10
+[INFO ] [2023-04-05 22:09:11,982] Driver instance name = chromedriver: chrome on windows (53f789359d42ae15a90e2a416f62a8e7)
+[INFO ] [2023-04-05 22:19:41,971] Precondition - Step 01: Open Browser and adminUrl
+[INFO ] [2023-04-05 22:19:45,234] Precondition - Step 02: Enter to Username textbox with value: automationfc
+[INFO ] [2023-04-05 22:19:45,333] Precondition - Step 03: Enter to Password textbox with value: automationfc
+[INFO ] [2023-04-05 22:19:45,420] Precondition - Step 04: Click to Login button 
+[INFO ] [2023-04-05 22:19:47,637] Create_Post - Step 01: Click to 'Posts' menu Link
+[INFO ] [2023-04-05 22:19:48,727] Create_Post - Step 02: Get 'Search Post' Page URL
+[INFO ] [2023-04-05 22:19:48,731] Create_Post - Step 02: Click to 'Add New' button
+[INFO ] [2023-04-05 22:19:50,650] Create_Post - Step 03: Enter to post title
+[INFO ] [2023-04-05 22:19:51,202] Create_Post - Step 04: Enter to body
+[INFO ] [2023-04-05 22:19:53,691] Create_Post - Step 05: Click to 'Publish' button
+[INFO ] [2023-04-05 22:19:53,809] Create_Post - Step 07: Click to 'Publish Verify'button
+[INFO ] [2023-04-05 22:19:53,907] Create_Post - Step 08: Verify 'Post published' message is displayed
+[INFO ] [2023-04-05 22:19:55,170] Search_Post - Step 01: Open 'Search Post' page
+[INFO ] [2023-04-05 22:19:57,210] Search_Post - Step 02: Enter to searh textbox
+[INFO ] [2023-04-05 22:19:57,255] OS name = windows 10
+[INFO ] [2023-04-05 22:19:57,255] Driver instance name = chromedriver: chrome on windows (7afe7fd9d1d3d15a5c3b5d074b36ec21)
+[INFO ] [2023-04-05 22:23:44,676] Precondition - Step 01: Open Browser and adminUrl
+[INFO ] [2023-04-05 22:23:48,165] Precondition - Step 02: Enter to Username textbox with value: automationfc
+[INFO ] [2023-04-05 22:23:48,276] Precondition - Step 03: Enter to Password textbox with value: automationfc
+[INFO ] [2023-04-05 22:23:48,363] Precondition - Step 04: Click to Login button 
+[INFO ] [2023-04-05 22:23:50,718] Create_Post - Step 01: Click to 'Posts' menu Link
+[INFO ] [2023-04-05 22:23:51,882] Create_Post - Step 02: Get 'Search Post' Page URL
+[INFO ] [2023-04-05 22:23:51,887] Create_Post - Step 02: Click to 'Add New' button
+[INFO ] [2023-04-05 22:23:53,859] Create_Post - Step 03: Enter to post title
+[INFO ] [2023-04-05 22:23:54,493] Create_Post - Step 04: Enter to body
+[INFO ] [2023-04-05 22:23:57,024] Create_Post - Step 05: Click to 'Publish' button
+[INFO ] [2023-04-05 22:23:57,154] Create_Post - Step 07: Click to 'Publish Verify'button
+[INFO ] [2023-04-05 22:23:57,249] Create_Post - Step 08: Verify 'Post published' message is displayed
+[INFO ] [2023-04-05 22:23:58,550] Search_Post - Step 01: Open 'Search Post' page
+[INFO ] [2023-04-05 22:24:00,653] Search_Post - Step 02: Enter to searh textbox
+[INFO ] [2023-04-05 22:24:00,704] OS name = windows 10
+[INFO ] [2023-04-05 22:24:00,704] Driver instance name = chromedriver: chrome on windows (cd388c820e74e4dad8ded7be8865bbc1)
+[INFO ] [2023-04-05 22:25:52,127] Precondition - Step 01: Open Browser and adminUrl
+[INFO ] [2023-04-05 22:25:55,382] Precondition - Step 02: Enter to Username textbox with value: automationfc
+[INFO ] [2023-04-05 22:25:55,482] Precondition - Step 03: Enter to Password textbox with value: automationfc
+[INFO ] [2023-04-05 22:25:55,567] Precondition - Step 04: Click to Login button 
+[INFO ] [2023-04-05 22:25:57,741] Create_Post - Step 01: Click to 'Posts' menu Link
+[INFO ] [2023-04-05 22:25:58,838] Create_Post - Step 02: Get 'Search Post' Page URL
+[INFO ] [2023-04-05 22:25:58,843] Create_Post - Step 02: Click to 'Add New' button
+[INFO ] [2023-04-05 22:26:00,801] Create_Post - Step 03: Enter to post title
+[INFO ] [2023-04-05 22:26:01,438] Create_Post - Step 04: Enter to body
+[INFO ] [2023-04-05 22:26:03,948] Create_Post - Step 05: Click to 'Publish' button
+[INFO ] [2023-04-05 22:26:04,068] Create_Post - Step 07: Click to 'Publish Verify'button
+[INFO ] [2023-04-05 22:26:04,159] Create_Post - Step 08: Verify 'Post published' message is displayed
+[INFO ] [2023-04-05 22:26:05,434] Search_Post - Step 01: Open 'Search Post' page
+[INFO ] [2023-04-05 22:26:07,505] Search_Post - Step 02: Enter to searh textbox
+[INFO ] [2023-04-05 22:26:07,611] Search_Post - Step 03: Click to 'Search Posts' button
+[INFO ] [2023-04-05 22:26:09,454] Search_Post - Step 04: Verify Search Table contain 'Live Coding Title 9508'
+[INFO ] [2023-04-05 22:27:09,562] OS name = windows 10
+[INFO ] [2023-04-05 22:27:09,562] Driver instance name = chromedriver: chrome on windows (d1bf3a263ee14d4f7209ba9f0e9bb4ed)
+[INFO ] [2023-04-05 22:28:38,093] Precondition - Step 01: Open Browser and adminUrl
+[INFO ] [2023-04-05 22:28:42,354] Precondition - Step 02: Enter to Username textbox with value: automationfc
+[INFO ] [2023-04-05 22:28:42,450] Precondition - Step 03: Enter to Password textbox with value: automationfc
+[INFO ] [2023-04-05 22:28:42,533] Precondition - Step 04: Click to Login button 
+[INFO ] [2023-04-05 22:28:44,742] Create_Post - Step 01: Click to 'Posts' menu Link
+[INFO ] [2023-04-05 22:28:45,857] Create_Post - Step 02: Get 'Search Post' Page URL
+[INFO ] [2023-04-05 22:28:45,861] Create_Post - Step 02: Click to 'Add New' button
+[INFO ] [2023-04-05 22:28:47,815] Create_Post - Step 03: Enter to post title
+[INFO ] [2023-04-05 22:28:48,464] Create_Post - Step 04: Enter to body
+[INFO ] [2023-04-05 22:28:50,950] Create_Post - Step 05: Click to 'Publish' button
+[INFO ] [2023-04-05 22:28:51,034] Create_Post - Step 07: Click to 'Publish Verify'button
+[INFO ] [2023-04-05 22:28:51,160] Create_Post - Step 08: Verify 'Post published' message is displayed
+[INFO ] [2023-04-05 22:28:52,426] Search_Post - Step 01: Open 'Search Post' page
+[INFO ] [2023-04-05 22:28:53,486] Search_Post - Step 02: Enter to searh textbox
+[INFO ] [2023-04-05 22:28:53,600] Search_Post - Step 03: Click to 'Search Posts' button
+[INFO ] [2023-04-05 22:28:55,409] Search_Post - Step 04: Verify Search Table contain 'Live Coding Title 8273'
+[INFO ] [2023-04-05 22:28:55,469] Search_Post - Step 05: Verify Search Table contain  'automationfc'
+[INFO ] [2023-04-05 22:28:55,510] Search_Post - Step 06: Open End User site
+[INFO ] [2023-04-05 22:28:55,510] Search_Post - Step 07: Verify Post Title displayed at Home Page
+[INFO ] [2023-04-05 22:28:55,514] OS name = windows 10
+[INFO ] [2023-04-05 22:28:55,514] Driver instance name = chromedriver: chrome on windows (044b402480dfbd36ba42921634b0cef6)
+[INFO ] [2023-04-05 22:31:15,207] OS name = windows 10
+[INFO ] [2023-04-05 22:31:15,207] Cannot invoke "Object.toString()" because "this.driver" is null
+[INFO ] [2023-04-05 22:35:15,623] Precondition - Step 01: Open Browser and adminUrl
+[INFO ] [2023-04-05 22:35:19,604] Precondition - Step 02: Enter to Username textbox with value: automationfc
+[INFO ] [2023-04-05 22:35:19,702] Precondition - Step 03: Enter to Password textbox with value: automationfc
+[INFO ] [2023-04-05 22:35:19,784] Precondition - Step 04: Click to Login button 
+[INFO ] [2023-04-05 22:35:22,026] Create_Post - Step 01: Click to 'Posts' menu Link
+[INFO ] [2023-04-05 22:35:23,128] Create_Post - Step 02: Get 'Search Post' Page URL
+[INFO ] [2023-04-05 22:35:23,133] Create_Post - Step 02: Click to 'Add New' button
+[INFO ] [2023-04-05 22:35:25,074] Create_Post - Step 03: Enter to post title
+[INFO ] [2023-04-05 22:35:25,750] Create_Post - Step 04: Enter to body
+[INFO ] [2023-04-05 22:35:28,256] Create_Post - Step 05: Click to 'Publish' button
+[INFO ] [2023-04-05 22:35:28,357] Create_Post - Step 07: Click to 'Publish Verify'button
+[INFO ] [2023-04-05 22:35:28,498] Create_Post - Step 08: Verify 'Post published' message is displayed
+[INFO ] [2023-04-05 22:35:29,726] Search_Post - Step 01: Open 'Search Post' page
+[INFO ] [2023-04-05 22:35:31,808] Search_Post - Step 02: Enter to searh textbox
+[INFO ] [2023-04-05 22:35:31,914] Search_Post - Step 03: Click to 'Search Posts' button
+[INFO ] [2023-04-05 22:35:33,781] Search_Post - Step 04: Verify Search Table contain 'Live Coding Title 1591'
+[INFO ] [2023-04-05 22:35:33,842] Search_Post - Step 05: Verify Search Table contain  'automationfc'
+[INFO ] [2023-04-05 22:35:33,886] Search_Post - Step 06: Open End User site
+[INFO ] [2023-04-05 22:35:33,886] Search_Post - Step 07: Verify Post Title displayed at Home Page
+[INFO ] [2023-04-05 22:35:33,891] OS name = windows 10
+[INFO ] [2023-04-05 22:35:33,891] Driver instance name = chromedriver: chrome on windows (1b5eb3373ca86c4886ee6371d695ced8)
+[INFO ] [2023-04-05 22:39:36,028] Precondition - Step 01: Open Browser and adminUrl
+[INFO ] [2023-04-05 22:39:39,959] Precondition - Step 02: Enter to Username textbox with value: automationfc
+[INFO ] [2023-04-05 22:39:40,052] Precondition - Step 03: Enter to Password textbox with value: automationfc
+[INFO ] [2023-04-05 22:39:40,141] Precondition - Step 04: Click to Login button 
+[INFO ] [2023-04-05 22:39:42,314] Create_Post - Step 01: Click to 'Posts' menu Link
+[INFO ] [2023-04-05 22:39:43,415] Create_Post - Step 02: Get 'Search Post' Page URL
+[INFO ] [2023-04-05 22:39:43,420] Create_Post - Step 02: Click to 'Add New' button
+[INFO ] [2023-04-05 22:39:45,336] Create_Post - Step 03: Enter to post title
+[INFO ] [2023-04-05 22:39:45,943] Create_Post - Step 04: Enter to body
+[INFO ] [2023-04-05 22:39:48,419] Create_Post - Step 05: Click to 'Publish' button
+[INFO ] [2023-04-05 22:39:48,550] Create_Post - Step 07: Click to 'Publish Verify'button
+[INFO ] [2023-04-05 22:39:48,666] Create_Post - Step 08: Verify 'Post published' message is displayed
+[INFO ] [2023-04-05 22:39:49,905] Search_Post - Step 01: Open 'Search Post' page
+[INFO ] [2023-04-05 22:39:52,009] Search_Post - Step 02: Enter to searh textbox
+[INFO ] [2023-04-05 22:39:52,109] Search_Post - Step 03: Click to 'Search Posts' button
+[INFO ] [2023-04-05 22:39:53,891] Search_Post - Step 04: Verify Search Table contain 'Live Coding Title 1951'
+[INFO ] [2023-04-05 22:39:53,956] Search_Post - Step 05: Verify Search Table contain  'automationfc'
+[INFO ] [2023-04-05 22:39:53,997] Search_Post - Step 06: Open End User site
+[INFO ] [2023-04-05 22:39:55,008] Search_Post - Step 07: Verify Post Title displayed at Home Page
+[INFO ] [2023-04-05 22:40:25,339] OS name = windows 10
+[INFO ] [2023-04-05 22:40:25,339] Driver instance name = chromedriver: chrome on windows (ec1f15db8f912a88d0d359f3fcc93bdf)
+[INFO ] [2023-04-05 22:41:19,895] Precondition - Step 01: Open Browser and adminUrl
+[INFO ] [2023-04-05 22:41:24,038] Precondition - Step 02: Enter to Username textbox with value: automationfc
+[INFO ] [2023-04-05 22:41:24,131] Precondition - Step 03: Enter to Password textbox with value: automationfc
+[INFO ] [2023-04-05 22:41:24,222] Precondition - Step 04: Click to Login button 
+[INFO ] [2023-04-05 22:41:26,443] Create_Post - Step 01: Click to 'Posts' menu Link
+[INFO ] [2023-04-05 22:41:27,557] Create_Post - Step 02: Get 'Search Post' Page URL
+[INFO ] [2023-04-05 22:41:27,562] Create_Post - Step 02: Click to 'Add New' button
+[INFO ] [2023-04-05 22:41:29,514] Create_Post - Step 03: Enter to post title
+[INFO ] [2023-04-05 22:41:30,217] Create_Post - Step 04: Enter to body
+[INFO ] [2023-04-05 22:41:32,747] Create_Post - Step 05: Click to 'Publish' button
+[INFO ] [2023-04-05 22:41:32,864] Create_Post - Step 07: Click to 'Publish Verify'button
+[INFO ] [2023-04-05 22:41:32,960] Create_Post - Step 08: Verify 'Post published' message is displayed
+[INFO ] [2023-04-05 22:41:34,141] Search_Post - Step 01: Open 'Search Post' page
+[INFO ] [2023-04-05 22:41:36,231] Search_Post - Step 02: Enter to searh textbox
+[INFO ] [2023-04-05 22:41:36,342] Search_Post - Step 03: Click to 'Search Posts' button
+[INFO ] [2023-04-05 22:41:38,191] Search_Post - Step 04: Verify Search Table contain 'Live Coding Title 7283'
+[INFO ] [2023-04-05 22:41:38,253] Search_Post - Step 05: Verify Search Table contain  'automationfc'
+[INFO ] [2023-04-05 22:41:38,297] Search_Post - Step 06: Open End User site
+[INFO ] [2023-04-05 22:41:39,356] Search_Post - Step 07: Verify Post Title displayed at Home Page
+[INFO ] [2023-04-05 22:42:09,437] OS name = windows 10
+[INFO ] [2023-04-05 22:42:09,437] Driver instance name = chromedriver: chrome on windows (e597a45da0dea181a9d8ca3f8104008a)
+[INFO ] [2023-04-05 22:54:22,916] Precondition - Step 01: Open Browser and adminUrl
+[INFO ] [2023-04-05 22:54:27,092] Precondition - Step 02: Enter to Username textbox with value: automationfc
+[INFO ] [2023-04-05 22:54:27,187] Precondition - Step 03: Enter to Password textbox with value: automationfc
+[INFO ] [2023-04-05 22:54:27,273] Precondition - Step 04: Click to Login button 
+[INFO ] [2023-04-05 22:54:29,459] Create_Post - Step 01: Click to 'Posts' menu Link
+[INFO ] [2023-04-05 22:54:30,577] Create_Post - Step 02: Get 'Search Post' Page URL
+[INFO ] [2023-04-05 22:54:30,584] Create_Post - Step 02: Click to 'Add New' button
+[INFO ] [2023-04-05 22:54:32,474] Create_Post - Step 03: Enter to post title
+[INFO ] [2023-04-05 22:54:33,212] Create_Post - Step 04: Enter to body
+[INFO ] [2023-04-05 22:54:35,717] Create_Post - Step 05: Click to 'Publish' button
+[INFO ] [2023-04-05 22:54:35,836] Create_Post - Step 07: Click to 'Publish Verify'button
+[INFO ] [2023-04-05 22:54:35,926] Create_Post - Step 08: Verify 'Post published' message is displayed
+[INFO ] [2023-04-05 22:54:37,138] Search_Post - Step 01: Open 'Search Post' page
+[INFO ] [2023-04-05 22:54:39,216] Search_Post - Step 02: Enter to searh textbox
+[INFO ] [2023-04-05 22:54:39,321] Search_Post - Step 03: Click to 'Search Posts' button
+[INFO ] [2023-04-05 22:54:41,159] Search_Post - Step 04: Verify Search Table contain 'Live Coding Title 77'
+[INFO ] [2023-04-05 22:54:41,205] Search_Post - Step 05: Verify Search Table contain  'automationfc'
+[INFO ] [2023-04-05 22:54:41,249] Search_Post - Step 06: Open End User site
+[INFO ] [2023-04-05 22:54:42,268] Search_Post - Step 07: Verify Post Title displayed at Home Page
+[INFO ] [2023-04-05 22:55:12,592] OS name = windows 10
+[INFO ] [2023-04-05 22:55:12,592] Driver instance name = chromedriver: chrome on windows (8128cc5782768d1c48b0ccacf9d3f4de)
+[INFO ] [2023-04-05 22:57:21,979] Precondition - Step 01: Open Browser and adminUrl
+[INFO ] [2023-04-05 22:57:26,060] Precondition - Step 02: Enter to Username textbox with value: automationfc
+[INFO ] [2023-04-05 22:57:26,153] Precondition - Step 03: Enter to Password textbox with value: automationfc
+[INFO ] [2023-04-05 22:57:26,242] Precondition - Step 04: Click to Login button 
+[INFO ] [2023-04-05 22:57:28,468] Create_Post - Step 01: Click to 'Posts' menu Link
+[INFO ] [2023-04-05 22:57:29,616] Create_Post - Step 02: Get 'Search Post' Page URL
+[INFO ] [2023-04-05 22:57:29,620] Create_Post - Step 02: Click to 'Add New' button
+[INFO ] [2023-04-05 22:57:31,537] Create_Post - Step 03: Enter to post title
+[INFO ] [2023-04-05 22:57:32,175] Create_Post - Step 04: Enter to body
+[INFO ] [2023-04-05 22:57:34,678] Create_Post - Step 05: Click to 'Publish' button
+[INFO ] [2023-04-05 22:57:34,798] Create_Post - Step 07: Click to 'Publish Verify'button
+[INFO ] [2023-04-05 22:57:34,895] Create_Post - Step 08: Verify 'Post published' message is displayed
+[INFO ] [2023-04-05 22:57:36,109] Search_Post - Step 01: Open 'Search Post' page
+[INFO ] [2023-04-05 22:57:37,184] Search_Post - Step 02: Enter to searh textbox
+[INFO ] [2023-04-05 22:57:37,298] Search_Post - Step 03: Click to 'Search Posts' button
+[INFO ] [2023-04-05 22:57:39,155] Search_Post - Step 04: Verify Search Table contain 'Live Coding Title 8795'
+[INFO ] [2023-04-05 22:57:39,202] Search_Post - Step 05: Verify Search Table contain  'automationfc'
+[INFO ] [2023-04-05 22:57:39,248] Search_Post - Step 06: Open End User site
+[INFO ] [2023-04-05 22:57:40,305] Search_Post - Step 07: Verify Post Title displayed at Home Page
+[INFO ] [2023-04-05 22:57:40,443] Search_Post - Step 08: Click to Post Title
+[INFO ] [2023-04-05 22:57:41,415] Search_Post - Step 09: Verify Post infor displayed at Post detail page
+[INFO ] [2023-04-05 22:57:41,421] OS name = windows 10
+[INFO ] [2023-04-05 22:57:41,421] Driver instance name = chromedriver: chrome on windows (b901e96fe7336e3ac7d88a50be361b1a)
+[INFO ] [2023-04-05 22:58:15,426] Precondition - Step 01: Open Browser and adminUrl
+[INFO ] [2023-04-05 22:58:19,542] Precondition - Step 02: Enter to Username textbox with value: automationfc
+[INFO ] [2023-04-05 22:58:19,634] Precondition - Step 03: Enter to Password textbox with value: automationfc
+[INFO ] [2023-04-05 22:58:19,722] Precondition - Step 04: Click to Login button 
+[INFO ] [2023-04-05 22:58:21,908] Create_Post - Step 01: Click to 'Posts' menu Link
+[INFO ] [2023-04-05 22:58:23,027] Create_Post - Step 02: Get 'Search Post' Page URL
+[INFO ] [2023-04-05 22:58:23,032] Create_Post - Step 02: Click to 'Add New' button
+[INFO ] [2023-04-05 22:58:24,955] Create_Post - Step 03: Enter to post title
+[INFO ] [2023-04-05 22:58:25,526] Create_Post - Step 04: Enter to body
+[INFO ] [2023-04-05 22:58:28,062] Create_Post - Step 05: Click to 'Publish' button
+[INFO ] [2023-04-05 22:58:28,186] Create_Post - Step 07: Click to 'Publish Verify'button
+[INFO ] [2023-04-05 22:58:28,291] Create_Post - Step 08: Verify 'Post published' message is displayed
+[INFO ] [2023-04-05 22:58:29,504] Search_Post - Step 01: Open 'Search Post' page
+[INFO ] [2023-04-05 22:58:31,581] Search_Post - Step 02: Enter to searh textbox
+[INFO ] [2023-04-05 22:58:31,682] Search_Post - Step 03: Click to 'Search Posts' button
+[INFO ] [2023-04-05 22:58:33,528] Search_Post - Step 04: Verify Search Table contain 'Live Coding Title 9207'
+[INFO ] [2023-04-05 22:58:33,574] Search_Post - Step 05: Verify Search Table contain  'automationfc'
+[INFO ] [2023-04-05 22:58:33,619] Search_Post - Step 06: Open End User site
+[INFO ] [2023-04-05 22:58:34,627] Search_Post - Step 07: Verify Post Title displayed at Home Page
+[INFO ] [2023-04-05 22:58:34,768] Search_Post - Step 08: Click to Post Title
+[INFO ] [2023-04-05 22:58:35,691] Search_Post - Step 09: Verify Post infor displayed at Post detail page
+[INFO ] [2023-04-05 22:58:35,696] OS name = windows 10
+[INFO ] [2023-04-05 22:58:35,696] Driver instance name = chromedriver: chrome on windows (a8acd34b4666dfc4b672c4a484ccf786)
+[INFO ] [2023-04-05 23:03:11,562] Precondition - Step 01: Open Browser and adminUrl
+[INFO ] [2023-04-05 23:03:15,698] Precondition - Step 02: Enter to Username textbox with value: automationfc
+[INFO ] [2023-04-05 23:03:15,797] Precondition - Step 03: Enter to Password textbox with value: automationfc
+[INFO ] [2023-04-05 23:03:15,884] Precondition - Step 04: Click to Login button 
+[INFO ] [2023-04-05 23:03:18,089] Create_Post - Step 01: Click to 'Posts' menu Link
+[INFO ] [2023-04-05 23:03:19,208] Create_Post - Step 02: Get 'Search Post' Page URL
+[INFO ] [2023-04-05 23:03:19,212] Create_Post - Step 02: Click to 'Add New' button
+[INFO ] [2023-04-05 23:03:21,140] Create_Post - Step 03: Enter to post title
+[INFO ] [2023-04-05 23:03:21,798] Create_Post - Step 04: Enter to body
+[INFO ] [2023-04-05 23:03:24,269] Create_Post - Step 05: Click to 'Publish' button
+[INFO ] [2023-04-05 23:03:24,390] Create_Post - Step 07: Click to 'Publish Verify'button
+[INFO ] [2023-04-05 23:03:24,543] Create_Post - Step 08: Verify 'Post published' message is displayed
+[INFO ] [2023-04-05 23:03:25,809] Search_Post - Step 01: Open 'Search Post' page
+[INFO ] [2023-04-05 23:03:27,886] Search_Post - Step 02: Enter to searh textbox
+[INFO ] [2023-04-05 23:03:27,993] Search_Post - Step 03: Click to 'Search Posts' button
+[INFO ] [2023-04-05 23:03:29,812] Search_Post - Step 04: Verify Search Table contain 'Live Coding Title 2172'
+[INFO ] [2023-04-05 23:03:29,859] Search_Post - Step 05: Verify Search Table contain  'automationfc'
+[INFO ] [2023-04-05 23:03:29,904] Search_Post - Step 06: Open End User site
+[INFO ] [2023-04-05 23:03:30,968] Search_Post - Step 07: Verify Post Title displayed at Home Page
+[INFO ] [2023-04-05 23:03:31,108] Search_Post - Step 08: Click to Post Title
+[INFO ] [2023-04-05 23:03:32,020] Search_Post - Step 09: Verify Post infor displayed at Post detail page
+[INFO ] [2023-04-05 23:04:02,297] OS name = windows 10
+[INFO ] [2023-04-05 23:04:02,298] Driver instance name = chromedriver: chrome on windows (f6119dbd5b6bebe11a6720d7819fac4f)
+[INFO ] [2023-04-05 23:10:45,292] Precondition - Step 01: Open Browser and adminUrl
+[INFO ] [2023-04-05 23:10:49,574] Precondition - Step 02: Enter to Username textbox with value: automationfc
+[INFO ] [2023-04-05 23:10:49,673] Precondition - Step 03: Enter to Password textbox with value: automationfc
+[INFO ] [2023-04-05 23:10:49,758] Precondition - Step 04: Click to Login button 
+[INFO ] [2023-04-05 23:10:52,159] Create_Post - Step 01: Click to 'Posts' menu Link
+[INFO ] [2023-04-05 23:10:53,306] Create_Post - Step 02: Get 'Search Post' Page URL
+[INFO ] [2023-04-05 23:10:53,311] Create_Post - Step 02: Click to 'Add New' button
+[INFO ] [2023-04-05 23:10:55,392] Create_Post - Step 03: Enter to post title
+[INFO ] [2023-04-05 23:10:55,962] Create_Post - Step 04: Enter to body
+[INFO ] [2023-04-05 23:10:58,486] Create_Post - Step 05: Click to 'Publish' button
+[INFO ] [2023-04-05 23:10:58,606] Create_Post - Step 07: Click to 'Publish Verify'button
+[INFO ] [2023-04-05 23:10:58,704] Create_Post - Step 08: Verify 'Post published' message is displayed
+[INFO ] [2023-04-05 23:11:00,029] Search_Post - Step 01: Open 'Search Post' page
+[INFO ] [2023-04-05 23:11:02,218] Search_Post - Step 02: Enter to searh textbox
+[INFO ] [2023-04-05 23:11:02,324] Search_Post - Step 03: Click to 'Search Posts' button
+[INFO ] [2023-04-05 23:11:04,270] Search_Post - Step 04: Verify Search Table contain 'Live Coding Title 1599'
+[INFO ] [2023-04-05 23:11:04,319] Search_Post - Step 05: Verify Search Table contain  'automationfc'
+[INFO ] [2023-04-05 23:11:04,365] Search_Post - Step 06: Open End User site
+[INFO ] [2023-04-05 23:11:05,422] Search_Post - Step 07: Verify Post Title displayed at Home Page
+[INFO ] [2023-04-05 23:11:05,559] Search_Post - Step 08: Click to Post Title
+[INFO ] [2023-04-05 23:11:06,534] Search_Post - Step 09: Verify Post infor displayed at Post detail page
+[INFO ] [2023-04-05 23:11:06,681] OS name = windows 10
+[INFO ] [2023-04-05 23:11:06,681] Driver instance name = chromedriver: chrome on windows (f0a2157423d094c09043416b1d626378)

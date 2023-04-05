@@ -3,16 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.nopcommerce.user.Level_24_Multiple_Enviroment_Owner">
+      <class name="com.wordpress.posts.Post_01_Create_Read_Update_Delete">
         <methods>
-          <include name="afterClass"/>
-          <include name="User_03_My_Account"/>
+          <include name="Post_01_Create_New_Post"/>
           <include name="initBeforeSuite"/>
-          <include name="User_02_Login"/>
           <include name="beforeClass"/>
-          <include name="User_01_Register"/>
+          <include name="afterClass"/>
+          <include name="Post_02_Search_And_View_Post"/>
         </methods>
-      </class> <!-- com.nopcommerce.user.Level_24_Multiple_Enviroment_Owner -->
+      </class> <!-- com.wordpress.posts.Post_01_Create_Read_Update_Delete -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

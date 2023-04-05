@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">5 methods,   5 passed</span>
+                    <span class="method-stats">2 methods,   2 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -107,22 +107,7 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-WordPress_-_Admin" title="com.wordpress.posts.Post_01_Create_Read_Update_Delete" class="method navigator-link" hash-for-method="Post_02_Search_Post">Post_02_Search_Post</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-WordPress_-_Admin" title="com.wordpress.posts.Post_01_Create_Read_Update_Delete" class="method navigator-link" hash-for-method="Post_03_View_Post">Post_03_View_Post</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-WordPress_-_Admin" title="com.wordpress.posts.Post_01_Create_Read_Update_Delete" class="method navigator-link" hash-for-method="Post_04_Edit_Post">Post_04_Edit_Post</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-WordPress_-_Admin" title="com.wordpress.posts.Post_01_Create_Read_Update_Delete" class="method navigator-link" hash-for-method="Post_05_Delete_Post">Post_05_Delete_Post</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-WordPress_-_Admin" title="com.wordpress.posts.Post_01_Create_Read_Update_Delete" class="method navigator-link" hash-for-method="Post_02_Search_And_View_Post">Post_02_Search_And_View_Post</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-WordPress_-_Admin -->
@@ -152,30 +137,9 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="Post_02_Search_Post">
-                  </a> <!-- Post_02_Search_Post -->
-                  <span class="method-name">Post_02_Search_Post</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="Post_03_View_Post">
-                  </a> <!-- Post_03_View_Post -->
-                  <span class="method-name">Post_03_View_Post</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="Post_04_Edit_Post">
-                  </a> <!-- Post_04_Edit_Post -->
-                  <span class="method-name">Post_04_Edit_Post</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="Post_05_Delete_Post">
-                  </a> <!-- Post_05_Delete_Post -->
-                  <span class="method-name">Post_05_Delete_Post</span>
+                  <a name="Post_02_Search_And_View_Post">
+                  </a> <!-- Post_02_Search_And_View_Post -->
+                  <span class="method-name">Post_02_Search_And_View_Post</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -190,8 +154,8 @@
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;WordPress - Admin&quot;&gt;
-  &lt;parameter name=&quot;urlUser&quot; value=&quot;https://localhost/&quot;/&gt;
   &lt;parameter name=&quot;adminURL&quot; value=&quot;https://localhost/wp-admin/&quot;/&gt;
+  &lt;parameter name=&quot;userURL&quot; value=&quot;https://localhost/&quot;/&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Run on Chrome&quot;&gt;
     &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
     &lt;classes&gt;
@@ -235,32 +199,20 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(5);
+data.addRows(2);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'Post_01_Create_New_Post')
 data.setCell(0, 2, 'com.wordpress.posts.Post_01_Create_Read_Update_Delete')
-data.setCell(0, 3, 8062);
+data.setCell(0, 3, 7861);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'Post_02_Search_Post')
+data.setCell(1, 1, 'Post_02_Search_And_View_Post')
 data.setCell(1, 2, 'com.wordpress.posts.Post_01_Create_Read_Update_Delete')
-data.setCell(1, 3, 1349);
-data.setCell(2, 0, 2)
-data.setCell(2, 1, 'Post_04_Edit_Post')
-data.setCell(2, 2, 'com.wordpress.posts.Post_01_Create_Read_Update_Delete')
-data.setCell(2, 3, 3);
-data.setCell(3, 0, 3)
-data.setCell(3, 1, 'Post_05_Delete_Post')
-data.setCell(3, 2, 'com.wordpress.posts.Post_01_Create_Read_Update_Delete')
-data.setCell(3, 3, 2);
-data.setCell(4, 0, 4)
-data.setCell(4, 1, 'Post_03_View_Post')
-data.setCell(4, 2, 'com.wordpress.posts.Post_01_Create_Read_Update_Delete')
-data.setCell(4, 3, 2);
+data.setCell(1, 3, 6652);
 window.suiteTableData['WordPress_-_Admin']= { tableData: data, tableDiv: 'times-div-WordPress_-_Admin'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 9 seconds</span>
+              <span class="suite-total-time">Total running time: 14 seconds</span>
               <div id="times-div-WordPress_-_Admin">
               </div> <!-- times-div-WordPress_-_Admin -->
             </div> <!-- times-div -->
@@ -274,28 +226,44 @@ return data;
             <div class="reporter-method-div">
               <span class="reporter-method-name">Post_01_Create_New_Post</span>
               <div class="reporter-method-output-div">
-                <span class="reporter-method-output">[INFO ] [2023-03-20 20:57:14,346] Create_Post - Step 01: Click to 'Posts' menu Link
+                <span class="reporter-method-output">[INFO ] [2023-04-05 23:10:52,159] Create_Post - Step 01: Click to 'Posts' menu Link
 <br></span>
-                <span class="reporter-method-output">[INFO ] [2023-03-20 20:57:15,468] Create_Post - Step 02: Get 'Search Post' Page URL
+                <span class="reporter-method-output">[INFO ] [2023-04-05 23:10:53,306] Create_Post - Step 02: Get 'Search Post' Page URL
 <br></span>
-                <span class="reporter-method-output">[INFO ] [2023-03-20 20:57:15,473] Create_Post - Step 02: Click to 'Add New' button
+                <span class="reporter-method-output">[INFO ] [2023-04-05 23:10:53,311] Create_Post - Step 02: Click to 'Add New' button
 <br></span>
-                <span class="reporter-method-output">[INFO ] [2023-03-20 20:57:17,791] Create_Post - Step 03: Enter to post title
+                <span class="reporter-method-output">[INFO ] [2023-04-05 23:10:55,392] Create_Post - Step 03: Enter to post title
 <br></span>
-                <span class="reporter-method-output">[INFO ] [2023-03-20 20:57:18,413] Create_Post - Step 04: Enter to body
+                <span class="reporter-method-output">[INFO ] [2023-04-05 23:10:55,962] Create_Post - Step 04: Enter to body
 <br></span>
-                <span class="reporter-method-output">[INFO ] [2023-03-20 20:57:20,933] Create_Post - Step 05: Click to 'Publish' button
+                <span class="reporter-method-output">[INFO ] [2023-04-05 23:10:58,486] Create_Post - Step 05: Click to 'Publish' button
 <br></span>
-                <span class="reporter-method-output">[INFO ] [2023-03-20 20:57:21,069] Create_Post - Step 07: Click to 'Publish Verify'button
+                <span class="reporter-method-output">[INFO ] [2023-04-05 23:10:58,606] Create_Post - Step 07: Click to 'Publish Verify'button
 <br></span>
-                <span class="reporter-method-output">[INFO ] [2023-03-20 20:57:21,196] Create_Post - Step 08: Verify 'Post published' message is displayed
+                <span class="reporter-method-output">[INFO ] [2023-04-05 23:10:58,704] Create_Post - Step 08: Verify 'Post published' message is displayed
 <br></span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
             <div class="reporter-method-div">
-              <span class="reporter-method-name">Post_02_Search_Post</span>
+              <span class="reporter-method-name">Post_02_Search_And_View_Post</span>
               <div class="reporter-method-output-div">
-                <span class="reporter-method-output">[INFO ] [2023-03-20 20:57:22,414] Search_Post - Step 01: Open 'Search Post' page
+                <span class="reporter-method-output">[INFO ] [2023-04-05 23:11:00,029] Search_Post - Step 01: Open 'Search Post' page
+<br></span>
+                <span class="reporter-method-output">[INFO ] [2023-04-05 23:11:02,218] Search_Post - Step 02: Enter to searh textbox
+<br></span>
+                <span class="reporter-method-output">[INFO ] [2023-04-05 23:11:02,324] Search_Post - Step 03: Click to 'Search Posts' button
+<br></span>
+                <span class="reporter-method-output">[INFO ] [2023-04-05 23:11:04,270] Search_Post - Step 04: Verify Search Table contain 'Live Coding Title 1599'
+<br></span>
+                <span class="reporter-method-output">[INFO ] [2023-04-05 23:11:04,319] Search_Post - Step 05: Verify Search Table contain  'automationfc'
+<br></span>
+                <span class="reporter-method-output">[INFO ] [2023-04-05 23:11:04,365] Search_Post - Step 06: Open End User site
+<br></span>
+                <span class="reporter-method-output">[INFO ] [2023-04-05 23:11:05,422] Search_Post - Step 07: Verify Post Title displayed at Home Page
+<br></span>
+                <span class="reporter-method-output">[INFO ] [2023-04-05 23:11:05,559] Search_Post - Step 08: Click to Post Title
+<br></span>
+                <span class="reporter-method-output">[INFO ] [2023-04-05 23:11:06,534] Search_Post - Step 09: Verify Post infor displayed at Post detail page
 <br></span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
@@ -320,32 +288,20 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="configuration-class before">
-                <span class="method-name">beforeClass(chrome, https://localhost/wp-admin/)</span>
-                <span class="method-start">21 ms</span>
+                <span class="method-name">beforeClass(chrome, https://localhost/wp-admin/, https://localhost/)</span>
+                <span class="method-start">24 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">Post_01_Create_New_Post</span>
-                <span class="method-start">9347 ms</span>
+                <span class="method-start">6851 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">Post_02_Search_Post</span>
-                <span class="method-start">17458 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">Post_03_View_Post</span>
-                <span class="method-start">18810 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">Post_04_Edit_Post</span>
-                <span class="method-start">18813 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">Post_05_Delete_Post</span>
-                <span class="method-start">18817 ms</span>
+                <span class="method-name">Post_02_Search_And_View_Post</span>
+                <span class="method-start">14761 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">afterClass</span>
-                <span class="method-start">18821 ms</span>
+                <span class="method-start">21415 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
