@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [WordPress - Admin]">
-  <parameter name="urlUser" value="https://localhost/"/>
   <parameter name="adminURL" value="https://localhost/wp-admin/"/>
+  <parameter name="userURL" value="https://localhost/"/>
   <test thread-count="5" name="Run on Chrome(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
       <class name="com.wordpress.posts.Post_01_Create_Read_Update_Delete">
         <methods>
-          <include name="Post_01_Create_New_Post"/>
           <include name="initBeforeSuite"/>
           <include name="beforeClass"/>
           <include name="afterClass"/>
+          <include name="Post_02_Search_And_View_Post"/>
         </methods>
       </class> <!-- com.wordpress.posts.Post_01_Create_Read_Update_Delete -->
     </classes>

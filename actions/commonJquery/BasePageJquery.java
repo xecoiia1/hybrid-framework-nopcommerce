@@ -663,8 +663,8 @@ public class BasePageJquery {
 	
 	//Switch Role
 	public UserHomePO openEndUserSite(WebDriver driver,  String endUserURL) {
-		// TODO Auto-generated method stub
-		return null;
+		openPageURL(driver, endUserURL);
+		return pageObjects.wordpress.PageGeneratorManager.getUserHomePage(driver);
 	}
 	
 	private long longTimeOut = GlobalConstants.LONG_TIMEOUT;

@@ -20,8 +20,8 @@ public class AdminPostSearchPO extends BasePageJquery {
 	}
 
 	public void enterToSearchTextBox(String postTitle) {
-		waitForElementVisible(driver, AdminPostSeachPageUI.ADD_NEW_BTN);
-		sendkeysToElementByXpath(driver, AdminPostSeachPageUI.ADD_NEW_BTN, postTitle);
+		waitForElementVisible(driver, AdminPostSeachPageUI.SEARCH_TEXTBOX);
+		sendkeysToElementByXpath(driver, AdminPostSeachPageUI.SEARCH_TEXTBOX, postTitle);
 	}
 
 	public void clickToSearchPostsButton() {
@@ -29,15 +29,10 @@ public class AdminPostSearchPO extends BasePageJquery {
 		clickToElementByXpath(driver, AdminPostSeachPageUI.SEARCH_POSTS_BUTTON);
 	}
 
-	public boolean isPostSearchTableDisplayed(String headerID, String postTitle) {
+	public boolean isPostSearchTableDisplayed(String headerID, String cellValue) {
 		int headerIndex = getElementSize(driver, AdminPostSeachPageUI.TABLE_HEADER_INDEX_BY_HEADER_NAME, headerID) + 1;
-		waitForElementVisible(driver, AdminPostSeachPageUI.TABLE_ROW_VALUE_BY_HEADER_INDEX, null);
-		return false;
-	}
-
-	public UserHomePO openEndUserSite(String endUserURL) {
-		// TODO Auto-generated method stub
-		return null;
+		waitForElementVisible(driver, AdminPostSeachPageUI.TABLE_ROW_VALUE_BY_HEADER_INDEX, String.valueOf(headerIndex), cellValue);
+		return isElementDisplay(driver, AdminPostSeachPageUI.TABLE_ROW_VALUE_BY_HEADER_INDEX, String.valueOf(headerIndex), cellValue);
 	}
 
 }

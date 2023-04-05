@@ -33,13 +33,13 @@ public class Post_01_Create_Read_Update_Delete extends BaseTestJquery  {
 	
 	@Parameters({"browser", "adminURL", "userURL"})
 	@BeforeClass
-	public void beforeClass(String browserName, String adminURL, String endUserURL) {
+	public void beforeClass(String browserName, String adminURL, String userURL) {
 		
 	  log.info("Precondition - Step 01: Open Browser and adminUrl");
 	  
 	  this.adminURL = adminURL;
 	  
-	  this.endUserURL = endUserURL;
+	  this.endUserURL = userURL;
 	
 	  driver = getBrowserDriverAppURL(browserName, adminURL);
 	
@@ -86,7 +86,7 @@ public class Post_01_Create_Read_Update_Delete extends BaseTestJquery  {
   public void Post_02_Search_And_View_Post() {
 	  log.info("Search_Post - Step 01: Open 'Search Post' page");
 	  adminPostSeachPage =  adminPostAddNewPage.openSearchPostPageUrl(searchPostUrl);
-	  
+ 
 	  log.info("Search_Post - Step 02: Enter to searh textbox");
 	  adminPostSeachPage.enterToSearchTextBox(postTitle);
 	  
@@ -94,39 +94,32 @@ public class Post_01_Create_Read_Update_Delete extends BaseTestJquery  {
 	  adminPostSeachPage.clickToSearchPostsButton();
 	  
 	  log.info("Search_Post - Step 04: Verify Search Table contain '" + postTitle + "'" );
-	  verifyTrue(adminPostSeachPage.isPostSearchTableDisplayed("Title",postTitle));
+	  verifyTrue(adminPostSeachPage.isPostSearchTableDisplayed("title", postTitle));
+	  
 	  log.info("Search_Post - Step 05: Verify Search Table contain  '" + authorName + "'" );
-	  verifyTrue(adminPostSeachPage.isPostSearchTableDisplayed("Author" ,authorName));
+	  verifyTrue(adminPostSeachPage.isPostSearchTableDisplayed("author", authorName));
 	  
 	  log.info("Search_Post - Step 06: Open End User site");
-	  userHomePage = adminPostSeachPage.openEndUserSite(this.endUserURL);
+	  userHomePage = adminPostSeachPage.openEndUserSite(driver, this.endUserURL);
 	  
 	  log.info("Search_Post - Step 07: Verify Post Title displayed at Home Page");
-	  verifyTrue(userHomePage.isPostInforDisplayed(postTitle));
-	  verifyTrue(userHomePage.isPostInforDisplayed(postBody));
-	  verifyTrue(userHomePage.isPostInforDisplayed(authorName));
-	  verifyTrue(userHomePage.isPostInforDisplayed(currentDay));
+	  verifyTrue(userHomePage.isPostInforDisplayedWithPostTitle(postTitle));
+	  verifyTrue(userHomePage.isPostInforDisplayedWithPostBody(postTitle, postBody));
+	  verifyTrue(userHomePage.isPostInforDisplayedWithAuthorName(postTitle, authorName));
+	  verifyTrue(userHomePage.isPostInforDisplayedWithCurrentDay(postTitle, currentDay));
 	  
 	  log.info("Search_Post - Step 08: Click to Post Title");
-	  userHomePage.clicktoPostTitlte(postTitle);
+	  userPostDetailPage = userHomePage.clicktoPostTitle(postTitle);
 	  
 	  log.info("Search_Post - Step 09: Verify Post infor displayed at Post detail page");
-	  verifyTrue(userPostDetailPage.isPostInforDisplayed(postTitle));
-	  verifyTrue(userPostDetailPage.isPostInforDisplayed(postBody));
-	  verifyTrue(userPostDetailPage.isPostInforDisplayed(authorName));
-	  verifyTrue(userPostDetailPage.isPostInforDisplayed(authorName));
+	  verifyTrue(userPostDetailPage.isPostInforDisplayedWithPostTitle(postTitle));
+	  verifyTrue(userPostDetailPage.isPostInforDisplayedWithPostBody(postTitle, postBody));
+	  verifyTrue(userPostDetailPage.isPostInforDisplayedWithAuthorName(postTitle, authorName));
+	  verifyTrue(userPostDetailPage.isPostInforDisplayedWithCurrentDay(postTitle, currentDay));
 	  
 	 }
    
-  @Test
-  public void Post_04_Edit_Post() {
-	  
-  }
   
-  @Test
-  public void Post_05_Delete_Post() {
-	  
-  }
   @AfterClass(alwaysRun = true)
   public void afterClass() {
 	  closeBrowserAndDriver();

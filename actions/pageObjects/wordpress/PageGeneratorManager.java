@@ -19,11 +19,11 @@ public class PageGeneratorManager {
 		return new AdminPostAddNewPO(driver);
 	}
 	
-	public static UserPostDetailPO getUserPostDetailPO(WebDriver driver) {
+	public static UserPostDetailPO getUserPostDetailPage(WebDriver driver) {
 		return new UserPostDetailPO(driver);
 	}
 	
-	public static UserHomePO getUserHomePO(WebDriver driver) {
+	public static UserHomePO getUserHomePage(WebDriver driver) {
 		return new UserHomePO(driver);
 	}
 }
