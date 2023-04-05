@@ -20,17 +20,18 @@ public class AdminPostSearchPO extends BasePageJquery {
 	}
 
 	public void enterToSearchTextBox(String postTitle) {
-		// TODO Auto-generated method stub
-		
+		waitForElementVisible(driver, AdminPostSeachPageUI.ADD_NEW_BTN);
+		sendkeysToElementByXpath(driver, AdminPostSeachPageUI.ADD_NEW_BTN, postTitle);
 	}
 
 	public void clickToSearchPostsButton() {
-		// TODO Auto-generated method stub
-		
+		waitForElementClickAble(driver, AdminPostSeachPageUI.SEARCH_POSTS_BUTTON);
+		clickToElementByXpath(driver, AdminPostSeachPageUI.SEARCH_POSTS_BUTTON);
 	}
 
-	public boolean isPostSearchTableDisplayed(String string, String postTitle) {
-		// TODO Auto-generated method stub
+	public boolean isPostSearchTableDisplayed(String headerID, String postTitle) {
+		int headerIndex = getElementSize(driver, AdminPostSeachPageUI.TABLE_HEADER_INDEX_BY_HEADER_NAME, headerID) + 1;
+		waitForElementVisible(driver, AdminPostSeachPageUI.TABLE_ROW_VALUE_BY_HEADER_INDEX, null);
 		return false;
 	}
 
