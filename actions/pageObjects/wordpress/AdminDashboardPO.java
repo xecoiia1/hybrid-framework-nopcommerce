@@ -18,4 +18,10 @@ public class AdminDashboardPO extends BasePageJquery {
 		clickToElementByXpath(driver, AdminDashboardPageUI.POST_MENU_LINK);
 		return PageGeneratorManager.getAdminPostSeachPage(driver);
 	}
+	
+	public AdminUserPO clickToUserMenuLink() {
+		waitForElementClickAble(driver, AdminDashboardPageUI.USER_MENU_LINK);
+		clickToElementByXpath(driver, AdminDashboardPageUI.USER_MENU_LINK);
+		return PageGeneratorManager.getAdminUserSeachPage(driver);
+	}
 }

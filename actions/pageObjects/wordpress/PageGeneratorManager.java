@@ -26,4 +26,8 @@ public class PageGeneratorManager {
 	public static UserHomePO getUserHomePage(WebDriver driver) {
 		return new UserHomePO(driver);
 	}
+
+	public static AdminUserPO getAdminUserSeachPage(WebDriver driver) {
+		return new AdminUserPO(driver);
+	}
 }
